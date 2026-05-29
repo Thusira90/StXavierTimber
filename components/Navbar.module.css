@@ -1,0 +1,121 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(46, 79, 18, 0.12);
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.logoImg {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.link {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #1a2e08;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: color 0.15s, background 0.15s;
+}
+
+.link:hover {
+  color: #0f1a04;
+  background: rgba(46, 79, 18, 0.1);
+}
+
+.cta {
+  flex-shrink: 0;
+  background: var(--sage-800);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: background 0.15s;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: var(--sage-900);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.burger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: #2e4f12;
+  border-radius: 2px;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px 20px;
+  border-top: 1px solid rgba(46, 79, 18, 0.12);
+  gap: 2px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.mobileLink {
+  font-size: 15px;
+  color: #2e4f12;
+  padding: 10px 8px;
+  border-radius: 6px;
+}
+
+.mobileCta {
+  margin-top: 8px;
+  background: var(--sage-800);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .links { display: none; }
+  .cta { display: none; }
+  .burger { display: flex; }
+  .inner { padding: 0 20px; }
+}
