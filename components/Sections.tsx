@@ -97,6 +97,44 @@ export function Process() {
 }
 
 /* ── Industries ───────────────────────────────────────────── */
+const indIcons: Record<string, React.ReactNode> = {
+  'Export Pallet Manufacturers': (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M21 8V6a2 2 0 00-2-2H5a2 2 0 00-2 2v2"/><rect x="1" y="8" width="22" height="13" rx="2"/><path d="M12 8v13M8 8v13M16 8v13"/>
+    </svg>
+  ),
+  'Construction Companies': (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 21h18M9 21V7l3-4 3 4v14M3 21V11l6-4M21 21V11l-6-4"/><path d="M9 12h6"/>
+    </svg>
+  ),
+  'Furniture Manufacturers': (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="4" y="9" width="16" height="7" rx="2"/><path d="M4 12H2v4h2M20 12h2v4h-2M6 16v2M18 16v2"/>
+    </svg>
+  ),
+  'Door & Window Makers': (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="4" y="2" width="16" height="20" rx="1"/><path d="M4 12h16M12 2v20"/><circle cx="16" cy="12" r="1" fill="currentColor" stroke="none"/>
+    </svg>
+  ),
+  'Packaging Industry': (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+    </svg>
+  ),
+  'Architects & Interior Designers': (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 21L12 3l9 18"/><path d="M6.5 14.5h11"/>
+    </svg>
+  ),
+  'Agricultural Exporters': (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M3 17h18M3 17L6 7h12l3 10M12 7V3M9 3h6"/><path d="M7 17v2M17 17v2"/>
+    </svg>
+  ),
+};
+
 const industries = [
   {
     icon: '📦',
@@ -199,7 +237,7 @@ export function Industries() {
           {industries.map((i) => (
             <div key={i.name} className={styles.indCard}>
               <div className={styles.indCardTop}>
-                <span className={styles.indIcon}>{i.icon}</span>
+                <span className={styles.indIcon}>{indIcons[i.name]}</span>
                 <div>
                   <p className={styles.indName}>{i.name}</p>
                   <p className={styles.indSub}>{i.sub}</p>
@@ -445,10 +483,38 @@ export function FAQ() {
 /* ── Contact ──────────────────────────────────────────────── */
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(false);
+    const form = e.currentTarget;
+    const data = {
+      name:      (form.elements.namedItem('name')      as HTMLInputElement).value,
+      species:   (form.elements.namedItem('species')   as HTMLInputElement).value,
+      quantity:  (form.elements.namedItem('quantity')  as HTMLInputElement).value,
+      treatment: (form.elements.namedItem('treatment') as HTMLSelectElement).value,
+      phone:     (form.elements.namedItem('phone')     as HTMLInputElement).value,
+      notes:     (form.elements.namedItem('notes')     as HTMLTextAreaElement).value,
+    };
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -489,18 +555,21 @@ export function Contact() {
             </div>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
-              <input type="text" placeholder="Your name / company" required className={styles.input} />
-              <input type="text" placeholder="Timber species & dimensions" required className={styles.input} />
-              <input type="text" placeholder="Quantity (m³ or pieces)" required className={styles.input} />
-              <select className={styles.input} defaultValue="">
+              <input name="name" type="text" placeholder="Your name / company" required className={styles.input} />
+              <input name="species" type="text" placeholder="Timber species & dimensions" required className={styles.input} />
+              <input name="quantity" type="text" placeholder="Quantity (sq ft or pieces)" required className={styles.input} />
+              <select name="treatment" className={styles.input} defaultValue="" required>
                 <option value="" disabled>Treatment required</option>
                 <option>Kiln Drying only</option>
                 <option>Vacuum Pressure Impregnation only</option>
                 <option>Both — Kiln + VPI</option>
               </select>
-              <input type="text" placeholder="Phone or WhatsApp number" className={styles.input} />
-              <textarea placeholder="Any other requirements or questions..." className={styles.textarea} rows={4} />
-              <button type="submit" className={styles.submitBtn}>Send Enquiry →</button>
+              <input name="phone" type="tel" inputMode="numeric" placeholder="Phone or WhatsApp number" className={styles.input} onKeyDown={(e) => { if (!/[\d\s\+\-\(\)]/.test(e.key) && !['Backspace','Delete','Tab','ArrowLeft','ArrowRight'].includes(e.key)) e.preventDefault(); }} />
+              <textarea name="notes" placeholder="Any other requirements or questions..." className={styles.textarea} rows={4} />
+              {error && <p className={styles.formError}>Something went wrong — please try again or call us directly.</p>}
+              <button type="submit" className={styles.submitBtn} disabled={loading}>
+                {loading ? 'Sending…' : 'Send Enquiry →'}
+              </button>
             </form>
           )}
         </div>
@@ -531,9 +600,9 @@ export function Footer() {
           <p className={styles.footerSub}>1088, Colombo Road, Daluwakotuwa. Kochchikade. · Est. 1955</p>
         </div>
         <div className={styles.footerLinks}>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">LinkedIn</a>
+          <a href="https://www.facebook.com/profile.php?id=100054793123041" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/stxaviertimber?igsh=MTRueHJydWNkNmdnOQ%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
         <p className={styles.footerRight}>
           Pallet products →{' '}

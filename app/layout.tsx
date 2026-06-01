@@ -27,6 +27,14 @@ export const metadata: Metadata = {
     'timber treatment Negombo',
     'export pallet treatment',
     'ISPM 15 pallet Sri Lanka',
+    'CeyPall',
+    'wooden pallets Sri Lanka',
+    'pallet manufacturer Sri Lanka',
+    'ISPM 15 wooden pallet Sri Lanka',
+    'export pallets Sri Lanka',
+    'heat treated pallets Sri Lanka',
+    'pallet manufacturing Daluwakotuwa',
+    'wooden crates Sri Lanka',
   ],
   authors: [{ name: 'St. Xavier Timber' }],
   creator: 'St. Xavier Timber',
@@ -141,9 +149,76 @@ const localBusinessSchema = {
     ],
   },
   sameAs: [
-    'https://www.facebook.com/stxaviertimber',
+    'https://www.facebook.com/profile.php?id=100054793123041',
     'https://www.instagram.com/stxaviertimber',
-    'https://www.linkedin.com/company/stxaviertimber',
+    'https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/',
+  ],
+  subOrganization: {
+    '@type': 'Organization',
+    name: 'CeyPall',
+    description:
+      'Pallet manufacturing arm of St. Xavier Timber. Produces ISPM 15 certified, IPPC registered wooden pallets from kiln-dried and VPI-treated timber for export and local use.',
+    url: 'https://ceypall.com',
+    foundingDate: '1955',
+    parentOrganization: {
+      '@type': 'Organization',
+      name: 'St. Xavier Timber',
+      url: siteUrl,
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Pallet Products',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'ISPM 15 Certified Export Pallets',
+            description:
+              'Heat treated wooden pallets compliant with ISPM 15 phytosanitary standards. IPPC registered, accepted in 180+ countries for international export.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Product',
+            name: 'VPI Treated Pallets',
+            description:
+              'Vacuum pressure impregnated pallets for pest and fungal protection. Made from St. Xavier kiln-dried timber.',
+          },
+        },
+      ],
+    },
+  },
+};
+
+const ceypallSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://ceypall.com',
+  name: 'CeyPall',
+  alternateName: 'CeyPall Pallets',
+  description:
+    'Sri Lanka\'s IPPC registered pallet manufacturer. ISPM 15 certified wooden pallets made from kiln-dried and VPI-treated timber. Sister company of St. Xavier Timber, Est. 1955.',
+  url: 'https://ceypall.com',
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'St. Xavier Timber',
+    url: siteUrl,
+  },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '1088, Colombo Road',
+    addressLocality: 'Daluwakotuwa, Kochchikade',
+    addressRegion: 'Western Province',
+    addressCountry: 'LK',
+  },
+  knowsAbout: [
+    'ISPM 15 wooden pallets',
+    'IPPC heat treatment',
+    'export pallet manufacturing',
+    'wooden packaging Sri Lanka',
+    'phytosanitary compliance',
   ],
 };
 
@@ -154,6 +229,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ceypallSchema) }}
         />
       </head>
       <body>{children}</body>

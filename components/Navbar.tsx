@@ -4,12 +4,13 @@ import Image from 'next/image';
 import styles from './Navbar.module.css';
 
 const links = [
-  { label: 'Services', href: '#services' },
-  { label: 'Process', href: '#process' },
-  { label: 'Industries', href: '#industries' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Process', href: '/#process' },
+  { label: 'Industries', href: '/#industries' },
   { label: 'About', href: '/about' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'FAQ', href: '/#faq' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar() {
@@ -38,7 +39,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="#contact" className={styles.cta}>Get a Quote</a>
+        <a href="/#contact" className={styles.cta}>Get a Quote</a>
 
         <button
           className={styles.burger}
@@ -56,7 +57,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#contact" className={styles.mobileCta} onClick={() => setOpen(false)}>
+          <a href="/#contact" className={styles.mobileCta} onClick={() => setOpen(false)}>
             Get a Quote
           </a>
         </div>
