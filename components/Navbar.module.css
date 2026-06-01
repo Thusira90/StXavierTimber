@@ -39,8 +39,10 @@
 }
 
 .link {
-  font-size: 13.5px;
-  font-weight: 500;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #1a2e08;
   padding: 6px 10px;
   border-radius: 6px;
@@ -96,7 +98,10 @@
 }
 
 .mobileLink {
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #2e4f12;
   padding: 10px 8px;
   border-radius: 6px;
