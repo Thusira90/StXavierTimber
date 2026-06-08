@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: 'St. Xavier Timber | Kiln Drying & Wood Preservation Sri Lanka',
     description:
       'Industrial kiln drying and VPI timber treatment. IPPC registered, ISPM 15 certified. Est. 1955.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
