@@ -54,6 +54,8 @@ export default async function PostPage({
   const post = getPost(slug);
   if (!post) notFound();
 
+  const BASE = 'https://www.stxaviertimber.com';
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -64,32 +66,48 @@ export default async function PostPage({
     author: {
       '@type': 'Organization',
       name: 'St. Xavier Timber',
-      url: 'https://www.stxaviertimber.com',
+      url: BASE,
     },
     publisher: {
       '@type': 'Organization',
       name: 'St. Xavier Timber',
-      url: 'https://www.stxaviertimber.com',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://www.stxaviertimber.com/logo.png',
-      },
+      url: BASE,
+      logo: { '@type': 'ImageObject', url: `${BASE}/logo.png` },
     },
     keywords: post.tags.join(', '),
     articleSection: post.category,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://www.stxaviertimber.com/blog/${post.slug}`,
+      '@id': `${BASE}/blog/${post.slug}`,
     },
+    about: {
+      '@type': 'LocalBusiness',
+      '@id': BASE,
+      name: 'St. Xavier Timber',
+    },
+    image: {
+      '@type': 'ImageObject',
+      url: `${BASE}/og-image.jpg`,
+      width: 1200,
+      height: 630,
+    },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE },
+      { '@type': 'ListItem', position: 2, name: 'Knowledge Centre', item: `${BASE}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `${BASE}/blog/${post.slug}` },
+    ],
   };
 
   return (
     <>
       <Navbar />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
       <section className={styles.hero}>

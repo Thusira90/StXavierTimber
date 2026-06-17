@@ -449,6 +449,18 @@ const faqs = [
     q: 'What is ISPM 15 / IPPC certification and why does my export shipment need it?',
     a: 'ISPM 15 is a global standard that requires all wooden packaging material — pallets, crates, dunnage — used in international trade to be heat-treated or fumigated to eliminate pests and pathogens. Without ISPM 15 certification, your shipment can be held, fumigated at your cost, or rejected at the destination port. St. Xavier Timber is IPPC registered and issues the required certification marks on all treated material.',
   },
+  {
+    q: 'Where is St. Xavier Timber located and do you deliver island-wide?',
+    a: 'We are located at 1088, Colombo Road, Daluwakotuwa, Kochchikade (postal code 11540), near Negombo on the western coast of Sri Lanka. We offer island-wide delivery and work with customers from Colombo, Gampaha, Kurunegala, Kandy, and beyond. You can also collect directly from our facility.',
+  },
+  {
+    q: 'What timber species do you treat?',
+    a: 'We regularly treat rubberwood, pine, teak, nadun, kumbuk, mahogany, and most imported hardwood species. Rubberwood is our most common species — it requires both kiln drying and VPI due to its susceptibility to borers. Teak typically requires kiln drying only as it is naturally durable. We tailor the treatment schedule per species and thickness.',
+  },
+  {
+    q: 'How do I get a quote for timber treatment?',
+    a: 'Send us your timber species, dimensions, quantity, and treatment required (kiln drying, VPI, or both). You can call us on 031 227 7752, WhatsApp 071 471 1417, or fill in the quote form on this page. We typically reply with a timeline and price within a few hours during business hours.',
+  },
 ];
 
 export function FAQ() {
