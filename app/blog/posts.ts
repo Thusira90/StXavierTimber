@@ -18,6 +18,82 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'termite-protection-roof-timber-sri-lanka',
+    title: 'Termite Protection for Roof Timber in Sri Lanka: What Builders Need to Know',
+    description:
+      'Termite damage to roof structures is one of the most expensive building failures in Sri Lanka — and almost entirely preventable. This guide explains how termites attack roof timber, what treatment stops them, and how to specify correctly for new construction.',
+    date: '2026-06-30',
+    readTime: '5 min read',
+    category: 'Construction',
+    tags: ['termite treatment', 'roof timber', 'VPI treatment', 'construction timber Sri Lanka', 'timber treatment', 'termite protection Sri Lanka'],
+    sections: [
+      {
+        heading: 'Why Roof Timber is the Highest-Risk Structural Element',
+        paragraphs: [
+          'In Sri Lanka\'s tropical climate, subterranean termites are active year-round. Roof structures — rafters, purlins, wall plates, and ridge boards — are among their preferred targets. The combination of timber in contact with masonry, limited ventilation, and moisture from condensation and minor roof leaks creates conditions that termites exploit quickly and silently.',
+          'The problem is that termite damage in roof structures is rarely detected until it is severe. Unlike a leaking pipe or a cracked wall, timber deterioration happens inside the wood — invisible from the surface until the structural integrity is already compromised. By the time sagging ceilings, bowing rafters, or visible exit holes appear, significant structural members may need full replacement.',
+        ],
+      },
+      {
+        heading: 'How Termites Attack Roof Timber',
+        paragraphs: [
+          'Subterranean termites — the dominant species causing structural damage in Sri Lanka — typically enter buildings through the foundation and travel upward through mud tubes built along masonry walls and column surfaces. Once they reach the roof space, they attack timber from the inside out, hollowing out rafters and purlins while leaving a thin outer shell intact. The wood looks fine from the outside; a screwdriver pushed into an infested member will pass straight through.',
+          'Drywood termites — less common but also present — infest timber directly, entering through exposed end grain, small cracks, and unprotected surfaces. They do not need ground contact and can attack roof timber in buildings where subterranean termites have never been a problem. Powder post beetles follow a similar pattern, laying eggs in the wood grain and boring through the timber as larvae mature — the fine sawdust below a rafter is often the first visible sign.',
+        ],
+      },
+      {
+        heading: 'The Only Effective Solution: Deep Penetration Treatment',
+        paragraphs: [
+          'Surface treatments — painted-on preservatives, spray applications, and brush-applied chemicals — do not protect roof timber against termites. Termites attack from within the wood and through cut ends and joints where surface coatings are absent. A coat of something on the outside of a rafter is not a barrier against an organism that eats from the inside.',
+          'The only treatment that provides reliable, long-term protection is Vacuum Pressure Impregnation (VPI) with a proven preservative carried deep into the wood core under pressure. VPI forces a 5% Boron Borax solution into the cellular structure of the timber throughout its entire cross-section — not just the outer few millimetres. The result is timber where every part of the wood contains the preservative, eliminating the possibility of a pest finding an untreated path through the material.',
+        ],
+      },
+      {
+        heading: 'What VPI Treatment Does Inside the Timber',
+        paragraphs: [
+          'During VPI treatment, timber is loaded into a sealed pressure vessel. A 45-minute initial vacuum draws air out of the wood cells, creating space for the preservative to enter. Boron Borax solution is then introduced at 10 bar (145 PSI) and held under pressure for 2–6 hours depending on species and cross-section thickness. The pressure forces the solution through the entire cross-section — from surface to core — achieving penetration that no surface application can match.',
+          'Boron Borax works by interfering with the digestive enzymes of wood-destroying insects. Termites and borers that ingest treated wood cannot metabolise nutrients and die. Unlike older timber preservatives based on arsenic or chromium, Boron Borax is non-toxic to humans and animals at treatment concentrations, making it safe for use in residential buildings, schools, and any occupied structure.',
+        ],
+        list: [
+          'Full cross-section penetration — not just the outer surface',
+          'Boron Borax disrupts digestive enzymes in termites and wood-boring insects',
+          'Non-toxic to humans, animals, and pets at treatment concentrations',
+          'Does not wash off or evaporate in normal indoor conditions',
+          'Timber remains fully workable after treatment — can be cut, drilled, and fixed normally',
+        ],
+      },
+      {
+        heading: 'The Real Cost of Not Treating',
+        paragraphs: [
+          'The cost of VPI treatment for a roof structure is a small fraction of the cost of replacing it. A full roof re-timber in Sri Lanka — stripping out infested rafters, purlins, and wall plates, installing new members, repairing the roofing material, and making good the ceiling — typically runs to several times the original treatment cost, and that is before accounting for the disruption and the potential structural risk during the period of damage.',
+          'The indirect costs are often higher still. Termite damage that spreads from the roof into timber lintels, door and window frames, and floor structures can result in a remediation project that affects the entire building. Insurance policies in Sri Lanka rarely cover termite damage as standard — it is classified as a maintenance failure, not an insured event.',
+        ],
+      },
+      {
+        heading: 'How to Specify Treated Timber for Roof Structures',
+        paragraphs: [
+          'For new construction, the specification should require all structural timber — rafters, purlins, wall plates, ridge boards, and any timber in contact with or within 300mm of masonry — to be VPI-treated with Boron Borax to a confirmed retention level, supplied by an IPPC-registered treatment facility. The treatment provider should supply batch records confirming the treatment cycle, pressure, chemical concentration, and timber species and dimensions processed.',
+          'Kiln drying prior to VPI treatment significantly improves treatment effectiveness. Dry timber absorbs the preservative solution more uniformly and achieves higher retention levels than green or partially dried timber. For roof structural timber, the correct specification is: kiln-dried to 15–18% MC, then VPI-treated with Boron Borax — in that sequence, under one roof where possible to avoid re-wetting between processes.',
+        ],
+        list: [
+          'Specify VPI treatment with Boron Borax for all structural roof members',
+          'Require batch treatment records from an IPPC-registered facility',
+          'Kiln dry to 15–18% MC before VPI for best penetration and retention',
+          'Include all timber within 300mm of masonry in the treatment specification',
+          'Re-treat any timber cut on site — exposed end grain loses the protection',
+        ],
+        note: 'St. Xavier Timber operates kiln drying and VPI treatment under one roof in Daluwakotuwa. We treat roof structural timber for construction companies across Sri Lanka and issue full treatment records for specification compliance. Contact us with your timber dimensions and we will provide a turnaround timeline and quote.',
+      },
+      {
+        heading: 'What About Existing Roof Structures?',
+        paragraphs: [
+          'For existing buildings without treated timber, the options are more limited. In-situ borate treatment — where a borate solution is drilled and injected into existing structural members — can extend the life of at-risk timber, but it does not achieve the same penetration or retention as factory VPI treatment. It is a remedial measure, not a substitute for correct specification at construction stage.',
+          'The practical advice for existing buildings is to inspect the roof space annually — particularly after the rainy season — and look for mud tubes on masonry surfaces, exit holes with powdery deposits, sagging or soft spots in timber members, and any sign of insect activity. Early detection is the difference between replacing two rafters and replacing the entire roof structure.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'what-is-ispm-15-heat-treatment',
     title: 'What Is ISPM 15 Heat Treatment — And Why Sri Lankan Exporters Need It',
     description:
