@@ -18,6 +18,194 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'what-is-fibre-saturation-point',
+    title: 'What Is the Fibre Saturation Point — and Why Does It Matter for Timber?',
+    description:
+      'The fibre saturation point is the threshold at which timber starts to shrink, swell, and change its mechanical properties. Understanding it explains almost every moisture-related problem in timber construction and manufacturing.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['fibre saturation point', 'moisture content', 'timber drying', 'kiln drying', 'wood science', 'timber treatment Sri Lanka'],
+    sections: [
+      {
+        heading: 'The Threshold That Changes Everything',
+        paragraphs: [
+          'Wood contains water in two distinct forms. Free water occupies the hollow cavities of the wood cells — the lumens — and behaves much like water in a container. Bound water is chemically held within the walls of the wood cells themselves, absorbed into the cellulose and hemicellulose molecules that make up the cell wall structure.',
+          'The fibre saturation point (FSP) is the moisture content at which all free water has been removed from the cell cavities, but the cell walls are still fully saturated with bound water. For most timber species, the FSP falls between 25% and 30% MC, with 28% often used as a practical average.',
+          'This threshold matters because the two forms of water behave completely differently when removed. Removing free water — drying timber from green (50–100% MC) down to the FSP — causes almost no dimensional change and has minimal effect on strength. Removing bound water — drying below the FSP — causes the cell walls to shrink, which is what produces all the dimensional change, strength gain, and stress that timber undergoes during drying.',
+        ],
+      },
+      {
+        heading: 'Why Shrinkage Only Happens Below the FSP',
+        paragraphs: [
+          'Above the fibre saturation point, the cell walls are fully hydrated and cannot shrink further — adding or removing free water from the cell cavities does not change the dimensions of the wood. This is why green timber cut to 100mm width and then dried to 30% MC (just above the FSP) will still be very close to 100mm wide. No meaningful shrinkage has occurred.',
+          'Below the FSP, every reduction in moisture content causes the cell walls to lose bound water and contract. The relationship between MC and shrinkage is approximately linear below the FSP: for most species, each 1% reduction in MC below the FSP produces roughly 0.25–0.35% shrinkage in the tangential direction and 0.15–0.20% in the radial direction. For a 100mm wide flat-sawn board of rubberwood dried from 28% MC down to 12% MC, that represents approximately 3–4mm of total width shrinkage.',
+          'This is why all the critical decisions in timber drying — schedule design, stress management, conditioning — are focused on what happens below the FSP. The early stages of drying (from green down to the FSP) are relatively straightforward; it is the final stages, where bound water is being removed and the cell walls are under stress, that require careful control.',
+        ],
+      },
+      {
+        heading: 'How the FSP Affects Timber Strength',
+        paragraphs: [
+          'Timber gets stronger as it dries below the fibre saturation point. Bound water in the cell walls acts as a plasticiser — it reduces the stiffness of the cellulose chains and allows the cell walls to deform more easily under load. When bound water is removed, the cell walls stiffen and the timber\'s mechanical properties improve.',
+          'The effect is significant: the modulus of rupture (bending strength) of most timbers approximately doubles between 28% MC and 12% MC. Stiffness (modulus of elasticity) increases by roughly 50% over the same range. This is why structural timber standards specify a dry service class for load-bearing applications — timber that gets wet in service and approaches the FSP loses much of the strength it had when dry.',
+          'This also means that timber graded at one moisture content may not meet the same grade requirements if it is re-wetted. Structural timber specified for dry conditions should be protected from wetting in storage and during installation.',
+        ],
+        list: [
+          'Above FSP: strength properties are at their minimum; no further change with rewetting',
+          'Below FSP: each 1% MC reduction increases strength by approximately 3–5%',
+          'Bending strength roughly doubles between 28% MC and 12% MC',
+          'Stiffness increases approximately 50% over the same range',
+          'Timber re-wetted above the FSP loses its dry-condition strength advantage',
+        ],
+      },
+      {
+        heading: 'Practical Implications for Kiln Drying',
+        paragraphs: [
+          'From a kiln drying perspective, the fibre saturation point marks the boundary between the easy phase and the demanding phase of drying. Timber entering a kiln at 50–80% MC will spend the first portion of the cycle drying from green to the FSP — losing free water quickly and with relatively little risk of degrade. Once the timber crosses the FSP and starts losing bound water, the cell walls begin to shrink and drying stresses build up.',
+          'A well-designed drying schedule accounts for this transition. The wet-bulb depression (the humidity control parameter) is typically kept low — meaning high humidity — until the timber approaches the FSP, then increased progressively as the timber dries below it. This staged approach controls the rate of bound water removal and limits the stress differential between the fast-drying surface and the slower-drying core.',
+        ],
+      },
+      {
+        heading: 'Why the FSP Varies Between Species',
+        paragraphs: [
+          'The fibre saturation point is not identical for all species — it varies with the chemical composition of the cell walls, particularly the ratio of cellulose, hemicellulose, and lignin. Species with higher hemicellulose content tend to have a slightly higher FSP because hemicellulose is more hygroscopic than cellulose.',
+          'In practical terms, most commercial timber species have an FSP in the range of 25–32% MC, and using 28% as a working figure for schedule design introduces only small errors. For precise scientific work or for unusual species, the FSP should be measured directly by comparing volume at saturation with volume at oven-dry weight.',
+        ],
+        note: 'Understanding the fibre saturation point is the foundation of all timber drying science. If you are specifying timber for a structural or manufacturing application and need to understand how moisture content will affect performance in your specific conditions, contact St. Xavier Timber — we can advise on target MC, expected movement, and the right drying specification for your project.',
+      },
+    ],
+  },
+  {
+    slug: '7-kiln-drying-myths',
+    title: '7 Kiln Drying Myths That Cost Timber Buyers Money',
+    description:
+      'Misconceptions about kiln drying lead to bad purchasing decisions, failed projects, and unnecessary cost. These are the seven most common myths — and what the reality actually is.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['kiln drying myths', 'kiln drying', 'timber buying Sri Lanka', 'moisture content', 'timber quality', 'wood drying facts'],
+    sections: [
+      {
+        heading: 'Myth 1: Kiln-Dried Means Permanently Dry',
+        paragraphs: [
+          'This is probably the most expensive misconception in the industry. Kiln drying brings timber to a target moisture content at the time of drying — it does not lock the timber at that moisture content forever. Wood is permanently hygroscopic: it will absorb moisture from humid air and release moisture into dry air for the rest of its life.',
+          'Kiln-dried timber stored in a humid environment — an open yard, a warehouse without humidity control, a shipping container — will reabsorb moisture and rise back toward the equilibrium moisture content of that environment. Timber dried to 12% MC and then stored outdoors in Sri Lanka may return to 18–22% MC within weeks. The kiln drying was real; it has just been undone by poor storage.',
+          'The practical implication: always check the moisture content of timber at the point of use, not just at the point of purchase. Request the date of drying and inspect storage conditions before accepting a delivery.',
+        ],
+      },
+      {
+        heading: 'Myth 2: All Kiln-Dried Timber Is the Same',
+        paragraphs: [
+          'A kiln is just a heated room. What determines the quality of kiln-dried timber is the schedule used, the monitoring during the cycle, and the conditioning at the end — not the existence of the kiln itself. Timber that was driven through a fast, hot schedule to save cycle time can have severe internal stresses, large MC gradients between surface and core, and significant checking, even though it was technically "kiln-dried".',
+          'Ask your supplier what schedule was used, what the target MC was, how it was verified, and whether the batch was conditioned. A supplier who cannot answer these questions has not operated the kiln correctly.',
+        ],
+      },
+      {
+        heading: 'Myth 3: Green Timber Is Fine if It Will Dry Out After Installation',
+        paragraphs: [
+          'This argument is used to justify using undried or poorly dried timber in construction. The reasoning is that the timber will eventually reach the right moisture content once it is in the building. It will — but the movement it undergoes while doing so is the problem.',
+          'Timber drying from 30% MC to 15% MC after installation will shrink, warp, open joints, crack finishes, loosen fixings, and in structural applications, change the load distribution as members deflect. The drying will happen in an uncontrolled way, in an uncontrolled environment, with the timber already fixed in place. The damage is done during the drying process, not after it is complete.',
+        ],
+      },
+      {
+        heading: 'Myth 4: Thicker Timber Takes Proportionally Longer to Dry',
+        paragraphs: [
+          'Drying time does not scale linearly with thickness — it scales roughly with the square of the thickness. A 50mm board takes approximately four times as long to dry as a 25mm board of the same species, not twice as long. This is because moisture has to travel from the centre of the board to the surface, and that distance doubles when the thickness doubles — but the time to diffuse is proportional to the square of the distance.',
+          'This has two practical consequences: specifying thicker cross-sections significantly increases drying cost and time, and mixing thick and thin sections in the same kiln load produces inconsistent results — the thin pieces are over-dried while the thick pieces are still too wet.',
+        ],
+      },
+      {
+        heading: 'Myth 5: Surface Dryness Means the Timber Is Dry',
+        paragraphs: [
+          'Timber dried too quickly develops a dry surface over a wet core — a condition sometimes called case hardening. The surface reads correctly on a standard pin meter, but the core is still significantly above target MC. When the timber is ripped or planed to expose the core, the previously wet material dries out and causes the piece to warp or cup.',
+          'This is why a reliable MC reading requires measuring at depth, not just at the surface. For timber thicker than 50mm, use deep probes or confirm with a oven-dry test on a sample cut from the centre of the cross-section.',
+        ],
+      },
+      {
+        heading: 'Myth 6: Kiln Drying Ruins the Structural Properties of Timber',
+        paragraphs: [
+          'The opposite is true. Properly kiln-dried timber is significantly stronger than green timber of the same species and dimensions. Bending strength roughly doubles between 28% MC and 12% MC. Stiffness increases by around 50% over the same range. Kiln drying does not weaken timber — aggressive or incorrect drying schedules that cause checking and internal cracking can reduce strength, but that is a consequence of poor drying practice, not of kiln drying itself.',
+          'Structural timber standards reflect this: timber graded for use in dry service conditions (the standard for most interior structural applications) is assigned higher design values than timber graded for wet service conditions, precisely because dry timber is stronger.',
+        ],
+      },
+      {
+        heading: 'Myth 7: You Can Tell Good Timber by Looking at It',
+        paragraphs: [
+          'Moisture content is invisible. Timber at 25% MC can look identical to timber at 12% MC — same colour, same surface feel, same apparent weight for small pieces. Internal stresses from poor drying are also invisible until the timber is machined or installed and the stress is released.',
+          'The only way to know the moisture content of timber is to measure it with a calibrated meter or by oven-dry testing. The only way to know whether a batch was dried correctly is to ask for the drying records. Visual inspection at the point of delivery is not sufficient quality control for any application where MC matters — which is almost every application except rough exterior temporary work.',
+        ],
+        note: 'St. Xavier Timber provides batch drying records — cycle log, target MC, final MC readings, and date of drying — with every kiln drying order. If your current supplier cannot provide this documentation, you are buying timber without knowing what you are getting. Contact us to discuss your drying requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'common-kiln-drying-defects',
+    title: 'Common Kiln Drying Defects and What They Tell You About the Drying Process',
+    description:
+      'Degrade in kiln-dried timber is not random — each type of defect is caused by a specific failure in the drying process. Knowing how to identify and diagnose drying defects lets you reject bad timber before it becomes an expensive problem.',
+    date: '2026-07-01',
+    readTime: '6 min read',
+    category: 'Timber Treatment',
+    tags: ['kiln drying defects', 'timber degrade', 'drying defects', 'kiln drying quality', 'timber treatment Sri Lanka', 'wood drying problems'],
+    sections: [
+      {
+        heading: 'Why Drying Defects Matter',
+        paragraphs: [
+          'Kiln drying defects reduce the usable yield from a batch of timber, compromise structural performance, and cause problems during and after manufacture. Some defects are visible at delivery; others only reveal themselves when the timber is machined, installed, or exposed to humidity changes in service. Understanding the common defect types — what they look like, what causes them, and what they indicate about the drying process — is the foundation of effective timber quality control.',
+          'Most drying defects fall into two categories: stress-related defects caused by uneven moisture distribution during drying, and temperature-related defects caused by excessive heat at the wrong stage of the cycle. A third category covers defects that begin before drying — biological degradation that the kiln schedule failed to prevent or accelerated.',
+        ],
+      },
+      {
+        heading: 'Surface Checking',
+        paragraphs: [
+          'Surface checks are longitudinal cracks on the face or edge of a board, typically appearing across the growth rings on the tangential face. They are caused by drying stress in the early stages of the kiln cycle when the surface loses moisture faster than the core. The dry surface tries to shrink while the wet core resists, putting the surface in tension and eventually causing it to split.',
+          'Mild surface checking — cracks less than 2mm wide that close to near-invisible as the board dries — is common in many species and has minimal impact on structural or appearance grade. Severe surface checking — wide, deep cracks that remain open in the finished board — indicates that the initial drying conditions were too aggressive: humidity too low or temperature too high in the first stage of the schedule.',
+          'Surface checking is almost entirely preventable with correct schedule design. If you receive a batch with severe surface checking, the initial wet-bulb depression was set too high for that species and thickness.',
+        ],
+      },
+      {
+        heading: 'End Splitting',
+        paragraphs: [
+          'End splits radiate from the centre of the end grain along ray lines or ring boundaries. They are caused by the rapid loss of moisture from the exposed end grain — ends lose moisture approximately 10–15 times faster than faces — creating a sharp MC gradient that generates tensile stress along the grain.',
+          'End splitting is prevented by applying an end coating (wax emulsion) to the cut ends before kiln drying to slow the rate of end-grain moisture loss. When end splits appear in a batch, it usually means the timber was loaded into the kiln without end coating, or that end coating was applied inconsistently.',
+          'End splits that extend more than 150–200mm from the cut face affect the usable length of the board and must be accounted for when calculating yield. In structural members, the end region is typically where maximum shear stress occurs — splits in this area can affect shear capacity.',
+        ],
+      },
+      {
+        heading: 'Honeycombing',
+        paragraphs: [
+          'Honeycombing is internal cracking that is not visible on the surface of the board but becomes apparent when the board is ripped or cross-cut. The end grain reveals a pattern of voids and cracks radiating from the centre of the cross-section — a pattern that resembles a honeycomb.',
+          'Honeycombing is caused by reversed stress during drying. In the early stages of drying, the surface is in tension and the core is in compression. If drying continues too quickly, the surface stress is locked in as the surface sets. In the later stages of drying, when the core begins to dry and shrink, it is now the core that is in tension — but the set surface resists. The core tears internally, producing honeycomb voids that are entirely hidden from surface inspection.',
+          'Honeycombing is a serious defect. It reduces the cross-sectional area of the member, significantly reduces shear strength, and is not detectable without cutting the timber. Timber from a supplier with a known honeycombing problem should be tested by cutting sample cross-sections before accepting a large batch.',
+        ],
+        list: [
+          'Not visible on the surface — only revealed by cutting',
+          'Indicates reversed stress caused by setting the surface before the core has dried',
+          'Caused by too-fast drying in the early stages or too-low humidity throughout',
+          'Seriously reduces strength — particularly shear strength in structural members',
+          'Diagnose by cutting 2–3 cross-sections from a sample board in the batch',
+        ],
+      },
+      {
+        heading: 'Collapse',
+        paragraphs: [
+          'Collapse is a permanent deformation of the cell wall structure caused by drying timber above the fibre saturation point at temperatures high enough to soften the cell walls. Instead of losing free water gradually from the cell cavities, the cell walls buckle inward as the free water is rapidly removed. The result is a corrugated or washboard surface texture on the face of the board, and a cross-section that is smaller in dimension than the pre-drying size by more than shrinkage alone would account for.',
+          'Collapse is most common in species with large vessels or thin-walled cells that are prone to buckling under drying stress — some eucalyptus species, certain tropical hardwoods, and a few softwoods. It is caused by too-high temperature in the first stage of drying, before the timber has come below the FSP.',
+          'Mild collapse can sometimes be partially recovered by reconditioning — steaming the timber at high humidity to allow the cells to partially recover. Severe collapse is not recoverable and the timber must be downgraded or discarded.',
+        ],
+      },
+      {
+        heading: 'Biological Degrade: Staining, Mould, and Blue Stain',
+        paragraphs: [
+          'Green timber that is not dried promptly is vulnerable to biological attack. Sapwood staining — blue stain in pine, brown or grey staining in rubberwood — is caused by fungi that colonise the sapwood cells and use the sugars and starches stored there as a food source. These fungi do not degrade the cell walls and do not significantly affect structural strength, but they cause permanent discolouration that affects appearance grade and marketability.',
+          'Staining is most severe in species with high starch content (rubberwood, pine) during warm, humid conditions — exactly the conditions in Sri Lanka\'s climate when timber is air-dried slowly before kilning. The prevention is to kiln-dry promptly after sawing and to maintain adequate airflow in any air-drying stage to keep the surface dry.',
+          'Surface mould — visible as white, green, or black patches on the face of boards — occurs under similar conditions and is equally preventable with rapid drying. Unlike staining fungi, surface moulds can usually be removed with light brushing or planing.',
+        ],
+        note: 'When assessing a batch of kiln-dried timber, check for surface checking on both faces and edges, inspect cut ends for splitting, cut a cross-section from at least two boards to check for honeycombing, and look for surface staining or mould. Any significant defect should be discussed with your supplier before acceptance. St. Xavier Timber monitors degrade rates in every drying cycle and adjusts schedules accordingly. Contact us to discuss quality standards for your specific application.',
+      },
+    ],
+  },
+  {
     slug: 'drying-hardwood-vs-softwood-timber',
     title: 'Drying Hardwood vs Softwood: What Changes and Why It Matters',
     description:
