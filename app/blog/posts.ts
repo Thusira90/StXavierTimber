@@ -18,6 +18,407 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'how-to-inspect-timber-batch-before-delivery',
+    title: 'How to Inspect a Timber Batch Before Accepting Delivery',
+    description:
+      'Accepting a delivery without inspection is the most expensive mistake in timber procurement. This guide gives you a step-by-step process for checking moisture content, grade, treatment, and defects before the timber leaves the lorry.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['timber inspection', 'timber quality control', 'timber delivery', 'timber buying Sri Lanka', 'timber grading', 'moisture content check'],
+    sections: [
+      {
+        heading: 'Why Inspection at Delivery Matters',
+        paragraphs: [
+          'Once timber is installed — nailed into a roof structure, built into a wall frame, cut into furniture components — problems discovered after the fact are expensive to resolve. The correct time to identify and reject sub-standard timber is at delivery, before it is unloaded and accepted. Once you have signed for a delivery and the lorry has left, your options for remedy are significantly more difficult to exercise.',
+          'A timber inspection does not need to be slow or complicated. With a moisture meter, a basic knowledge of what to look for, and the relevant treatment documentation in hand, an experienced buyer can assess a typical delivery in 20–30 minutes and make a confident accept-or-reject decision.',
+        ],
+      },
+      {
+        heading: 'Step 1: Check Documentation Before Inspecting the Timber',
+        paragraphs: [
+          'Before touching the timber, verify the documentation. For treated structural timber you need: the treatment batch record (species, cross-section, pre-treatment MC, VPI cycle parameters, retention, treatment date, treating facility name and IPPC registration number). For export pallets, also check ISPM 15 compliance documentation.',
+          'If documentation is absent or incomplete, stop. Treatment that is not documented either did not happen or cannot be verified. Request the records from the supplier before proceeding. Accepting without treatment records means you have no basis for a warranty claim if problems emerge later.',
+        ],
+      },
+      {
+        heading: 'Step 2: Check Moisture Content',
+        paragraphs: [
+          'Select boards from different positions in the stack — top, middle, bottom, and from both ends. Use a calibrated moisture meter with the correct species setting. Take at least three readings per board: at both ends and in the middle, on both faces.',
+          'Compare to the specified MC. For structural timber, accept deviations of ±2–3% as normal batch variation. A batch where the majority of readings are 5% or more above the stated target MC has not been dried to specification — reject or arrange re-drying before use. Flag any board where the face reading is much lower than the edge reading, which may indicate a dry surface over a wet core.',
+        ],
+        list: [
+          'Set the species correction before taking any readings',
+          'Sample from multiple stack positions — not just the accessible top layer',
+          'Take readings on both faces and both ends of each sampled board',
+          'For thick sections: use deep probes to check core MC',
+          'Batch fails if majority of readings are more than 3% above specified MC',
+        ],
+      },
+      {
+        heading: 'Step 3: Inspect for Visible Defects',
+        paragraphs: [
+          'Walk the length of the stack and look for: significant warp (boards visibly bowed, cupped, or twisted), large checking (cracks wider than 2–3mm or penetrating more than a quarter of the thickness), honeycombing on cut ends (internal voids visible in the cross-section), end splitting extending more than 150mm, and blue stain or surface mould if appearance matters.',
+          'Pull 5–10% of boards and inspect both faces and both ends. For structural timber, check end grain on sampled boards for ring shakes (separations along the growth ring boundary) and heart shakes (radial cracks from the pith).',
+        ],
+      },
+      {
+        heading: 'Step 4: Verify Dimensions and Count',
+        paragraphs: [
+          'Measure actual thickness and width at multiple points along sampled boards. Shrinkage from drying results in actual dimensions slightly below green-sawn nominal — significant undersizing may indicate the timber was cut below nominal or a higher-shrinkage species has been substituted. Count pieces and verify against the delivery note.',
+        ],
+      },
+      {
+        heading: 'Step 5: Accept or Reject',
+        paragraphs: [
+          'Accept if: documentation is complete, MC is within 3% of specification on the majority of sampled pieces, visible degrade is within grade limits, and dimensions are as ordered.',
+          'Reject or renegotiate if: documentation is absent, MC is consistently more than 3% above specification, significant structural defects (ring shake, honeycombing, severe case hardening) appear in more than 10–15% of sampled pieces, or dimensions are systematically short. Document any rejection in writing before the lorry leaves.',
+        ],
+        note: 'St. Xavier Timber provides treatment records and MC data with every delivery. We welcome pre-delivery inspections at our facility in Daluwakotuwa. Contact us to arrange an inspection or discuss quality standards for your application.',
+      },
+    ],
+  },
+  {
+    slug: 'reaction-wood-timber-defect',
+    title: 'Reaction Wood: What It Is and Why It Causes Problems in Sawn Timber',
+    description:
+      'Reaction wood forms in leaning trees and branches and has fundamentally different properties from normal wood. It causes unpredictable warp after sawing and behaves differently in drying, machining, and structural loading.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['reaction wood', 'compression wood', 'tension wood', 'timber defects', 'timber warp', 'wood properties'],
+    sections: [
+      {
+        heading: 'What Reaction Wood Is',
+        paragraphs: [
+          'When a tree grows at an angle — because it has been displaced, is growing on a slope, or a branch is carrying significant load — it produces abnormal wood on one side to counteract the displacement. This is called reaction wood, and it is the tree\'s mechanical response to gravitational and wind stress. Reaction wood has a different cell structure, different chemical composition, and different mechanical properties from normal wood on the opposite side of the trunk.',
+          'There are two types. Compression wood forms in softwoods (pine, spruce, cedar) on the underside of leaning trunks and branches. It is dense, brittle, and shrinks far more along the grain than normal wood when dried. Tension wood forms in hardwoods on the upper side of leaning trunks. It has a gelatinous layer in the inner cell wall and produces woolly, torn surfaces when machined.',
+        ],
+      },
+      {
+        heading: 'How to Identify Reaction Wood',
+        paragraphs: [
+          'Compression wood in softwoods is typically denser and darker than surrounding normal wood, with wider growth rings on one side of the end grain cross-section. In sawn boards from leaning trees it often appears as a zone of different colour and texture on one face.',
+          'Tension wood in hardwoods is harder to identify visually. The clearest indicator is a woolly or hairy surface after planing — the gelatinous cell wall layer tears rather than cutting cleanly. Finish adhesion problems and blotchy stain absorption also point to tension wood surfaces.',
+        ],
+      },
+      {
+        heading: 'Why Reaction Wood Is a Problem',
+        paragraphs: [
+          'Compression wood shrinks dramatically along the grain during drying — up to ten times the longitudinal shrinkage of normal wood. A board containing both normal and compression wood bows severely as the compression wood side contracts more than the normal side. This bow can develop during drying or after installation when the timber is exposed to any moisture change.',
+          'Structurally, compression wood is brittle in tension and fails at lower stress than normal wood, with less warning. In a structural beam, a zone of compression wood on the tension face is a serious weakness. Tension wood causes machining and glue-bonding problems that are difficult to resolve without specialised tooling or surface treatment.',
+        ],
+        list: [
+          'Compression wood (softwoods): extreme longitudinal shrinkage — severe bow during and after drying',
+          'Compression wood: brittle in tension — fails at lower stress, with less warning',
+          'Tension wood (hardwoods): woolly machined surface — affects finish quality and glue bonding',
+          'Both types: eccentric ring pattern visible on end grain',
+          'Both types: present in any board cut from a leaning or curved log section',
+        ],
+      },
+      {
+        heading: 'Practical Management',
+        paragraphs: [
+          'For structural timber, boards containing significant reaction wood zones should be downgraded or excluded from applications where the defective zone falls in a critical location. Structural grading rules address this through grain slope limits — reaction wood has severe local grain deviation — and through checks on bow and warp after drying.',
+          'For furniture timber, boards with visible reaction wood should be used in short component applications where bow is not significant, or in painted applications where surface quality is less critical. Reaction wood in glued panels can cause cupping and splitting at glue lines — identify and exclude it from high-value panel production.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'timber-knots-grading-structural-impact',
+    title: 'Timber Knots: Types, Grading Rules, and Structural Impact',
+    description:
+      'Knots are the most visible timber defect — but not all knots are equal. The type, size, location, and condition of a knot all determine how much it affects structural performance and appearance grade.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['knots in timber', 'timber knots', 'structural grading', 'timber defects', 'wood knots', 'timber quality'],
+    sections: [
+      {
+        heading: 'What Knots Are and Why They Form',
+        paragraphs: [
+          'Knots are the cross-sections of branches enclosed within the growing trunk. When a tree produces a branch, subsequent annual rings of the trunk enclose the branch base. The trunk wood fibres divert around and through the branch base, creating the cross-grain pattern visible as a knot in sawn timber.',
+          'Knots are a natural feature of how trees grow, not a manufacturing defect. But their presence introduces localised grain deviation, stress concentration, and potential discontinuities in the wood structure that directly affect mechanical performance.',
+        ],
+      },
+      {
+        heading: 'Types of Knots',
+        paragraphs: [
+          'Tight knots (sound or intergrown knots) are firmly attached to the surrounding wood throughout their perimeter. They formed in a living branch and are integral to the wood structure — they cannot be removed without leaving a hole. Dead knots (encased or black knots) form when a branch dies before being enclosed by trunk growth. Because the dead branch is not actively bonded to surrounding tissue, it may be held only loosely and can fall out during drying — leaving a knot hole, which is structurally more serious.',
+          'Spike knots appear when a board is cut along the length of a branch rather than across it, producing an elongated oval exposure. They affect a greater area over a longer board length than a round knot of equivalent diameter.',
+        ],
+        list: [
+          'Tight knot: firmly attached, formed in living branch — graded by size and location',
+          'Dead knot: loosely held, may fall out — treated as a knot hole in most grading rules',
+          'Knot hole: missing knot — more serious than an equivalent tight knot',
+          'Spike knot: elongated from long-axis sawing — larger affected area',
+        ],
+      },
+      {
+        heading: 'How Knots Affect Structural Performance',
+        paragraphs: [
+          'The structural impact of a knot depends on its size relative to the board cross-section, its location (edge, face, or centre), whether it is tight or loose, and the type of stress being applied. In a bending member, a knot on the tension face (lower edge of a downward-loaded beam) is more serious than one on the compression face. Tension fibres carry full bending stress in direct tension — any interruption creates a stress concentration that can initiate fracture. Compression fibres are less sensitive to localised defects.',
+          'A knot in the middle third of the span — where bending moment is highest — is more serious than the same knot near the supports. Structural grading rules apply different limits to the critical middle third and the end thirds of the piece.',
+        ],
+      },
+      {
+        heading: 'Knot Limits in Structural Grading',
+        paragraphs: [
+          'Structural grading expresses knot limits as a knot area ratio (KAR) — knot diameter divided by board width. A 40mm knot in a 150mm board gives KAR 0.27; the same knot in a 75mm board gives KAR 0.53. Higher structural grades permit lower KARs. European C24 grade limits KAR to 1/4 (0.25) in the critical zone. This is why knot limits are always expressed relative to board width, not as an absolute diameter.',
+          'For appearance-grade furniture and joinery, knot size, type, and frequency determine the yield of clear cuttings available from each board. Lower appearance grades are often adequate for furniture production — the yield of clear cuttings from a No. 1 Common board may be nearly as high as from a top grade, at significantly lower cost.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'blue-stain-timber-does-it-matter',
+    title: 'Blue Stain in Timber: What It Is and Whether It Matters',
+    description:
+      'Blue stain is one of the most visible timber defects — dark streaks through the sapwood that look alarming but are not always a structural concern. This guide explains what causes it, what it tells you about the timber\'s history, and when to reject it.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['blue stain timber', 'sap stain', 'timber staining', 'timber defects', 'timber quality', 'kiln drying stain'],
+    sections: [
+      {
+        heading: 'What Blue Stain Actually Is',
+        paragraphs: [
+          'Blue stain — also called sap stain or sapwood stain — is a discolouration of the sapwood caused by staining fungi. Unlike decay fungi, which attack the structural components of the wood cell walls, staining fungi colonise cell cavities and use the sugars and starches in sapwood parenchyma cells as their food source. They do not attack the cellulose or lignin that gives timber its structural strength.',
+          'The characteristic blue-grey to black colour comes from pigment in the fungal hyphae growing through the cell cavities. These pigmented threads colour the wood without degrading its cell walls. The discolouration is permanent — it cannot be removed by drying, planing, or any surface treatment.',
+        ],
+      },
+      {
+        heading: 'What Causes Blue Stain',
+        paragraphs: [
+          'Staining fungi grow in freshly sawn timber that is wet and warm — conditions almost continuously present in Sri Lanka if green timber is left without prompt processing. The timbers most susceptible are those with high sapwood starch content: pine is the classic blue-stain timber, and rubberwood is highly susceptible due to its dense parenchyma cells. Blue stain develops within days to weeks of sawing. Kiln drying kills staining fungi and prevents further development — but does not remove stain already formed.',
+        ],
+      },
+      {
+        heading: 'Does Blue Stain Affect Structural Performance?',
+        paragraphs: [
+          'For most staining fungi, the answer is no. The stain affects only sapwood, does not reduce bending strength, tensile strength, or stiffness, and does not affect the wood\'s ability to hold fixings. Structural grading standards generally permit blue stain in lower grades.',
+          'The exception is heavy staining accompanied by softening of the wood surface — this indicates cell wall degradation alongside staining, meaning the fungi involved were not purely non-structural staining species. Blue-stained timber that feels soft or spongy should be probed and rejected if it shows any signs of incipient decay.',
+        ],
+      },
+      {
+        heading: 'When to Reject Blue-Stained Timber',
+        paragraphs: [
+          'Reject blue-stained timber in three situations: for appearance-grade applications where discolouration will be visible in the finished product; where staining is accompanied by softening, suggesting incipient decay; and for export timber where the destination market explicitly prohibits sapwood staining.',
+          'Accept it where it will be concealed, where it is within a structural grade that permits stain, or where the end use does not require appearance quality.',
+        ],
+        note: 'St. Xavier Timber dries rubberwood and pine promptly after sawing to minimise staining risk. Blue-stained timber is identified and segregated during grading. Contact us to discuss stain-free grade requirements for your application.',
+      },
+    ],
+  },
+  {
+    slug: 'fungal-decay-timber-identification',
+    title: 'Fungal Decay in Timber: How to Identify It and What to Do',
+    description:
+      'Fungal decay destroys timber faster than any other biological threat. Knowing what it looks like, what conditions allow it to establish, and how to stop it is essential for anyone managing structural timber in Sri Lanka\'s climate.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['fungal decay', 'wood rot', 'timber decay Sri Lanka', 'wet rot', 'dry rot', 'timber treatment', 'timber preservation'],
+    sections: [
+      {
+        heading: 'What Fungal Decay Is and Is Not',
+        paragraphs: [
+          'Fungal decay — commonly called wood rot — is the degradation of timber by fungal organisms that use the cellulose and lignin in wood cell walls as a food source. It is not the same as surface mould or staining fungi, which affect appearance but do not structurally degrade the wood. True decay fungus attacks the structural components of the cell wall, reducing the wood to a fraction of its original strength before any visible sign appears on the surface.',
+          'Decay fungi require four conditions simultaneously: moisture above approximately 20% MC, oxygen, a temperature between 5°C and 40°C, and an organic food source. Removing any one of these conditions stops fungal activity. The most practical lever is moisture: dry timber at 18–20% MC or below will not decay regardless of temperature or the presence of spores.',
+        ],
+      },
+      {
+        heading: 'Types of Decay',
+        paragraphs: [
+          'Brown rot breaks down the cellulose and hemicellulose in cell walls, leaving the lignin behind. The residue is brown, brittle, and cracks into characteristic cuboid blocks. Brown rot removes the structural cellulose that gives wood its strength, leaving a hollow-feeling lightweight residue. Affected timber may retain its shape and surface appearance while being almost completely structureless internally.',
+          'White rot attacks both cellulose and lignin simultaneously, leaving a white, stringy, fibrous residue. It is most common in hardwoods and produces a bleached, spongy surface. Soft rot occurs in very wet conditions — timber in ground contact or consistently saturated — producing a softened surface layer that can be scraped away while the interior remains sound.',
+        ],
+        list: [
+          'Brown rot: cuboid cracking, brown residue — attacks cellulose; very common in conifers',
+          'White rot: white, stringy fibrous residue — attacks cellulose and lignin; common in hardwoods',
+          'Soft rot: surface erosion in very wet conditions — scrapes away from still-sound interior',
+          'All types cause catastrophic strength loss — wood may look intact while structurally failed',
+        ],
+      },
+      {
+        heading: 'How to Identify Decay in Structural Timber',
+        paragraphs: [
+          'Early-stage decay may be invisible on the surface. The most reliable field test is probing with a pointed instrument — a screwdriver, awl, or knife. Sound timber resists penetration; decayed timber offers little or no resistance. Probe in areas of highest moisture risk: timber ends embedded in masonry, areas of known moisture ingress, timber near gutters or roof penetrations, and any timber showing surface discolouration.',
+          'Brown rot at an early stage produces a slightly darker colour and wrinkled surface texture — the wood has shrunk internally but the surface has not yet cracked. Late-stage brown rot is unmistakable: the wood crumbles under finger pressure. White rot produces a bleached, spongy surface with a stringy texture when surface fibres are pulled.',
+        ],
+      },
+      {
+        heading: 'How to Stop Active Decay and Prevent Recurrence',
+        paragraphs: [
+          'The first step is to address the moisture source. Decay cannot continue below 20% MC — removing moisture kills the fungus, though it does not reverse damage already done. Fix the leak, improve drainage, or increase ventilation.',
+          'Once the moisture source is addressed, structurally compromised timber must be replaced. Do not attempt to reinforce visibly decayed structural members. For adjacent sound timber that has been exposed to damp conditions, in-situ borate treatment — drilling and injection with concentrated borate solution — provides protection while the moisture issue is resolved. Specify VPI-treated replacement timber to prevent recurrence.',
+        ],
+        note: 'All structural timber in new construction in Sri Lanka should be VPI-treated with Boron Borax before installation. Borate preservatives protect against both fungal decay and insect attack in above-ground, sheltered applications. St. Xavier Timber provides VPI treatment with full batch records. Contact us for specifications.',
+      },
+    ],
+  },
+  {
+    slug: 'case-hardening-kiln-drying-defect',
+    title: 'Case Hardening: The Hidden Kiln Drying Defect That Causes Problems After Machining',
+    description:
+      'Case hardening is a residual stress condition in kiln-dried timber that is invisible until the wood is re-sawn. It causes boards to spring and distort the moment the saw blade passes through — revealing a drying failure that cannot be undone.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['case hardening', 'kiln drying defect', 'timber stress', 'wood drying problems', 'residual stress', 'kiln drying quality'],
+    sections: [
+      {
+        heading: 'What Case Hardening Is',
+        paragraphs: [
+          'Case hardening is a condition of locked-in stress in kiln-dried timber where the outer layers of the board are in compression and the core is in tension. It is caused by the outer surface drying and setting while the core is still wet — the surface shrinks and stiffens into a rigid shell around a still-soft core. When the core subsequently dries and tries to shrink, it cannot — the set surface resists. The core is held in tension.',
+          'The key characteristic is that it is invisible from the outside. A case-hardened board may appear identical to a correctly dried board — same dimensions, same surface MC reading, no visible distortion. The stress is locked inside the wood.',
+        ],
+      },
+      {
+        heading: 'How Case Hardening Reveals Itself',
+        paragraphs: [
+          'Case hardening becomes apparent when the timber is re-sawn. When a case-hardened board is ripped along its length, the saw cut releases the locked stress. If the core is in tension, the two halves spring toward each other — pinching the blade. If reverse case hardening is present (core in compression, surface in tension), the halves spring apart.',
+          'This board movement during ripping is the diagnostic test for case hardening. In correctly dried and conditioned timber the halves remain flat and parallel. Cupping and distortion after re-sawing or planing are the downstream manifestation — a board flat before machining develops significant cup after the first planing pass because removing material from one face disturbs the stress balance.',
+        ],
+      },
+      {
+        heading: 'Cause, Prevention, and Correction',
+        paragraphs: [
+          'Case hardening is caused by too-aggressive early drying conditions — too-low humidity and too-high temperature before the core moisture content has begun to fall. The surface dries, shrinks, and sets while the core is still saturated and soft. As the core subsequently dries, it is held in tension by the set surface.',
+          'Prevention is through correct schedule design: high-humidity initial conditions that slow surface drying, with progressive humidity reduction as the core dries. Correction of existing case hardening requires conditioning — steaming in a high-humidity environment at the end of the drying cycle. The prong test confirms whether conditioning has worked: a prong cut from the board end should remain straight rather than bending inward (case hardening) or outward (reverse case hardening).',
+          'Timber that arrives case-hardened cannot be corrected without a conditioning chamber. The practical options are to reject the batch, use the timber in applications where no re-machining is required, or accept the distortion risk and oversize initial dimensions.',
+        ],
+        note: 'St. Xavier Timber includes a conditioning stage at the end of every kiln drying cycle and tests boards with the prong test before dispatch. Contact us to discuss quality standards for your kiln drying order.',
+      },
+    ],
+  },
+  {
+    slug: 'shakes-ring-shake-timber-defect',
+    title: 'Shakes and Ring Shakes in Structural Timber: What They Are and Why They Matter',
+    description:
+      'Shakes are separations along the grain of timber that form in the standing tree. They are among the most serious structural defects because they reduce shear capacity exactly where shear forces are highest.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['ring shake', 'shakes timber', 'timber defects', 'structural timber defect', 'wood shake', 'timber quality'],
+    sections: [
+      {
+        heading: 'What Shakes Are',
+        paragraphs: [
+          'A shake is a separation along the grain of timber — a crack or split that follows the wood fibres rather than crossing them. Unlike checking, which develops during drying as a surface defect, shakes typically originate in the standing tree or during felling and exist before any processing begins. They may not be visible on the surface of sawn boards, becoming apparent only when the board is cut or when shear force is applied in service.',
+          'Shakes are particularly serious in structural timber because they occur parallel to the board surface and directly reduce shear capacity. A beam carries shear stress through horizontal planes parallel to its axis — a shake along exactly this plane eliminates the timber\'s ability to transfer shear across that plane.',
+        ],
+      },
+      {
+        heading: 'Types of Shakes',
+        paragraphs: [
+          'Heart shakes radiate from the centre (pith) outward, following the rays. They are caused by internal stresses in old trees where the heartwood has shrunk relative to the sapwood. In sawn boards they appear as cracks running from the middle toward the edge.',
+          'Ring shakes (or cup shakes) follow growth ring boundaries, separating one annual ring from the adjacent one. They are caused by frost damage, wind stress, or severe growth stress in the standing tree. In sawn boards they appear as arcs following a growth ring. They are the most dangerous type because they can be entirely internal — no surface expression — and only become visible when the board is cross-cut or fails in service.',
+          'Wind shakes are caused by excessive bending stress on the standing tree during storms. They follow the grain direction across the cross-section and produce a fibrous, torn appearance distinctly different from a clean drying check.',
+        ],
+        list: [
+          'Heart shake: from pith outward — visible on face and end grain',
+          'Ring shake: along growth ring — may be entirely internal and invisible on faces',
+          'Wind shake: across grain from mechanical stress — fibrous, torn appearance',
+          'All shakes reduce shear capacity — structural impact depends on location and extent',
+        ],
+      },
+      {
+        heading: 'Why Ring Shake Is the Most Dangerous Defect',
+        paragraphs: [
+          'Ring shake is particularly dangerous because it cannot always be detected by visual inspection of board surfaces. A board with a severe internal ring shake may look clean on all four faces and both ends. The defect only reveals itself when the board is cross-cut — exposing the ring separation on the end grain — or when the member fails in shear.',
+          'This failure mode is most concerning in roof rafters and floor joists, where horizontal shear stress is highest near the supports. A shake running along the beam at mid-depth can cause sudden, catastrophic failure under a peak load event with almost no prior warning.',
+        ],
+      },
+      {
+        heading: 'How to Check for Shakes at Delivery',
+        paragraphs: [
+          'Inspect the end grain of every piece in a structural delivery. The end grain cross-section reveals heart shakes as radial cracks from the centre and ring shakes as separations along ring boundaries — both are clearly visible even when invisible on the face. Any timber with a ring shake visible on the end should be rejected for structural use regardless of face grade.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'slope-of-grain-timber-defect',
+    title: 'Slope of Grain: Why Diagonal Grain Reduces Timber Strength',
+    description:
+      'Slope of grain is one of the most important and least understood defects in structural timber. A board that looks perfectly clean can have its bending strength reduced by half due to grain that deviates from the board axis.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['slope of grain', 'timber defects', 'structural timber', 'grain deviation', 'timber grading', 'wood defects'],
+    sections: [
+      {
+        heading: 'What Slope of Grain Is',
+        paragraphs: [
+          'The strength of timber comes primarily from cellulose fibres that run along the length of the tree trunk. When a board is sawn parallel to these fibres — straight grain — the full length of fibre contributes to bending and tensile strength. When the fibres run at an angle to the board axis — sloped grain or cross grain — the effective fibre length contributing to strength is reduced.',
+          'Slope of grain is expressed as a ratio: a 1:12 slope means the grain deviates 1 unit across the grain for every 12 units along the board. The greater the slope, the greater the strength reduction.',
+        ],
+      },
+      {
+        heading: 'How Much Does Sloped Grain Reduce Strength?',
+        paragraphs: [
+          'The effect is significant and non-linear. At a 1:12 slope, bending strength is reduced to approximately 80% of the straight-grain value. At 1:8, roughly 60%. At 1:4, the bending strength can be as low as 40%. A board that appears clean can have less than half the structural capacity of a straight-grained board of the same species and grade.',
+          'This is why structural grading rules set strict slope-of-grain limits. Most higher structural grades limit slope of grain to 1:10 or 1:12; lower grades allow 1:6. Timber exceeding the permitted limit must be downgraded or excluded from structural use.',
+        ],
+        list: [
+          '1:20 (nearly straight): ~95% of straight-grain strength',
+          '1:12: ~80% — permitted in higher structural grades',
+          '1:8: ~60% — lower structural grades only',
+          '1:4: ~40% — below most structural grade limits',
+          'Below 1:4: reject for structural use',
+        ],
+      },
+      {
+        heading: 'How to Identify and Manage Slope of Grain',
+        paragraphs: [
+          'Look at the surface grain lines on the face of the board: lines running parallel to the board edge indicate straight grain; lines running diagonally indicate sloped grain. The field test is the scribe method — scratch along the grain direction and measure the ratio of the offset to the distance along the board.',
+          'Slope of grain is caused either by sawing error (a straight-grained log fed at an angle) or by inherent grain deviation in the log — spiral or interlocked grain that no sawmill technique can correct. When inspecting structural timber, check grain slope on the face of each board alongside checking for knots and shakes. A board can achieve a good appearance grade while having significant grain slope that limits its structural value.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'how-to-grade-timber-sri-lanka',
+    title: 'How Timber Is Graded: What the Marks and Numbers Mean',
+    description:
+      'Timber grading is the system that translates visible defects into structural or appearance classifications. Understanding what a grade means — and what it does not guarantee — is essential for anyone buying timber for construction or furniture.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['timber grading', 'structural timber grade', 'appearance grade', 'timber quality Sri Lanka', 'timber buying guide', 'wood grading'],
+    sections: [
+      {
+        heading: 'Why Timber Grading Exists',
+        paragraphs: [
+          'Trees grow in response to their environment — sunlight, wind, soil, and damage. The result is that no two pieces of timber are identical. One board may be straight-grained and clear of defects; another from the same log may have large knots, sloped grain, and a shake. Timber grading is the standardised process of assessing visible features and assigning a classification that tells the buyer what structural performance or appearance quality to expect.',
+        ],
+      },
+      {
+        heading: 'Structural Grading vs Appearance Grading',
+        paragraphs: [
+          'Structural grading assesses features that affect load-bearing performance — knot size and position, slope of grain, checks, wane, and warp — and assigns design strength values that engineers can use in calculations. Appearance grading assesses visual quality — knot size and frequency, checks, colour consistency, and surface quality — without reference to structural performance.',
+          'A clear appearance-grade board may be structurally inferior to a heavily knotted structural-grade board. Using the wrong grading system leads to either over-specification (paying for visual quality that will be hidden by plaster) or under-specification (using furniture-grade timber in a structural role). For construction, specify by structural grade. For exposed finish applications, specify by appearance grade.',
+        ],
+      },
+      {
+        heading: 'How Structural Grades Are Assigned',
+        paragraphs: [
+          'Structural timber is graded by visual inspection or by machine. Visual grading has a trained inspector assess limiting defects — the defects that would most reduce structural performance — particularly in the critical middle third of the length where bending stress is highest. Machine grading measures the stiffness of each piece directly with a roller, correlating deflection to modulus of elasticity. Machine grading is faster and more consistent but less effective at detecting localised defects like large knots or shakes.',
+        ],
+      },
+      {
+        heading: 'Reading Grade Marks and Appearance Grades',
+        paragraphs: [
+          'Structural grade marks on imported timber include the grade designation (C16, C24 in European standards; MGP10, MGP12 in Australian standards), the species or species group, the moisture content at grading, and the certification body. A piece of C24 pine from a reputable mill gives a predictable minimum bending strength and stiffness for structural design.',
+          'For hardwoods, the NHLA (National Hardwood Lumber Association) grading system is widely referenced — grades including FAS (Firsts and Seconds), Select, No. 1 Common, and No. 2 Common define the percentage of clear cuttings obtainable from each board. No. 2 Common has shorter clear sections but may be entirely adequate for furniture components where knots can be worked around at a much lower material cost.',
+        ],
+        note: 'When sourcing timber for structural or furniture applications, ask your supplier for the grade designation and grading standard used. St. Xavier Timber can advise on the appropriate grade specification for your application and process timber to your specified moisture content. Contact us to discuss your requirements.',
+      },
+    ],
+  },
+  {
     slug: 'timber-species-for-construction-sri-lanka',
     title: 'Timber Species for Construction in Sri Lanka: What to Specify and Why',
     description:
