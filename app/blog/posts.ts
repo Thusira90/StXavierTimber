@@ -18,6 +18,525 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'timber-species-for-construction-sri-lanka',
+    title: 'Timber Species for Construction in Sri Lanka: What to Specify and Why',
+    description:
+      'The species you specify for structural timber in Sri Lanka determines durability, treatability, dimensional stability, and long-term maintenance requirements. This guide covers the main options and what each one delivers in construction applications.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Construction',
+    tags: ['construction timber Sri Lanka', 'timber species', 'structural timber', 'teak', 'pine', 'mahogany', 'timber specification'],
+    sections: [
+      {
+        heading: 'Why Species Selection Matters in Construction',
+        paragraphs: [
+          'Structural timber is not a commodity. Different species have different density, different strength-to-weight ratios, different natural durability, different shrinkage behaviour, and different responses to treatment. A beam specified as "timber" without a species reference could be anything from dense, naturally durable teak to low-density, highly susceptible rubberwood — and the structural and maintenance implications are completely different.',
+          'In Sri Lanka, construction timber comes from two main sources: local species grown domestically and imported softwoods and hardwoods. The right choice depends on the application, the required service life, the exposure conditions, and the budget.',
+        ],
+      },
+      {
+        heading: 'Pine (Imported Softwood)',
+        paragraphs: [
+          'Imported pine — primarily radiata pine from New Zealand and Australia, and various species from South America and Europe — is the most widely used construction timber in Sri Lanka for roof structures, formwork, and general framing. It is widely available, consistently dimensioned, relatively light, and works easily with standard tools.',
+          'Pine has moderate natural durability and is susceptible to termites and fungal decay without treatment. For roof structural applications, it should always be kiln-dried and VPI-treated. Its treatability is good — pine absorbs Boron Borax readily in VPI treatment, achieving high and uniform retention. Kiln-dried, VPI-treated pine is an excellent choice for roof structures where budget is a primary consideration.',
+        ],
+        list: [
+          'Density: 400–600 kg/m³ (varies by species) — lighter than most local hardwoods',
+          'Natural durability: low to moderate — requires treatment for most construction uses',
+          'Treatability: good — absorbs VPI preservative well',
+          'Workability: excellent — easy to cut, nail, and fix',
+          'Best uses: roof structures, formwork, general framing, pallet timber',
+        ],
+      },
+      {
+        heading: 'Mahogany (Imported Hardwood)',
+        paragraphs: [
+          'Mahogany used in Sri Lanka is typically Swietenia macrophylla (genuine mahogany) or Khaya species (African mahogany), both of which offer significantly higher natural durability than pine. Mahogany is a moderately dense hardwood with good dimensional stability after drying, moderate natural resistance to insects and fungal decay, and excellent machining properties.',
+          'For structural applications requiring higher durability than pine — large-span roof beams, exposed structural elements, and any application where the timber may be difficult to inspect or replace — mahogany is a good step up from softwood. It benefits from VPI treatment despite its moderate natural durability, particularly in coastal environments or where termite pressure is high.',
+        ],
+        list: [
+          'Density: 450–700 kg/m³ — heavier and stronger than pine',
+          'Natural durability: moderate — suitable for above-ground applications without treatment',
+          'Treatability: moderate — sapwood treats well; heartwood less so',
+          'Workability: good — machines well, holds fixings well',
+          'Best uses: large structural beams, door and window frames, heavy joinery',
+        ],
+      },
+      {
+        heading: 'Teak (Local and Imported)',
+        paragraphs: [
+          'Teak (Tectona grandis) is Sri Lanka\'s most valued construction hardwood and one of the most durable timbers in the world. Its heartwood contains natural oils (tectoquinone) that make it highly resistant to both insects and fungal decay, resistant to moisture absorption, and dimensionally stable after drying. It is the benchmark against which other species are compared for durability.',
+          'The practical constraint on teak is cost. Mature teak is significantly more expensive than pine or imported mahogany, and the premium is justified only where durability and appearance justify the investment. For premium residential construction — exposed structural elements, high-quality door and window frames, feature beams — teak delivers a service life measured in generations with minimal maintenance. For hidden structural work where cost is the primary driver, pine with VPI treatment is more appropriate.',
+        ],
+        list: [
+          'Density: 600–750 kg/m³ — dense and heavy',
+          'Natural durability: very high — naturally resistant to termites and fungi',
+          'Treatability: low for heartwood (natural oils repel water-borne preservatives)',
+          'Workability: good but hard on tools due to silica content',
+          'Best uses: premium joinery, exposed structural elements, outdoor furniture',
+        ],
+      },
+      {
+        heading: 'Local Hardwoods: Jak, Coconut, and Others',
+        paragraphs: [
+          'Sri Lanka has several locally grown timber species that are used in construction, though supply is less consistent than for imported species. Jak (Artocarpus heterophyllus) is a moderately dense hardwood with good natural durability and workability — it has been used in Sri Lankan construction and furniture for generations. Coconut timber (from the stem of mature coconut palms) is unusually dense and hard, particularly the outer material, and is increasingly used for flooring and structural applications as a sustainable local alternative to imported hardwoods.',
+          'Local hardwoods are generally harder to source in consistent dimensions and grades than imported timber, and their properties vary more between individual pieces. For large construction projects requiring consistent specification, imported species are more reliable. For small-scale work, bespoke joinery, or projects where local provenance is valued, local species are worth exploring.',
+        ],
+      },
+      {
+        heading: 'The Treatment Requirement Across All Species',
+        paragraphs: [
+          'Regardless of species, structural timber in Sri Lanka should be kiln-dried to 15–18% MC and VPI-treated with Boron Borax before installation in any roof structure, floor framing, or joinery application. The level of natural durability of the species reduces — but does not eliminate — the benefit of VPI treatment. Even teak sapwood benefits from treatment. For the more vulnerable species (pine, rubberwood), treatment is not optional if the structure is expected to last.',
+          'The cost of treatment is a small fraction of the structural timber cost, and a smaller fraction still of the total construction cost. Specifying treatment across all structural timber is the most cost-effective insurance available against termite and decay damage.',
+        ],
+        note: 'St. Xavier Timber kiln-dries and VPI-treats pine, mahogany, rubberwood, and a range of imported hardwoods. We can advise on species selection for your specific application and provide treatment records for compliance documentation. Contact us with your project requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'timber-species-for-furniture-sri-lanka',
+    title: 'Timber Species for Furniture in Sri Lanka: Which Wood Works Best?',
+    description:
+      'The species you choose for furniture determines workability, finish quality, dimensional stability, pest resistance, and long-term durability. This guide covers the main options available in Sri Lanka and what each one offers for furniture production.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['furniture timber Sri Lanka', 'rubberwood furniture', 'teak furniture', 'mahogany furniture', 'timber species', 'wood for furniture'],
+    sections: [
+      {
+        heading: 'What Makes a Good Furniture Timber',
+        paragraphs: [
+          'The qualities that make a timber suitable for furniture are different from those required for structural applications. Furniture timber must machine cleanly, hold fine detail, accept glue reliably, take finishes well, and remain stable after manufacture. Strength and load-bearing capacity — critical in structural timber — are rarely the limiting factor in furniture.',
+          'The most important properties for furniture timber are dimensional stability (low shrinkage after drying, low response to humidity changes in service), machinability (clean cutting, good surface quality off the saw and plane), grain character (aesthetics matter in furniture), and treatability (for species prone to pest attack).',
+        ],
+      },
+      {
+        heading: 'Rubberwood: The Industry Standard',
+        paragraphs: [
+          'Rubberwood (Hevea brasiliensis) is the dominant furniture timber in Sri Lanka and across much of Southeast Asia, and for good reasons. It is relatively abundant, moderately priced, has a uniform grain and texture that machines exceptionally cleanly, accepts both stains and paint finishes well, and glues reliably. Kiln-dried rubberwood at 12–15% MC is dimensionally stable in interior conditions.',
+          'Its weakness — high susceptibility to powder post beetles — is fully addressed by the combination of kiln drying and VPI treatment. Kiln drying kills any beetles present at the time of drying; VPI treatment prevents re-infestation throughout the life of the piece. Rubberwood treated by this sequence is as pest-resistant as naturally durable species for interior furniture applications. Untreated rubberwood is a significant quality risk.',
+          'For volume furniture production where cost efficiency is critical, rubberwood with correct drying and treatment is the optimum choice in the Sri Lankan market.',
+        ],
+        list: [
+          'Density: 540–630 kg/m³ — medium weight, easy to handle in production',
+          'Grain: uniform, straight — excellent machinability and finish quality',
+          'Pest resistance: low without treatment; high after kiln drying + VPI',
+          'Stability: good after kiln drying to 12–15% MC',
+          'Cost: moderate — widely available in Sri Lanka',
+        ],
+      },
+      {
+        heading: 'Mahogany: The Quality Step Up',
+        paragraphs: [
+          'Mahogany — whether genuine Swietenia macrophylla or the closely related Khaya species from Africa — produces furniture with a distinct visual quality that rubberwood cannot match. Its interlocked grain produces a natural lustre on quartersawn faces, it accepts oil and wax finishes beautifully, and its density gives finished pieces a solidity that lighter species do not have.',
+          'Mahogany machines well but requires sharp tooling to avoid tearout on the interlocked grain. It is moderately durable against insects and decay — better than rubberwood without treatment, but still benefiting from VPI treatment in high-risk environments. Kiln-dried mahogany at 12–15% MC is dimensionally stable and well-suited to quality furniture joinery.',
+          'For premium residential furniture, solid mahogany or mahogany-veneered board construction is the market-standard choice in Sri Lanka. The premium over rubberwood is significant but justified by the appearance and durability improvement.',
+        ],
+      },
+      {
+        heading: 'Teak: The Premium Choice',
+        paragraphs: [
+          'Teak is the highest-value furniture timber available in Sri Lanka and commands a significant price premium. Its combination of natural durability, dimensional stability, distinctive grain and colour, and resistance to moisture makes it the material of choice for heirloom-quality furniture, outdoor furniture, and any piece expected to outlast its owner.',
+          'Teak works well but requires carbide tooling due to its silica content, which rapidly dulls high-speed steel blades. It glues more reluctantly than rubberwood or mahogany because of its natural oil content — surfaces should be wiped with solvent before gluing to remove surface oils. Teak does not need VPI treatment for pest resistance — its natural durability is sufficient — but the sapwood is less durable and should be treated if present.',
+          'For outdoor furniture and garden structures in Sri Lanka\'s climate, teak with minimal finish (teak oil annually) significantly outperforms any other commonly available species.',
+        ],
+      },
+      {
+        heading: 'Jak Wood: The Local Alternative',
+        paragraphs: [
+          'Jak (Artocarpus heterophyllus) is a locally available hardwood with a long tradition in Sri Lankan furniture making. It has a distinctive golden-yellow heartwood that darkens to amber with age, good natural durability, and workability similar to mahogany. Historically it was the primary material for quality Sri Lankan domestic furniture.',
+          'The practical challenge with jak is supply consistency. Unlike plantation-grown rubberwood, jak trees are not grown in managed plantations and timber comes from scattered sources — dimensions and grades are less predictable. For custom furniture makers who can select and process their own timber, jak offers a genuine local alternative to imported species with strong heritage appeal.',
+        ],
+      },
+      {
+        heading: 'The Treatment Requirement for All Furniture Timber',
+        paragraphs: [
+          'All rubberwood used in furniture production should be kiln-dried to 12–15% MC and VPI-treated with Boron Borax. This is not optional — it is the minimum specification for quality production. Mahogany benefits from VPI treatment in any environment where termite activity is present, or where the furniture will be in a humid location.',
+          'The treatment adds a small cost to the input timber and delivers a dramatic reduction in post-production quality problems. Beetle emergence in delivered furniture is the most common — and most damaging — quality complaint in the Sri Lankan furniture industry. It is entirely preventable.',
+        ],
+        note: 'St. Xavier Timber supplies kiln-dried, VPI-treated rubberwood and mahogany to furniture manufacturers across Sri Lanka. We process both small and large batches to your specified dimensions and moisture content. Contact us with your volumes and requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'rubberwood-complete-guide',
+    title: 'Rubberwood: A Complete Guide for Sri Lankan Furniture and Construction Buyers',
+    description:
+      'Rubberwood is Sri Lanka\'s most-used timber — but it is also one of the most misunderstood. This guide covers its properties, strengths, weaknesses, correct treatment, and where it should and should not be used.',
+    date: '2026-07-01',
+    readTime: '6 min read',
+    category: 'Timber Treatment',
+    tags: ['rubberwood', 'rubberwood Sri Lanka', 'Hevea brasiliensis', 'rubber wood treatment', 'rubberwood furniture', 'rubber wood properties'],
+    sections: [
+      {
+        heading: 'What Rubberwood Actually Is',
+        paragraphs: [
+          'Rubberwood is the timber harvested from rubber trees (Hevea brasiliensis) at the end of their latex-producing life. A rubber tree is productive for approximately 25–30 years, after which latex yields decline and the tree is felled and replaced. Until the 1970s and 1980s, the felled trees were largely burned as waste. Recognition that the timber from these trees has genuine commercial value turned what was an agricultural waste product into one of the most important furniture timbers in Asia.',
+          'Sri Lanka has substantial rubber plantation area — concentrated in the wet zone provinces of Sabaragamuwa, Western, and Southern Province — which makes rubberwood a genuinely local, renewable resource. The sustainability credentials of rubberwood are legitimate: trees grown primarily for latex production are harvested at the natural end of their productive life, with no additional land use for timber production.',
+        ],
+      },
+      {
+        heading: 'Physical Properties',
+        paragraphs: [
+          'Rubberwood is a medium-density hardwood with a density of approximately 540–630 kg/m³ when dry. It has a fine, uniform texture and a relatively straight grain that produces a clean surface off the saw and plane. The natural colour is pale cream to light tan, which takes stains evenly and produces consistent results — an advantage in production furniture where colour consistency across a batch matters.',
+          'Rubberwood has moderate dimensional stability after kiln drying. Its shrinkage values — approximately 8.5% tangential and 4% radial — give a T/R ratio of about 2.1, which means flat-sawn boards are prone to cupping if dried too quickly. With a correctly designed kiln schedule, this is managed effectively, and kiln-dried rubberwood at 12–15% MC performs well in furniture applications.',
+        ],
+        list: [
+          'Density: 540–630 kg/m³',
+          'Hardness: moderate — comparable to black cherry or soft maple',
+          'Grain: straight and uniform — excellent machinability',
+          'Colour: pale cream to light tan — takes stain evenly',
+          'T/R shrinkage ratio: ~2.1 — prone to cupping if dried too fast',
+        ],
+      },
+      {
+        heading: 'The Starch Problem and What It Means for Pest Susceptibility',
+        paragraphs: [
+          'Rubberwood sapwood contains high concentrations of starch stored in parenchyma cells — the same storage starch that was supporting the metabolic activity of the living tree. This starch is an ideal food source for Lyctus powder post beetles, which specifically target wide-vessel sapwood with high starch content.',
+          'The result is that rubberwood is among the most susceptible timber species to beetle infestation. Untreated rubberwood stored in a sawmill or furniture workshop for more than a few weeks is at risk. Untreated rubberwood in finished furniture can show beetle exit holes within months of delivery to the end customer.',
+          'Kiln drying at temperatures above 55°C kills all beetle life stages — eggs, larvae, and adults — and significantly reduces the starch content of the wood, making it less attractive to reinfestation. VPI treatment with Boron Borax provides ongoing chemical protection against reinfestation after drying. The combination of both treatments is the correct specification for rubberwood in any furniture or construction application.',
+        ],
+      },
+      {
+        heading: 'Workability and Finishing',
+        paragraphs: [
+          'Rubberwood is one of the most workable timbers commercially available in Sri Lanka. It cuts cleanly with both hand and machine tools, produces a smooth surface with minimal grain tearout, and holds detail well in routed profiles and moulded sections. Sharp tooling is important — rubberwood blunts tools at a moderate rate and begins to produce a slightly fuzzy surface as blades dull.',
+          'Adhesive bonding is excellent — rubberwood glues reliably with standard PVA and urea formaldehyde adhesives without pre-treatment. It accepts paint finishes consistently due to its uniform, fine texture. For stained and lacquered finishes, a sanding sealer is recommended to control differential absorption between grain lines, after which rubberwood produces an extremely smooth, consistent finish that is competitive with far more expensive species.',
+        ],
+      },
+      {
+        heading: 'Where Rubberwood Should and Should Not Be Used',
+        paragraphs: [
+          'Rubberwood is an excellent choice for: interior furniture in dry or air-conditioned environments (with kiln drying and VPI treatment); kitchen cabinet carcasses, door fronts, and drawer components; interior joinery and mouldings; and any application where machinability and finish consistency matter more than natural durability.',
+          'Rubberwood is not appropriate for: ground contact applications, exterior furniture exposed to rain, or any application where borate treatment will be subject to water leaching. It is also not ideal for structural applications in large cross-sections — its moderate strength values and treatability limitations in thick heartwood sections make it a second choice behind pine or mahogany for large structural members.',
+        ],
+        note: 'St. Xavier Timber is one of Sri Lanka\'s leading processors of rubberwood — kiln drying and VPI treating for furniture manufacturers and construction companies across the island. We process rubberwood in any dimensions to your specified MC and issue full treatment records. Contact us with your requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'teak-timber-properties-uses-sri-lanka',
+    title: 'Teak Timber in Sri Lanka: Properties, Uses, and Why It Costs What It Does',
+    description:
+      'Teak is the benchmark hardwood for durability, stability, and appearance — but the premium it commands is only justified in certain applications. This guide explains what teak actually delivers and where it is worth the investment.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['teak timber', 'teak Sri Lanka', 'Tectona grandis', 'teak properties', 'teak furniture', 'teak construction'],
+    sections: [
+      {
+        heading: 'What Makes Teak Different',
+        paragraphs: [
+          'Teak (Tectona grandis) occupies a unique position among timber species: it combines high natural durability, excellent dimensional stability, inherent weather resistance, and distinctive appearance in a single species. Most other durable timber species make trade-offs — they may be durable but difficult to work, stable but lacking in appearance, or beautiful but not durable. Teak delivers all of these properties simultaneously, which is why it commands a premium.',
+          'Teak heartwood contains tectoquinone and other natural extractives that act as natural preservatives. These compounds make the heartwood inherently resistant to termites, other wood-boring insects, and fungal decay. They also repel water, reducing the rate of moisture absorption and making teak one of the most dimensionally stable timbers available — it swells and shrinks very little with changes in humidity compared to most other species.',
+        ],
+      },
+      {
+        heading: 'Physical Properties',
+        paragraphs: [
+          'Teak is a moderately dense hardwood — typically 600–750 kg/m³ — which gives finished pieces a satisfying solidity without being impractically heavy. The grain is typically straight to slightly wavy, with a coarse, uneven texture due to the large vessels in the earlywood. The natural colour of freshly cut teak heartwood ranges from golden yellow to brown, darkening to a rich honey-brown with age and UV exposure. Untreated teak exposed outdoors weathers to a silver-grey patina over several years.',
+          'The silica content of teak — present as fine particles in the wood cells — is responsible for the most significant practical challenge in working teak: it rapidly dulls cutting edges. High-speed steel blades need frequent resharpening. Carbide-tipped blades are standard for any volume production work with teak. Dust from teak machining can cause skin and respiratory sensitisation in some individuals — dust extraction and appropriate PPE are important in any teak processing environment.',
+        ],
+        list: [
+          'Density: 600–750 kg/m³',
+          'Natural durability: very high — heartwood resistant to termites, fungi, and weathering',
+          'Dimensional stability: excellent — low shrinkage and low response to humidity changes',
+          'Workability: good, but silica dulls tools rapidly — use carbide tooling',
+          'Gluing: requires solvent wipe before gluing to remove surface oils',
+        ],
+      },
+      {
+        heading: 'Teak Sources in Sri Lanka',
+        paragraphs: [
+          'Sri Lanka has limited domestic teak — some plantation teak exists but supply is inconsistent and the timber from young plantation trees lacks the density and durability of mature teak. The majority of teak used in Sri Lanka is imported from Myanmar (historically the benchmark source for quality teak, now with regulated supply), India, and plantations in Central America and West Africa.',
+          'The provenance and age of teak significantly affect its properties. Old-growth teak from slow-growing natural forests has higher density, more extractives, and better durability than fast-grown plantation teak. For applications where maximum durability is required, specifying old-growth Myanmar teak or mature plantation teak from established plantations is important. Plantation teak from young trees can have a much higher proportion of less-durable sapwood and lower extractive content.',
+        ],
+      },
+      {
+        heading: 'Where Teak Justifies Its Cost',
+        paragraphs: [
+          'The premium over pine or rubberwood for teak is substantial — typically 4–8 times the cost per cubic metre depending on grade and source. This premium is justified in specific applications where the unique combination of teak properties delivers value that alternatives cannot.',
+          'Outdoor furniture is the clearest case. No other commonly available species matches teak\'s combination of weather resistance, dimensional stability, and appearance in outdoor applications. A teak garden set maintained with annual teak oil can last 30–50 years in Sri Lanka\'s climate with no other intervention.',
+          'Premium interior joinery, exposed structural features, and high-value door and window frames are other justified applications. The key question is whether the application will be visible, maintained, and expected to outlast a typical furniture lifespan. If yes, teak may be worth the investment. For hidden structural work or budget-constrained applications, properly treated pine or mahogany is the rational choice.',
+        ],
+      },
+      {
+        heading: 'Does Teak Need Treatment?',
+        paragraphs: [
+          'Teak heartwood does not require VPI treatment for pest resistance in most above-ground applications — its natural durability is sufficient. This is one of the few cases where the natural properties of the species reduce the case for VPI treatment.',
+          'However, two caveats apply. First, the sapwood of teak — the pale outer ring of the log — has much lower natural durability than the heartwood and should be treated if it is present in the cross-section of structural members. Second, even naturally durable species benefit from treatment in exceptional risk environments — coastal buildings with very high termite pressure, or applications where the timber is exposed to intermittent wetting. In these cases, VPI treatment provides an additional margin of protection beyond what the natural extractives alone provide.',
+        ],
+        note: 'St. Xavier Timber can kiln-dry and VPI-treat teak sapwood on request. For teak heartwood applications, we can advise on whether treatment adds meaningful value for your specific situation. Contact us with your project details.',
+      },
+    ],
+  },
+  {
+    slug: 'pine-timber-sri-lanka-guide',
+    title: 'Pine Timber in Sri Lanka: What You Need to Know Before You Buy',
+    description:
+      'Pine is Sri Lanka\'s most widely used construction timber — but not all pine is the same. This guide explains the species differences, what to look for when buying, and why treatment is non-negotiable for structural use.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['pine timber Sri Lanka', 'softwood timber', 'construction timber', 'pine treatment', 'radiata pine', 'imported timber Sri Lanka'],
+    sections: [
+      {
+        heading: 'Which Pine Species Come to Sri Lanka',
+        paragraphs: [
+          'The pine sold in Sri Lanka for construction comes from several different source regions and species, though it is rarely labelled by species at the point of sale. The most common are radiata pine (Pinus radiata) from New Zealand and Chile, various pine species from South America (Pinus taeda, Pinus elliottii), and European redwood (Pinus sylvestris) from Scandinavia and the Baltic states. The properties of these species are broadly similar, but there are differences in density, resin content, and knot frequency that affect performance in specific applications.',
+          'Radiata pine from New Zealand and Chile is typically fast-grown plantation timber with wide growth rings, moderate density, and consistent dimensions. It is the most price-competitive option and the most widely available. European redwood tends to be slower-grown with tighter growth rings, higher density, and better strength values — and is priced accordingly. For most Sri Lankan construction applications, radiata pine is adequate; for applications requiring higher structural performance, European or North American softwoods may be worth the premium.',
+        ],
+      },
+      {
+        heading: 'Physical Properties of Structural Pine',
+        paragraphs: [
+          'Construction pine is typically sold in the density range of 450–550 kg/m³ when dry — lighter than most hardwoods, which makes it easier to handle on site and reduces dead load in roof structures. Its strength-to-weight ratio is surprisingly good: while pine is weaker than dense hardwoods in absolute terms, its light weight means that for given structural spans and loads, pine sections can often be as small as equivalent hardwood sections.',
+          'Pine shrinks moderately on drying — approximately 7–8% tangentially and 4% radially — with a T/R ratio of around 1.8. This relatively well-balanced shrinkage makes pine less prone to cupping than many hardwoods. Kiln-dried pine at 15–18% MC is dimensionally stable in most Sri Lankan construction conditions.',
+        ],
+        list: [
+          'Density: 450–550 kg/m³ — lighter than most hardwoods',
+          'Shrinkage T/R ratio: ~1.8 — moderate and balanced, less prone to cupping',
+          'Natural durability: low — requires treatment for all construction uses in Sri Lanka',
+          'Treatability: good — absorbs VPI preservative well throughout the cross-section',
+          'Knots: present in all grades; specify by grade if appearance matters',
+        ],
+      },
+      {
+        heading: 'Why All Structural Pine Needs Treatment in Sri Lanka',
+        paragraphs: [
+          'Pine has low natural durability. Its heartwood and sapwood are both susceptible to termite attack, and pine sapwood is also susceptible to fungal staining (blue stain) if it remains wet. In Sri Lanka\'s tropical climate with year-round termite activity, untreated pine roof structures are a liability — not a matter of if termites will attack, but when.',
+          'The good news is that pine responds very well to VPI treatment. Its open tracheid structure allows Boron Borax solution to penetrate deeply and uniformly, achieving high retention levels throughout the cross-section. Kiln-dried, VPI-treated pine is a structurally reliable and pest-resistant construction timber with a service life comparable to naturally durable species in above-ground applications.',
+        ],
+      },
+      {
+        heading: 'What to Check When Buying Construction Pine',
+        paragraphs: [
+          'When buying pine for structural use, check the following: moisture content (should be 15–18% MC for structural applications — ask for measurement records from the supplier), treatment status (VPI-treated with Boron Borax from an IPPC-registered facility, with batch records), grade (structural grades have limits on knot size, slope of grain, and other defects that affect strength), and dimensions (check that actual dimensions match nominal — some suppliers sell undersized timber to nominal dimensions).',
+          'Reject timber that is visibly bowed, twisted, or has deep surface checking. Some degrade is normal in any batch of construction timber, but excessive degrade indicates poor kiln drying practice and may indicate deeper problems (honeycombing, residual stress) that are not visible on the surface.',
+        ],
+        note: 'St. Xavier Timber processes construction pine — kiln drying to 15–18% MC and VPI treating with Boron Borax — and issues full treatment records with every batch. Contact us for pricing and turnaround times on your pine dimensions.',
+      },
+      {
+        heading: 'Pine for Pallet Manufacture',
+        paragraphs: [
+          'Pine is also widely used for pallet manufacture in Sri Lanka, both for domestic use and for export. Export pallets require ISPM 15 heat treatment — a separate regulatory treatment from structural VPI — which must be carried out by an IPPC-registered facility. The ISPM 15 HT mark must appear on every pallet used in international shipments.',
+          'Domestic pallets for in-country logistics do not require ISPM 15 treatment but benefit from kiln drying for weight reduction and dimensional stability. Wet or green pallet timber is significantly heavier than dried timber of the same dimensions, which increases shipping and handling costs throughout the supply chain.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'mahogany-timber-sri-lanka-guide',
+    title: 'Mahogany in Sri Lanka: Species, Properties, and What to Expect',
+    description:
+      'Mahogany is a broad term covering several related species. Understanding which species you are buying, what its properties are, and how it should be treated is important for getting the result you need in furniture or construction.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['mahogany Sri Lanka', 'Swietenia macrophylla', 'Khaya', 'mahogany properties', 'mahogany furniture', 'timber species Sri Lanka'],
+    sections: [
+      {
+        heading: 'Which Species Are Called Mahogany in Sri Lanka',
+        paragraphs: [
+          'The term "mahogany" in Sri Lanka covers several different species, not all of which are botanically related. Genuine mahogany (Swietenia macrophylla) — sometimes called American or Brazilian mahogany — is the species that established mahogany\'s reputation for quality. African mahogany (Khaya ivorensis, Khaya anthotheca, and related Khaya species) is botanically distinct but produces timber with similar properties and is widely sold under the mahogany name. Philippine mahogany (various Shorea and Parashorea species) is botanically unrelated but shares some visual similarities.',
+          'In practice, most mahogany sold in Sri Lanka is Khaya species from West Africa. It is a genuine high-quality hardwood and a good choice for furniture and joinery — the mahogany name, in this case, is not misleading. Philippine mahogany varies considerably by species and is generally inferior to Swietenia or Khaya in terms of natural durability and mechanical properties.',
+        ],
+      },
+      {
+        heading: 'Physical Properties',
+        paragraphs: [
+          'Khaya and Swietenia mahogany have broadly similar properties: medium density (450–650 kg/m³), interlocked grain that produces a natural ribbon figure on quartersawn faces, good dimensional stability after drying, and moderate natural durability. The colour ranges from pale salmon-pink in fresh timber to deep reddish-brown in aged pieces, with the interlocked grain producing a distinctive lustre.',
+          'The interlocked grain is both an aesthetic asset and a workability challenge. On quartersawn faces it produces the ribbon figure that makes mahogany distinctive in appearance. On tangential faces, the interlocking can cause tearout if machined against the grain — sharp tooling and attention to feed direction are important in production environments.',
+        ],
+        list: [
+          'Density: 450–650 kg/m³ (varies by species and origin)',
+          'Grain: interlocked — produces ribbon figure on quartersawn faces',
+          'Natural durability: moderate — suitable for above-ground applications; benefits from treatment in high-risk environments',
+          'Dimensional stability: good after kiln drying',
+          'Workability: good with sharp tooling; interlocked grain requires attention to feed direction',
+        ],
+      },
+      {
+        heading: 'Kiln Drying Mahogany',
+        paragraphs: [
+          'Mahogany dries reasonably well but requires a careful schedule to avoid checking and grain distortion. The interlocked grain means that differential shrinkage along different grain angles can cause distortion during drying — boards that are not well-stacked with stickers at close intervals may develop bow and twist. End coating before kiln loading is important for mahogany, as it is prone to end splitting if ends are left unprotected.',
+          'Target moisture content for furniture mahogany is 12–15% MC. For structural and joinery applications, 15–18% MC is appropriate. Well-kiln-dried mahogany at these moisture contents is stable in interior conditions and will not move significantly after installation.',
+        ],
+      },
+      {
+        heading: 'Treatment Requirements',
+        paragraphs: [
+          'Mahogany\'s moderate natural durability means it performs adequately in above-ground, interior applications without VPI treatment in low-risk environments. However, in Sri Lanka\'s tropical climate where termite activity is widespread, VPI treatment adds a meaningful margin of protection — particularly for mahogany used in door and window frames (which are in contact with masonry) and for any application in coastal or high-humidity environments.',
+          'The sapwood of mahogany is significantly less durable than the heartwood and should always be treated. In older, large-diameter logs, the sapwood proportion is small. In younger plantation mahogany, sapwood may represent a significant portion of each board and should not be used in structural applications without VPI treatment.',
+        ],
+        note: 'St. Xavier Timber kiln-dries and VPI-treats mahogany for furniture manufacturers and construction projects. We can process Khaya and Swietenia species to your specified dimensions and MC. Contact us with your requirements.',
+      },
+      {
+        heading: 'Comparing Mahogany with Rubberwood for Furniture',
+        paragraphs: [
+          'Rubberwood and mahogany are the two most important furniture timbers in Sri Lanka, and the choice between them is essentially a price-versus-appearance decision. Rubberwood is significantly cheaper, machines as well or better, and with correct treatment is equally pest-resistant. Mahogany costs more, has a richer appearance, better natural durability, and the interlocked grain figure that rubberwood lacks.',
+          'For volume production furniture where cost per piece is the key metric, rubberwood with kiln drying and VPI treatment is the correct choice. For premium furniture where appearance and perceived quality matter, mahogany — or mahogany-veneer construction — justifies its premium. Both species, correctly dried and treated, will deliver excellent service life in interior applications.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'jak-wood-sri-lanka-guide',
+    title: 'Jak Wood in Sri Lanka: Properties, Traditional Uses, and Modern Applications',
+    description:
+      'Jak (Artocarpus heterophyllus) has been used in Sri Lankan construction and furniture for generations. This guide covers its physical properties, natural durability, workability, and where it fits in modern building and furniture practice.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['jak wood', 'jak timber Sri Lanka', 'Artocarpus heterophyllus', 'local timber Sri Lanka', 'Sri Lankan wood', 'jak furniture'],
+    sections: [
+      {
+        heading: 'Jak as a Timber Species',
+        paragraphs: [
+          'The jak tree (Artocarpus heterophyllus) is best known in Sri Lanka for its fruit — the world\'s largest tree-borne fruit — but it also produces timber that has been valued for construction, furniture, and musical instruments for centuries. The heartwood of mature jak trees is a striking golden-yellow colour, highly distinctive, and darkens to a rich amber-orange with age and light exposure.',
+          'Jak belongs to the Moraceae family and is related to breadfruit and mulberry. It is a medium to large tree that grows throughout Sri Lanka\'s wet and intermediate zones, including as a garden and homestead tree. Timber is sourced from felled trees at the end of their productive life, from roadside clearances, and from plantation thinnings — though jak is not grown in managed timber plantations.',
+        ],
+      },
+      {
+        heading: 'Physical Properties',
+        paragraphs: [
+          'Jak heartwood has a density of approximately 560–640 kg/m³ — comparable to rubberwood — with a generally straight to slightly interlocked grain and a moderate, uniform texture. The distinctive feature of jak timber is its colour: the heartwood ranges from bright yellow in freshly cut timber to deep amber after several years of exposure. The sapwood is pale and clearly distinct from the heartwood.',
+          'Jak is moderately hard with good impact resistance. It works well with hand tools and machines adequately with sharp tooling, though the grain can be slightly woolly if tools are not kept sharp. It polishes well and accepts oil and wax finishes that complement its natural colour, though it is less receptive to paint finishes than rubberwood due to its colour bleed-through.',
+        ],
+        list: [
+          'Density: 560–640 kg/m³',
+          'Colour: golden-yellow to amber-orange heartwood — highly distinctive',
+          'Natural durability: moderate to good — better than rubberwood without treatment',
+          'Workability: good with sharp tools — slightly woolly grain requires attention',
+          'Finishes: oil and wax finishes ideal; paint not recommended due to colour bleed',
+        ],
+      },
+      {
+        heading: 'Natural Durability and Treatment',
+        paragraphs: [
+          'Jak heartwood has moderate to good natural durability — significantly better than rubberwood and comparable to mahogany for above-ground, interior applications. The sapwood is far less durable and should be excluded from structural applications or treated with VPI.',
+          'In traditional Sri Lankan construction, jak was used without treatment — and many jak-framed structures have survived for decades or centuries in reasonable condition. However, in the modern context where buildings are expected to last 50–100 years with minimal maintenance, and where termite pressure is significant, VPI treatment of jak structural timber adds a meaningful and inexpensive margin of protection.',
+        ],
+      },
+      {
+        heading: 'Traditional and Modern Applications',
+        paragraphs: [
+          'Traditionally, jak was one of the primary materials for Sri Lankan domestic furniture — beds, cupboards, and chests made from solid jak are found in historic homes throughout the wet zone. The wood\'s distinctive colour and moderate hardness made it well-suited to hand-tool furniture making.',
+          'In modern applications, jak is most appropriate for bespoke furniture where its distinctive colour and local provenance are valued, for small architectural elements such as decorative screens and feature panels, and for flooring in heritage restoration projects where matching historic material is important. It is less suited to volume production furniture because of supply inconsistency.',
+          'Jak wood is also used in the manufacture of musical instruments — particularly drums — where its tone properties are valued. The jak wood drum (yak bera) is a traditional Sri Lankan instrument, and this application continues to be an important use for high-quality jak timber.',
+        ],
+        note: 'St. Xavier Timber can kiln-dry and VPI-treat jak wood on request. Contact us to discuss treatment of jak timber for construction or furniture applications.',
+      },
+      {
+        heading: 'Supply and Sourcing',
+        paragraphs: [
+          'Jak timber supply in Sri Lanka is informal and inconsistent compared to imported species. There are no managed jak plantations, and most timber comes from individual trees felled in gardens, on roadsides, or from small sawyers who process trees opportunistically. This means that dimensions, drying status, and treatment are rarely standardised.',
+          'Buyers of jak timber should verify the moisture content at purchase, confirm whether any drying has been done, and arrange kiln drying and treatment before use in any finished application. Buying jak "off the tree" or from a small sawyer and using it green is the source of most jak furniture failures — the distinctive colour and character of the species does not compensate for timber that moves significantly after manufacture.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'coconut-timber-sri-lanka-guide',
+    title: 'Coconut Timber in Sri Lanka: Properties, Uses, and What Makes It Unusual',
+    description:
+      'Coconut timber — harvested from the stems of mature palms — is one of Sri Lanka\'s most unusual and underused building materials. This guide explains its distinctive properties, where it works well, and its significant limitations.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['coconut timber', 'coconut wood Sri Lanka', 'palm timber', 'coco timber', 'local timber Sri Lanka', 'sustainable timber'],
+    sections: [
+      {
+        heading: 'What Coconut Timber Is and How It Differs from Wood',
+        paragraphs: [
+          'Coconut timber comes from the stem (trunk) of coconut palms (Cocos nucifera) felled at the end of their productive life — typically 60–80 years. Unlike conventional timber from dicotyledonous trees, the coconut palm is a monocotyledon: it has no secondary growth and produces no distinct rings, no differentiated heartwood or sapwood, and no resin ducts. Structurally, it is composed of vascular bundles (the hard, fibrous strands visible in cross-section) embedded in a parenchyma matrix.',
+          'This structure gives coconut timber properties that are completely unlike conventional timber. The outer 2–3 inches of the stem are extremely dense and hard — among the hardest plant materials in common use, with a hardness that rivals or exceeds most tropical hardwoods. The inner material is much softer and weaker, and should not be used in structural applications. The gradient from outer to inner material is dramatic and visible.',
+        ],
+      },
+      {
+        heading: 'Physical Properties',
+        paragraphs: [
+          'The outer zone of coconut timber (high-density grade, or "HD coconut timber") has a density of 700–900 kg/m³ and a hardness comparable to or exceeding teak. It is highly resistant to abrasion, making it suitable for flooring applications. The colour is mid-brown with distinctive dark vascular bundle streaks that create a unique visual character unlike any conventional timber.',
+          'The inner zone (low-density grade) has a density of 200–400 kg/m³ — much lighter, weaker, and less durable. It is sometimes used for non-structural interior applications but is not appropriate for flooring, structural use, or any application requiring durability.',
+        ],
+        list: [
+          'Outer zone (HD): 700–900 kg/m³ — very high density, excellent hardness',
+          'Inner zone (LD): 200–400 kg/m³ — low density, limited structural value',
+          'Grain: no conventional grain — vascular bundles in parenchyma matrix',
+          'Appearance: mid-brown with distinctive dark fibre streaks',
+          'Durability: moderate to good for HD material; poor for LD material',
+        ],
+      },
+      {
+        heading: 'Where Coconut Timber Works Well',
+        paragraphs: [
+          'Coconut timber is most successfully used in flooring, where the high hardness and abrasion resistance of the outer material is an asset, and where the material\'s unusual appearance is a positive feature rather than a liability. Coconut timber flooring is harder than most conventional hardwood flooring and develops a distinctive patina with use.',
+          'Structural applications are possible with properly selected and graded HD coconut timber, though the variability of the material and the limited dimensions available from a single stem (most coconut stems are 200–400mm diameter) restrict its use to specific applications. It is not a substitute for sawn timber in conventional framing or roof construction.',
+        ],
+      },
+      {
+        heading: 'Limitations and Challenges',
+        paragraphs: [
+          'Coconut timber presents several challenges that limit its wider adoption. First, it is difficult to machine — the hard vascular bundles rapidly blunt conventional woodworking tools, and the mixture of hard and soft material in the cross-section makes achieving a clean, smooth surface challenging. Specialised tooling is required for consistent results.',
+          'Second, it does not hold nails and screws in the same way as conventional timber — the vascular bundle structure means that fixings in the outer zone hold well, but fixings in the softer parenchyma material do not. This affects the connection design for structural applications.',
+          'Third, supply is inconsistent and not standardised by grade in most markets. Coconut timber is typically sold informally, and the distinction between HD and LD material is not always clearly made. Buyers need to inspect material carefully and select the outer zone material explicitly.',
+        ],
+        note: 'St. Xavier Timber can advise on kiln drying and treatment options for coconut timber. Contact us to discuss your specific application requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'imported-vs-local-timber-sri-lanka',
+    title: 'Imported vs Local Timber in Sri Lanka: How to Choose for Your Project',
+    description:
+      'Sri Lanka imports substantial volumes of construction and furniture timber while significant local species exist. The decision between imported and local timber involves cost, availability, consistency, sustainability, and performance — this guide covers all of these.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['imported timber Sri Lanka', 'local timber Sri Lanka', 'timber sourcing', 'rubberwood', 'pine import', 'sustainable timber Sri Lanka'],
+    sections: [
+      {
+        heading: 'The Current Timber Supply Landscape in Sri Lanka',
+        paragraphs: [
+          'Sri Lanka imports substantial volumes of timber — primarily pine from New Zealand, Australia, and South America, and various hardwoods from Africa, Southeast Asia, and South America. Domestic production comes mainly from rubber plantation timber (rubberwood), coconut palm timber, jak, and small volumes of other local species. Forest department timber from managed natural forests is available in limited quantities through regulated channels.',
+          'The balance between imported and local timber in any project reflects practical realities: imported pine is widely available, consistently dimensioned, and competitively priced for construction; rubberwood is the cost-effective choice for furniture production; local hardwoods offer provenance and character but with less supply consistency.',
+        ],
+      },
+      {
+        heading: 'The Case for Imported Timber',
+        paragraphs: [
+          'Imported construction timber — primarily pine from plantation sources — offers consistency of dimensions, grade, and drying status that is difficult to match with local species. Construction projects using structural timber need consistent cross-sections, predictable strength values, and reliably dry material. Large-scale plantation pine supply chains, particularly from New Zealand and Chile, deliver this consistency.',
+          'For furniture hardwoods, imported mahogany (Khaya species) and teak offer properties — particularly appearance grade, dimensional stability, and natural durability — that are difficult to source in consistent volumes from local species. The premium for imported hardwoods reflects the consistency of supply and the quality of the material.',
+        ],
+      },
+      {
+        heading: 'The Case for Local Timber',
+        paragraphs: [
+          'Rubberwood is the strongest argument for local timber in Sri Lanka. It is grown, harvested, processed, and used domestically, producing a complete local supply chain with no import dependence. For furniture manufacturers, rubberwood correctly dried and treated is a locally sourced material that is competitive in performance with imported species at a significantly lower input cost.',
+          'Local timber also has shorter supply chains, lower transport costs, and is not subject to the exchange rate risk and import duty exposure that affects imported timber pricing. In a market where import costs are rising, local timber provides price stability that imported alternatives cannot.',
+          'The sustainability case for local rubberwood is also strong: trees are harvested at the end of their latex-producing life (a post-productive use), the plantation area is maintained for rubber production rather than cleared for timber, and the short supply chain minimises transport emissions.',
+        ],
+      },
+      {
+        heading: 'How to Make the Decision for Your Project',
+        paragraphs: [
+          'For structural roof timber on a budget: imported kiln-dried, VPI-treated pine is usually the most cost-effective choice, delivering consistent dimensions, good structural performance, and effective pest protection.',
+          'For furniture production in volume: kiln-dried, VPI-treated rubberwood is the optimum local choice. Only move to imported hardwoods where appearance grade justifies the premium.',
+          'For premium construction joinery and exposed structural elements: imported mahogany for a mid-range solution; teak for the premium option where budget allows.',
+          'For bespoke furniture with local provenance: jak or coconut timber for distinctive character, accepting the supply inconsistency and greater processing effort.',
+        ],
+        list: [
+          'Structural roof and floor framing: imported pine (kiln-dried, VPI-treated)',
+          'Volume furniture: local rubberwood (kiln-dried, VPI-treated)',
+          'Premium joinery and frames: imported mahogany or teak',
+          'Feature flooring: coconut timber (HD grade)',
+          'Heritage restoration or bespoke furniture: jak wood',
+        ],
+        note: 'St. Xavier Timber processes both local and imported timber — rubberwood, mahogany, teak, pine, and jak — through our kiln drying and VPI treatment facility. We can advise on the right species and treatment specification for your specific application. Contact us to discuss your project.',
+      },
+    ],
+  },
+  {
     slug: 'vpi-vs-surface-treatment-timber',
     title: 'VPI vs Surface Treatment: Why Brush-On Preservatives Do Not Protect Timber',
     description:
