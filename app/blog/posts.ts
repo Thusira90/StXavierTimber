@@ -18,6 +18,187 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'drying-hardwood-vs-softwood-timber',
+    title: 'Drying Hardwood vs Softwood: What Changes and Why It Matters',
+    description:
+      'Hardwoods and softwoods behave very differently in the kiln. Understanding those differences is what separates a drying schedule that produces quality timber from one that produces degrade. This guide explains the key variables and how they affect the drying process.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['hardwood drying', 'softwood drying', 'kiln drying', 'timber species Sri Lanka', 'rubberwood', 'mahogany', 'timber drying'],
+    sections: [
+      {
+        heading: 'Hardwood and Softwood Are Not Just About Hardness',
+        paragraphs: [
+          'The terms hardwood and softwood are botanical classifications, not descriptions of density or durability. Hardwoods come from broad-leaved trees (angiosperms) — rubberwood, mahogany, teak, and oak are all hardwoods. Softwoods come from coniferous trees (gymnosperms) — pine, cedar, and spruce are softwoods. Some softwoods (like longleaf pine) are denser and harder than some hardwoods (like balsa), so the classification does not tell you much about physical properties directly.',
+          'What the classification does tell you is something about wood structure. Hardwoods have a more complex cellular structure than softwoods, with specialised vessels (pores) for water transport and more varied ray and parenchyma cells. This structural difference has a direct impact on how each type behaves when dried — how quickly moisture moves through the material, how much it shrinks, and how prone it is to developing drying stresses.',
+        ],
+      },
+      {
+        heading: 'How Moisture Moves Differently in Hardwoods vs Softwoods',
+        paragraphs: [
+          'In softwoods, moisture moves primarily through tracheids — long, narrow cells that run along the grain. The bordered pits between tracheids provide relatively open pathways for water movement, which means softwoods generally dry faster than hardwoods of similar thickness. Pine, for example, dries quite readily under moderate kiln conditions.',
+          'Hardwoods move water through vessels — larger diameter pore cells that can be seen on an end-grain surface. The distribution and size of these vessels varies significantly between species. Ring-porous hardwoods (like oak and ash) have large vessels concentrated in the early wood, which can dry unevenly, causing internal stresses and collapse. Diffuse-porous hardwoods (like rubberwood, mahogany, and beech) have more evenly distributed vessels and generally dry more uniformly than ring-porous species, though they still require more careful drying than most softwoods.',
+        ],
+      },
+      {
+        heading: 'Shrinkage Rates: Why Hardwoods Are More Demanding',
+        paragraphs: [
+          'Shrinkage is the key number when designing a kiln drying schedule. All timber shrinks as it loses moisture below the fibre saturation point, but the amount varies enormously between species. Shrinkage is measured in two directions: tangentially (parallel to the growth rings, across the flat grain) and radially (perpendicular to the growth rings, across the edge grain). The ratio between these two values — the T/R ratio — determines how prone a species is to warping and checking.',
+          'Softwoods tend to have relatively low and well-balanced shrinkage values — pine shrinks roughly 7% tangentially and 4% radially, a T/R ratio of about 1.75. This moderate ratio means pine moves fairly uniformly and is less prone to cupping than many hardwoods.',
+          'Many hardwoods have higher and more unbalanced shrinkage values. Rubberwood shrinks approximately 8.5% tangentially and 4% radially (T/R ratio around 2.1). This high ratio means flat-sawn rubberwood boards are prone to cupping and checking if dried too quickly. Dense tropical hardwoods like merbau or keruing can have even higher T/R ratios and require very conservative drying schedules to avoid surface checking and collapse.',
+        ],
+        list: [
+          'Softwoods: typically lower T/R ratios — less prone to cupping and checking',
+          'Rubberwood: T/R ~2.1 — moderate warp tendency, fast drying causes checking',
+          'Dense tropical hardwoods: high T/R ratios — require slow, conservative schedules',
+          'Ring-porous hardwoods (oak, ash): uneven vessel distribution causes drying stress',
+          'Diffuse-porous hardwoods (mahogany, rubberwood): more uniform drying than ring-porous',
+        ],
+      },
+      {
+        heading: 'Species Commonly Dried in Sri Lanka — and What They Need',
+        paragraphs: [
+          'Rubberwood (Hevea brasiliensis) is the dominant hardwood in Sri Lankan timber processing. It dries reasonably well but requires care: it is prone to surface checking if initial drying is too aggressive, susceptible to staining and mould during the early stages when MC is high, and highly attractive to powder post beetles if not treated promptly. The correct approach is a high-humidity first stage to slow surface drying, then a progressive reduction in humidity as the core dries. Rubberwood should be kiln-dried within days of sawing — not air-dried for weeks first.',
+          'Mahogany (typically Swietenia macrophylla or Khaya species in Sri Lanka) is a more forgiving hardwood. It has moderate shrinkage values and dries without the same degree of checking that rubberwood is prone to, though it benefits from the same staged drying approach.',
+          'Pine (various imported species) is a softwood widely used in pallet manufacture and construction. It dries quickly and with less degrade than most hardwoods, but it is resinous and requires attention to temperature control — too-high temperatures early in the schedule can cause resin bleed that interferes with finishing and adhesive bonding.',
+        ],
+      },
+      {
+        heading: 'Key Differences in Kiln Schedules',
+        paragraphs: [
+          'A softwood schedule is typically more aggressive than a hardwood schedule — higher temperatures, lower humidity, and a shorter total cycle. Pine that might be dried at an initial dry-bulb temperature of 70°C can be brought to 15% MC in 3–5 days.',
+          'Hardwood schedules — particularly for dense or ring-porous species — start at lower temperatures (50–60°C initial dry-bulb) and higher relative humidity, and progress more slowly. A thick cross-section of tropical hardwood may require 10–20 days in the kiln to reach 12% MC without unacceptable degrade.',
+          'The consequence of using a softwood schedule on a hardwood species is rapid and visible: surface checking within the first day or two of drying, cupping in boards wider than about 100mm, and in extreme cases, collapse — a permanent distortion of the cell walls caused by drying under excessive stress. These are not recoverable defects.',
+        ],
+        note: 'St. Xavier Timber dries rubberwood, mahogany, and a range of imported hardwoods and softwoods. We run species-specific schedules rather than a single universal schedule, which produces consistently lower degrade rates and better dimensional stability. Contact us with your species and target MC for a quote.',
+      },
+    ],
+  },
+  {
+    slug: 'kiln-drying-schedules-explained',
+    title: 'Kiln Drying Schedules Explained: How Temperature and Humidity Control the Drying Process',
+    description:
+      'A kiln drying schedule is a programmed sequence of temperature and humidity conditions that guides timber through the drying process with minimal degrade. This guide explains what a schedule controls, why the sequence matters, and what happens when it goes wrong.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Timber Treatment',
+    tags: ['kiln drying schedule', 'kiln drying', 'timber drying', 'moisture content', 'timber treatment Sri Lanka', 'drying degrade'],
+    sections: [
+      {
+        heading: 'What a Drying Schedule Actually Controls',
+        paragraphs: [
+          'A kiln drying schedule is a set of instructions that tells the kiln how to change temperature and humidity at different stages of the drying process. The two key variables are dry-bulb temperature (the air temperature in the kiln) and wet-bulb temperature (the temperature of a thermometer with a wetted wick, which reflects the humidity in the kiln). The difference between dry-bulb and wet-bulb readings — the wet-bulb depression — determines the relative humidity inside the kiln and therefore the rate at which moisture can leave the timber.',
+          'A high wet-bulb depression (large difference between the two readings) means low relative humidity and fast drying. A low wet-bulb depression means high relative humidity and slow drying. A kiln schedule manages this relationship throughout the drying cycle to balance drying speed against the risk of stress-related degrade.',
+        ],
+      },
+      {
+        heading: 'Why the Sequence of Conditions Matters',
+        paragraphs: [
+          'The most common mistake in kiln drying is applying aggressive (low humidity, high temperature) conditions too early in the drying process. When timber first enters the kiln, the surface moisture content is high and the surface dries quickly under any conditions. If the kiln humidity is set low from the start, the surface loses moisture much faster than the core can supply it. The surface dries and tries to shrink while the core is still wet and unable to shrink. This puts the surface in tension and causes surface checking — small cracks along the face and edges of the board.',
+          'The solution is to start the schedule with relatively high humidity — a small wet-bulb depression — to slow the rate of surface drying and allow the drying front to move inward more evenly. As the average moisture content of the load falls toward the fibre saturation point, the schedule progressively increases the wet-bulb depression to increase the drying rate. By the time conditions become aggressive, the gradient between surface and core is smaller and the risk of stress cracking is much lower.',
+        ],
+        list: [
+          'Stage 1 (high MC): low wet-bulb depression — slow surface drying to match core',
+          'Stage 2 (mid MC): moderate wet-bulb depression — balanced drying rate',
+          'Stage 3 (low MC): higher wet-bulb depression — accelerated final drying',
+          'Final conditioning: steam injection to equalise MC across the load and relieve residual stresses',
+        ],
+      },
+      {
+        heading: 'The Role of Temperature in Drying Rate and Timber Quality',
+        paragraphs: [
+          'Higher temperature increases the vapour pressure of water in the wood, which drives moisture toward the surface and out of the timber faster. It also reduces the viscosity of free water in the cell cavities, making it easier to move. The combined effect is that a kiln running at 80°C dries timber significantly faster than one running at 60°C.',
+          'Temperature also affects the physical properties of the timber during drying. At temperatures above approximately 50°C, the lignin in the cell walls begins to soften — the wood becomes more plastic and less prone to fracturing under drying stress. This is why high-temperature (HT) drying schedules can sometimes be used for species that would check badly under the same drying rate at lower temperatures.',
+          'However, excessive temperatures cause their own problems. Temperatures above 90°C can cause resin bleed in softwoods, colour change in light hardwoods, and a reduction in the equilibrium moisture content of the wood (the timber ends up hygroscopically stiffer than it was before drying, affecting how it responds to humidity changes in service). For most hardwoods, kiln temperatures above 75°C require careful justification.',
+        ],
+      },
+      {
+        heading: 'Conditioning: The Final Stage That Most People Skip',
+        paragraphs: [
+          'At the end of a drying cycle, timber that has been dried to the target average MC will typically have a moisture gradient from the surface (drier) to the core (slightly wetter). It may also have residual drying stresses — the surface was put into tension early in the drying process, and even though the stress has reduced as the core dried, some residual stress often remains.',
+          'The conditioning stage addresses both of these issues. Steam is injected into the kiln to raise the humidity, which allows moisture from the slightly wetter core to redistribute outward — equalising the MC gradient across the cross-section. At the same time, the elevated humidity and temperature relieve residual stress by allowing the cell walls to creep slightly. Properly conditioned timber has a uniform MC across its cross-section, no residual stress, and is far less likely to warp or crack during subsequent machining.',
+          'Skipping conditioning saves a few hours of kiln time and significantly increases the risk of problems in manufactured products. It is a false economy.',
+        ],
+      },
+      {
+        heading: 'How Schedules Are Determined for Different Species',
+        paragraphs: [
+          'Standard drying schedules for common timber species have been developed and published by timber research organisations and are used as starting points by most kiln operators. These schedules specify initial temperature, initial wet-bulb depression, and the step changes to make at different MC stages. They are based on decades of testing and represent a reasonable starting point for common species.',
+          'In practice, schedules are often modified based on the specific kiln equipment, the origin and quality of the timber, the thickness of the load, and the required final MC. A kiln operator who dries the same species regularly will develop empirical knowledge of what works in their specific equipment — adjusting schedules based on observed degrade rates and drying times.',
+        ],
+        note: 'St. Xavier Timber runs species-specific drying schedules with continuous monitoring of dry-bulb and wet-bulb temperatures throughout each cycle. We log cycle data and can provide it as documentation with your order. Contact us for drying of your timber to a specified target MC.',
+      },
+    ],
+  },
+  {
+    slug: 'how-moisture-meters-work',
+    title: 'How Moisture Meters Work — and How to Use Them Correctly',
+    description:
+      'A moisture meter is the most useful tool in timber quality control — but it can also mislead you if you do not understand its limitations. This guide explains the two main types of meter, how they measure MC, and where each one can give a wrong reading.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Timber Treatment',
+    tags: ['moisture meter', 'moisture content', 'timber quality', 'kiln drying', 'wood testing Sri Lanka', 'timber measurement'],
+    sections: [
+      {
+        heading: 'Why Measuring Moisture Content Matters',
+        paragraphs: [
+          'You cannot tell the moisture content of timber by looking at it, feeling it, or knocking it. Timber at 25% MC can look and feel identical to timber at 12% MC — especially if the surface has been dressed smooth. The only way to know whether timber is at the right MC for your application is to measure it.',
+          'This matters in practice because using timber at the wrong MC is one of the most common causes of furniture failures, joint problems, and structural movement in Sri Lanka. A reliable MC measurement at the point of purchase or delivery is simple quality control that prevents expensive problems downstream.',
+        ],
+      },
+      {
+        heading: 'Type 1: Pin-Type (Resistance) Meters',
+        paragraphs: [
+          'Pin-type meters are the most common type used in timber processing and construction. They work by measuring the electrical resistance between two metal pins pushed into the surface of the wood. Dry wood is a very poor electrical conductor — it has high resistance. Wet wood contains dissolved salts that conduct electricity more readily — it has lower resistance. The meter converts the measured resistance into an MC reading using a species-calibration curve.',
+          'Pin meters are inexpensive, fast, and give a reading immediately. Their main limitation is depth: standard pins penetrate only 5–8mm into the surface. This means a pin meter is measuring the MC of the outer layer of the board only. If the timber has a moisture gradient — dry on the surface, wet in the core, as is common in partially dried or recently kiln-dried timber — the pin meter will give a reading that is too low. The surface looks dry; the core is still wet.',
+          'This can be addressed with insulated deep probes — longer pins with only the tips exposed, which measure at a depth of 25–40mm. For boards thicker than 50mm, deep probes are the only reliable way to check for surface-to-core gradients using a resistance meter.',
+        ],
+        list: [
+          'Measures resistance between two pins at the surface (typically 5–8mm depth)',
+          'Fast and inexpensive — suitable for routine quality control',
+          'Accurate range: approximately 6–30% MC',
+          'Above 30% MC: readings become unreliable (all saturated wood looks similar)',
+          'Use insulated deep probes to check MC at depth in thick sections',
+          'Species correction: most meters have a species adjustment — set it correctly',
+        ],
+      },
+      {
+        heading: 'Type 2: Capacitance (Pinless) Meters',
+        paragraphs: [
+          'Capacitance meters measure the dielectric properties of the wood through a flat sensor pad pressed against the surface, without penetrating the wood at all. They measure to a depth of approximately 20–40mm depending on the model, and because they do not require pins, they leave no marks on the surface.',
+          'Pinless meters are faster for scanning a large batch of boards — you can slide the sensor along the surface and get a reading every few seconds. They are also better for finished or high-value timber where pin holes would be unacceptable.',
+          'Their limitation is sensitivity to surface conditions: a wet surface, wet sawdust on the face, or a density variation near the surface can throw the reading off. They are best used for screening — identifying which boards are likely to be significantly wetter or drier than the batch average — rather than for precise MC measurement. When a pinless meter identifies an outlier board, confirm with a pin meter.',
+        ],
+      },
+      {
+        heading: 'Common Mistakes When Using Moisture Meters',
+        paragraphs: [
+          'The most common mistake is taking a single reading on one face and treating it as the MC of the board. Moisture content varies within a board — between surface and core, between the two ends, and between the heartwood and sapwood. A reliable MC assessment requires multiple readings: at minimum, one reading on each face and at least three along the length of the board.',
+          'The second mistake is ignoring the species correction setting. Pin meters are calibrated on a reference species (usually Douglas fir for meters sold internationally, or a similar reference timber). The resistance-to-MC relationship varies between species because different woods have different densities and ionic content. An uncorrected reading on dense tropical hardwood can be 3–5% MC points off. Always set the species correction for the timber you are testing.',
+          'The third mistake is measuring at the end of a board, where end-grain moisture loss or end coating can give misleading readings. Measure at least 300mm from each cut end for a representative face-grain reading.',
+        ],
+        list: [
+          'Take multiple readings — at least 3 per board, on both faces',
+          'Set the species correction for the timber you are measuring',
+          'Avoid measuring within 300mm of cut ends',
+          'For thick sections: use deep probes to check for surface-to-core gradients',
+          'Confirm pinless readings with pin meter when high accuracy is needed',
+          'Let the timber acclimatise to room temperature before measuring — cold timber reads wetter',
+        ],
+      },
+      {
+        heading: 'What to Do If the Reading Seems Wrong',
+        paragraphs: [
+          'If a moisture meter gives a reading that does not match your expectation — a batch that was described as kiln-dried to 12% reading at 19%, for example — first check the species correction setting and battery level. A depleted battery causes inaccurate resistance readings on pin meters. Then check your probe depth: if you are using standard pins on thick timber, you may be reading the dried surface over a wet core.',
+          'If readings are consistently higher than specified after checking the instrument, the timber may not have been dried to the stated specification. Request the drying cycle records from your supplier. A reputable kiln operator will have batch records showing the drying schedule, humidity and temperature log, and final MC readings taken before dispatch. If your supplier cannot provide these records, you should question whether controlled kiln drying was actually carried out.',
+        ],
+        note: 'St. Xavier Timber provides batch-level MC data with every kiln drying order. We test moisture content at multiple points per batch before dispatch and can provide the drying cycle log on request. Contact us to discuss your drying specification.',
+      },
+    ],
+  },
+  {
     slug: 'why-timber-cracks-splits-during-drying',
     title: 'Why Does Timber Crack and Split? Understanding Checking and End Splitting',
     description:
