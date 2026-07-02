@@ -8,7 +8,7 @@ const links = [
   { label: 'Process', href: '/#process' },
   { label: 'Industries', href: '/#industries' },
   { label: 'About', href: '/about' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Knowledge Centre', href: '/blog' },
   { label: 'FAQ', href: '/#faq' },
   { label: 'Contact', href: '/#contact' },
 ];
