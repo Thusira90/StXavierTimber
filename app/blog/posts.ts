@@ -18,6 +18,383 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'common-furniture-defects-incorrect-timber-drying',
+    title: 'Common Furniture Defects Caused by Incorrect Timber Drying',
+    description:
+      'Most furniture quality failures — warped panels, opening joints, cracked surfaces, sticking drawers — trace back to timber that was not dried correctly before manufacture. This guide identifies each defect type and the specific drying failure that caused it.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['furniture defects', 'furniture quality', 'timber drying furniture', 'kiln drying', 'furniture manufacturing Sri Lanka', 'wood movement furniture'],
+    sections: [
+      {
+        heading: 'Why Most Furniture Failures Are Timber Problems',
+        paragraphs: [
+          'Quality control in furniture manufacturing typically focuses on joinery accuracy, finishing quality, and hardware specification. These are all important — but they are downstream of the root cause of most furniture failures. A beautifully made joint will open if the timber was too wet at manufacture. A perfect lacquer finish will crack if the panel moves after application. A drawer that fits perfectly in the factory will stick in the customer\'s home if the timber was at a different MC at manufacture than it reaches in service.',
+          'The common thread in all of these failures is moisture content — specifically, a mismatch between the MC of the timber when it was processed and the MC it reaches in its final environment. Understanding this mechanism and the defects it causes is the most practical tool available for reducing quality failures in furniture production.',
+        ],
+      },
+      {
+        heading: 'Defect 1: Warped or Bowed Panels',
+        paragraphs: [
+          'Panels that are flat when assembled but develop a bow or cup after the piece is completed — or after delivery — are the most common moisture-related furniture defect. The mechanism is simple: the panel was at a higher MC when assembled than it reaches in the customer\'s environment. As it dries, it shrinks. Because the two faces of the panel are exposed to different drying conditions — one face may be behind a back panel or sealed with lacquer; the other exposed — the drying is uneven, and the differential shrinkage causes the panel to cup toward the drier face.',
+          'Prevention: process panels at 12–15% MC — the equilibrium MC for Sri Lankan interior conditions. A panel processed at this MC will not dry further in service and will not move. A panel processed at 20% MC will lose 5–8% of its width in service as it dries to equilibrium.',
+        ],
+      },
+      {
+        heading: 'Defect 2: Opening Joints',
+        paragraphs: [
+          'Mortise and tenon, dowel, and bridle joints that fit tightly at assembly but develop visible gaps after delivery are caused by timber shrinkage at the tenon or dowel. The tenon shrinks across the grain as the timber dries in service, reducing its width and pulling away from the mortise walls. The gap is proportional to the initial MC overage — the more the timber was above its service MC at manufacture, the larger the gap.',
+          'The same mechanism applies to glued edge joints in panels: if the individual board staves were at different MC at gluing, differential movement after gluing creates internal stress at the glue line that can cause the joint to open or the panel to crack along the glue line.',
+          'Prevention: bring all timber to equilibrium MC before machining and jointing. Boards at 12–15% MC that are jointed and glued will not move relative to each other and the joint will be stable in service.',
+        ],
+      },
+      {
+        heading: 'Defect 3: Cracked or Lifted Finish',
+        paragraphs: [
+          'Lacquer, paint, or stain that cracks, peels, or lifts from the timber surface after application is usually a timber movement problem, not a finishing product failure. When timber at high MC is finished and then dries in service, it shrinks. The finish — which is bonded to the surface and cannot shrink at the same rate — is put into tension. When the tension exceeds the tensile strength of the finish or its bond to the wood, the finish cracks or lifts.',
+          'Cracking is most visible on painted furniture (where cracks in the paint film are clearly visible), and on lacquered panels where the lacquer develops hairline cracks along the grain direction. Peeling and blistering occur when the bond between the finish and the wood surface fails — either because the surface was not adequately prepared, or because the wood has moved so much that the bond cannot accommodate the strain.',
+        ],
+      },
+      {
+        heading: 'Defect 4: Sticking and Binding Drawers and Doors',
+        paragraphs: [
+          'Drawers that fit perfectly in the factory but stick in the customer\'s home, or doors that close without resistance at installation but bind against the frame after one monsoon season, are caused by timber swelling in a more humid environment than the factory.',
+          'This is the reverse of the drying problem: timber processed at MC lower than the service environment will absorb moisture and swell after installation. For furniture going into non-air-conditioned spaces, or for furniture manufactured in an air-conditioned factory that is then used in a non-air-conditioned home, the service environment may be significantly more humid than the manufacturing environment. The correct approach is to manufacture at a MC appropriate for the expected service environment — not for the factory.',
+        ],
+      },
+      {
+        heading: 'Defect 5: Beetle Exit Holes After Delivery',
+        paragraphs: [
+          'Fine powdery frass and small circular exit holes appearing in delivered furniture — typically rubberwood pieces — indicate powder post beetle infestation. This is not a drying defect in the strict sense, but it is directly related to the timber treatment process: kiln drying at adequate temperatures kills existing beetle life stages, and VPI treatment prevents re-infestation.',
+          'Beetle emergence in delivered furniture means either that the timber was not kiln-dried (and the infestation was present at manufacture), that the timber was kiln-dried but then stored long enough for adult beetles to re-infest before manufacture, or that the timber was treated but the treatment was inadequate. Combined kiln drying and VPI treatment, done in the correct sequence, eliminates this defect entirely.',
+        ],
+        note: 'St. Xavier Timber supplies kiln-dried, VPI-treated rubberwood and mahogany to furniture manufacturers across Sri Lanka. We process timber to your specified MC and issue treatment records with every batch. Contact us to discuss your production requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'export-furniture-timber-requirements',
+    title: 'Export Furniture Timber: What International Buyers Require',
+    description:
+      'Sri Lankan furniture manufacturers exporting to Europe, the Middle East, and Southeast Asia face specific requirements from international buyers around timber treatment, moisture content, and documentation. This guide covers what is typically required and how to comply.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['export furniture Sri Lanka', 'furniture export requirements', 'timber treatment export', 'ISPM 15', 'furniture manufacturing', 'export compliance'],
+    sections: [
+      {
+        heading: 'Why Export Buyers Have Stricter Requirements',
+        paragraphs: [
+          'International buyers of Sri Lankan furniture — retailers and importers in Europe, the Gulf states, Australia, and Southeast Asian markets — operate in markets where end consumers have high expectations around product quality and longevity. A furniture retailer in Germany or the UAE that receives a container of rubberwood furniture and finds beetle damage within months of delivery faces significant warranty costs, reputational damage, and the loss of a supply relationship. These buyers have learned from experience that Sri Lankan furniture can be excellent or problematic depending entirely on how the timber was processed.',
+          'The result is that serious international buyers specify timber treatment, moisture content, and documentation requirements as contract conditions — not as optional quality gestures. Manufacturers who cannot meet these requirements cannot access the better-paying export markets.',
+        ],
+      },
+      {
+        heading: 'Moisture Content Requirements',
+        paragraphs: [
+          'Export buyers almost universally specify a maximum MC for furniture timber at the time of manufacture. The specific requirement varies by destination market and the intended service environment, but the most common specification is 8–12% MC for furniture destined for air-conditioned retail and residential environments in Europe and the Gulf states.',
+          'This is lower than the 12–15% MC commonly produced by Sri Lankan kiln drying operations, and reflects the lower equilibrium MC of air-conditioned environments in colder climates. Sri Lankan manufacturers who dry to 15% MC and then ship to a buyer requiring 12% will have furniture that dries further in transit and in the destination environment — causing exactly the warping, joint opening, and finish cracking defects described elsewhere.',
+          'Meeting the buyer\'s MC requirement may require an extended kiln drying cycle, a final conditioning stage at lower humidity, or close monitoring of the timber stock before production to ensure it has not re-absorbed moisture in the factory environment.',
+        ],
+      },
+      {
+        heading: 'Treatment Documentation Requirements',
+        paragraphs: [
+          'Most European and Australian buyers require evidence that rubberwood furniture timber has been treated against powder post beetles. The minimum documentation required is typically a treatment certificate from the treating facility confirming the species, the treatment method (kiln drying plus VPI, or kiln drying alone), the treatment date, and the chemical used.',
+          'Some buyers additionally require the treatment to be carried out by a facility that is third-party certified to an international standard — requiring the treating facility to have independent verification of its process. This is a higher bar than simply providing a self-issued certificate. Manufacturers sourcing from St. Xavier Timber can reference our IPPC registration and treatment records as the primary treatment documentation.',
+        ],
+      },
+      {
+        heading: 'Wooden Packaging Requirements: ISPM 15',
+        paragraphs: [
+          'Export furniture shipped in wooden crates, on wooden pallets, or secured with wooden dunnage must comply with ISPM 15 — the International Standards for Phytosanitary Measures No. 15. The wooden packaging must be heat-treated to a core temperature of 56°C for 30 continuous minutes by an IPPC-registered facility, and marked with the IPPC mark.',
+          'This is a separate requirement from the treatment of the furniture timber itself. The furniture timber treatment (VPI for beetle protection) and the packaging treatment (ISPM 15 heat treatment for phytosanitary compliance) are different processes for different purposes. Both are required for export. St. Xavier Timber\'s IPPC registration covers heat treatment for wooden packaging material as well as VPI treatment for structural and furniture timber.',
+        ],
+      },
+      {
+        heading: 'Setting Up for Compliance Before the First Container',
+        paragraphs: [
+          'Manufacturers who want to access export markets should establish their compliance infrastructure before committing to an export order. This means: confirming the buyer\'s specific MC requirement and ensuring the kiln drying process can reliably achieve it; establishing a treatment supply chain with a certified facility that can provide the required documentation; and verifying that ISPM 15 compliant wooden packaging is available for the shipment.',
+          'An export buyer who discovers a compliance problem after the container has shipped faces customs delays, fumigation costs, and potential shipment rejection. Getting the compliance right before the first shipment is far less expensive than dealing with a non-compliant shipment after the fact.',
+        ],
+        note: 'St. Xavier Timber provides both VPI treatment for furniture timber and ISPM 15 heat treatment for wooden packaging. We issue treatment certificates in the format required by export buyers and can advise on documentation requirements for specific destination markets. Contact us to discuss your export requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'furniture-timber-sourcing-sri-lanka',
+    title: 'How to Source Timber for Furniture Production in Sri Lanka',
+    description:
+      'Timber sourcing for furniture manufacture is not just about price per cubic metre. Species, moisture content, treatment, and supply consistency all determine whether your production runs smoothly or generates a steady stream of quality problems.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['furniture timber sourcing', 'rubberwood supplier', 'timber supplier Sri Lanka', 'furniture manufacturing', 'kiln dried timber supplier', 'timber procurement'],
+    sections: [
+      {
+        heading: 'The True Cost of Cheap Timber',
+        paragraphs: [
+          'Furniture manufacturers who source on price alone consistently underestimate their total timber cost. Timber purchased at a low price but at the wrong MC, without treatment, or with high degrade rates creates downstream costs that far exceed the price saving: rejected components that must be re-cut, production delays waiting for replacement material, quality failures in finished pieces that require rework or replacement, and customer complaints that erode the value of the supply relationship.',
+          'The relevant comparison is not the price per cubic metre of raw timber. It is the cost per square metre of usable, defect-free, appropriately dried and treated furniture component — which includes the cost of the raw timber, the drying and treatment, the degrade allowance, and the downstream rework rate.',
+        ],
+      },
+      {
+        heading: 'What to Specify When Sourcing',
+        paragraphs: [
+          'A furniture timber sourcing specification should cover four things: species and grade (define the minimum properties you need, not just the name), moisture content (specify the target MC and the acceptable tolerance, and require measurement records), treatment (specify kiln drying and VPI treatment for rubberwood as a mandatory requirement, with batch records), and dimensions (specify nominal and acceptable actual dimensions, accounting for shrinkage from drying).',
+          'A supplier who cannot provide documentation against all four of these requirements is not a reliable supply chain partner for furniture production. The documentation is not bureaucracy — it is evidence that the timber meets the specification you depend on for quality production.',
+        ],
+      },
+      {
+        heading: 'Understanding Degrade Allowances',
+        paragraphs: [
+          'All timber has some level of degrade — checking, knots, warp, and stain that reduce the yield of usable furniture components per cubic metre of purchased timber. Understanding the degrade rate for your specific supply and component requirements is essential for accurate material costing.',
+          'Rubberwood from a well-managed kiln with correct schedule design and stickering typically produces degrade rates of 8–15% for furniture production, depending on the component dimensions and the appearance requirements. Rubberwood from poorly managed air-drying or from a kiln with an aggressive schedule can produce degrade rates of 25–40% — more than double — which completely eliminates any price advantage over higher-cost, better-prepared material.',
+          'Ask your supplier for their typical degrade rate by species and thickness. A supplier who can answer this question precisely has operational data from their facility. A supplier who cannot answer it does not have the production monitoring to know their own degrade rate.',
+        ],
+      },
+      {
+        heading: 'Supply Consistency and Lead Time',
+        paragraphs: [
+          'For volume furniture production, supply consistency is at least as important as price. A supplier who delivers at the right MC and with the right treatment 90% of the time but fails 10% of the time creates production disruptions that cost more in downtime and rescheduling than the material saving from their lower price.',
+          'Establish the following before committing to a supplier: their minimum lead time for a standard order, their typical batch size, whether they can commit to a regular supply schedule, and what their process is for handling quality disputes on delivered material. A supplier with reliable lead times, consistent quality, and a clear dispute process is worth paying a modest premium over a lower-cost, less reliable alternative.',
+        ],
+        note: 'St. Xavier Timber supplies kiln-dried, VPI-treated rubberwood and mahogany to furniture manufacturers. We operate a dedicated industrial kiln and can process regular batches to your specification with consistent lead times. Contact us to discuss volume requirements and supply scheduling.',
+      },
+    ],
+  },
+  {
+    slug: 'gluing-jointing-kiln-dried-timber',
+    title: 'Gluing and Jointing Kiln-Dried Timber: What Furniture Manufacturers Need to Know',
+    description:
+      'Glue joint failure is one of the most common furniture quality problems — and almost always preventable. Moisture content, surface condition, and joint design all affect glue bond strength. This guide covers what to get right before the clamps go on.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['gluing timber', 'wood jointing', 'furniture joinery', 'glue joint failure', 'kiln dried timber', 'furniture manufacturing Sri Lanka'],
+    sections: [
+      {
+        heading: 'Why Glue Joints Fail',
+        paragraphs: [
+          'Glue joint failure in furniture occurs in two distinct ways. The first is adhesive failure — the glue bond itself breaks, leaving a clean separation between the wood surface and the glue film. This typically indicates a surface preparation problem: the mating surfaces were contaminated, the glue was not applied correctly, or the clamping pressure was inadequate. The second is cohesive failure — the glue bond holds but the wood itself tears at the glue line, leaving wood fibres attached to both faces. Cohesive failure is actually the desired failure mode: it means the glue bond was stronger than the wood, which is the correct outcome.',
+          'The most common cause of adhesive glue joint failure in Sri Lankan furniture production is not the adhesive — it is the condition of the timber at the time of gluing. Timber that is too wet, too dry, contaminated with oils (common in teak), or has been freshly re-sawn without adequate surface preparation will consistently produce weaker bonds than correctly prepared, correctly dried timber.',
+        ],
+      },
+      {
+        heading: 'The Effect of Moisture Content on Glue Bond Strength',
+        paragraphs: [
+          'Standard PVA and urea formaldehyde (UF) adhesives — the most common furniture adhesives used in Sri Lanka — are water-based. They require moisture from the wood surface to work correctly: the water in the adhesive migrates into the wood as the glue sets, and this migration is part of the bonding mechanism. Timber that is too dry absorbs the water too quickly, leaving the glue film starved of moisture before it has fully penetrated the surface cells. Timber that is too wet dilutes the adhesive and slows curing to the point where the joint may not achieve full strength before it is removed from the clamps.',
+          'The optimal MC range for gluing with PVA and UF adhesives is 10–15% MC — which corresponds to the target MC for furniture production in Sri Lankan interior conditions. Timber at this MC provides the right level of moisture absorption for the adhesive to set correctly. Timber significantly above or below this range produces consistently weaker glue joints.',
+        ],
+        list: [
+          '6–8% MC: too dry — absorbs adhesive too quickly; starves the glue line',
+          '10–15% MC: optimal range for PVA and UF adhesives',
+          '18–22% MC: too wet — dilutes adhesive; slow curing; weak joint',
+          'Above 22% MC: joint may appear sound until timber dries and moves in service',
+          'Teak at any MC: surface oils must be removed with solvent before gluing',
+        ],
+      },
+      {
+        heading: 'Surface Preparation for Good Glue Bonds',
+        paragraphs: [
+          'The gluing surface should be freshly machined — within 24 hours of gluing in a production environment, and ideally within a few hours. A freshly planed or sawn surface has open, clean wood cells that accept adhesive well. A surface that has been sitting for days or weeks develops a case-hardened layer — oxidised cell walls that are less permeable to adhesive — and should be lightly re-planed before gluing.',
+          'Dust on the mating surfaces is a significant contamination risk. Sanding dust is particularly problematic — it does not conduct away moisture and does not provide a structural path for the adhesive to bridge across the joint. Surfaces should be blown clean with compressed air or wiped with a dry cloth immediately before adhesive application.',
+          'For teak, surface oils must be removed with acetone or toluene-based solvent wiped across both mating faces and allowed to evaporate completely before adhesive application. Gluing to an un-wiped teak surface produces adhesive failure consistently.',
+        ],
+      },
+      {
+        heading: 'Joint Design and Clamping',
+        paragraphs: [
+          'Edge joints (gluing flat grain surfaces) produce the most reliable glue bonds in furniture production. The long-grain surfaces of both boards provide maximum contact area and the most uniform adhesive distribution. End-grain joints — where the cut end of one member is glued to the face of another — are inherently weak because the open end cells absorb the adhesive before it can bond the surfaces, and because end grain wood has very low tensile strength perpendicular to the board face.',
+          'Clamping pressure should be sufficient to close the joint and squeeze a bead of excess adhesive from the full length of the joint line — this confirms that the adhesive has spread uniformly across the mating surfaces. Insufficient clamping leaves glue-starved voids in the joint. Excessive clamping squeezes so much adhesive out that the joint is starved from the opposite direction.',
+        ],
+        note: 'St. Xavier Timber supplies rubberwood and mahogany dried to 12–15% MC — optimal for furniture jointing. Timber leaves our facility with consistent MC across the batch, reducing adhesive failures from MC variability between boards. Contact us with your dimensions and required volumes.',
+      },
+    ],
+  },
+  {
+    slug: 'finishing-kiln-dried-timber-moisture-effect',
+    title: 'Finishing Kiln-Dried Timber: How Moisture Content Affects Paint, Stain, and Lacquer',
+    description:
+      'The moisture content of timber at the time of finishing directly affects how finishes bond, how they look, and how long they last. Getting the MC right before the first coat goes on is the single most important preparation step in furniture finishing.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['wood finishing', 'timber finishing Sri Lanka', 'paint on timber', 'lacquer timber', 'moisture content finishing', 'furniture finishing'],
+    sections: [
+      {
+        heading: 'Why MC Matters at the Finishing Stage',
+        paragraphs: [
+          'Finishing products — paints, stains, lacquers, oils, and waxes — are applied to the surface of wood to protect it, enhance its appearance, or both. The wood surface they are applied to is not passive: it is a hygroscopic material that is absorbing and releasing moisture at a rate determined by the ambient humidity. If the timber is at a different MC than it will be in service, it will move after finishing — and that movement will damage the finish.',
+          'The mechanisms of finish failure caused by MC problems are well understood: timber that is too wet at finishing creates a damp barrier between the finish and the wood surface, reducing adhesion and causing blistering or peeling as the moisture escapes through the finish. Timber that dries after finishing shrinks, cracking the finish as the paint or lacquer film is put in tension beyond its elongation limit.',
+        ],
+      },
+      {
+        heading: 'Target MC for Finishing',
+        paragraphs: [
+          'The ideal MC for finishing timber is the equilibrium MC of the environment in which the finished piece will be used. For interior furniture in Sri Lankan air-conditioned environments, this is 12–14% MC. For non-air-conditioned interiors, it is closer to 15–17% MC. For exterior furniture, it is 16–20% MC depending on the local climate.',
+          'Finishing at the service EMC ensures that the timber will not absorb or release significant moisture after the finish is applied. The finish can do its job — sealing the surface and protecting against minor moisture variation — without being undermined by major dimensional movement in the substrate.',
+        ],
+      },
+      {
+        heading: 'How Different Finishes Respond to MC Problems',
+        paragraphs: [
+          'Paint (including primer-undercoat-topcoat systems) is the least tolerant of MC problems. Paint films are relatively inelastic — they have low elongation before cracking. A substrate that moves by even 1–2% of its dimension after painting will crack the paint film, particularly across the grain direction where movement is greatest. Paint applied to timber at 20% MC that subsequently dries to 14% MC will crack visibly within one to two seasonal cycles.',
+          'Lacquer (nitrocellulose and polyurethane) is more elastic than paint but still cracks if the substrate moves significantly. Water-based lacquers are more sensitive to high-MC substrates than solvent-based systems because the water in the lacquer increases the MC of the surface layer and can cause grain raising — the wood fibres at the surface swell and stand up, creating a rough surface under the first coat.',
+          'Oil and wax finishes are the most tolerant of MC variation. They penetrate the wood surface rather than forming a film, so they move with the substrate rather than being strained by it. For furniture where movement is expected or cannot be fully controlled, oil finishes are more durable in practice than film finishes, even though they provide less protection.',
+        ],
+      },
+      {
+        heading: 'Acclimation Before Finishing',
+        paragraphs: [
+          'Timber should be acclimated to the production environment before finishing begins. If the factory is air-conditioned at 65% RH (EMC approximately 12%), timber brought in from outdoor or non-conditioned storage at 18% MC should be stacked and allowed to equilibrate for at least 5–7 days before machining and finishing. The surface MC of the timber may drop quickly, but the core MC lags — finishing when only the surface has equilibrated risks movement of the core after finishing.',
+          'For consistent finishing quality in volume production, monitor the MC of incoming timber stock with a moisture meter at the start of each production run. Reject or delay processing any batch where the MC is more than 2% above the target finishing MC.',
+        ],
+        note: 'St. Xavier Timber delivers rubberwood and mahogany at 12–15% MC as standard — ready for direct use in finishing production after a brief acclimation period in the factory environment. Contact us to discuss MC targets for your specific finishing process.',
+      },
+    ],
+  },
+  {
+    slug: 'solid-timber-vs-panel-board-furniture',
+    title: 'Solid Timber vs Panel Board in Furniture Production: When to Use Each',
+    description:
+      'Solid timber and engineered panel boards are not competing products — they are different solutions to different problems. Understanding which performs better in which application determines quality and cost efficiency in furniture production.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['solid timber furniture', 'panel board furniture', 'MDF furniture', 'plywood furniture', 'furniture materials', 'furniture manufacturing Sri Lanka'],
+    sections: [
+      {
+        heading: 'What the Choice Is Actually About',
+        paragraphs: [
+          'The decision between solid timber and panel board (MDF, plywood, particleboard, or finger-jointed laminated board) in furniture is not simply about cost or quality. It is about matching the material to the performance requirement of the specific component. Solid timber excels where structural integrity, visible natural grain, and solid feel are valued. Panel boards excel where dimensional stability, flat surfaces, consistent thickness, and efficient use of material matter more than natural aesthetics.',
+          'High-quality furniture production uses both, often in the same piece: solid timber for the structural frame, legs, and visible panels where grain matters; panel boards for back panels, drawer bottoms, and shelf interiors where stability and cost efficiency matter more than appearance.',
+        ],
+      },
+      {
+        heading: 'Where Solid Timber Is the Right Choice',
+        paragraphs: [
+          'Solid timber is appropriate where: the grain and natural character of the material are part of the design; the structural role requires the strength and density of solid wood (chair legs, table aprons, frame members under load); the piece will be repaired and refinished over a long service life (antique-style furniture, heirloom pieces); and where the dimensions allow for movement without structural consequence (narrow components, short lengths).',
+          'The key limitation of solid timber in wide components is movement. A solid timber panel 600mm wide will move approximately 6–12mm across its width between the driest and most humid conditions it encounters in service. A furniture design that does not accommodate this movement — using fixed joints at both ends of a wide panel, for example — will crack the panel or fail the frame joint within a few years.',
+        ],
+      },
+      {
+        heading: 'Where Panel Board Is the Right Choice',
+        paragraphs: [
+          'Panel boards are appropriate where: flat, stable surfaces of consistent thickness are required (carcass panels, shelves, drawer fronts); large widths are needed without movement risk (MDF and plywood are dimensionally stable across large widths); veneering or painting will cover the surface (panel boards provide a better substrate for veneer and paint than solid timber); and cost efficiency is the primary driver for non-visible internal components.',
+          'MDF is the most dimensionally stable panel product and provides an excellent substrate for paint and veneer, but it is heavy, cannot be reliably fixed near edges, and swells significantly if wetted — it should not be used in any application where moisture exposure is possible. Plywood is lighter, stronger, and more moisture resistant than MDF, and can be fixed near edges — it is the correct choice for structural panel applications and for any environment with moderate moisture risk.',
+        ],
+      },
+      {
+        heading: 'The Movement Problem in Mixed Construction',
+        paragraphs: [
+          'Combining solid timber and panel board in the same piece requires understanding that the two materials move very differently with humidity change. Panel boards are dimensionally stable; solid timber moves significantly across the grain. A design that rigidly constrains a solid timber panel within a panel-board frame will either crack the panel or fail the frame connection as the humidity changes through the year.',
+          'The standard solution is to allow the solid timber component to float within the frame — using slotted screw holes, figure-8 fasteners, or buttons that allow the panel to move laterally while remaining secured to the frame. This is a fundamental joinery technique for mixed solid-timber-and-panel construction and must be designed in from the beginning, not retrofitted after a failure.',
+        ],
+        note: 'St. Xavier Timber supplies solid timber — rubberwood and mahogany — at 12–15% MC for furniture production. For guidance on appropriate material selection for your specific furniture design, contact us to discuss your production requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'rubberwood-vs-mahogany-furniture-comparison',
+    title: 'Rubberwood vs Mahogany for Furniture: A Cost and Performance Comparison',
+    description:
+      'Rubberwood and mahogany are the two most widely used furniture timbers in Sri Lanka. The right choice between them depends on application, market, and the specific performance properties that matter for your product. This guide compares them across every dimension that matters in production.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['rubberwood vs mahogany', 'furniture timber comparison', 'rubberwood furniture', 'mahogany furniture', 'timber selection', 'furniture manufacturing Sri Lanka'],
+    sections: [
+      {
+        heading: 'The Market Position Difference',
+        paragraphs: [
+          'Rubberwood and mahogany occupy different positions in the furniture market, and this market position is the most important starting point for the comparison. Rubberwood is the volume furniture timber — widely available, moderately priced, and capable of producing good-quality furniture at competitive cost. Mahogany is the premium furniture timber — more expensive, with a richer appearance, and associated in the market with higher-quality production.',
+          'The choice between them is partly a production decision and partly a market positioning decision. A manufacturer producing bedroom furniture for the local mass market will default to rubberwood for cost efficiency. A manufacturer producing dining furniture for export to the Gulf states or for premium local retail will consider mahogany for the appearance premium it delivers.',
+        ],
+      },
+      {
+        heading: 'Physical Properties Comparison',
+        paragraphs: [
+          'Rubberwood (Hevea brasiliensis): density 540–630 kg/m³; straight, uniform grain; pale cream colour; high susceptibility to powder post beetles without treatment; good dimensional stability after kiln drying; excellent machinability; very good gluing and finishing properties.',
+          'Mahogany (Khaya or Swietenia species): density 450–650 kg/m³ depending on species and age; interlocked grain producing ribbon figure on quartersawn faces; pink to deep reddish-brown colour; moderate natural durability against insects; good dimensional stability; good machinability with sharp tooling (interlocked grain can tearout against the grain); very good finishing properties with distinctive natural lustre.',
+          'In terms of pure machinability and finishing consistency, rubberwood is marginally superior — its uniform, straight grain means fewer surface tearout problems and more consistent stain absorption across a batch. Mahogany\'s interlocked grain requires more attention to feed direction but produces a superior natural appearance on quartersawn faces.',
+        ],
+        list: [
+          'Machinability: rubberwood slightly better — more uniform grain, fewer tearout issues',
+          'Appearance: mahogany significantly better — richer colour, natural figure on quartersawn faces',
+          'Pest resistance (untreated): mahogany better — moderate natural durability vs rubberwood\'s very low',
+          'Pest resistance (treated): equal — both fully protected by kiln drying + VPI',
+          'Dimensional stability (after drying): approximately equal at 12–15% MC',
+          'Cost: rubberwood typically 40–60% lower cost per m³',
+        ],
+      },
+      {
+        heading: 'Treatment Requirements',
+        paragraphs: [
+          'Rubberwood requires kiln drying and VPI treatment as a mandatory specification — untreated rubberwood is a quality liability, not a cost saving. The treatment adds to the input cost but is non-negotiable for any serious production.',
+          'Mahogany requires kiln drying as standard. VPI treatment is strongly recommended for any application in Sri Lanka where termite activity is present — which is most of the country. The moderate natural durability of mahogany reduces the risk compared to rubberwood, but does not eliminate it in high-risk environments. For export furniture where buyers require treatment documentation, treat mahogany to the same standard as rubberwood.',
+        ],
+      },
+      {
+        heading: 'Making the Decision',
+        paragraphs: [
+          'Choose rubberwood when: price is the primary driver, the application is bedroom or living room furniture for the local mid-market or for export volume markets, the finish will be painted or heavily stained (where the natural colour advantage of mahogany is not visible), and the production volume justifies the consistent kiln drying and VPI treatment supply chain.',
+          'Choose mahogany when: the market positioning requires a premium material, the design features quartersawn faces where the ribbon figure is visible, the piece will be finished with a clear or light stain that shows natural colour, and the price premium can be recovered in the selling price.',
+          'In both cases, kiln drying and VPI treatment are non-negotiable production inputs for quality furniture aimed at any serious market.',
+        ],
+        note: 'St. Xavier Timber supplies both kiln-dried, VPI-treated rubberwood and mahogany in production volumes. We can process either species to your specified dimensions and MC. Contact us to compare pricing for your specific production requirements.',
+      },
+    ],
+  },
+  {
+    slug: 'furniture-factory-timber-drying-specification',
+    title: 'Setting Up a Timber Drying and Treatment Specification for a Furniture Factory',
+    description:
+      'A written timber input specification is the most cost-effective quality control system a furniture factory can implement. It defines what you accept, creates a basis for rejection, and shifts the quality risk to the supplier. This guide covers what the specification should contain.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Industries',
+    tags: ['furniture factory quality', 'timber specification', 'timber procurement', 'quality control furniture', 'kiln drying specification', 'furniture manufacturing Sri Lanka'],
+    sections: [
+      {
+        heading: 'Why a Written Specification Changes the Dynamic',
+        paragraphs: [
+          'Without a written timber input specification, every quality dispute with a supplier becomes a matter of opinion. The supplier says the timber was adequately dried; you say it was not. The supplier says the treatment was adequate; you say it was not. Without documented requirements, there is no basis for resolution.',
+          'A written specification changes this: it defines the standard before the delivery, creates an objective basis for acceptance and rejection, and makes the supplier responsible for meeting the specification rather than for meeting an unspecified standard of "good enough." It also forces clarity within the production team about what standard is actually needed — which often reveals that different people in the factory have been accepting different standards without realising it.',
+        ],
+      },
+      {
+        heading: 'What the Specification Should Cover',
+        paragraphs: [
+          'A complete furniture timber input specification should cover six areas. Species (define acceptable species and explicitly exclude unacceptable substitutes). Dimensions (nominal and acceptable actual dimensions, with tolerances). Moisture content (target MC and acceptable range, measurement method, and documentation requirement). Treatment (for rubberwood: kiln drying and VPI treatment with Boron Borax, with batch records; for mahogany: kiln drying as minimum, VPI treatment recommended). Grade (minimum grade by your own visual inspection criteria or reference to a published standard). Degrade allowance (the maximum percentage of each delivery that can be below specification before the batch is rejected).',
+        ],
+      },
+      {
+        heading: 'Setting the Moisture Content Requirement',
+        paragraphs: [
+          'The MC requirement should be set based on the EMC of your production environment and the EMC of the expected service environment for the finished furniture. For production in a non-air-conditioned factory in Sri Lanka, producing furniture for air-conditioned residential use, specify 12–15% MC as the acceptance range. This is above the service EMC (12–14%) by a small amount — enough to account for the slightly higher factory humidity without being so high that significant post-manufacture movement occurs.',
+          'If your factory is air-conditioned, specify 10–12% MC to match the lower factory EMC. If producing for outdoor or high-humidity environments, adjust upward. The specification should also define the measurement method — a calibrated pin meter with species correction, tested at face and both ends of each sampled board — and the sampling frequency (minimum 10% of boards per delivery).',
+        ],
+      },
+      {
+        heading: 'The Acceptance Protocol',
+        paragraphs: [
+          'Define a clear acceptance protocol: who inspects the delivery, what they check, what documentation they verify, and what authority they have to reject. A delivery that arrives without treatment records, or where the measured MC is consistently more than 3% above specification, should be rejected or held pending supplier confirmation — not accepted with a note to "be careful" in production.',
+          'Document the inspection result for every delivery — a simple log recording the delivery date, supplier, species, batch number, MC readings, treatment record reference, and accept/reject decision. This log provides the evidence base for supplier performance discussions and for tracing quality failures back to specific material batches.',
+        ],
+      },
+      {
+        heading: 'Communicating the Specification to Suppliers',
+        paragraphs: [
+          'Share the written specification with every timber supplier before the first delivery. A supplier who cannot meet the specification is better identified before the supply relationship starts than after a failed delivery. A supplier who meets the specification consistently is a supply partner worth developing a long-term relationship with.',
+          'Review the specification annually and update it based on production experience — quality failures that recur suggest either that the specification is incomplete or that it is not being enforced consistently.',
+        ],
+        note: 'St. Xavier Timber can supply timber against a customer\'s written specification and issue batch documentation in the format the customer requires. We are experienced in working with furniture manufacturers\' quality systems. Contact us to discuss how we can support your input specification.',
+      },
+    ],
+  },
+  {
     slug: 'common-structural-timber-failures-sri-lanka',
     title: 'Common Structural Timber Failures in Sri Lanka — and How to Prevent Them',
     description:
