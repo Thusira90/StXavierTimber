@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     'wood preservation guide',
     'export pallet compliance',
   ],
-  alternates: { canonical: '/blog' },
-  openGraph: { url: '/blog' },
+  alternates: { canonical: 'https://www.stxaviertimber.com/blog' },
+  openGraph: { url: 'https://www.stxaviertimber.com/blog' },
 };
 
 function formatDate(dateStr: string) {

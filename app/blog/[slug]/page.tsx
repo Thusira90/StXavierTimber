@@ -21,11 +21,11 @@ export async function generateMetadata({
     title: post.title,
     description: post.description,
     keywords: post.tags,
-    alternates: { canonical: `/blog/${slug}` },
+    alternates: { canonical: `https://www.stxaviertimber.com/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `/blog/${slug}`,
+      url: `https://www.stxaviertimber.com/blog/${slug}`,
       type: 'article',
       publishedTime: post.date,
       authors: ['St. Xavier Timber'],
