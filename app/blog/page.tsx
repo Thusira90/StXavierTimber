@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     'wood preservation guide',
     'export pallet compliance',
   ],
+  alternates: { canonical: '/blog' },
+  openGraph: { url: '/blog' },
 };
 
 function formatDate(dateStr: string) {

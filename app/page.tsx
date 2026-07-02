@@ -5,7 +5,8 @@ import Services from '@/components/Services';
 import { Process, Industries, CeyPall, FAQ, Contact, Footer } from '@/components/Sections';
 
 export const metadata: Metadata = {
-  alternates: { canonical: 'https://www.stxaviertimber.com' },
+  alternates: { canonical: '/' },
+  openGraph: { url: '/' },
 };
 
 const BASE = 'https://www.stxaviertimber.com';

@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   title: 'About St. Xavier Timber — Timber Treatment Specialists, Sri Lanka Est. 1955',
   description:
     'St. Xavier Timber has operated from Daluwakotuwa, Kochchikade since 1955. Three generations of family expertise in kiln drying, vacuum pressure impregnation, and ISPM 15 heat treatment for construction, furniture, and export industries across Sri Lanka.',
-  alternates: { canonical: 'https://www.stxaviertimber.com/about' },
+  alternates: { canonical: '/about' },
+  openGraph: { url: '/about' },
 };
 
 const milestones = [

@@ -36,14 +36,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'St. Xavier Timber' }],
   creator: 'St. Xavier Timber',
   publisher: 'St. Xavier Timber',
-  alternates: {
-    canonical: siteUrl,
-  },
   openGraph: {
     title: 'St. Xavier Timber | Kiln Drying & Wood Preservation Sri Lanka',
     description:
       'Industrial kiln drying and VPI timber treatment. IPPC registered, ISPM 15 certified. Est. 1955. Serving construction, furniture, and export industries island-wide.',
-    url: siteUrl,
     siteName: 'St. Xavier Timber',
     locale: 'en_LK',
     type: 'website',
