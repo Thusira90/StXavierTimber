@@ -18,6 +18,440 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'common-structural-timber-failures-sri-lanka',
+    title: 'Common Structural Timber Failures in Sri Lanka — and How to Prevent Them',
+    description:
+      'Most structural timber failures in Sri Lanka share the same root causes: untreated timber, inadequate drying, and poor specification at the design stage. This guide covers the failures that occur most often and exactly what prevents each one.',
+    date: '2026-07-01',
+    readTime: '6 min read',
+    category: 'Construction',
+    tags: ['structural timber failure', 'timber failure Sri Lanka', 'construction timber', 'termite damage', 'timber treatment', 'building failure'],
+    sections: [
+      {
+        heading: 'Why Timber Failures Keep Happening',
+        paragraphs: [
+          'Structural timber failures in Sri Lanka are not random. When investigated, the vast majority trace back to a small number of root causes that are well understood and entirely preventable. The failures look different — a sagging roof here, a rotten wall plate there, a door frame that has collapsed into the masonry — but the underlying cause is almost always one of three things: timber that was not treated, timber that was not dried, or timber that was poorly specified for its application.',
+          'Understanding the common failure modes and their causes is the most practical tool for prevention. Every one of the failures described below has a known solution that is cheaper than the remediation it prevents.',
+        ],
+      },
+      {
+        heading: 'Failure 1: Termite Damage to Roof Structures',
+        paragraphs: [
+          'Termite damage to roof timber is the most common structural timber failure in Sri Lanka. Subterranean termites enter through the foundation and travel upward through mud tubes along masonry walls, reaching the roof space where they attack rafters, purlins, and wall plates from the inside out. The damage is invisible until structural integrity is already severely compromised.',
+          'Prevention is simple and inexpensive: specify VPI treatment with Boron Borax for all roof structural members before installation. The cost of treatment is a small fraction of the cost of a full roof re-timber. No other intervention — post-installation spraying, soil treatment, physical barriers alone — provides the same level of built-in protection as treating the timber itself.',
+        ],
+      },
+      {
+        heading: 'Failure 2: Rot in Wall Plates and Embedded Members',
+        paragraphs: [
+          'Wall plates — the horizontal timber members that sit on top of the masonry wall and carry the roof structure — are among the highest-risk elements in any building. They are in direct contact with masonry, which wicks moisture from rain, condensation, and rising damp. They are often inaccessible for inspection once the ceiling is installed. And in many Sri Lankan buildings, they are installed without treatment.',
+          'Fungal decay in wall plates is slow, silent, and widespread by the time it is discovered. A wall plate that has been rotting for three to five years may retain its shape and surface appearance while being structurally hollow — the probe test with a screwdriver is the only way to detect it without opening up the ceiling. Prevention requires VPI-treated wall plate timber and a damp-proof layer between the timber and the masonry to reduce moisture transfer.',
+        ],
+      },
+      {
+        heading: 'Failure 3: Door and Window Frame Collapse from Termite Attack',
+        paragraphs: [
+          'Door and window frames in contact with masonry are a primary entry point for termites attacking a building. The embedded end grain and the uncoated back face provide direct access to the timber interior. Termites hollow out the frame while leaving the painted exterior surface intact — the frame looks fine until it fails under the load of the door or under wind pressure.',
+          'The failure typically begins in the wall plate and frame junction — the most vulnerable point. Once the frame is compromised, termites use it as a base to access the surrounding wall cavity and ceiling structure. Prevention: VPI treat all door and window frames before installation, isolate the back face from masonry with a damp-proof membrane, and flood-coat any site cuts with concentrated borate solution immediately after cutting.',
+        ],
+      },
+      {
+        heading: 'Failure 4: Post-Installation Warp in Joinery',
+        paragraphs: [
+          'Doors that stick after installation. Window frames that twist out of square. Built-in furniture that develops gaps at joints within months of delivery. These failures are all caused by the same mechanism: timber that was at a higher moisture content than its final environment when it was processed and installed, and then dried out in place.',
+          'Prevention is not complicated: process timber at the moisture content appropriate for its final environment. For interior joinery in Sri Lankan air-conditioned spaces, that means 12–15% MC. Timber processed from air-dried stock at 20–25% MC will move significantly after installation. Kiln-dried timber at 12–15% MC, correctly stored and installed promptly, will not.',
+        ],
+      },
+      {
+        heading: 'Failure 5: Structural Failure from Undetected Defects',
+        paragraphs: [
+          'Ring shakes, honeycombing, severe slope of grain, and reaction wood can all be present in structural timber that appears clean on the surface. These defects may pass undetected through casual inspection and be installed in load-bearing positions where they cause sudden failure under peak load conditions.',
+          'Prevention requires two things: buying graded structural timber from a supplier who uses a recognised grading standard, and inspecting the end grain of every piece in a structural delivery for shakes and internal defects before installation. The end grain cross-section reveals defects that are invisible on the face — ring shakes, honeycombing, and compression wood all show clearly in end grain even when the board surface looks clean.',
+        ],
+      },
+      {
+        heading: 'Failure 6: Beetle Infestation in Furniture After Delivery',
+        paragraphs: [
+          'Powder post beetle emergence in delivered furniture — fine dust and small exit holes appearing weeks or months after delivery — is the most common quality failure in the Sri Lankan furniture industry. It is caused by rubberwood processed without VPI treatment, or rubberwood that was kiln-dried (killing existing beetles) but then stored or transported long enough for adult beetles to re-infest before manufacture or delivery.',
+          'Prevention: kiln-dry rubberwood to kill existing infestation, then VPI treat with Boron Borax to prevent re-infestation. Both steps are required. Kiln drying alone is not sufficient; VPI alone on green timber does not achieve adequate penetration. The combined treatment sequence, done in the correct order, eliminates this failure mode entirely.',
+        ],
+      },
+      {
+        heading: 'The Common Thread: Specification at the Design Stage',
+        paragraphs: [
+          'Every failure above is prevented at the specification stage, not at the remediation stage. A timber treatment specification in a schedule of works — requiring kiln-dried, VPI-treated timber with batch records submitted before concealing finishes — is the single most cost-effective structural quality control available in Sri Lankan construction.',
+          'The specification costs nothing to write and a small amount to comply with. The remediation costs — roof re-timbers, frame replacements, furniture refusals — are many multiples of the treatment cost. The question is not whether treated timber is worth the cost. The question is whether the cost of the failure is acceptable.',
+        ],
+        note: 'St. Xavier Timber supplies kiln-dried, VPI-treated structural timber and issues full treatment records for specification compliance. Contact us to discuss treatment specifications for your construction project.',
+      },
+    ],
+  },
+  {
+    slug: 'timber-lintels-wall-plates-embedded-treatment',
+    title: 'Timber Lintels, Wall Plates, and Embedded Members: Treatment and Specification',
+    description:
+      'The most vulnerable timber elements in any Sri Lankan building are those in direct contact with masonry — wall plates, lintels, sill plates, and embedded beam ends. These are the elements that fail first and are the hardest to replace. Here is what the specification needs to cover.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Construction',
+    tags: ['wall plate timber', 'timber lintel', 'embedded timber', 'timber treatment', 'construction specification', 'structural timber Sri Lanka'],
+    sections: [
+      {
+        heading: 'Why Masonry-Contact Timber Is the Highest Risk',
+        paragraphs: [
+          'Masonry — concrete, brick, and block — is permanently porous. It absorbs moisture from rain, ground water, and condensation, and holds it for extended periods. Any timber element in contact with masonry is therefore in a permanently elevated-moisture environment, which creates ideal conditions for both fungal decay (above 20% MC) and subterranean termite activity.',
+          'The combination of constant moisture, concealment behind plaster and ceilings, and the difficulty of inspection makes masonry-contact timber the highest-risk category in any Sri Lankan building. A wall plate that has been decaying for three years may be structurally hollow before anyone notices. A termite colony that entered through a wall plate can spread through the entire roof structure before the ceiling sags.',
+        ],
+      },
+      {
+        heading: 'Wall Plates',
+        paragraphs: [
+          'Wall plates are the horizontal timber members resting on top of the masonry wall that carry the roof rafter feet and transfer roof loads to the wall. They are in direct contact with the masonry top surface, are typically enclosed between the top of the wall and the ceiling, and are inaccessible for inspection or maintenance without demolition.',
+          'Treatment specification for wall plates: kiln-dried to 15–18% MC, VPI-treated with Boron Borax to confirmed retention, from an IPPC-registered facility. Additionally, a damp-proof course (DPC) membrane — polythene, bituminous felt, or proprietary DPC strip — should be placed between the masonry wall top and the underside of the wall plate. This is not a substitute for timber treatment; it is a complementary measure that reduces the moisture transfer from masonry to timber and extends the service life of even treated timber.',
+        ],
+        list: [
+          'Kiln-dried to 15–18% MC before VPI treatment',
+          'VPI treated with Boron Borax — confirmed penetration and retention',
+          'DPC membrane between masonry top and timber underside',
+          'Treatment records required before ceiling installation conceals the wall plate',
+          'Inspect at 5-year intervals if accessible; replace at first sign of softening',
+        ],
+      },
+      {
+        heading: 'Timber Lintels',
+        paragraphs: [
+          'Timber lintels span door and window openings to carry the masonry above. Unlike steel or concrete lintels, timber lintels are inherently susceptible to moisture and biological attack — and they sit in exactly the environment where both are most likely: in contact with masonry on three faces, above an opening that may admit rain splash, and in a position that is difficult to inspect once plastered.',
+          'Modern construction increasingly uses concrete or steel lintels as a standard specification, which is a rational response to the maintenance demands of timber lintels in Sri Lanka\'s climate. Where timber lintels are specified — for heritage reasons, for flexibility of installation, or where the span and load do not require the strength of steel — they must be VPI treated with Boron Borax and should be isolated from masonry contact on the bearing surfaces with a DPC strip.',
+        ],
+      },
+      {
+        heading: 'Embedded Beam Ends and Sill Plates',
+        paragraphs: [
+          'Beam ends embedded in masonry pockets are a critical detail in traditional Sri Lankan construction. The pocket traps moisture around the timber, prevents drying, and provides the concealed, damp conditions that both termites and decay fungi require. Beam ends in masonry pockets should either be replaced with steel hangers (which eliminate the problem entirely) or be VPI treated and isolated from the masonry with DPC material on all three bearing faces.',
+          'Sill plates — horizontal timber members at the base of framed wall structures, bearing on the floor slab or foundation — are the masonry-contact detail most often found without treatment in Sri Lankan construction. They are also the most exposed to termite attack from below, as they are the closest structural timber element to the ground. Sill plates must be VPI treated and must bear on a DPC layer that is continuous across the full width of the wall.',
+        ],
+      },
+      {
+        heading: 'Specification Language for Masonry-Contact Timber',
+        paragraphs: [
+          'The specification clause for masonry-contact timber should be explicit: "All timber in contact with or within 300mm of masonry — including wall plates, lintels, sill plates, embedded beam ends, and any timber built into walls — shall be kiln-dried to 15–18% MC and VPI-treated with Boron Borax to a minimum retention of 3.5 kg/m³. A continuous damp-proof course membrane shall be installed between masonry and timber at all bearing faces. Treatment records shall be submitted before any masonry or plaster work conceals the treated members."',
+          'This specification, written at design stage and enforced at construction stage, prevents all of the failure modes described above for a cost that is a fraction of the remediation bill.',
+        ],
+        note: 'St. Xavier Timber supplies VPI-treated wall plate timber, lintels, and structural members cut to your specified dimensions. We issue treatment records with every order. Contact us for pricing and turnaround times.',
+      },
+    ],
+  },
+  {
+    slug: 'roof-timber-specification-guide-sri-lanka',
+    title: 'Roof Timber Specification: A Complete Guide for Sri Lankan Builders',
+    description:
+      'A roof structure is the most valuable timber investment in any building and the most expensive to replace. This guide covers every element of a complete roof timber specification — species, moisture content, treatment, grade, and documentation.',
+    date: '2026-07-01',
+    readTime: '6 min read',
+    category: 'Construction',
+    tags: ['roof timber specification', 'roof structure Sri Lanka', 'timber roof Sri Lanka', 'structural timber', 'construction specification', 'roof rafters'],
+    sections: [
+      {
+        heading: 'What a Complete Roof Timber Specification Covers',
+        paragraphs: [
+          'A roof timber specification is not just a list of sizes. A complete specification covers: the species, the minimum moisture content at installation, the treatment method and retention level, the structural grade, the documentation required for compliance, and any dimensional or processing requirements specific to the design. Leaving any of these elements unspecified passes the decision to the contractor — who will choose the option that minimises their cost, which may not be the option that minimises your client\'s risk.',
+          'The elements below cover what each part of the specification should include and why it matters.',
+        ],
+      },
+      {
+        heading: 'Species Specification',
+        paragraphs: [
+          'Acceptable species for structural roof timber in Sri Lanka include pine (radiata or European softwood), mahogany (Swietenia or Khaya), and teak for premium applications. Rubberwood is not appropriate for large-span structural roof members — its moderate strength values and susceptibility to pests without treatment make it a second choice for structural applications where pine or mahogany can be specified.',
+          'If the design allows for any compliant species, specify a minimum density and grading standard rather than a specific species — this allows competitive procurement while still controlling the minimum structural performance. If a specific species is required (for appearance, for heritage reasons, or for a specific structural calculation), name it explicitly in the specification.',
+        ],
+      },
+      {
+        heading: 'Moisture Content at Installation',
+        paragraphs: [
+          'All structural roof timber should be installed at 15–18% MC. Timber installed above 20% MC will dry in place — shrinking, moving, and loosening fixings as it does. Purlins that were tightly connected to rafters at installation may have significant gaps at the joints after one dry season. Wall plates that were a snug fit on the masonry may pull away from their bearing surface.',
+          'Specifying MC at installation, and requiring the supplier to provide MC measurement data as part of the delivery documentation, is the most effective way to prevent post-installation movement. Do not accept delivery of structural timber without verifying the MC at the point of receipt.',
+        ],
+      },
+      {
+        heading: 'Treatment Specification',
+        paragraphs: [
+          'All structural roof timber — rafters, purlins, wall plates, ridge boards, hip and valley boards, ceiling joists, and any timber within 300mm of masonry — should be VPI treated with Boron Borax to a minimum retention of 3.0 kg/m³, from an IPPC-registered treatment facility. Treatment records (species, cross-section, pre-treatment MC, VPI cycle log, retention figure, date, facility registration) must be submitted before ceiling installation.',
+          'The specification should additionally require that any timber cut on site after delivery be immediately flood-coated with a concentrated borate solution on all exposed end grain surfaces. This partial protection does not substitute for factory VPI treatment but significantly reduces the vulnerability of site-cut ends.',
+        ],
+        list: [
+          'All rafters, purlins, ridge boards, hip and valley boards: VPI treated',
+          'All wall plates and ceiling joists: VPI treated with DPC membrane under wall plates',
+          'Any timber within 300mm of masonry: VPI treated',
+          'Minimum retention: 3.0 kg/m³ for above-ground interior structural use',
+          'Treatment records required before ceiling installation proceeds',
+          'Site-cut end grain to be flood-coated with borate solution immediately after cutting',
+        ],
+      },
+      {
+        heading: 'Structural Grade',
+        paragraphs: [
+          'For structural timber imported with a grading mark, specify the minimum structural grade required for each member based on the structural calculations — C16 or C24 for European softwoods, MGP10 or MGP12 for Australian/New Zealand pine. For locally sourced or ungraded timber, specify visual grading to a stated standard with limits on knot area ratio, slope of grain, and warp.',
+          'If no structural calculation has been prepared (for simple residential roofs within standard span limits), specify timber to minimum structural grade with a requirement that the contractor provide a structural engineer\'s confirmation that the member sizes are adequate for the span and loading.',
+        ],
+      },
+      {
+        heading: 'Connector and Fixing Specification',
+        paragraphs: [
+          'Fixings in treated timber should be specified as hot-dip galvanised or stainless steel. Boron Borax treatment does not corrode mild steel fixings under dry interior conditions, but any moisture at the fixing interface can cause corrosion of unprotected steel, which stains the timber and weakens the connection over time. For coastal environments, stainless steel fixings are the correct specification.',
+          'Nail plates, joist hangers, and truss connectors should all be specified as hot-dip galvanised as a minimum for interior structural applications, and stainless steel for any exposed or coastal application.',
+        ],
+        note: 'St. Xavier Timber supplies kiln-dried, VPI-treated structural timber in pine, mahogany, and rubberwood, cut to your specified dimensions and marked with treatment batch information. Contact us to discuss your roof structure requirements and we will provide a quote with turnaround time.',
+      },
+    ],
+  },
+  {
+    slug: 'timber-floor-joists-specification-failures',
+    title: 'Timber Floor Joists: Specification, Treatment, and Common Failures',
+    description:
+      'Floor joists are among the least inspected structural elements in a building — and among the most expensive to replace. This guide covers the correct specification for floor joists in Sri Lankan construction and the failure modes that occur when the specification is wrong.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Construction',
+    tags: ['floor joists', 'timber floor Sri Lanka', 'floor joist treatment', 'structural timber', 'sub-floor framing', 'timber construction Sri Lanka'],
+    sections: [
+      {
+        heading: 'Why Floor Joists Fail More Often Than Roof Timber',
+        paragraphs: [
+          'In Sri Lankan construction, floor joists in elevated timber floors — particularly in older buildings and in the upper storeys of masonry structures — are among the most frequently found examples of severe termite and decay damage. The reasons are predictable: floor joists often sit in masonry pockets (embedded beam ends), run close to bathrooms and kitchens where moisture is highest, and are permanently hidden above the ceiling below and below the floor above.',
+          'Unlike roof timber, where a sagging rafter or visible crack in the ceiling surface gives early warning, floor joist failure is often silent until the floor itself deflects noticeably or produces alarming sounds under load. By then, the infestation has typically spread far beyond the visible failure point.',
+        ],
+      },
+      {
+        heading: 'The Masonry Pocket Problem',
+        paragraphs: [
+          'The most vulnerable part of a floor joist is the bearing end embedded in a masonry pocket. The pocket traps moisture around the timber, prevents the end grain from drying, and provides the concealed, damp, enclosed environment that subterranean termites and decay fungi both prefer. Even in otherwise well-ventilated sub-floor spaces, the masonry pocket ends of floor joists are at persistently elevated moisture content.',
+          'The correct detail is to either use steel joist hangers attached to the masonry face (which eliminates the embedded pocket entirely) or to treat the joist ends with VPI before installation and isolate the bearing face from the masonry with a DPC membrane. The pocket should be ventilated if possible — a small gap at the back of the pocket allows moisture to escape rather than accumulate.',
+        ],
+      },
+      {
+        heading: 'Treatment Specification for Floor Joists',
+        paragraphs: [
+          'All floor joists in elevated timber floors should be kiln-dried to 15–18% MC and VPI treated with Boron Borax before installation. Treatment records must be submitted before the floor boarding is installed and the joists are concealed.',
+          'For sub-floor spaces — the void between the ground and the underside of a ground floor timber structure — additional considerations apply. If the sub-floor space is enclosed and cannot be adequately ventilated, the risk of elevated moisture and associated decay and termite activity is high. A chemical or physical termite barrier at the perimeter of the structure, combined with VPI-treated joists, provides the most complete protection for this detail.',
+        ],
+        list: [
+          'All floor joists: kiln-dried to 15–18% MC and VPI treated',
+          'Masonry pocket ends: VPI treated and isolated with DPC membrane',
+          'Prefer steel joist hangers over embedded pockets where structurally possible',
+          'Sub-floor space: cross-ventilation at a minimum; consider perimeter termite barrier',
+          'Treatment records before floor boarding installation',
+        ],
+      },
+      {
+        heading: 'Structural Specification for Floor Joists',
+        paragraphs: [
+          'Floor joists carry the dead load of the floor structure and the imposed load from occupancy. The structural design of joist size and spacing should be based on the span, the load, and the species being used. For most residential applications in Sri Lanka, joist sizing is done by reference to standard span tables rather than full structural calculation — confirm that the standard you are using corresponds to the species and grade of timber being supplied.',
+          'Pine is the most common floor joist species in Sri Lankan construction. Specify structural grade with a minimum grade mark corresponding to the design strength values used in the span table. Ungraded timber should not be used in structural floor framing without an engineer\'s confirmation of adequacy.',
+        ],
+      },
+      {
+        heading: 'Inspection and Maintenance',
+        paragraphs: [
+          'Elevated timber floors should be inspected for structural condition every five years, with access through inspection hatches or by removing a section of floor boarding. Probe the joist bearing ends and the joist mid-span for softness. Check the sub-floor space for mud tubes, moisture, and any sign of biological activity.',
+          'A floor joist that gives way to the probe should be treated as a structural emergency — prop the floor above, investigate the extent of the damage, and replace affected members before returning the floor to full occupancy. Attempting to monitor a compromised structural member without remediation is not a safe option.',
+        ],
+        note: 'St. Xavier Timber supplies kiln-dried, VPI-treated floor joists in pine, mahogany, and rubberwood to construction projects across Sri Lanka. We issue treatment records with every order and can advise on appropriate species and dimensions for your floor span. Contact us with your joist dimensions and required lengths.',
+      },
+    ],
+  },
+  {
+    slug: 'timber-in-contact-with-masonry-risk',
+    title: 'Timber in Contact with Masonry: The Hidden Risk in Every Building',
+    description:
+      'Masonry wicks moisture and provides the damp conditions that termites and decay fungi need. Any timber touching concrete, brick, or block is at elevated biological risk — and most of these elements are hidden behind finishes within weeks of installation.',
+    date: '2026-07-01',
+    readTime: '4 min read',
+    category: 'Construction',
+    tags: ['timber masonry contact', 'wall plate treatment', 'embedded timber', 'termite prevention', 'construction detail', 'timber treatment Sri Lanka'],
+    sections: [
+      {
+        heading: 'Why Masonry Is a Problem for Adjacent Timber',
+        paragraphs: [
+          'Masonry — concrete, brick, block, and mortar — is hygroscopic and porous. Rain absorbed through external faces, ground moisture rising through the foundation, and condensation forming on cold surfaces all contribute to moisture that is held within the masonry fabric. This moisture transfers to any timber in contact with the masonry surface.',
+          'The result is that timber in masonry contact is at a consistently higher moisture content than timber of the same species installed in a ventilated, above-ground position. Even in buildings with no visible dampness problem, timber in direct masonry contact may be at 22–28% MC — above the threshold for fungal decay and in the moisture range that subterranean termites require for colony establishment.',
+        ],
+      },
+      {
+        heading: 'Every Point of Masonry Contact',
+        paragraphs: [
+          'Mapping the points of masonry contact in a typical Sri Lankan building reveals how many critical timber elements are at risk. Wall plates bear directly on masonry wall tops. Lintels span door and window openings within the masonry. Sill plates sit on concrete floor slabs. Door and window frames are set into masonry openings, with their back faces and embedded ends in contact with mortar and block. Embedded beam ends are built into masonry pockets. Vertical timber posts and columns may be set into concrete shoes or directly into concrete foundations.',
+          'Every one of these details is a potential point of moisture transfer and biological attack. Every one is concealed by plaster, screed, or boarding within days or weeks of installation. And in the majority of Sri Lankan buildings, none of them receive treatment that would protect against the risk.',
+        ],
+      },
+      {
+        heading: 'The Two-Part Solution: Treatment and Isolation',
+        paragraphs: [
+          'Correct protection of masonry-contact timber requires two complementary measures: treating the timber to resist biological attack, and isolating it from the moisture source to reduce the ongoing risk.',
+          'Treatment means VPI with Boron Borax to full cross-section penetration. This provides chemical resistance to termites and decay fungi throughout the timber. It does not prevent moisture absorption — it prevents the organisms that need moisture from causing damage once they are present.',
+          'Isolation means a damp-proof course membrane — polythene, bituminous felt, or a proprietary DPC material — installed between the masonry surface and the timber bearing face. This significantly reduces the rate of moisture transfer from masonry to timber. Used with VPI-treated timber, isolation extends the service life of masonry-contact details by decades compared to either measure used alone.',
+        ],
+        list: [
+          'VPI treatment: provides chemical resistance throughout the timber cross-section',
+          'DPC membrane: reduces moisture transfer from masonry to timber at bearing faces',
+          'Both measures together: the correct specification for all masonry-contact timber',
+          'Neither measure alone is sufficient in high-risk or coastal environments',
+        ],
+      },
+      {
+        heading: 'What Happens When Neither Measure Is Used',
+        paragraphs: [
+          'Untreated timber in direct masonry contact in Sri Lanka has a predictable failure timeline. Fungal decay can establish within 2–3 years in embedded or enclosed masonry-contact positions under persistently wet conditions. Termite attack may begin sooner if the building has a high subterranean termite pressure. By year 5–8, significant structural decay is common in the most vulnerable positions — wall plate ends, lintel bearing zones, embedded beam ends. By year 10–15, remediation in the worst cases involves major structural work and significant disruption to the finishes and occupancy of the building.',
+          'The specification of treated timber with DPC isolation adds a small percentage to the cost of the masonry-contact structural elements. The remediation it prevents — if it is not specified — costs many times more.',
+        ],
+        note: 'St. Xavier Timber supplies VPI-treated timber for all masonry-contact applications, cut to your specified dimensions. We issue treatment records with every order. Contact us to discuss your project specifications.',
+      },
+    ],
+  },
+  {
+    slug: 'building-with-timber-sri-lanka-regulations',
+    title: 'Building with Timber in Sri Lanka: What the Regulations Require',
+    description:
+      'Sri Lankan building regulations set out requirements for structural timber use, fire resistance, and pest protection. This guide explains the key regulatory requirements for timber in construction and how to comply.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Construction',
+    tags: ['Sri Lanka building regulations', 'timber building code', 'construction regulations Sri Lanka', 'timber specification', 'ICTAD', 'structural timber compliance'],
+    sections: [
+      {
+        heading: 'The Regulatory Framework for Timber in Sri Lankan Construction',
+        paragraphs: [
+          'Construction in Sri Lanka is governed by a combination of national standards, local authority by-laws, and professional guidelines. The primary regulatory document for structural construction is the Sri Lanka National Annex to the Eurocode system, which Sri Lanka has been progressively adopting, alongside existing ICTAD (Institute for Construction Training and Development) specifications and guidelines.',
+          'For timber specifically, the relevant requirements cover: structural design values (which depend on species and grade), moisture content requirements for structural applications, preservation treatment requirements for specific exposure classes, and fire resistance requirements for buildings above certain occupancy categories.',
+        ],
+      },
+      {
+        heading: 'Structural Design Requirements',
+        paragraphs: [
+          'Structural timber must be designed to carry its imposed and dead loads with an appropriate safety factor. In the absence of a full structural calculation — which is required for commercial buildings and complex structures — residential construction typically follows prescriptive span tables that relate member size, spacing, and span to species and grade.',
+          'The species and grade must be known for the span tables to be valid. Specifying "timber" without a species or grade reference means the span table assumptions cannot be verified. Any structural timber member must be traceable to a grade and a species for the structural design to be defensible.',
+        ],
+      },
+      {
+        heading: 'Preservation Treatment Requirements',
+        paragraphs: [
+          'ICTAD specification CS-02 and the general conditions of the Public Works Department require preservation treatment for structural timber in specific applications. The key requirements are: timber in ground contact must be treated with a preservative system rated for ground contact (CCA or equivalent — not borate treatment, which leaches in ground contact); structural timber in buildings must be treated against termites and decay in accordance with the applicable exposure class; and wooden packaging for export must comply with ISPM 15 (heat treatment from an IPPC-registered facility).',
+          'For most above-ground structural applications in Sri Lanka — roof structures, floor joists, door and window frames — VPI treatment with Boron Borax satisfies the preservation requirements of the applicable specifications. Treatment records from an IPPC-registered facility provide the documentation evidence for compliance.',
+        ],
+      },
+      {
+        heading: 'Fire Resistance Requirements',
+        paragraphs: [
+          'Timber is a combustible material and does not inherently provide the fire resistance periods required for certain building types — particularly commercial, industrial, and multi-storey residential buildings above specified occupancy thresholds. Where fire resistance is required, structural timber must either be enclosed in fire-resistant cladding, designed as "exposed massive timber" using the charring rate method (where the section is sized to retain adequate strength after charring for the required period), or replaced with non-combustible materials.',
+          'For standard residential construction in Sri Lanka, fire resistance requirements for structural timber are generally met through standard construction practice — gypsum board ceilings, plaster finishes, and appropriate member sizing — rather than through special fire-treatment of the timber.',
+        ],
+      },
+      {
+        heading: 'Local Authority Approvals and Documentation',
+        paragraphs: [
+          'Building plans submitted to local authorities for approval must indicate the structural timber species, sizes, and treatment specification where timber is used for structural purposes. Plans that specify "timber rafters" without dimensions, species, or treatment are increasingly being challenged at approval stage by more technically rigorous local authorities.',
+          'For larger projects and all commercial construction, the structural engineer\'s drawings and calculations form the primary document for approval. For residential construction, compliance with prescriptive requirements and standard specifications is the typical path. In both cases, treatment records for structural timber should be retained as part of the building compliance file.',
+        ],
+        note: 'St. Xavier Timber supplies timber and issues treatment records that meet the documentation requirements for building compliance. We can provide species confirmation, treatment method, and retention figures in the format required for regulatory submissions. Contact us to discuss documentation requirements for your project.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-specify-treated-timber-building-projects',
+    title: 'How to Specify Treated Timber for Building Projects: A Guide for Architects and QS',
+    description:
+      'Timber treatment specification is the most cost-effective structural quality control available in Sri Lankan construction — but only if it is written correctly and enforced. This guide gives architects and quantity surveyors the specification language and documentation requirements they need.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Construction',
+    tags: ['timber specification', 'architect specification', 'quantity surveyor', 'treated timber specification', 'construction Sri Lanka', 'schedule of works'],
+    sections: [
+      {
+        heading: 'Why Getting the Specification Right Matters',
+        paragraphs: [
+          'The purpose of a timber treatment specification is to define a minimum performance standard that the contractor must meet, and to create a contractual mechanism for verifying compliance before treated members are concealed. A specification that is vague — "use treated timber" — achieves neither. A contractor reading "use treated timber" may reasonably interpret this as any surface-applied preservative, which provides a fraction of the protection of VPI treatment at similar cost.',
+          'A correctly written specification names the treatment method, the minimum retention level, the documentation required, and the compliance verification point. It eliminates ambiguity and gives the contract administrator the tools to enforce the standard.',
+        ],
+      },
+      {
+        heading: 'The Four Elements of a Complete Treatment Specification',
+        paragraphs: [
+          'A complete timber treatment specification has four elements. First, the scope — which elements are covered. This should list every type of timber member that requires treatment, with no room for a contractor to argue that a specific element was not included. Second, the treatment method — which must specify VPI with Boron Borax, not surface application. Third, the minimum retention level — the amount of preservative that must be present in the wood, expressed in kg/m³. Fourth, the documentation requirements — what records must be submitted, by when, and to whom.',
+        ],
+      },
+      {
+        heading: 'Scope: What Must Be Included',
+        paragraphs: [
+          'The minimum scope for a typical Sri Lankan residential building should include: all roof structural timber (rafters, purlins, ceiling joists, ridge boards, hip and valley boards, wall plates), all timber within 300mm of masonry (including wall plates, lintels, sill plates, and embedded beam ends), all door and window frames and sub-frames, and any timber in a sub-floor or enclosed, unventilated space.',
+          'Elements frequently omitted from specifications — and therefore frequently left untreated — include door and window sub-frames, architraves, and timber built into walls or floors. A specification that covers "structural timber" but not joinery is half a specification.',
+        ],
+      },
+      {
+        heading: 'Sample Specification Clauses',
+        paragraphs: [
+          'The following clauses can be adapted for inclusion in a schedule of works or bill of quantities.',
+          '"All structural roof timber including rafters, purlins, ceiling joists, ridge boards, hip and valley boards, and wall plates shall be kiln-dried to 15–18% MC and Vacuum Pressure Impregnated with Boron Borax preservative to a minimum retention of 3.0 kg/m³, by an IPPC-registered treatment facility. Batch treatment records shall be submitted to the architect before ceiling installation proceeds."',
+          '"All door and window frames, sub-frames, and sill members shall be kiln-dried to 12–15% MC and VPI treated with Boron Borax to a minimum retention of 2.5 kg/m³. End grain exposed by site cutting shall be flood-coated with concentrated borate solution immediately after cutting. A damp-proof membrane shall be installed between all frame back faces and masonry before fixing."',
+        ],
+      },
+      {
+        heading: 'Compliance Verification and Hold Points',
+        paragraphs: [
+          'The most important procedural element is the hold point — the stage in the construction programme at which treatment records must be submitted before subsequent work can proceed. Two hold points are essential: treatment records for structural roof timber before ceiling installation, and treatment records for framing and joinery before plastering.',
+          'At each hold point, the contract administrator should verify: the treatment facility name and IPPC registration number, the batch date and timber description, the species and cross-section dimensions, the VPI cycle parameters, and the achieved retention figure. Batches that do not meet the specified retention should not be accepted.',
+        ],
+        note: 'St. Xavier Timber provides standard-format treatment records that include all information required for compliance verification at the hold points described above. We are available to advise architects and quantity surveyors on appropriate specifications for specific applications. Contact us to discuss your project.',
+      },
+    ],
+  },
+  {
+    slug: 'timber-treatment-new-build-vs-renovation',
+    title: 'Timber Treatment for New Build vs Renovation: Different Problems, Different Solutions',
+    description:
+      'New construction and renovation projects have very different timber treatment challenges. In new build, the goal is to prevent problems from establishing. In renovation, the goal is to stop problems that may already be present and protect the new material going in.',
+    date: '2026-07-01',
+    readTime: '5 min read',
+    category: 'Construction',
+    tags: ['renovation timber treatment', 'new build timber', 'VPI treatment', 'timber renovation Sri Lanka', 'termite remediation', 'construction timber Sri Lanka'],
+    sections: [
+      {
+        heading: 'New Build: Prevention Is the Only Strategy',
+        paragraphs: [
+          'In new construction, timber treatment is purely preventive — the timber goes into a building that has no established pest population or decay, and the goal is to ensure it stays that way. The tools available in new construction are comprehensive: you can specify the species, control the moisture content, apply factory VPI treatment before installation, design in DPC isolation at masonry contacts, and require documentation before concealing finishes are applied.',
+          'All of these tools are available at low cost and with minimal disruption in new construction — and none of them are available once the building is built. The decision not to specify treated timber in new construction is a decision to accept the future cost of remediation as a certainty rather than an avoidable expense.',
+        ],
+      },
+      {
+        heading: 'Renovation: Assessment Before Specification',
+        paragraphs: [
+          'Renovation projects have a fundamentally different starting condition: some or all of the existing timber may already be infested, decayed, or stressed. Before specifying replacement timber or additional treatment, the condition of the existing structure must be assessed. Opening up sufficient ceiling and wall areas to inspect the structural timber is not a cost; it is the minimum information required to design the remediation correctly.',
+          'The assessment should establish: which members are sound (no decay, no active infestation, adequate structural section), which are compromised (some decay or infestation but structurally adequate with propping), which must be replaced immediately, and whether any active termite colony is present. An active colony that is not treated before the structural work will simply reinfest the new timber installed to replace what it damaged.',
+        ],
+      },
+      {
+        heading: 'Dealing with Active Termite Colonies in Renovation',
+        paragraphs: [
+          'If an active termite colony is found during renovation — evidenced by live termites in mud tubes, in damaged timber, or in the soil — the colony must be treated before new structural timber is installed. Installing VPI-treated replacement timber into a building with an active colony reduces re-infestation risk significantly, but it does not eliminate the colony. The colony will survive in the soil below the building and will continue to seek new food sources.',
+          'Colony treatment options include soil barrier treatment (applying a liquid termiticide to the soil around and under the building to create a chemical barrier), baiting systems (slow-acting baits that worker termites carry back to the colony, eventually killing the queen), and physical barriers (stainless steel mesh or aggregate barriers at the foundation level that prevent termite access). The appropriate approach depends on the type of construction, the accessibility of the soil, and the severity of the infestation.',
+        ],
+      },
+      {
+        heading: 'In-Situ Treatment for Retained Structural Members',
+        paragraphs: [
+          'For structural members that are assessed as sound but have been exposed to risk — either from adjacent decay, from known termite activity, or from persistently high moisture — in-situ borate treatment provides a measure of protection without the disruption of full replacement.',
+          'In-situ treatment involves drilling a grid of holes into the timber member and injecting a concentrated borate solution under pressure or by gravity. The solution diffuses through the moisture in the wood and distributes the preservative through the cross-section. The level of penetration and retention achieved by in-situ treatment does not match factory VPI treatment — it is a remedial measure for sound timber at risk, not a substitute for VPI in new construction.',
+        ],
+      },
+      {
+        heading: 'Replacement Timber in Renovation',
+        paragraphs: [
+          'Replacement structural members installed during renovation should be specified to exactly the same standard as new construction: kiln-dried to the target MC, VPI treated with Boron Borax, with treatment records. The fact that a building already exists and has existing timber does not reduce the standard required for the replacement material — if anything, the high-risk environment revealed by the need for renovation increases the case for the highest available treatment standard.',
+          'Replacement timber is often installed in more difficult conditions than new construction: working in confined roof spaces, connecting to existing members that may not be at the ideal MC, and installing before the moisture problem that caused the original failure has been fully resolved. These conditions increase the importance of starting with the best possible treatment on the replacement timber.',
+        ],
+        note: 'St. Xavier Timber supplies VPI-treated replacement structural timber for renovation projects and can turn most orders around within 3–5 working days. We issue treatment records with every order. Contact us to discuss your renovation specification and timeline.',
+      },
+    ],
+  },
+  {
     slug: 'how-to-inspect-timber-batch-before-delivery',
     title: 'How to Inspect a Timber Batch Before Accepting Delivery',
     description:
