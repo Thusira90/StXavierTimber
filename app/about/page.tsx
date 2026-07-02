@@ -29,8 +29,8 @@ const milestones = [
   },
   {
     year: '2005',
-    title: 'Pallet Manufacturing Begins',
-    desc: 'A pivotal milestone: St. Xavier began producing wooden pallets to international standards, primarily for export markets. This marked the start of the company\'s formal involvement in ISPM 15-compliant manufacturing.',
+    title: 'ISPM 15 Certification Achieved',
+    desc: 'St. Xavier Timber achieved IPPC registration, allowing the company to provide certified ISPM 15 heat treatment for timber and wooden packaging destined for international export. This milestone opened the business to Sri Lanka\'s growing export logistics sector.',
   },
   {
     year: '2015',

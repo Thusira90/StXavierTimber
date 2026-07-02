@@ -98,7 +98,7 @@ export function Process() {
 
 /* ── Industries ───────────────────────────────────────────── */
 const indIcons: Record<string, React.ReactNode> = {
-  'Export Pallet Manufacturers': (
+  'Wooden Packaging & Export': (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M21 8V6a2 2 0 00-2-2H5a2 2 0 00-2 2v2"/><rect x="1" y="8" width="22" height="13" rx="2"/><path d="M12 8v13M8 8v13M16 8v13"/>
     </svg>
@@ -138,14 +138,14 @@ const indIcons: Record<string, React.ReactNode> = {
 const industries = [
   {
     icon: '📦',
-    name: 'Export Pallet Manufacturers',
-    sub: 'ISPM 15 heat treatment for compliance',
-    desc: 'Pallets crossing international borders must meet ISPM 15 phytosanitary standards. We provide IPPC-registered heat treatment and issue the documentation required for customs clearance in any destination country.',
+    name: 'Wooden Packaging & Export',
+    sub: 'ISPM 15 heat treatment for international shipments',
+    desc: 'Wooden packaging, crates, and dunnage crossing international borders must meet ISPM 15 phytosanitary standards. We provide IPPC-registered heat treatment and issue the documentation required for customs clearance in any destination country.',
     details: [
-      'IPPC mark applied to every certified pallet load',
+      'IPPC mark applied to every certified treated load',
       'Full treatment records issued for customs documentation',
       'Fast turnaround to keep export schedules on track',
-      'High-volume batch capacity for regular pallet runs',
+      'High-volume batch capacity for regular export runs',
     ],
   },
   {
@@ -230,7 +230,7 @@ export function Industries() {
           <span className={styles.eyebrow}>Industries Served</span>
           <h2 className={styles.h2}>Who We Work With</h2>
           <p className={styles.headerSub}>
-            From export pallet manufacturers to furniture makers — we treat timber for industries where quality and compliance are non-negotiable.
+            From construction companies to furniture manufacturers — we treat timber for industries where quality and compliance are non-negotiable.
           </p>
         </div>
         <div className={styles.indGrid}>
