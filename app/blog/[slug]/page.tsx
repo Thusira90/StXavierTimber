@@ -3,7 +3,7 @@ import Navbar from '../../../components/Navbar';
 import { Footer } from '../../../components/Sections';
 import styles from './post.module.css';
 import type { Metadata } from 'next';
-import { posts, getPost } from '../posts';
+import { posts, getPost, getRelatedPosts } from '../posts';
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -55,6 +55,7 @@ export default async function PostPage({
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) notFound();
+  const related = getRelatedPosts(slug);
 
   const BASE = 'https://www.stxaviertimber.com';
 
@@ -156,6 +157,24 @@ export default async function PostPage({
           ))}
         </div>
       </article>
+
+      {/* Related Articles */}
+      {related.length > 0 && (
+        <section className={styles.related}>
+          <div className={styles.relatedInner}>
+            <h2 className={styles.relatedHeading}>Related Articles</h2>
+            <div className={styles.relatedGrid}>
+              {related.map((r) => (
+                <a key={r.slug} href={`/blog/${r.slug}`} className={styles.relatedCard}>
+                  <span className={styles.relatedCategory}>{r.category}</span>
+                  <p className={styles.relatedTitle}>{r.title}</p>
+                  <span className={styles.relatedReadMore}>Read article →</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className={styles.cta}>

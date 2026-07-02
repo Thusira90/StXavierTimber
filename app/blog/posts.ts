@@ -3158,3 +3158,19 @@ export const posts: Post[] = [
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
 }
+
+export function getRelatedPosts(slug: string, count = 3): Post[] {
+  const current = posts.find((p) => p.slug === slug);
+  if (!current) return [];
+  const currentTags = new Set(current.tags);
+  return posts
+    .filter((p) => p.slug !== slug)
+    .map((p) => ({
+      post: p,
+      score: p.tags.filter((t) => currentTags.has(t)).length,
+    }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, count)
+    .map(({ post }) => post);
+}

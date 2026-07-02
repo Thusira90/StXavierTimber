@@ -211,9 +211,78 @@
 
 .ctaBack:hover { color: var(--sage-200); }
 
+/* ── Related Articles ────────────────────────────────────── */
+.related {
+  background: #f7f8f5;
+  padding: 64px 24px;
+  border-top: 1px solid #e4e8dc;
+}
+
+.relatedInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.relatedHeading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a2310;
+  margin: 0 0 28px;
+  letter-spacing: -0.01em;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.relatedCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #e4e8dc;
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.relatedCard:hover {
+  border-color: #5a7a2e;
+  box-shadow: 0 4px 16px rgba(90,122,46,0.10);
+}
+
+.relatedCategory {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #5a7a2e;
+}
+
+.relatedTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a2310;
+  line-height: 1.45;
+  margin: 0;
+  flex: 1;
+}
+
+.relatedReadMore {
+  font-size: 13px;
+  color: #5a7a2e;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   .hero { padding: 72px 20px 48px; }
   .article { padding: 48px 20px 64px; }
+  .related { padding: 48px 20px; }
+  .relatedGrid { grid-template-columns: 1fr; }
   .cta { padding: 56px 20px; }
 }
