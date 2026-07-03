@@ -24,6 +24,12 @@ const staticRoutes: MetadataRoute.Sitemap = [
     priority: 0.8,
   },
   {
+    url: `${BASE}/case-studies`,
+    lastModified: new Date('2026-07-03'),
+    changeFrequency: 'yearly',
+    priority: 0.8,
+  },
+  {
     url: `${BASE}/timber-treatment-negombo`,
     lastModified: new Date('2026-07-03'),
     changeFrequency: 'monthly',
