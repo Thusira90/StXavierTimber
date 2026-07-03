@@ -18,6 +18,12 @@ const staticRoutes: MetadataRoute.Sitemap = [
     priority: 0.7,
   },
   {
+    url: `${BASE}/calculator`,
+    lastModified: new Date('2026-07-03'),
+    changeFrequency: 'yearly',
+    priority: 0.8,
+  },
+  {
     url: `${BASE}/blog`,
     // Always reflects the newest post date so Google knows when fresh content arrived.
     lastModified: new Date(posts[0].date),
