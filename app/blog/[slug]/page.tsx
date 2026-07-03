@@ -106,11 +106,31 @@ export default async function PostPage({
     ],
   };
 
+  const faqEntries = post.sections
+    .filter((s) => s.heading && s.paragraphs && s.paragraphs.length > 0)
+    .slice(0, 4);
+
+  const faqSchema = faqEntries.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqEntries.map((s) => ({
+          '@type': 'Question',
+          name: s.heading,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: s.paragraphs!.join(' '),
+          },
+        })),
+      }
+    : null;
+
   return (
     <>
       <Navbar />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
       {/* Hero */}
       <section className={styles.hero}>
