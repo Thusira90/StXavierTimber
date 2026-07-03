@@ -22,63 +22,79 @@ const USE_CASES = [
   { value: 'other', label: 'Other' },
 ];
 
-function getDryingDays(thicknessMm: number, dryFactor: number): [number, number] {
+function getDryingDays(thicknessIn: number, dryFactor: number): [number, number] {
+  const mm = thicknessIn * 25.4;
   let base: [number, number];
-  if (thicknessMm <= 25) base = [3, 5];
-  else if (thicknessMm <= 38) base = [4, 7];
-  else if (thicknessMm <= 50) base = [5, 9];
-  else if (thicknessMm <= 75) base = [8, 13];
+  if (mm <= 25) base = [3, 5];
+  else if (mm <= 38) base = [4, 7];
+  else if (mm <= 50) base = [5, 9];
+  else if (mm <= 75) base = [8, 13];
   else base = [12, 20];
   return [Math.round(base[0] * dryFactor), Math.round(base[1] * dryFactor)];
 }
 
-function getTreatmentRecommendation(useCase: string, vpiRecommended: boolean): {
-  kiln: boolean; vpi: boolean; ispm: boolean; label: string; note: string;
-} {
+function getTreatment(useCase: string, vpiRecommended: boolean) {
   if (useCase === 'export-packaging') {
-    return { kiln: false, vpi: false, ispm: true, label: 'ISPM 15 Heat Treatment', note: 'Required for all wooden packaging crossing international borders. We are IPPC registered and issue the certification mark.' };
+    return { label: 'ISPM 15 Heat Treatment', kiln: false, vpi: false, ispm: true, note: 'Required for all wooden packaging crossing international borders. We are IPPC registered and issue the IPPC certification mark.' };
   }
   if (useCase === 'furniture' || useCase === 'doors-windows') {
-    return { kiln: true, vpi: true, ispm: false, label: 'Kiln Drying + VPI Treatment', note: vpiRecommended ? 'Strongly recommended — this species is pest-prone. VPI protects the core, kiln drying ensures dimensional stability.' : 'Recommended combination — kiln drying delivers stable 12–15% MC; VPI adds long-term pest protection.' };
+    return { label: 'Kiln Drying + VPI Treatment', kiln: true, vpi: true, ispm: false, note: vpiRecommended ? 'Strongly recommended — this species is pest-prone. VPI protects the core; kiln drying ensures dimensional stability.' : 'Recommended combination — kiln drying delivers stable 12–15% MC; VPI adds long-term pest protection.' };
   }
   if (useCase === 'construction') {
-    return { kiln: true, vpi: true, ispm: false, label: 'Kiln Drying + VPI Treatment', note: 'Structural timber must be dimensionally stable and pest-free. Both treatments extend service life significantly.' };
+    return { label: 'Kiln Drying + VPI Treatment', kiln: true, vpi: true, ispm: false, note: 'Structural timber must be dimensionally stable and pest-free. Both treatments significantly extend service life.' };
   }
   if (useCase === 'flooring') {
-    return { kiln: true, vpi: false, ispm: false, label: 'Kiln Drying', note: 'Flooring requires precise 8–12% MC to prevent gapping or buckling. VPI is optional but recommended for ground-floor installations.' };
+    return { label: 'Kiln Drying', kiln: true, vpi: false, ispm: false, note: 'Flooring requires precise 8–12% MC to prevent gapping or buckling post-installation. VPI is optional but recommended for ground-floor use.' };
   }
-  return { kiln: true, vpi: vpiRecommended, ispm: false, label: vpiRecommended ? 'Kiln Drying + VPI Treatment' : 'Kiln Drying', note: 'Based on your inputs, kiln drying is the primary requirement. Speak to us about whether VPI adds value for your application.' };
+  return { label: vpiRecommended ? 'Kiln Drying + VPI Treatment' : 'Kiln Drying', kiln: true, vpi: vpiRecommended, ispm: false, note: 'Kiln drying is the primary requirement. Contact us about whether VPI adds value for your specific application.' };
 }
 
 export default function TimberCalculator() {
   const [species, setSpecies] = useState('rubberwood');
   const [useCase, setUseCase] = useState('furniture');
-  const [lengthMm, setLengthMm] = useState('2400');
-  const [widthMm, setWidthMm] = useState('100');
-  const [thicknessMm, setThicknessMm] = useState('50');
-  const [quantity, setQuantity] = useState('100');
-  const [unit, setUnit] = useState<'mm' | 'inches'>('mm');
+  const [timberType, setTimberType] = useState<'planks' | 'beams'>('planks');
 
-  const toMm = (val: string) => {
-    const n = parseFloat(val) || 0;
-    return unit === 'inches' ? n * 25.4 : n;
-  };
+  // Planks
+  const [plankThickness, setPlankThickness] = useState('1');
+  const [plankSqft, setPlankSqft] = useState('');
+
+  // Beams
+  const [beamWidth, setBeamWidth] = useState('4');
+  const [beamHeight, setBeamHeight] = useState('4');
+  const [beamLft, setBeamLft] = useState('');
 
   const result = useMemo(() => {
     const sp = SPECIES.find((s) => s.value === species) || SPECIES[0];
-    const L = toMm(lengthMm) / 1000;
-    const W = toMm(widthMm) / 1000;
-    const T = toMm(thicknessMm) / 1000;
-    const Q = parseInt(quantity) || 0;
-    const volumeM3 = L * W * T * Q;
-    const thickMm = toMm(thicknessMm);
-    const [dMin, dMax] = getDryingDays(thickMm, sp.dryFactor);
-    const treatment = getTreatmentRecommendation(useCase, sp.vpiRecommended);
-    return { volumeM3, dMin, dMax, treatment, valid: volumeM3 > 0 };
-  }, [species, useCase, lengthMm, widthMm, thicknessMm, quantity, unit]);
 
+    let volumeM3 = 0;
+    let thicknessIn = 0;
+
+    if (timberType === 'planks') {
+      const t = parseFloat(plankThickness) || 0;
+      const sqft = parseFloat(plankSqft) || 0;
+      thicknessIn = t;
+      // 1 sqft = 0.092903 m², thickness inches → metres = t × 0.0254
+      volumeM3 = sqft * 0.092903 * t * 0.0254;
+    } else {
+      const w = parseFloat(beamWidth) || 0;
+      const h = parseFloat(beamHeight) || 0;
+      const lft = parseFloat(beamLft) || 0;
+      // cross-section in m²: (w × 0.0254) × (h × 0.0254); length: lft × 0.3048
+      thicknessIn = Math.max(w, h);
+      volumeM3 = (w * 0.0254) * (h * 0.0254) * (lft * 0.3048);
+    }
+
+    const [dMin, dMax] = getDryingDays(thicknessIn, sp.dryFactor);
+    const treatment = getTreatment(useCase, sp.vpiRecommended);
+    return { volumeM3, dMin, dMax, treatment, valid: volumeM3 > 0 };
+  }, [species, useCase, timberType, plankThickness, plankSqft, beamWidth, beamHeight, beamLft]);
+
+  const sp = SPECIES.find((s) => s.value === species);
+  const uc = USE_CASES.find((u) => u.value === useCase);
   const whatsappMsg = encodeURIComponent(
-    `Hi, I used the calculator on your website.\n\nSpecies: ${SPECIES.find(s => s.value === species)?.label}\nUse case: ${USE_CASES.find(u => u.value === useCase)?.label}\nDimensions: ${lengthMm} × ${widthMm} × ${thicknessMm} ${unit}\nQuantity: ${quantity} pieces\nEstimated volume: ${result.volumeM3.toFixed(3)} m³\n\nPlease send me a quote.`
+    timberType === 'planks'
+      ? `Hi, I used the calculator on your website.\n\nSpecies: ${sp?.label}\nUse case: ${uc?.label}\nTimber type: Planks\nThickness: ${plankThickness}"\nTotal area: ${plankSqft} sqft\nEstimated volume: ${result.volumeM3.toFixed(3)} m³\n\nPlease send me a quote.`
+      : `Hi, I used the calculator on your website.\n\nSpecies: ${sp?.label}\nUse case: ${uc?.label}\nTimber type: Beams\nCross-section: ${beamWidth}" × ${beamHeight}"\nTotal length: ${beamLft} LFT\nEstimated volume: ${result.volumeM3.toFixed(3)} m³\n\nPlease send me a quote.`
   );
 
   return (
@@ -88,8 +104,8 @@ export default function TimberCalculator() {
           <span className={styles.eyebrow}>Free Estimator</span>
           <h1 className={styles.h1}>Timber Treatment<br /><em>Calculator</em></h1>
           <p className={styles.heroSub}>
-            Enter your timber dimensions and intended use — get an instant estimate of volume,
-            drying time, and the right treatment. Then request an exact quote.
+            Select your species, intended use, and timber type — get an instant estimate of
+            volume, drying time, and the right treatment.
           </p>
         </div>
       </div>
@@ -97,7 +113,7 @@ export default function TimberCalculator() {
       <div className={styles.body}>
         <div className={styles.grid}>
 
-          {/* Inputs */}
+          {/* ── Inputs ── */}
           <div className={styles.inputs}>
             <div className={styles.card}>
               <h2 className={styles.cardTitle}>Your Timber</h2>
@@ -117,35 +133,98 @@ export default function TimberCalculator() {
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label}>Dimensions</label>
-                <div className={styles.unitToggle}>
-                  <button className={`${styles.unitBtn} ${unit === 'mm' ? styles.unitActive : ''}`} onClick={() => setUnit('mm')}>mm</button>
-                  <button className={`${styles.unitBtn} ${unit === 'inches' ? styles.unitActive : ''}`} onClick={() => setUnit('inches')}>inches</button>
-                </div>
-                <div className={styles.dimRow}>
-                  <div className={styles.dimField}>
-                    <span className={styles.dimLabel}>Length</span>
-                    <input className={styles.input} type="number" min="0" value={lengthMm} onChange={e => setLengthMm(e.target.value)} placeholder="2400" />
-                  </div>
-                  <div className={styles.dimField}>
-                    <span className={styles.dimLabel}>Width</span>
-                    <input className={styles.input} type="number" min="0" value={widthMm} onChange={e => setWidthMm(e.target.value)} placeholder="100" />
-                  </div>
-                  <div className={styles.dimField}>
-                    <span className={styles.dimLabel}>Thickness</span>
-                    <input className={styles.input} type="number" min="0" value={thicknessMm} onChange={e => setThicknessMm(e.target.value)} placeholder="50" />
-                  </div>
+                <label className={styles.label}>Timber Type</label>
+                <div className={styles.typeToggle}>
+                  <button
+                    className={`${styles.typeBtn} ${timberType === 'planks' ? styles.typeActive : ''}`}
+                    onClick={() => setTimberType('planks')}
+                  >
+                    Planks
+                  </button>
+                  <button
+                    className={`${styles.typeBtn} ${timberType === 'beams' ? styles.typeActive : ''}`}
+                    onClick={() => setTimberType('beams')}
+                  >
+                    Beams
+                  </button>
                 </div>
               </div>
 
-              <div className={styles.field}>
-                <label className={styles.label}>Number of Pieces</label>
-                <input className={styles.input} type="number" min="1" value={quantity} onChange={e => setQuantity(e.target.value)} placeholder="100" />
-              </div>
+              {timberType === 'planks' ? (
+                <>
+                  <div className={styles.field}>
+                    <label className={styles.label}>Plank Thickness (inches)</label>
+                    <input
+                      className={styles.input}
+                      type="number"
+                      min="0"
+                      step="0.25"
+                      value={plankThickness}
+                      onChange={e => setPlankThickness(e.target.value)}
+                      placeholder='e.g. 1"'
+                    />
+                  </div>
+                  <div className={styles.field}>
+                    <label className={styles.label}>Total Area (sqft)</label>
+                    <input
+                      className={styles.input}
+                      type="number"
+                      min="0"
+                      value={plankSqft}
+                      onChange={e => setPlankSqft(e.target.value)}
+                      placeholder="e.g. 500"
+                    />
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className={styles.field}>
+                    <label className={styles.label}>Cross-section (inches)</label>
+                    <div className={styles.crossRow}>
+                      <div className={styles.crossField}>
+                        <span className={styles.crossLabel}>Width</span>
+                        <input
+                          className={styles.input}
+                          type="number"
+                          min="0"
+                          step="0.5"
+                          value={beamWidth}
+                          onChange={e => setBeamWidth(e.target.value)}
+                          placeholder='4"'
+                        />
+                      </div>
+                      <span className={styles.crossX}>×</span>
+                      <div className={styles.crossField}>
+                        <span className={styles.crossLabel}>Height</span>
+                        <input
+                          className={styles.input}
+                          type="number"
+                          min="0"
+                          step="0.5"
+                          value={beamHeight}
+                          onChange={e => setBeamHeight(e.target.value)}
+                          placeholder='4"'
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles.field}>
+                    <label className={styles.label}>Total Length (LFT)</label>
+                    <input
+                      className={styles.input}
+                      type="number"
+                      min="0"
+                      value={beamLft}
+                      onChange={e => setBeamLft(e.target.value)}
+                      placeholder="e.g. 200"
+                    />
+                  </div>
+                </>
+              )}
             </div>
           </div>
 
-          {/* Results */}
+          {/* ── Results ── */}
           <div className={styles.results}>
             {result.valid ? (
               <>
@@ -196,10 +275,11 @@ export default function TimberCalculator() {
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" aria-hidden="true">
                   <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
                 </svg>
-                <p>Enter your timber dimensions to see your estimate.</p>
+                <p>Fill in your timber details on the left to see your estimate.</p>
               </div>
             )}
           </div>
+
         </div>
       </div>
     </div>

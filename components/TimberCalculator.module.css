@@ -84,32 +84,46 @@
 }
 .select:focus, .input:focus { border-color: #5a7a2e; }
 
-.unitToggle {
+.typeToggle {
   display: flex;
-  gap: 6px;
-  margin-bottom: 4px;
-}
-.unitBtn {
-  padding: 6px 14px;
+  gap: 0;
   border: 1px solid #cdd6bc;
-  border-radius: 6px;
-  font-size: 12px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.typeBtn {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 14px;
   font-weight: 600;
   color: #6a7a58;
   background: #fafbf8;
+  border: none;
   cursor: pointer;
   transition: all 0.15s;
   font-family: inherit;
 }
-.unitActive {
+.typeBtn:first-child { border-right: 1px solid #cdd6bc; }
+.typeActive {
   background: #1a2e0f;
   color: #fff;
-  border-color: #1a2e0f;
 }
 
-.dimRow { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
-.dimField { display: flex; flex-direction: column; gap: 5px; }
-.dimLabel { font-size: 11px; color: #8a9a78; font-weight: 500; }
+.crossRow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+  align-items: end;
+}
+.crossField { display: flex; flex-direction: column; gap: 5px; }
+.crossLabel { font-size: 11px; color: #8a9a78; font-weight: 500; }
+.crossX {
+  font-size: 18px;
+  color: #8a9a78;
+  font-weight: 300;
+  padding-bottom: 11px;
+  text-align: center;
+}
 
 /* ── Results ─────────────────────────────────────────────── */
 .results {
