@@ -36,6 +36,24 @@ const staticRoutes: MetadataRoute.Sitemap = [
     priority: 0.9,
   },
   {
+    url: `${BASE}/timber-treatment-colombo`,
+    lastModified: new Date('2026-07-04'),
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    url: `${BASE}/timber-treatment-gampaha`,
+    lastModified: new Date('2026-07-04'),
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    url: `${BASE}/timber-treatment-kandy`,
+    lastModified: new Date('2026-07-04'),
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
     url: `${BASE}/blog`,
     // Always reflects the newest post date so Google knows when fresh content arrived.
     lastModified: new Date(posts[0].date),
