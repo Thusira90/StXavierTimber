@@ -147,10 +147,11 @@ jobs:
           check_og "description"
           check_og "url"
 
-          # og:image is a warning only
+          # og:image check
           OG_IMAGE=$(grep -o 'property="og:image" content="[^"]*"' /tmp/homepage.html | head -1)
           if [ -z "$OG_IMAGE" ]; then
-            echo "WARN: og:image missing — add og-image.jpg to /public"
+            echo "FAIL: og:image missing"
+            FAIL=1
           else
             echo "OK: og:image present"
           fi
