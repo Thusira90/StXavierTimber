@@ -1,0 +1,176 @@
+name: SEO Audit
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    # Runs every Monday at 07:00 UTC (12:30 PM Sri Lanka time)
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+
+jobs:
+  seo-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ── 1. Wait for Vercel deploy to settle (only on push) ─────────────────
+      - name: Wait for deployment
+        if: github.event_name == 'push'
+        run: sleep 60
+
+      # ── 2. Canonical URL checks ────────────────────────────────────────────
+      - name: Check canonical URLs
+        run: |
+          BASE="https://www.stxaviertimber.com"
+          FAIL=0
+
+          check_canonical() {
+            local path="$1"
+            local expected="${BASE}${path}"
+            local url="${BASE}${path}"
+            local canonical
+            canonical=$(curl -s --max-time 15 "$url" | grep -oP '(?<=<link rel="canonical" href=")[^"]+' | head -1)
+
+            if [ -z "$canonical" ]; then
+              echo "❌ MISSING canonical on $path"
+              FAIL=1
+            elif [ "$canonical" != "$expected" ]; then
+              echo "❌ WRONG canonical on $path"
+              echo "   Expected: $expected"
+              echo "   Got:      $canonical"
+              FAIL=1
+            else
+              echo "✅ $path → $canonical"
+            fi
+          }
+
+          check_canonical "/"
+          check_canonical "/blog"
+          check_canonical "/about"
+          check_canonical "/calculator"
+          check_canonical "/case-studies"
+          check_canonical "/timber-treatment-negombo"
+          check_canonical "/timber-treatment-colombo"
+          check_canonical "/timber-treatment-gampaha"
+          check_canonical "/timber-treatment-kandy"
+
+          # Spot-check first blog post slug
+          FIRST_SLUG=$(curl -s "${BASE}/sitemap.xml" | grep -oP '(?<=<loc>)https://www\.stxaviertimber\.com/blog/[^<]+' | head -1)
+          if [ -n "$FIRST_SLUG" ]; then
+            PATH_ONLY="${FIRST_SLUG#$BASE}"
+            check_canonical "$PATH_ONLY"
+          fi
+
+          if [ $FAIL -ne 0 ]; then
+            echo ""
+            echo "One or more canonical URLs are wrong. Fix before merging."
+            exit 1
+          fi
+
+      # ── 3. Meta description present on key pages ───────────────────────────
+      - name: Check meta descriptions
+        run: |
+          BASE="https://www.stxaviertimber.com"
+          FAIL=0
+          PAGES=("/" "/blog" "/about" "/calculator" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy")
+
+          for path in "${PAGES[@]}"; do
+            meta=$(curl -s --max-time 15 "${BASE}${path}" | grep -oP '(?<=<meta name="description" content=")[^"]+' | head -1)
+            if [ -z "$meta" ]; then
+              echo "❌ Missing meta description: $path"
+              FAIL=1
+            else
+              len=${#meta}
+              if [ $len -lt 50 ]; then
+                echo "⚠️  Meta description too short ($len chars): $path"
+              elif [ $len -gt 160 ]; then
+                echo "⚠️  Meta description too long ($len chars, truncates in SERPs): $path"
+              else
+                echo "✅ $path ($len chars)"
+              fi
+            fi
+          done
+
+          if [ $FAIL -ne 0 ]; then exit 1; fi
+
+      # ── 4. Sitemap accessible and non-empty ────────────────────────────────
+      - name: Check sitemap
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://www.stxaviertimber.com/sitemap.xml")
+          if [ "$STATUS" != "200" ]; then
+            echo "❌ Sitemap returned HTTP $STATUS"
+            exit 1
+          fi
+          COUNT=$(curl -s "https://www.stxaviertimber.com/sitemap.xml" | grep -c "<url>")
+          echo "✅ Sitemap OK — $COUNT URLs found"
+          if [ "$COUNT" -lt 10 ]; then
+            echo "⚠️  Sitemap has fewer than 10 URLs — check posts.ts"
+          fi
+
+      # ── 5. Open Graph tags on homepage ────────────────────────────────────
+      - name: Check Open Graph tags
+        run: |
+          HTML=$(curl -s --max-time 15 "https://www.stxaviertimber.com")
+          FAIL=0
+
+          check_og() {
+            local prop="$1"
+            local val
+            val=$(echo "$HTML" | grep -oP "(?<=<meta property=\"og:${prop}\" content=\")[^\"]+")
+            if [ -z "$val" ]; then
+              echo "❌ Missing og:$prop"
+              FAIL=1
+            else
+              echo "✅ og:$prop present"
+            fi
+          }
+
+          check_og "title"
+          check_og "description"
+          check_og "url"
+          check_og "image"
+
+          if [ $FAIL -ne 0 ]; then exit 1; fi
+
+      # ── 6. GA4 tag present ─────────────────────────────────────────────────
+      - name: Check GA4 tag
+        run: |
+          HTML=$(curl -s --max-time 15 "https://www.stxaviertimber.com")
+          if echo "$HTML" | grep -q "G-QS03GW2LEN"; then
+            echo "✅ GA4 tag (G-QS03GW2LEN) found"
+          else
+            echo "❌ GA4 tag missing from homepage HTML"
+            exit 1
+          fi
+
+      # ── 7. Key pages return HTTP 200 ───────────────────────────────────────
+      - name: Check page status codes
+        run: |
+          BASE="https://www.stxaviertimber.com"
+          FAIL=0
+          PAGES=("/" "/blog" "/about" "/calculator" "/case-studies" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy")
+
+          for path in "${PAGES[@]}"; do
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "${BASE}${path}")
+            if [ "$STATUS" = "200" ]; then
+              echo "✅ $path → $STATUS"
+            else
+              echo "❌ $path → $STATUS"
+              FAIL=1
+            fi
+          done
+
+          if [ $FAIL -ne 0 ]; then exit 1; fi
+
+      # ── 8. Structured data (LocalBusiness schema) present ─────────────────
+      - name: Check LocalBusiness schema
+        run: |
+          HTML=$(curl -s --max-time 15 "https://www.stxaviertimber.com")
+          if echo "$HTML" | grep -q '"LocalBusiness"'; then
+            echo "✅ LocalBusiness schema found"
+          else
+            echo "❌ LocalBusiness schema missing"
+            exit 1
+          fi
