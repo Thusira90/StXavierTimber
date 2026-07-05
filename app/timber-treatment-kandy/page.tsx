@@ -8,7 +8,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Kandy | Kiln Drying, VPI & ISPM 15',
   description:
-    'Industrial timber treatment for Kandy businesses. St. Xavier Timber provides kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment with island-wide delivery to Kandy. IPPC registered. Est. 1955.',
+    'Kiln drying, VPI, and ISPM 15 heat treatment with island-wide delivery to Kandy. IPPC registered. Est. 1955. Sri Lanka\'s most experienced timber treatment facility.',
   keywords: [
     'timber treatment Kandy',
     'kiln drying Kandy',

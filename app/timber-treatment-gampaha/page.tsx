@@ -8,7 +8,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Gampaha | Kiln Drying, VPI & ISPM 15',
   description:
-    'Industrial timber treatment for Gampaha district businesses. St. Xavier Timber provides kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. IPPC registered. Est. 1955. Convenient access from Gampaha via the Colombo–Negombo road.',
+    'Industrial kiln drying, VPI, and ISPM 15 heat treatment for Gampaha district. IPPC registered. Est. 1955. 35 minutes via the Colombo–Negombo road. Island-wide delivery available.',
   keywords: [
     'timber treatment Gampaha',
     'kiln drying Gampaha',

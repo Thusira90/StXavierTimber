@@ -8,7 +8,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Negombo | Kiln Drying, VPI & ISPM 15',
   description:
-    'St. Xavier Timber is Negombo\'s closest industrial timber treatment facility — 5 minutes from Negombo town in Daluwakotuwa, Kochchikade. Kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. Est. 1955. Island-wide delivery.',
+    'Timber treatment 5 minutes from Negombo. Kiln drying, VPI, and ISPM 15 heat treatment in Daluwakotuwa, Kochchikade. IPPC registered. Est. 1955. Island-wide delivery.',
   keywords: [
     'timber treatment Negombo',
     'kiln drying Negombo',

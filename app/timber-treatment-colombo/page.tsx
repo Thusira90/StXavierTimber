@@ -8,7 +8,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Colombo | Kiln Drying, VPI & ISPM 15',
   description:
-    'Industrial timber treatment for Colombo businesses. St. Xavier Timber provides kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. IPPC registered. Est. 1955. Island-wide delivery including Colombo.',
+    'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Colombo. IPPC registered. Est. 1955. Island-wide delivery to construction sites, furniture workshops, and export depots.',
   keywords: [
     'timber treatment Colombo',
     'kiln drying Colombo',

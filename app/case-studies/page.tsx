@@ -8,7 +8,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Case Studies | Timber Treatment Results — St. Xavier Timber',
   description:
-    'Real results from St. Xavier Timber clients in Sri Lanka. See how correct kiln drying and VPI treatment solved contamination, warping, and cracking problems for construction companies.',
+    'Real results from St. Xavier Timber clients. How kiln drying and VPI treatment solved contamination, warping, and cracking for Sri Lanka construction companies.',
   alternates: { canonical: `${BASE}/case-studies` },
   openGraph: { url: `${BASE}/case-studies` },
 };
