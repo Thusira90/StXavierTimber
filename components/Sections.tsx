@@ -612,6 +612,9 @@ export function Footer() {
           <p className={styles.footerSub}>1088, Colombo Road, Daluwakotuwa. Kochchikade. · Est. 1955</p>
         </div>
         <div className={styles.footerLinks}>
+          <a href="/service-areas">Service Areas</a>
+          <a href="/blog">Knowledge Centre</a>
+          <a href="/calculator">Calculator</a>
           <a href="https://www.facebook.com/profile.php?id=100054793123041" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://www.instagram.com/stxaviertimber?igsh=MTRueHJydWNkNmdnOQ%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
