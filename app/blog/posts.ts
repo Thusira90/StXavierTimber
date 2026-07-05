@@ -18,6 +18,155 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'ispm-15-certification-sri-lanka-exporters-guide',
+    title: 'ISPM 15 Certification in Sri Lanka: A Complete Guide for Exporters',
+    description:
+      'How to get wooden packaging ISPM 15 certified in Sri Lanka — the process, the IPPC mark, what customs checks, and the mistakes that get shipments rejected at destination ports.',
+    date: '2026-07-05',
+    readTime: '6 min read',
+    category: 'Export',
+    tags: ['ISPM 15', 'ISPM 15 Sri Lanka', 'export packaging', 'IPPC mark', 'wooden packaging export', 'heat treatment', 'phytosanitary compliance', 'export compliance Sri Lanka'],
+    sections: [
+      {
+        heading: 'What ISPM 15 Actually Requires',
+        paragraphs: [
+          'ISPM 15 — International Standards for Phytosanitary Measures No. 15 — is the global standard governing wood packaging material in international trade. It exists because untreated wooden pallets, crates, and dunnage have historically been a major pathway for the spread of wood-boring pests between countries. Any solid wood packaging thicker than 6mm that crosses an international border must be treated according to the standard and must carry the IPPC certification mark.',
+          'The standard permits two main treatment methods: heat treatment (HT), in which the core of the wood is raised to a minimum of 56°C and held there for at least 30 minutes, and methyl bromide fumigation (MB), which is being phased out in most markets due to environmental concerns. In Sri Lanka, heat treatment is the standard method, and it is the only method we recommend — HT-marked packaging is accepted everywhere, while MB-marked packaging faces restrictions in the EU and a growing list of other markets.',
+        ],
+      },
+      {
+        heading: 'The IPPC Mark: What It Means and Who Can Apply It',
+        paragraphs: [
+          'The IPPC mark is a standardised stamp applied to certified wood packaging. It contains the IPPC symbol, a two-letter country code (LK for Sri Lanka), a unique registration number identifying the treatment facility, and the treatment code (HT for heat treatment). Customs authorities at destination ports check for this mark — packaging without it, or with an illegible or incomplete mark, is treated as non-compliant.',
+          'Only facilities registered with the National Plant Quarantine Service (NPQS) of Sri Lanka may apply the mark. Registration requires the facility to demonstrate that its treatment process reliably achieves the 56°C/30-minute core temperature requirement, with calibrated monitoring equipment and documented procedures. The registration number in the mark is traceable — if a problem is found at a destination port, the shipment can be traced back to the treating facility.',
+          'This is the critical point for exporters: you cannot heat-treat packaging yourself, and you cannot buy an IPPC stamp. The mark is only valid when applied by a registered facility on wood that facility actually treated.',
+        ],
+      },
+      {
+        heading: 'What Happens When Packaging Is Non-Compliant',
+        paragraphs: [
+          'The consequences of shipping with non-compliant wood packaging depend on the destination country, but the typical outcomes are: the shipment is held at port while the packaging is treated or destroyed at the importer\'s expense; the packaging is rejected and the goods must be re-packed; or in the strictest markets, the entire consignment is refused entry and returned. Australia and New Zealand are known for particularly rigorous enforcement.',
+          'Beyond the direct cost, a rejected shipment damages the relationship between exporter and buyer, and repeated non-compliance can flag an exporter for increased inspection on future shipments. For a relatively small treatment cost per pallet or crate, ISPM 15 compliance is among the cheapest insurance an exporter can buy.',
+        ],
+      },
+      {
+        heading: 'The Certification Process, Step by Step',
+        list: [
+          'Send your packaging — pallets, crates, boxes, or loose dunnage — to a registered treatment facility, or have the facility manufacture certified packaging for you.',
+          'The wood is heat treated: loaded into the chamber, brought to 56°C core temperature (verified by probes in the thickest pieces), and held for a minimum of 30 minutes.',
+          'The facility applies the IPPC mark to at least two opposite sides of each item.',
+          'A treatment certificate is issued for the batch, recording the date, treatment parameters, and quantity — keep this with your shipping documents.',
+          'The packaging is ready for export. Note that re-treatment is required if the packaging is repaired with untreated wood at any point.',
+        ],
+      },
+      {
+        heading: 'Common Mistakes That Cost Exporters',
+        paragraphs: [
+          'The most frequent mistake we see is treating packaging as an afterthought — ordering certified pallets days before a shipment deadline. Heat treatment itself is fast, but chamber scheduling, transport, and marking take time. Build packaging certification into your shipping timeline a week or more ahead.',
+          'The second mistake is repairing certified packaging with uncertified wood. A certified pallet repaired with an untreated board is no longer compliant — the whole unit must be re-treated and re-marked. Destination inspectors specifically look for boards without marks on otherwise marked pallets.',
+          'The third is confusing kiln drying with ISPM 15 heat treatment. They are different processes with different targets: kiln drying targets moisture content and takes days; ISPM 15 heat treatment targets core temperature and takes hours. Kiln-dried wood is not automatically ISPM 15 compliant — the treatment must be run and documented specifically against the ISPM 15 standard by a registered facility.',
+        ],
+        note: 'St. Xavier Timber is IPPC registered with the National Plant Quarantine Service of Sri Lanka. We heat treat wooden packaging to ISPM 15 and issue the IPPC mark and treatment certificate per batch. Contact us on 031 227 7752 or WhatsApp 071 471 1417 to schedule treatment for your next shipment.',
+      },
+    ],
+  },
+  {
+    slug: 'kiln-drying-cost-sri-lanka-what-determines-price',
+    title: 'How Much Does Kiln Drying Cost in Sri Lanka? What Determines the Price',
+    description:
+      'What drives the cost of kiln drying timber in Sri Lanka — species, thickness, volume, and initial moisture — and how to compare quotes properly so cheap drying does not become expensive timber.',
+    date: '2026-07-05',
+    readTime: '5 min read',
+    category: 'Kiln Drying',
+    tags: ['kiln drying cost', 'kiln drying price Sri Lanka', 'timber drying cost', 'kiln drying', 'timber treatment cost', 'timber buying guide'],
+    sections: [
+      {
+        heading: 'Why There Is No Single Price Per Cubic Foot',
+        paragraphs: [
+          'The most common question we receive is "what does kiln drying cost per cubic foot?" — and the honest answer is that a single number would mislead you. Kiln drying is priced on chamber time, and chamber time varies enormously with the timber itself. A load of 1-inch rubberwood planks might dry in 4–5 days; a load of 3-inch teak beams can take three weeks or more. Both occupy the same chamber space, but one uses four times the energy, labour, and chamber capacity of the other.',
+          'This is why reputable facilities quote per batch after knowing your species, dimensions, quantity, and starting condition — and why any facility quoting a flat rate per cubic foot without asking those questions is either building a large safety margin into the price or planning to cut the drying short.',
+        ],
+      },
+      {
+        heading: 'The Four Factors That Drive Your Price',
+        list: [
+          'Species — dense hardwoods like teak, kumbuk, and imported hardwoods hold moisture tightly and must be dried slowly to avoid checking; they can take two to three times as long as rubberwood or pine of the same thickness.',
+          'Thickness — drying time increases roughly with the square of thickness. A 2-inch plank does not take twice as long as a 1-inch plank; it takes closer to four times as long. Thickness is the single biggest driver of chamber time.',
+          'Initial moisture content — freshly sawn timber at 60–80% MC takes far longer than timber that has been air-dried to 25–30% before entering the kiln. Pre-air-drying your timber under cover is the most effective way to reduce your kiln cost.',
+          'Volume and stacking — a full, well-stacked chamber load is more economical per piece than a partial load. Mixed loads of different thicknesses are inefficient because the schedule must follow the slowest-drying pieces.',
+        ],
+      },
+      {
+        heading: 'How to Compare Quotes Properly',
+        paragraphs: [
+          'When comparing kiln drying quotes, the number on the quote is only half the information. The other half is what you are actually getting for it. The questions that matter: What final moisture content is being targeted, and will it be verified with a calibrated meter and recorded? Is the schedule appropriate for the species, or is it a one-size-fits-all cycle? Is the kiln automated with humidity control, or is it a hot room with a fan?',
+          'A cheap quote that delivers timber at 20% MC when you needed 12–15% has not saved you money — it has sold you a problem. The timber will continue drying in service: joints open, panels warp, floors gap. The cost of one failed furniture order or one callback on a flooring job exceeds the entire kiln drying bill many times over.',
+          'Equally, drying that is done too fast to save chamber time causes case hardening, surface checking, and internal stresses that only reveal themselves when the timber is machined. If a quoted drying time seems dramatically shorter than everyone else\'s for the same load, that time is coming from somewhere — usually the quality of the result.',
+        ],
+      },
+      {
+        heading: 'How to Reduce Your Kiln Drying Cost',
+        paragraphs: [
+          'There are legitimate ways to bring the cost down without compromising the result. Air-dry your timber first: timber stacked off the ground, under cover, with spacers between layers will drop to 25–30% MC over some weeks in Sri Lankan conditions, substantially reducing chamber time. Saw before drying: drying timber at its final thickness rather than as oversized flitches reduces drying time dramatically — remember the square relationship with thickness. Batch consistently: sending a full load of one species at one thickness gets you the most efficient schedule.',
+          'Finally, plan ahead rather than paying for urgency. Kiln capacity is scheduled, and a customer who needs timber dried "by Friday" has no negotiating position. Customers who book chamber time in advance consistently get better rates and better results.',
+        ],
+        note: 'St. Xavier Timber operates automated kiln drying chambers in Daluwakotuwa, Kochchikade, drying to a verified 12–15% MC with per-batch records. Send us your species, dimensions, and quantity via WhatsApp on 071 471 1417 for a quote — or use the calculator on our website for an instant estimate.',
+      },
+    ],
+  },
+  {
+    slug: 'timber-decking-outdoor-use-sri-lanka',
+    title: 'Timber for Decking and Outdoor Use in Sri Lanka: Species, Treatment, and Detailing',
+    description:
+      'Outdoor timber in Sri Lanka faces sun, monsoon rain, and termites. Which species survive, why VPI treatment is essential, and the detailing that decides whether a deck lasts 3 years or 15.',
+    date: '2026-07-05',
+    readTime: '6 min read',
+    category: 'Construction',
+    tags: ['timber decking', 'outdoor timber Sri Lanka', 'decking Sri Lanka', 'VPI treatment', 'exterior timber', 'timber treatment', 'pergola timber', 'garden timber'],
+    sections: [
+      {
+        heading: 'Why Outdoor Timber Fails Faster in Sri Lanka',
+        paragraphs: [
+          'Sri Lanka is close to the harshest environment there is for exterior timber. High year-round humidity keeps timber moisture content elevated. Monsoon rain wets it repeatedly. Intense UV degrades the surface. Consistently warm temperatures keep fungal decay active every month of the year — there is no cold season pause as there is in temperate climates. And subterranean termites are active across most of the island.',
+          'The result is that detailing and treatment practices copied from European or Australian references often underperform here. A deck built to a specification that lasts 25 years in a temperate climate can fail in under five in Sri Lanka if the species, treatment, and detailing are not adapted to local conditions.',
+        ],
+      },
+      {
+        heading: 'Species Selection for Exterior Use',
+        paragraphs: [
+          'The traditional premium choice is teak — its natural oils give it genuine decay resistance, and it weathers to a silver grey rather than rotting. Kumbuk and other dense local hardwoods also perform well outdoors when properly treated. At the other end of the spectrum, rubberwood should never be used outdoors under any circumstances: it has no natural durability, and even treated rubberwood is an interior timber.',
+          'The practical middle ground for most projects is treated durable-to-moderately-durable hardwood. Natural durability alone is not a complete answer — sapwood of even the most durable species is perishable, and most commercially sawn timber contains some sapwood. This is why treatment matters even for "naturally durable" species.',
+        ],
+      },
+      {
+        heading: 'Why VPI Treatment Is Non-Negotiable Outdoors',
+        paragraphs: [
+          'For exterior timber, surface-applied preservatives — brush-on, spray, or dip treatments — provide only a few millimetres of protected shell. The first time the timber checks, cracks, or is cut, drilled, or notched during construction, unprotected wood is exposed, and in Sri Lankan conditions decay and termite attack begin there. Every deck board is cut to length; every joist is drilled for fixings. Surface treatment fails at exactly the points where the structure is most vulnerable.',
+          'Vacuum pressure impregnation drives preservative deep into the timber under pressure, protecting the wood through its cross-section. Cut ends should still be re-sealed as good practice, but the difference in outcome is fundamental: VPI-treated timber exposed by cutting is still protected timber; surface-treated timber exposed by cutting is bare wood.',
+        ],
+      },
+      {
+        heading: 'The Detailing That Decides Deck Lifespan',
+        list: [
+          'Keep timber out of ground contact — posts should bear on galvanised steel stirrups or concrete plinths, never be buried in soil, which is both a moisture trap and a termite highway.',
+          'Ventilate under the deck — trapped humid air under low decks keeps the underside of boards permanently damp. Allow cross-ventilation.',
+          'Gap the boards — 5–6mm gaps let rainwater drain and boards dry. Tightly butted boards hold water at every joint.',
+          'Slope and drain — any horizontal timber surface that holds water will fail first. Handrail caps, beam tops, and stair treads need a slight fall or a protective capping.',
+          'Use stainless or hot-dip galvanised fixings — treated timber and coastal humidity corrode standard steel fasteners, and a failed fixing lets water into the bore hole.',
+          'Seal cut ends — every site cut should receive a liberal coat of end-grain preservative before assembly.',
+        ],
+      },
+      {
+        heading: 'Maintenance: What Actually Works',
+        paragraphs: [
+          'The maintenance that extends outdoor timber life is simpler than most product marketing suggests. Keep the deck clean — leaf litter and soil in board gaps hold moisture against the timber. Re-oil or re-coat surfaces exposed to full sun annually or as the finish weathers; the coating\'s job is UV and water shedding, not preservation — that was the VPI treatment\'s job. Inspect annually for termite mud tubes on posts and the underside of the structure, and check that drainage details are still working.',
+          'A VPI-treated, correctly detailed hardwood deck in Sri Lanka is realistically a 15-year-plus structure with basic maintenance. The same timber, surface treated and detailed carelessly, can need major repairs within three to five years. The treatment and detailing decisions made before construction matter more than anything done afterwards.',
+        ],
+        note: 'St. Xavier Timber VPI-treats structural and decking timber with Boron Borax at 10 bar, backed by a 10-year warranty against pest contamination. Contact us on 031 227 7752 or WhatsApp 071 471 1417 to discuss your outdoor project.',
+      },
+    ],
+  },
+  {
     slug: 'common-furniture-defects-incorrect-timber-drying',
     title: 'Common Furniture Defects Caused by Incorrect Timber Drying',
     description:
