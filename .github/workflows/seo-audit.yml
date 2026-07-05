@@ -64,6 +64,10 @@ jobs:
           check_canonical "/timber-treatment-colombo"
           check_canonical "/timber-treatment-gampaha"
           check_canonical "/timber-treatment-kandy"
+          check_canonical "/timber-treatment-kurunegala"
+          check_canonical "/timber-treatment-chilaw"
+          check_canonical "/timber-treatment-galle"
+          check_canonical "/service-areas"
 
           # Spot-check first blog post
           FIRST_SLUG=$(curl -s "${BASE}/sitemap.xml" \
@@ -85,7 +89,7 @@ jobs:
         run: |
           BASE="https://www.stxaviertimber.com"
           FAIL=0
-          PAGES=("/" "/blog" "/about" "/calculator" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy")
+          PAGES=("/" "/blog" "/about" "/calculator" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy" "/timber-treatment-kurunegala" "/timber-treatment-chilaw" "/timber-treatment-galle" "/service-areas")
 
           for path in "${PAGES[@]}"; do
             meta=$(curl -s --max-time 20 "${BASE}${path}" \
@@ -173,7 +177,7 @@ jobs:
         run: |
           BASE="https://www.stxaviertimber.com"
           FAIL=0
-          PAGES=("/" "/blog" "/about" "/calculator" "/case-studies" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy")
+          PAGES=("/" "/blog" "/about" "/calculator" "/case-studies" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy" "/timber-treatment-kurunegala" "/timber-treatment-chilaw" "/timber-treatment-galle" "/service-areas")
 
           for path in "${PAGES[@]}"; do
             STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "${BASE}${path}")
