@@ -28,7 +28,6 @@ jobs:
 
           check_canonical() {
             local path="$1"
-            # Homepage canonical has no trailing slash
             local expected
             if [ "$path" = "/" ]; then
               expected="${BASE}"
@@ -36,19 +35,23 @@ jobs:
               expected="${BASE}${path}"
             fi
             local url="${BASE}${path}"
+            # Use grep -o + sed instead of lookbehind (more portable)
             local canonical
-            canonical=$(curl -s --max-time 15 "$url" | grep -oP '(?<=<link rel="canonical" href=")[^"]+' | head -1)
+            canonical=$(curl -s --max-time 20 "$url" \
+              | grep -o 'rel="canonical" href="[^"]*"' \
+              | sed 's/.*href="\([^"]*\)".*/\1/' \
+              | head -1)
 
             if [ -z "$canonical" ]; then
-              echo "❌ MISSING canonical on $path"
+              echo "FAIL: Missing canonical on $path"
               FAIL=1
             elif [ "$canonical" != "$expected" ]; then
-              echo "❌ WRONG canonical on $path"
-              echo "   Expected: $expected"
-              echo "   Got:      $canonical"
+              echo "FAIL: Wrong canonical on $path"
+              echo "  Expected: $expected"
+              echo "  Got:      $canonical"
               FAIL=1
             else
-              echo "✅ $path → $canonical"
+              echo "OK: $path => $canonical"
             fi
           }
 
@@ -62,16 +65,18 @@ jobs:
           check_canonical "/timber-treatment-gampaha"
           check_canonical "/timber-treatment-kandy"
 
-          # Spot-check first blog post slug
-          FIRST_SLUG=$(curl -s "${BASE}/sitemap.xml" | grep -oP '(?<=<loc>)https://www\.stxaviertimber\.com/blog/[^<]+' | head -1)
+          # Spot-check first blog post
+          FIRST_SLUG=$(curl -s "${BASE}/sitemap.xml" \
+            | grep -o '<loc>[^<]*blog[^<]*</loc>' \
+            | sed 's|<loc>\(.*\)</loc>|\1|' \
+            | head -1)
           if [ -n "$FIRST_SLUG" ]; then
             PATH_ONLY="${FIRST_SLUG#$BASE}"
             check_canonical "$PATH_ONLY"
           fi
 
           if [ $FAIL -ne 0 ]; then
-            echo ""
-            echo "One or more canonical URLs are wrong. Fix before merging."
+            echo "One or more canonical URLs are wrong."
             exit 1
           fi
 
@@ -83,18 +88,21 @@ jobs:
           PAGES=("/" "/blog" "/about" "/calculator" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy")
 
           for path in "${PAGES[@]}"; do
-            meta=$(curl -s --max-time 15 "${BASE}${path}" | grep -oP '(?<=<meta name="description" content=")[^"]+' | head -1)
+            meta=$(curl -s --max-time 20 "${BASE}${path}" \
+              | grep -o 'name="description" content="[^"]*"' \
+              | sed 's/.*content="\([^"]*\)".*/\1/' \
+              | head -1)
             if [ -z "$meta" ]; then
-              echo "❌ Missing meta description: $path"
+              echo "FAIL: Missing meta description on $path"
               FAIL=1
             else
               len=${#meta}
               if [ $len -lt 50 ]; then
-                echo "⚠️  Meta description too short ($len chars): $path"
+                echo "WARN: Meta too short (${len} chars): $path"
               elif [ $len -gt 160 ]; then
-                echo "⚠️  Meta description too long ($len chars, truncates in SERPs): $path"
+                echo "WARN: Meta too long (${len} chars, truncates in SERPs): $path"
               else
-                echo "✅ $path ($len chars)"
+                echo "OK: $path (${len} chars)"
               fi
             fi
           done
@@ -106,30 +114,32 @@ jobs:
         run: |
           STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://www.stxaviertimber.com/sitemap.xml")
           if [ "$STATUS" != "200" ]; then
-            echo "❌ Sitemap returned HTTP $STATUS"
+            echo "FAIL: Sitemap returned HTTP $STATUS"
             exit 1
           fi
           COUNT=$(curl -s "https://www.stxaviertimber.com/sitemap.xml" | grep -c "<url>")
-          echo "✅ Sitemap OK — $COUNT URLs found"
+          echo "OK: Sitemap accessible — $COUNT URLs"
           if [ "$COUNT" -lt 10 ]; then
-            echo "⚠️  Sitemap has fewer than 10 URLs — check posts.ts"
+            echo "WARN: Fewer than 10 URLs in sitemap — check posts.ts"
           fi
 
       # ── 5. Open Graph tags on homepage ────────────────────────────────────
       - name: Check Open Graph tags
         run: |
-          HTML=$(curl -s --max-time 15 "https://www.stxaviertimber.com")
+          curl -s --max-time 20 "https://www.stxaviertimber.com" > /tmp/homepage.html
           FAIL=0
 
           check_og() {
             local prop="$1"
             local val
-            val=$(echo "$HTML" | grep -oP "(?<=<meta property=\"og:${prop}\" content=\")[^\"]+")
+            val=$(grep -o "property=\"og:${prop}\" content=\"[^\"]*\"" /tmp/homepage.html \
+              | sed 's/.*content="\([^"]*\)".*/\1/' \
+              | head -1)
             if [ -z "$val" ]; then
-              echo "❌ Missing og:$prop"
+              echo "FAIL: Missing og:$prop"
               FAIL=1
             else
-              echo "✅ og:$prop present"
+              echo "OK: og:$prop present"
             fi
           }
 
@@ -137,12 +147,12 @@ jobs:
           check_og "description"
           check_og "url"
 
-          # og:image is a warning only — image asset may not exist yet
-          OG_IMAGE=$(echo "$HTML" | grep -oP '(?<=<meta property="og:image" content=")[^"]+')
+          # og:image is a warning only
+          OG_IMAGE=$(grep -o 'property="og:image" content="[^"]*"' /tmp/homepage.html | head -1)
           if [ -z "$OG_IMAGE" ]; then
-            echo "⚠️  og:image missing — add a real og-image.jpg to /public"
+            echo "WARN: og:image missing — add og-image.jpg to /public"
           else
-            echo "✅ og:image present"
+            echo "OK: og:image present"
           fi
 
           if [ $FAIL -ne 0 ]; then exit 1; fi
@@ -150,11 +160,10 @@ jobs:
       # ── 6. GA4 tag present ─────────────────────────────────────────────────
       - name: Check GA4 tag
         run: |
-          HTML=$(curl -s --max-time 15 "https://www.stxaviertimber.com")
-          if echo "$HTML" | grep -q "G-QS03GW2LEN"; then
-            echo "✅ GA4 tag (G-QS03GW2LEN) found"
+          if curl -s --max-time 20 "https://www.stxaviertimber.com" | grep -q "G-QS03GW2LEN"; then
+            echo "OK: GA4 tag (G-QS03GW2LEN) found"
           else
-            echo "❌ GA4 tag missing from homepage HTML"
+            echo "FAIL: GA4 tag missing from homepage HTML"
             exit 1
           fi
 
@@ -166,11 +175,11 @@ jobs:
           PAGES=("/" "/blog" "/about" "/calculator" "/case-studies" "/timber-treatment-negombo" "/timber-treatment-colombo" "/timber-treatment-gampaha" "/timber-treatment-kandy")
 
           for path in "${PAGES[@]}"; do
-            STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 15 "${BASE}${path}")
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "${BASE}${path}")
             if [ "$STATUS" = "200" ]; then
-              echo "✅ $path → $STATUS"
+              echo "OK: $path => $STATUS"
             else
-              echo "❌ $path → $STATUS"
+              echo "FAIL: $path => $STATUS"
               FAIL=1
             fi
           done
@@ -180,10 +189,9 @@ jobs:
       # ── 8. Structured data (LocalBusiness schema) present ─────────────────
       - name: Check LocalBusiness schema
         run: |
-          HTML=$(curl -s --max-time 15 "https://www.stxaviertimber.com")
-          if echo "$HTML" | grep -q '"LocalBusiness"'; then
-            echo "✅ LocalBusiness schema found"
+          if curl -s --max-time 20 "https://www.stxaviertimber.com" | grep -q '"LocalBusiness"'; then
+            echo "OK: LocalBusiness schema found"
           else
-            echo "❌ LocalBusiness schema missing"
+            echo "FAIL: LocalBusiness schema missing"
             exit 1
           fi
