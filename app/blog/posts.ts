@@ -18,6 +18,58 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'timber-seasoning-sri-lanka-complete-guide',
+    title: 'Timber Seasoning in Sri Lanka: Air Seasoning vs Kiln Seasoning Explained',
+    description:
+      'What timber seasoning is, how air seasoning and kiln seasoning compare in Sri Lankan conditions, and how to choose a seasoning provider — from Sri Lanka\'s longest-running facility.',
+    date: '2026-07-07',
+    readTime: '6 min read',
+    category: 'Kiln Drying',
+    tags: ['timber seasoning', 'wood seasoning Sri Lanka', 'kiln seasoning', 'air seasoning', 'kiln drying', 'timber drying', 'seasoning timber Sri Lanka', 'moisture content'],
+    sections: [
+      {
+        heading: 'What Is Timber Seasoning?',
+        paragraphs: [
+          'Timber seasoning is the process of removing moisture from freshly sawn wood before it is used. In Sri Lanka, "seasoning" is the everyday term for what the industry also calls timber drying — the two mean the same thing. Freshly sawn timber contains enormous amounts of water: often 60–80% of its oven-dry weight. Used in that state, timber shrinks, warps, cracks, and invites fungal decay and insect attack as it dries uncontrolled inside a finished product or building.',
+          'Seasoning brings the timber down to a moisture content close to what it will experience in service — around 12–15% for interior use in Sri Lankan conditions. Properly seasoned timber is dimensionally stable, stronger, lighter to transport, holds fasteners and glue better, and accepts paint, stain, and preservative treatment properly. Unseasoned timber is the root cause of most furniture and joinery failures on the island.',
+        ],
+      },
+      {
+        heading: 'Air Seasoning: The Traditional Method',
+        paragraphs: [
+          'Air seasoning is the traditional approach: timber is stacked off the ground under cover, with spacer sticks ("stickers") between layers so air can circulate, and left to dry naturally. It costs little beyond yard space and patience, and it remains useful as a first stage — bringing very wet timber partway down before finishing in a kiln.',
+          'But air seasoning has a hard limit in Sri Lanka: ambient humidity. In our coastal and lowland climate, air-dried timber plateaus around 18–22% moisture content and simply cannot go lower — the humid air will not accept more moisture from the wood. That is well above the 12–15% needed for interior furniture, doors, and joinery. Air seasoning is also slow (months for thicker sections), uncontrolled (surface checks and end splits are common), and offers no protection against insect attack during the long drying period — rubberwood in particular can be destroyed by borers before it ever finishes air drying.',
+        ],
+      },
+      {
+        heading: 'Kiln Seasoning: The Controlled Method',
+        paragraphs: [
+          'Kiln seasoning (kiln drying) dries timber inside a closed chamber where temperature, humidity, and airflow are controlled and adjusted through the drying cycle. The schedule is matched to the species and thickness — gentle enough to avoid checking and case hardening, fast enough to be economical. In an automated kiln, timber reaches a verified 12–15% moisture content in days rather than months, regardless of the weather outside.',
+          'Kiln seasoning has a second benefit that matters enormously in Sri Lanka: the heat of the kiln cycle kills insect eggs, larvae, and fungi already present in the timber. Air-seasoned timber carries whatever infested it in the yard; kiln-seasoned timber comes out sterilised. For pest-prone species like rubberwood, kiln seasoning followed by VPI preservative treatment is the standard specification.',
+        ],
+      },
+      {
+        heading: 'Air vs Kiln Seasoning: The Practical Comparison',
+        list: [
+          'Final moisture content — air: 18–22% at best in Sri Lankan humidity; kiln: verified 12–15% (or lower where specified).',
+          'Time — air: weeks to months depending on thickness; kiln: 3–12 days for most loads.',
+          'Control — air: none, weather-dependent, defects common; kiln: schedule matched to species, monitored throughout.',
+          'Pest and fungus — air: timber exposed throughout drying; kiln: heat sterilises the load.',
+          'Cost — air: cheap but slow and lossy; kiln: paid service, but predictable results and far lower wastage.',
+          'Best practice — air season first under cover to ~25–30% MC, then kiln season to final MC. This combination minimises kiln time and cost.',
+        ],
+      },
+      {
+        heading: 'How to Choose a Timber Seasoning Provider in Sri Lanka',
+        paragraphs: [
+          'Ask three questions of any seasoning facility. First: what final moisture content do you target, and how is it verified? The answer should be a specific figure (12–15% for interior use) checked with calibrated meters and recorded per batch — not "it will be dry." Second: is the kiln schedule matched to the species? Teak, mahogany, and other dense hardwoods need slower schedules than rubberwood or pine; a facility running one schedule for everything will case-harden your hardwood. Third: what happens after seasoning? Seasoned timber left in a humid yard reabsorbs moisture — the facility should store dried timber under cover and treat or dispatch it promptly.',
+          'St. Xavier Timber has been seasoning timber since 1955 at our facility at 1088, Colombo Road, Daluwakotuwa, Kochchikade — on the main Colombo–Negombo road, five minutes south of Negombo town. We operate automated kiln seasoning chambers alongside vacuum pressure impregnation (VPI) and ISPM 15 heat treatment, and we serve the whole island: timber comes to us from every province and returns seasoned, treated, and documented.',
+        ],
+        note: 'St. Xavier Timber — timber seasoning, kiln drying, VPI treatment, and ISPM 15 heat treatment in Daluwakotuwa, Kochchikade (Negombo area), Sri Lanka. Est. 1955. Call 031 227 7752 or WhatsApp 071 471 1417 for a seasoning quote, or use the calculator on our website for an instant estimate.',
+      },
+    ],
+  },
+  {
     slug: 'ispm-15-certification-sri-lanka-exporters-guide',
     title: 'ISPM 15 Certification in Sri Lanka: A Complete Guide for Exporters',
     description:

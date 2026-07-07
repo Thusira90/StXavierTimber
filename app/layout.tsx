@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     'Industrial kiln drying and vacuum pressure impregnation (VPI) services in Sri Lanka. IPPC registered, ISPM 15 compliant. Est. 1955, Daluwakotuwa, Kochchikade.',
   keywords: [
     'kiln drying Sri Lanka',
+    'timber seasoning Sri Lanka',
+    'wood seasoning Sri Lanka',
+    'kiln seasoning timber',
     'wood treatment Sri Lanka',
     'ISPM 15 heat treatment Sri Lanka',
     'vacuum pressure impregnation Sri Lanka',
