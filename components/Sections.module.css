@@ -47,7 +47,7 @@
 .processSection { background: var(--sage-900); padding: 96px 0; }
 .processEyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--sage-400); font-weight: 500; display: block; margin-bottom: 14px; }
 .processH2      { font-family: var(--font-display); font-size: clamp(26px, 3.5vw, 38px); font-weight: 400; color: #ffffff; line-height: 1.15; letter-spacing: -0.02em; }
-.processSub     { font-size: 14.5px; color: rgba(212,232,184,0.6); line-height: 1.7; font-weight: 300; margin-top: 12px; }
+.processSub     { font-size: 14.5px; color: rgba(212,232,184,0.82); line-height: 1.7; font-weight: 300; margin-top: 12px; }
 
 /* Process steps */
 .stepGrid   { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
@@ -84,7 +84,7 @@
 .stepTitle  { font-size: 16px; font-weight: 600; color: var(--text-primary); margin-bottom: 10px; line-height: 1.3; }
 .stepDesc   { font-size: 13.5px; color: rgba(212,232,184,0.88); line-height: 1.7; font-weight: 300; margin-bottom: 24px; }
 .stepList   { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-top: auto; padding-top: 20px; border-top: 1px solid var(--border); }
-.stepItem   { display: flex; align-items: flex-start; gap: 10px; font-size: 12.5px; color: rgba(212,232,184,0.75); line-height: 1.5; }
+.stepItem   { display: flex; align-items: flex-start; gap: 10px; font-size: 12.5px; color: rgba(212,232,184,0.9); line-height: 1.5; }
 .stepIcon   { color: var(--sage-400); flex-shrink: 0; margin-top: 1px; }
 .headerSub  { font-size: 14.5px; color: rgba(212,232,184,0.88); line-height: 1.7; font-weight: 300; margin-top: 12px; }
 
@@ -98,7 +98,7 @@
 .indSub       { font-size: 11.5px; color: var(--sage-400); font-weight: 500; }
 .indDesc      { font-size: 13px; color: rgba(212,232,184,0.85); line-height: 1.7; font-weight: 300; margin-bottom: 18px; }
 .indList      { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding-top: 16px; border-top: 1px solid rgba(168,195,120,0.12); }
-.indItem      { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: rgba(212,232,184,0.75); line-height: 1.5; }
+.indItem      { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: rgba(212,232,184,0.9); line-height: 1.5; }
 .indCheckIcon { color: var(--sage-400); flex-shrink: 0; margin-top: 1px; }
 
 /* Species */
@@ -156,22 +156,22 @@
 .ceypallStat      { padding: 20px 0; border-bottom: 1px solid rgba(168,195,120,0.12); display: flex; flex-direction: column; gap: 4px; }
 .ceypallStat:last-child { border-bottom: none; }
 .ceypallStatNum   { font-family: var(--font-display); font-size: 32px; color: var(--sage-400); line-height: 1; letter-spacing: -0.02em; }
-.ceypallStatLabel { font-size: 11px; color: rgba(212,232,184,0.7); text-transform: uppercase; letter-spacing: 0.07em; }
+.ceypallStatLabel { font-size: 11px; color: rgba(212,232,184,0.87); text-transform: uppercase; letter-spacing: 0.07em; }
 .ceypallGrid      { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
 .ceypallCard      { background: rgba(255,255,255,0.04); border: 1px solid rgba(168,195,120,0.13); border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; transition: box-shadow 0.2s, border-color 0.2s; }
 .ceypallCard:hover{ box-shadow: 0 4px 24px rgba(78,122,40,0.2); border-color: rgba(168,195,120,0.28); }
 .ceypallCardTop   { display: flex; flex-direction: column; gap: 6px; }
 .ceypallTag       { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--sage-600); background: var(--sage-50); border: 1px solid var(--sage-100); padding: 3px 10px; border-radius: 100px; align-self: flex-start; }
-.ceypallCardSub   { font-size: 11.5px; color: rgba(212,232,184,0.7); margin-top: 4px; }
+.ceypallCardSub   { font-size: 11.5px; color: rgba(212,232,184,0.87); margin-top: 4px; }
 .ceypallCardTitle { font-family: var(--font-display); font-size: 19px; font-weight: 400; color: #ffffff; letter-spacing: -0.01em; line-height: 1.2; }
 .ceypallCardDesc  { font-size: 13px; color: rgba(212,232,184,0.88); line-height: 1.7; font-weight: 300; }
 .ceypallFeatures  { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border); }
-.ceypallFeature   { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: rgba(212,232,184,0.78); line-height: 1.5; }
+.ceypallFeature   { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: rgba(212,232,184,0.9); line-height: 1.5; }
 .ceypallFeature svg{ color: var(--sage-500, var(--sage-400)); flex-shrink: 0; margin-top: 1px; }
 .ceypallCta       { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
 .ceypallCtaBtn    { background: var(--stone-800); color: var(--stone-50); font-size: 14px; font-weight: 500; padding: 12px 28px; border-radius: 8px; text-decoration: none; transition: background 0.15s; flex-shrink: 0; }
 .ceypallCtaBtn:hover { background: var(--text-primary); }
-.ceypallCtaNote   { font-size: 12.5px; color: rgba(212,232,184,0.7); }
+.ceypallCtaNote   { font-size: 12.5px; color: rgba(212,232,184,0.87); }
 
 /* Testimonials */
 .testGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -179,7 +179,7 @@
 .stars    { color: var(--sage-400); font-size: 15px; letter-spacing: 1px; margin-bottom: 14px; }
 .testQ    { font-size: 13.5px; line-height: 1.7; color: rgba(212,232,184,0.9); font-style: italic; margin-bottom: 18px; font-weight: 300; }
 .testCo   { font-size: 12.5px; font-weight: 500; color: #ffffff; }
-.testType { font-size: 11.5px; color: rgba(212,232,184,0.65); margin-top: 2px; }
+.testType { font-size: 11.5px; color: rgba(212,232,184,0.85); margin-top: 2px; }
 
 /* FAQ */
 .faqList  { display: flex; flex-direction: column; max-width: 760px; }
@@ -198,14 +198,14 @@
 /* Contact section */
 .contactSection { background: var(--sage-900); padding: 96px 0; }
 .contactInner   { max-width: 1120px; margin: 0 auto; padding: 0 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.eyebrowLight   { font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(212,232,184,0.55); font-weight: 500; display: block; margin-bottom: 16px; }
+.eyebrowLight   { font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(212,232,184,0.74); font-weight: 500; display: block; margin-bottom: 16px; }
 .contactTitle   { font-family: var(--font-display); font-size: clamp(36px, 5vw, 54px); font-weight: 400; color: var(--sage-100); line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 20px; }
-.contactSub     { font-size: clamp(16px, 1.8vw, 19px); line-height: 1.7; color: rgba(212,232,184,0.7); margin-bottom: 36px; font-weight: 300; }
+.contactSub     { font-size: clamp(16px, 1.8vw, 19px); line-height: 1.7; color: rgba(212,232,184,0.87); margin-bottom: 36px; font-weight: 300; }
 
 .contactInfo    { display: flex; flex-direction: column; gap: 18px; margin-bottom: 28px; }
 .cRow           { display: flex; align-items: flex-start; gap: 14px; }
 .cIcon          { display: flex; align-items: center; color: var(--sage-400); flex-shrink: 0; margin-top: 2px; }
-.cLabel         { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(212,232,184,0.65); margin-bottom: 2px; }
+.cLabel         { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(212,232,184,0.85); margin-bottom: 2px; }
 .cVal           { font-size: 14px; color: var(--sage-100); font-weight: 500; }
 
 .waBtn {
@@ -216,7 +216,7 @@
 .waBtn:hover { opacity: 0.88; }
 
 .hours        { border-top: 1px solid rgba(212,232,184,0.12); padding-top: 24px; }
-.hoursLabel   { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(212,232,184,0.65); margin-bottom: 12px; }
+.hoursLabel   { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.08em; color: rgba(212,232,184,0.85); margin-bottom: 12px; }
 .hoursRow     { display: flex; justify-content: space-between; font-size: 13.5px; color: rgba(212,232,184,0.88); padding: 5px 0; }
 
 /* Form */
@@ -242,17 +242,17 @@
 .thankYou     { padding: 48px 32px; text-align: center; }
 .thankIcon    { font-size: 36px; color: var(--sage-400); margin-bottom: 12px; }
 .thankTitle   { font-family: var(--font-display); font-size: 24px; color: var(--sage-100); margin-bottom: 8px; }
-.thankSub     { font-size: 14px; color: rgba(212,232,184,0.78); }
+.thankSub     { font-size: 14px; color: rgba(212,232,184,0.9); }
 
 /* Footer */
 .footer       { background: var(--sage-900); border-top: 1px solid rgba(212,232,184,0.08); padding: 28px 0; }
 .footerInner  { max-width: 1120px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
 .footerName   { font-family: var(--font-display); font-size: 14px; color: var(--sage-200); }
-.footerSub    { font-size: 11px; color: rgba(212,232,184,0.6); margin-top: 2px; }
+.footerSub    { font-size: 11px; color: rgba(212,232,184,0.82); margin-top: 2px; }
 .footerLinks  { display: flex; gap: 20px; }
-.footerLinks a{ font-size: 13px; color: rgba(212,232,184,0.65); text-decoration: none; transition: color 0.15s; }
+.footerLinks a{ font-size: 13px; color: rgba(212,232,184,0.85); text-decoration: none; transition: color 0.15s; }
 .footerLinks a:hover { color: var(--sage-200); }
-.footerRight  { font-size: 12px; color: rgba(212,232,184,0.6); }
+.footerRight  { font-size: 12px; color: rgba(212,232,184,0.82); }
 .ceypall      { color: var(--sage-400); text-decoration: none; }
 .ceypall:hover{ text-decoration: underline; }
 
