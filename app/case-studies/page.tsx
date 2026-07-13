@@ -176,7 +176,7 @@ export default function CaseStudiesPage() {
             and assess the treatment — at no charge. Or call us with your specifications.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/#contact" className={styles.ctaBtn}>Get in Touch</a>
+            <a href="/contact-us" className={styles.ctaBtn}>Get in Touch</a>
             <a href="tel:+94312277752" className={styles.ctaPhone}>031 227 7752</a>
           </div>
         </div>

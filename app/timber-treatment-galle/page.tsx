@@ -233,7 +233,7 @@ export default function GallePage() {
             Send us your timber species, dimensions, and quantity. We will advise on the right treatment and quote delivery to the south coast — usually within a few hours.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/#contact" className={styles.ctaBtn}>Get a Quote</a>
+            <a href="/contact-us" className={styles.ctaBtn}>Get a Quote</a>
             <a href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</a>
           </div>
         </div>

@@ -194,7 +194,7 @@ export default function ServiceAreasPage() {
             Send us your location, timber species, dimensions, and quantity. We will advise on the right treatment and quote transport both ways.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/#contact" className={styles.ctaBtn}>Get a Quote</a>
+            <a href="/contact-us" className={styles.ctaBtn}>Get a Quote</a>
             <a href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</a>
           </div>
         </div>

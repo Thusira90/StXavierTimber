@@ -205,7 +205,7 @@ export default async function PostPage({
             and provide a quote — usually within a few hours.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/#contact" className={styles.ctaBtn}>Get a Quote</a>
+            <a href="/contact-us" className={styles.ctaBtn}>Get a Quote</a>
             <a href="/blog" className={styles.ctaBack}>← All Articles</a>
           </div>
         </div>

@@ -40,7 +40,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="/#contact" className={styles.cta}>Get a Quote</a>
+        <a href="/contact-us" className={styles.cta}>Get a Quote</a>
 
         <button
           className={styles.burger}
@@ -58,7 +58,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="/#contact" className={styles.mobileCta} onClick={() => setOpen(false)}>
+          <a href="/contact-us" className={styles.mobileCta} onClick={() => setOpen(false)}>
             Get a Quote
           </a>
         </div>

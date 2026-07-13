@@ -267,7 +267,7 @@ export default function TimberCalculator() {
                     </svg>
                     Send via WhatsApp
                   </a>
-                  <a href="/#contact" className={styles.btnSecondary}>Request a Quote</a>
+                  <a href="/contact-us" className={styles.btnSecondary}>Request a Quote</a>
                 </div>
               </>
             ) : (
