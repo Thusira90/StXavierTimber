@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Contact, Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -38,14 +39,7 @@ const contactSchema = {
     name: 'St. Xavier Timber',
     telephone: ['+94312277752', '+94714711417', '+94769494944'],
     email: 'info@stxaviertimber.com',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '1088, Colombo Road',
-      addressLocality: 'Daluwakotuwa, Kochchikade',
-      addressRegion: 'Western Province',
-      postalCode: '11540',
-      addressCountry: 'LK',
-    },
+    address: POSTAL_ADDRESS,
     geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '08:30', closes: '17:00' },

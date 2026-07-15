@@ -244,7 +244,7 @@ export default function TimberCalculator() {
                   <p className={styles.treatmentLabel}>{result.treatment.label}</p>
                   <div className={styles.treatmentBadges}>
                     {result.treatment.kiln && <span className={styles.badge}>Kiln Drying</span>}
-                    {result.treatment.vpi && <span className={styles.badge}>VPI (Boron Borax)</span>}
+                    {result.treatment.vpi && <span className={styles.badge}>VPI (borate preservative)</span>}
                     {result.treatment.ispm && <span className={styles.badge}>ISPM 15 Heat Treatment</span>}
                   </div>
                   <p className={styles.treatmentNote}>{result.treatment.note}</p>

@@ -18,14 +18,14 @@ const services = [
   {
     tag: 'Vacuum Pressure Impregnation',
     title: 'Vacuum Pressure Impregnation',
-    desc: '5% Boron Borax driven to the wood core under 10 bar (145 PSI) of pressure — providing long-term protection against pests, fungal decay, and moisture ingress.',
+    desc: 'A 5% borate preservative solution (a boron-based preservative) is driven deep into the timber under 10 bar (145 PSI) of pressure, with retention verified per species and dimension — providing long-term protection against pests, fungal decay, and moisture ingress.',
     photo: 'VPI chamber photo',
     image: '/vpi-chamber.png',
     features: [
       '45-minute vacuum air removal pre-treatment',
       '10 bar / 145 PSI pressure maintained 2–6 hours',
-      'Full preservative penetration to the wood core',
-      'Safe Boron Borax — no heavy metals or toxic solvents',
+      'Deep preservative penetration, with retention verified per species and dimension',
+      'Safe borate preservative — no heavy metals or toxic solvents',
     ],
   },
 ];

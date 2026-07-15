@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About St. Xavier Timber — Timber Treatment Specialists, Sri Lanka Est. 1955',
   description:
-    'Family-owned since 1955. IPPC registered kiln drying, VPI, and ISPM 15 heat treatment in Daluwakotuwa, Kochchikade. Three generations serving Sri Lanka\'s construction, furniture, and export industries.',
+    'Family-owned since 1955. IPPC registered kiln drying, VPI, and ISPM 15 heat treatment in Daluwakotuwa, Kochchikade. Four generations serving Sri Lanka\'s construction, furniture, and export industries.',
   alternates: { canonical: 'https://www.stxaviertimber.com/about' },
   openGraph: { url: 'https://www.stxaviertimber.com/about' },
 };
@@ -40,7 +40,7 @@ const milestones = [
   {
     year: 'Today',
     title: 'Four Generations Strong',
-    desc: 'Now in its third generation of family ownership, St. Xavier Timber operates as one of Sri Lanka\'s leading timber treatment specialists. IPPC registered, ISPM 15 certified, and serving industries from construction to export logistics island-wide.',
+    desc: 'Now in its fourth generation of family ownership, St. Xavier Timber operates as one of Sri Lanka\'s leading timber treatment specialists. IPPC registered, ISPM 15 certified, and serving industries from construction to export logistics island-wide.',
   },
 ];
 
@@ -98,7 +98,7 @@ export default function AboutPage() {
           </h1>
           <p className={styles.heroSub}>
             From a single timber yard in Daluwakotuwa to one of Sri Lanka's leading treatment
-            facilities — built on three generations of family knowledge and a relentless commitment
+            facilities — built on four generations of family knowledge and a relentless commitment
             to quality.
           </p>
           <div className={styles.heroBadges}>
@@ -119,7 +119,7 @@ export default function AboutPage() {
               St. Xavier Timber was founded in 1955 in Daluwakotuwa, Sri Lanka, by a family with
               deep roots in the local timber trade. What started as a modest trading operation
               supplying construction and furniture businesses in the Western Province has grown,
-              over three generations, into one of Sri Lanka's most capable timber treatment
+              over four generations, into one of Sri Lanka's most capable timber treatment
               facilities.
             </p>
             <p className={styles.body}>
@@ -130,7 +130,7 @@ export default function AboutPage() {
               across the world.
             </p>
             <p className={styles.body}>
-              What sets us apart is not just the machinery — it is the three generations of timber
+              What sets us apart is not just the machinery — it is the four generations of timber
               knowledge behind every decision. Our team understands how different species respond
               to treatment, how moisture behaves through a drying cycle, and what it takes to
               deliver timber that genuinely performs in the field.

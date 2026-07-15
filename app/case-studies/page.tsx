@@ -61,7 +61,7 @@ const CASES = [
     },
     solution: {
       label: 'What We Did',
-      text: 'St. Xavier Timber assessed the contaminated timber and carried out a full re-treatment: a complete VPI cycle using 5% Boron Borax at 10 bar, followed by kiln drying to stabilise moisture content. The timber was returned to the client with our standard warranty against pest contamination.',
+      text: 'St. Xavier Timber assessed the contaminated timber and carried out a full re-treatment: a complete VPI cycle using 5% borate preservative solution at 10 bar, followed by kiln drying to stabilise moisture content. The timber was returned to the client with our standard warranty against pest contamination.',
     },
     result: {
       label: 'The Result',

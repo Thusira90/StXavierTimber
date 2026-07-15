@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from './negombo.module.css';
@@ -39,14 +40,7 @@ const localSchema = {
   url: `${BASE}/timber-treatment-negombo`,
   telephone: ['+94312277752', '+94714711417', '+94769494944'],
   email: 'info@stxaviertimber.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1088, Colombo Road',
-    addressLocality: 'Daluwakotuwa, Kochchikade',
-    addressRegion: 'Western Province',
-    postalCode: '11540',
-    addressCountry: 'LK',
-  },
+  address: POSTAL_ADDRESS,
   geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
   areaServed: [
     { '@type': 'City', name: 'Negombo' },
@@ -60,7 +54,7 @@ const localSchema = {
     name: 'Timber Treatment Services — Negombo',
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kiln Drying', description: 'Industrial automated kiln drying to 12–15% moisture content for construction, furniture, and export timber. Serving Negombo and surrounding areas.' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Vacuum Pressure Impregnation (VPI)', description: 'Full-penetration Boron Borax treatment at 10 bar for pest and fungal protection. 10-year warranty. Serving Negombo.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Vacuum Pressure Impregnation (VPI)', description: 'Deep-penetration borate preservative treatment at 10 bar for pest and fungal protection. 10-year warranty. Serving Negombo.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ISPM 15 Heat Treatment', description: 'IPPC registered heat treatment for wooden packaging destined for international export. Serving Negombo exporters.' } },
     ],
   },
@@ -82,10 +76,10 @@ const SERVICES = [
   {
     tag: 'Service 2',
     name: 'Vacuum Pressure Impregnation (VPI)',
-    headline: 'Full-core Boron Borax protection',
-    desc: 'Surface sprays and dips don\'t penetrate timber — they protect only the outer few millimetres. Our VPI process drives 5% Boron Borax preservative deep into the wood core at 10 bar (145 PSI), providing protection that holds even after cutting and machining. Backed by a 10-year warranty against pest contamination.',
+    headline: 'Deep-penetration borate protection',
+    desc: 'Surface sprays and dips don\'t penetrate timber — they protect only the outer few millimetres. Our VPI process drives 5% borate preservative solution deep into the timber at 10 bar (145 PSI), with retention verified per species and dimension, providing protection that holds even after cutting and machining. Backed by a 10-year warranty against pest contamination.',
     details: [
-      '10 bar (145 PSI) pressure drives preservative to the wood core',
+      '10 bar (145 PSI) pressure drives deep preservative penetration, verified per species and dimension',
       'Protects against termites, borers, and fungal decay',
       '10-year warranty against pest contamination',
       'Safe, non-toxic — no heavy metals, arsenic, or solvents',

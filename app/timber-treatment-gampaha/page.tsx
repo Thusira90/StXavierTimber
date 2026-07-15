@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -39,14 +40,7 @@ const localSchema = {
   url: `${BASE}/timber-treatment-gampaha`,
   telephone: ['+94312277752', '+94714711417', '+94769494944'],
   email: 'info@stxaviertimber.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1088, Colombo Road',
-    addressLocality: 'Daluwakotuwa, Kochchikade',
-    addressRegion: 'Western Province',
-    postalCode: '11540',
-    addressCountry: 'LK',
-  },
+  address: POSTAL_ADDRESS,
   geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
   areaServed: [
     { '@type': 'City', name: 'Gampaha' },
@@ -61,7 +55,7 @@ const localSchema = {
     name: 'Timber Treatment Services — Gampaha',
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kiln Drying', description: 'Industrial automated kiln drying to 12–15% moisture content. Serving Gampaha district construction companies, furniture workshops, and exporters.' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Vacuum Pressure Impregnation (VPI)', description: 'Full-penetration Boron Borax treatment at 10 bar for pest and fungal protection. 10-year warranty. Serving Gampaha district.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Vacuum Pressure Impregnation (VPI)', description: 'Deep-penetration borate preservative treatment at 10 bar for pest and fungal protection. 10-year warranty. Serving Gampaha district.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ISPM 15 Heat Treatment', description: 'IPPC registered heat treatment for wooden packaging destined for international export. Serving Gampaha-based exporters.' } },
     ],
   },
@@ -83,10 +77,10 @@ const SERVICES = [
   {
     tag: 'Service 2',
     name: 'Vacuum Pressure Impregnation (VPI)',
-    headline: 'Full-core Boron Borax protection',
-    desc: 'Surface sprays protect only the outer few millimetres. Our VPI process drives 5% Boron Borax deep into the wood core at 10 bar (145 PSI), providing long-lasting protection that survives cutting and machining. Gampaha\'s industrial zone and export processing businesses benefit from pest-free timber backed by a 10-year warranty.',
+    headline: 'Deep-penetration borate protection',
+    desc: 'Surface sprays protect only the outer few millimetres. Our VPI process drives 5% borate preservative solution deep into the timber at 10 bar (145 PSI), with retention verified per species and dimension, providing long-lasting protection that survives cutting and machining. Gampaha\'s industrial zone and export processing businesses benefit from pest-free timber backed by a 10-year warranty.',
     details: [
-      '10 bar (145 PSI) pressure drives preservative to the wood core',
+      '10 bar (145 PSI) pressure drives deep preservative penetration, verified per species and dimension',
       'Protects against termites, borers, and fungal decay',
       '10-year warranty against pest contamination',
       'Safe, non-toxic — no heavy metals, arsenic, or solvents',

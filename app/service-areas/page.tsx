@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -78,14 +79,7 @@ const serviceAreaSchema = {
   url: `${BASE}/service-areas`,
   telephone: ['+94312277752', '+94714711417', '+94769494944'],
   email: 'info@stxaviertimber.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1088, Colombo Road',
-    addressLocality: 'Daluwakotuwa, Kochchikade',
-    addressRegion: 'Western Province',
-    postalCode: '11540',
-    addressCountry: 'LK',
-  },
+  address: POSTAL_ADDRESS,
   geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
   areaServed: { '@type': 'Country', name: 'Sri Lanka' },
 };

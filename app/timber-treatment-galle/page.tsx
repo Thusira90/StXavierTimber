@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -37,14 +38,7 @@ const localSchema = {
   url: `${BASE}/timber-treatment-galle`,
   telephone: ['+94312277752', '+94714711417', '+94769494944'],
   email: 'info@stxaviertimber.com',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1088, Colombo Road',
-    addressLocality: 'Daluwakotuwa, Kochchikade',
-    addressRegion: 'Western Province',
-    postalCode: '11540',
-    addressCountry: 'LK',
-  },
+  address: POSTAL_ADDRESS,
   geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
   areaServed: [
     { '@type': 'City', name: 'Galle' },
@@ -59,7 +53,7 @@ const localSchema = {
     name: 'Timber Treatment Services — Galle',
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Kiln Drying', description: 'Industrial automated kiln drying to 12–15% moisture content. Serving Galle hotels, villa projects, and furniture makers with delivery via the Southern Expressway.' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Vacuum Pressure Impregnation (VPI)', description: 'Full-penetration Boron Borax treatment at 10 bar. 10-year pest warranty. Essential for south coast humidity and salt air conditions.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Vacuum Pressure Impregnation (VPI)', description: 'Deep-penetration borate preservative treatment at 10 bar. 10-year pest warranty. Essential for south coast humidity and salt air conditions.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ISPM 15 Heat Treatment', description: 'IPPC registered heat treatment for export wooden packaging. Serving Southern Province exporters.' } },
     ],
   },
@@ -81,10 +75,10 @@ const SERVICES = [
   {
     tag: 'Service 2',
     name: 'Vacuum Pressure Impregnation (VPI)',
-    headline: 'Full-core Boron Borax protection',
-    desc: 'Salt air, monsoon exposure, and year-round humidity make the south coast one of the toughest environments in Sri Lanka for timber. Surface treatments fail at every cut and fixing hole. Our VPI process drives 5% Boron Borax preservative to the core at 10 bar (145 PSI) — the specification serious villa and hotel projects use for structural and exposed timber. 10-year warranty against pest contamination.',
+    headline: 'Deep-penetration borate protection',
+    desc: 'Salt air, monsoon exposure, and year-round humidity make the south coast one of the toughest environments in Sri Lanka for timber. Surface treatments fail at every cut and fixing hole. Our VPI process drives 5% borate preservative solution deep into the timber at 10 bar (145 PSI), with retention verified per species and dimension — the specification serious villa and hotel projects use for structural and exposed timber. 10-year warranty against pest contamination.',
     details: [
-      '10 bar (145 PSI) pressure drives preservative to the wood core',
+      '10 bar (145 PSI) pressure drives deep preservative penetration, verified per species and dimension',
       'Protects against termites, borers, and fungal decay',
       '10-year warranty against pest contamination',
       'Safe, non-toxic — no heavy metals, arsenic, or solvents',

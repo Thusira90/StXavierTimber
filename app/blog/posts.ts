@@ -2002,7 +2002,7 @@ export const posts: Post[] = [
           'Surface preservatives appear cheap because the initial cost per litre is low. But the comparison should not be between the cost of surface treatment and VPI treatment — it should be between the cost of VPI treatment and the cost of termite remediation or structural replacement.',
           'Replacing a termite-damaged roof structure in Sri Lanka — stripping infested members, installing new kiln-dried and VPI-treated timber, repairing the roofing material, and making good the ceiling — costs many multiples of what VPI treatment at the time of construction would have cost. Surface treatment that fails to prevent this outcome is not cheap — it is the most expensive option.',
         ],
-        note: 'St. Xavier Timber provides VPI treatment with Boron Borax to full cross-section penetration with a 10-year pest warranty. We issue batch treatment records with every order. Contact us to discuss treatment specifications and turnaround times for your project.',
+        note: 'St. Xavier Timber provides VPI treatment with a borate preservative, achieving deep penetration with retention verified per species and dimension, backed by a 10-year pest warranty. We issue batch treatment records with every order. Contact us to discuss treatment specifications and turnaround times for your project.',
       },
     ],
   },
@@ -2990,7 +2990,7 @@ export const posts: Post[] = [
         heading: 'The Only Effective Solution: Deep Penetration Treatment',
         paragraphs: [
           'Surface treatments — painted-on preservatives, spray applications, and brush-applied chemicals — do not protect roof timber against termites. Termites attack from within the wood and through cut ends and joints where surface coatings are absent. A coat of something on the outside of a rafter is not a barrier against an organism that eats from the inside.',
-          'The only treatment that provides reliable, long-term protection is Vacuum Pressure Impregnation (VPI) with a proven preservative carried deep into the wood core under pressure. VPI forces a 5% Boron Borax solution into the cellular structure of the timber throughout its entire cross-section — not just the outer few millimetres. The result is timber where every part of the wood contains the preservative, eliminating the possibility of a pest finding an untreated path through the material.',
+          'The only treatment that provides reliable, long-term protection is Vacuum Pressure Impregnation (VPI) with a proven preservative carried deep into the timber under pressure. VPI forces a 5% borate preservative solution into the cellular structure of the timber, achieving deep, cross-sectional penetration — not just the outer few millimetres — with retention verified per species and dimension. The result is timber where the preservative is distributed through the wood, dramatically reducing the chance of a pest finding an untreated path through the material.',
         ],
       },
       {

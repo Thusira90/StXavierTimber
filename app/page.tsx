@@ -28,12 +28,12 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is Vacuum Pressure Impregnation (VPI) and how does it work?',
-      acceptedAnswer: { '@type': 'Answer', text: 'VPI is a two-stage preservative treatment. First, a 45-minute vacuum removes air from the wood cells. A 5% Boron Borax solution is then forced into the wood at 10 bar (145 PSI) for 2–6 hours, achieving full penetration to the wood core — not just surface saturation.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'VPI is a two-stage preservative treatment. First, a 45-minute vacuum removes air from the wood cells. A 5% borate preservative solution is then forced into the wood at 10 bar (145 PSI) for 2–6 hours, achieving deep preservative penetration, with retention verified per species and dimension — not just surface saturation.' },
     },
     {
       '@type': 'Question',
-      name: 'Is Boron Borax safe for indoor use and for humans?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes. Boron Borax contains no heavy metals, no arsenic, and no toxic solvents. It is widely used in residential construction, furniture, and children\'s play equipment. Treated timber is safe to handle, paint, and finish immediately after treatment.' },
+      name: 'Is the borate preservative safe for indoor use and for humans?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. The borate preservative contains no heavy metals, no arsenic, and no toxic solvents. It is widely used in residential construction, furniture, and children\'s play equipment. Treated timber is safe to handle, paint, and finish immediately after treatment.' },
     },
     {
       '@type': 'Question',
@@ -75,7 +75,7 @@ const processSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Vacuum Pressure Impregnation',
-      text: 'A 45-minute initial vacuum removes residual air from wood cells. 5% Boron Borax is then introduced at 10 bar (145 PSI) for 2–6 hours, driving the preservative deep into the wood core. Timber rests 24 hours post-treatment to allow fixation.',
+      text: 'A 45-minute initial vacuum removes residual air from wood cells. A 5% borate preservative solution is then introduced at 10 bar (145 PSI) for 2–6 hours, driving the preservative deep into the timber, with retention verified per species and dimension. Timber rests 24 hours post-treatment to allow fixation.',
       url: `${BASE}/#process`,
     },
     {
@@ -112,8 +112,8 @@ const vpiSchema = {
   '@type': 'Service',
   '@id': `${BASE}/#vpi`,
   name: 'Vacuum Pressure Impregnation',
-  alternateName: ['VPI Treatment', 'Boron Borax Treatment', 'Timber Preservation'],
-  description: 'Vacuum pressure impregnation (VPI) timber treatment using 5% Boron Borax at 10 bar (145 PSI). Full cross-section penetration to the wood core. Safe, non-toxic preservative. 10-year warranty against pest contamination.',
+  alternateName: ['VPI Treatment', 'Borate Preservative Treatment', 'Timber Preservation'],
+  description: 'Vacuum pressure impregnation (VPI) timber treatment using a 5% borate preservative solution at 10 bar (145 PSI). Deep preservative penetration, with retention verified per species and dimension. Safe, non-toxic preservative. 10-year warranty against pest contamination.',
   provider: { '@type': 'LocalBusiness', '@id': BASE, name: 'St. Xavier Timber' },
   areaServed: { '@type': 'Country', name: 'Sri Lanka' },
   serviceType: 'Timber Preservation',

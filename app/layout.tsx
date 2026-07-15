@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { POSTAL_ADDRESS } from '@/lib/company';
 import './globals.css';
 
 const siteUrl = 'https://www.stxaviertimber.com';
@@ -34,7 +35,6 @@ export const metadata: Metadata = {
     'timber treatment facility Sri Lanka',
     'termite treatment timber Sri Lanka',
     'export timber treatment Sri Lanka',
-    'CeyPall',
   ],
   authors: [{ name: 'St. Xavier Timber' }],
   creator: 'St. Xavier Timber',
@@ -85,13 +85,7 @@ const localBusinessSchema = {
   telephone: ['+94312277752', '+94714711417', '+94769494944'],
   email: 'info@stxaviertimber.com',
   foundingDate: '1955',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1088, Colombo Road',
-    addressLocality: 'Daluwakotuwa, Kochchikade',
-    addressRegion: 'Western Province',
-    addressCountry: 'LK',
-  },
+  address: POSTAL_ADDRESS,
   geo: {
     '@type': 'GeoCoordinates',
     latitude: 7.3553,
@@ -130,7 +124,7 @@ const localBusinessSchema = {
           '@type': 'Service',
           name: 'Vacuum Pressure Impregnation (VPI)',
           description:
-            'Full-penetration Boron Borax treatment at 10 bar (145 PSI) for pest and fungal protection. 10-year warranty against pest contamination.',
+            'Deep-penetration 5% borate preservative treatment at 10 bar (145 PSI) for pest and fungal protection, with retention verified per species and dimension. 10-year warranty against pest contamination.',
         },
       },
       {
@@ -202,13 +196,7 @@ const ceypallSchema = {
     name: 'St. Xavier Timber',
     url: siteUrl,
   },
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '1088, Colombo Road',
-    addressLocality: 'Daluwakotuwa, Kochchikade',
-    addressRegion: 'Western Province',
-    addressCountry: 'LK',
-  },
+  address: POSTAL_ADDRESS,
   knowsAbout: [
     'ISPM 15 wooden pallets',
     'IPPC heat treatment',

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './Sections.module.css';
+import { NAP_ADDRESS_SHORT, PHONE_OFFICE, PHONE_MOBILE, PHONE_MOBILE_ALT, EMAIL } from '@/lib/company';
 
 /* ── Process ─────────────────────────────────────────────── */
 const steps = [
@@ -20,12 +21,12 @@ const steps = [
   {
     n: '02',
     title: 'Vacuum Pressure Impregnation',
-    desc: 'Timber is loaded into our sealed pressure vessel where a two-stage cycle drives 5% Boron Borax preservative deep into the wood core — not just the surface.',
+    desc: 'Timber is loaded into our sealed pressure vessel where a two-stage cycle drives a 5% borate preservative solution deep into the timber — with retention verified per species and dimension, not just the surface.',
     details: [
       '45-minute initial vacuum removes residual air from wood cells',
-      '5% Boron Borax solution introduced at 10 bar (145 PSI)',
+      '5% borate preservative solution introduced at 10 bar (145 PSI)',
       'Pressure held for 2–6 hours depending on species and thickness',
-      'Final vacuum extracts surface excess, leaving preservative locked in the core',
+      'Final vacuum extracts surface excess, leaving preservative retained within the timber',
       'Timber rested 24 hours post-treatment to allow fixation',
     ],
     duration: '1–2 days',
@@ -300,97 +301,26 @@ export function Species() {
 }
 
 /* ── CeyPall ──────────────────────────────────────────────── */
-const ceypallProducts = [
-  {
-    tag: 'Export',
-    title: 'Heat-treated pallets',
-    subtitle: 'ISPM 15 compliant',
-    desc: 'ISPM 15-compliant pallets with IPPC stamp. Core heated to 56°C for a minimum of 30 minutes. Accepted in all major international markets. Treatment certificate provided.',
-    features: ['56°C core heat treatment', 'IPPC stamped', 'Treatment certificate included', 'Accepted in 180+ countries'],
-  },
-  {
-    tag: 'Storage',
-    title: 'Vacuum pressure impregnated',
-    subtitle: 'Long-term warehouse use',
-    desc: 'For long-term warehouse and racking applications. Boron Borax is forced deep into the wood core under pressure — backed by a warranty of up to 6 years against pest contamination.',
-    features: ['Up to 10 bar pressure impregnation', '6-year pest warranty', 'Ideal for racking systems', 'Enhanced durability'],
-  },
-  {
-    tag: 'Custom',
-    title: 'Custom size pallets',
-    subtitle: 'Built to your spec',
-    desc: 'All standard international dimensions and custom sizes built to your exact specifications. Same treatment standards, fast turnaround.',
-    features: ['All standard sizes available', 'Custom dimensions on request', 'Same treatment quality', 'Quick lead times'],
-  },
-];
-
 export function CeyPall() {
   return (
     <section className={styles.ceypallSection}>
       <div className={styles.inner}>
-        <div className={styles.ceypallHeader}>
-          <div className={styles.ceypallHeaderLeft}>
-            <span className={styles.ceypallEyebrow}>Sister Company</span>
-            <h2 className={styles.ceypallH2}>
-              Need pallets? <br />
-              <a href="https://ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypallLink}>CeyPall</a> has you covered.
-            </h2>
-            <p className={styles.ceypallSub}>
-              CeyPall is our pallet manufacturing arm — built on the same 1955 timber legacy.
-              Every CeyPall pallet is made from St. Xavier treated timber: kiln-dried, VPI-treated,
-              and ISPM 15 certified for export. IPPC registered with the National Plant Quarantine
-              Service of Sri Lanka.
-            </p>
-            <div className={styles.ceypallBadges}>
-              {['IPPC Registered', 'ISPM 15 Certified', 'Est. 1955 legacy', '20+ years manufacturing'].map((b) => (
-                <span key={b} className={styles.ceypallBadge}>{b}</span>
-              ))}
-            </div>
+        <div className={styles.ceypallHeaderLeft}>
+          <span className={styles.ceypallEyebrow}>Sister Company</span>
+          <h2 className={styles.ceypallH2}>
+            Need pallets?{' '}
+            <a href="https://ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypallLink}>CeyPall</a> has you covered.
+          </h2>
+          <p className={styles.ceypallSub}>
+            CeyPall is our pallet manufacturing arm — built on the same 1955 timber legacy.
+            Every CeyPall pallet is made from St. Xavier treated timber: kiln-dried, VPI-treated,
+            and ISPM 15 certified for export.
+          </p>
+          <div className={styles.ceypallCta}>
+            <a href="https://ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypallCtaBtn}>
+              Visit ceypall.com →
+            </a>
           </div>
-          <div className={styles.ceypallHeaderRight}>
-            <div className={styles.ceypallStat}>
-              <span className={styles.ceypallStatNum}>56°C</span>
-              <span className={styles.ceypallStatLabel}>Core heat treatment</span>
-            </div>
-            <div className={styles.ceypallStat}>
-              <span className={styles.ceypallStatNum}>IPPC</span>
-              <span className={styles.ceypallStatLabel}>Registered & Certified</span>
-            </div>
-            <div className={styles.ceypallStat}>
-              <span className={styles.ceypallStatNum}>180+</span>
-              <span className={styles.ceypallStatLabel}>Countries accepted</span>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.ceypallGrid}>
-          {ceypallProducts.map((p) => (
-            <div key={p.title} className={styles.ceypallCard}>
-              <div className={styles.ceypallCardTop}>
-                <span className={styles.ceypallTag}>{p.tag}</span>
-                <p className={styles.ceypallCardSub}>{p.subtitle}</p>
-                <h3 className={styles.ceypallCardTitle}>{p.title}</h3>
-              </div>
-              <p className={styles.ceypallCardDesc}>{p.desc}</p>
-              <ul className={styles.ceypallFeatures}>
-                {p.features.map((f) => (
-                  <li key={f} className={styles.ceypallFeature}>
-                    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                      <path d="M2 7l3.5 3.5L12 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        <div className={styles.ceypallCta}>
-          <a href="https://ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypallCtaBtn}>
-            Visit ceypall.com →
-          </a>
-          <p className={styles.ceypallCtaNote}>Heat-treated · VPI treated · Custom sizes · Island-wide delivery</p>
         </div>
       </div>
     </section>
@@ -439,11 +369,11 @@ const faqs = [
   },
   {
     q: 'What is Vacuum Pressure Impregnation (VPI) and how does it work?',
-    a: 'VPI is a two-stage preservative treatment. First, we remove all air from the wood cells under vacuum for approximately 45 minutes. We then force a 5% Boron Borax solution into the wood at 10 bar (145 PSI) of pressure for 2–6 hours. The result is full penetration of the preservative right to the wood core — not just surface saturation.',
+    a: 'VPI is a two-stage preservative treatment. First, we remove all air from the wood cells under vacuum for approximately 45 minutes. We then force a 5% borate preservative solution into the wood at 10 bar (145 PSI) of pressure for 2–6 hours. The result is deep preservative penetration, with retention verified per species and dimension — not just surface saturation.',
   },
   {
-    q: 'Is Boron Borax safe for indoor use and for humans?',
-    a: 'Yes. Boron Borax is one of the safest timber preservatives available. It contains no heavy metals, no arsenic, and no toxic solvents. It is widely used in residential construction, furniture, and children\'s play equipment. Treated timber is safe to handle, paint, and finish immediately after treatment.',
+    q: 'Is the borate preservative safe for indoor use and for humans?',
+    a: 'Yes. The borate preservative we use is one of the safest timber preservatives available. It contains no heavy metals, no arsenic, and no toxic solvents. It is widely used in residential construction, furniture, and children\'s play equipment. Treated timber is safe to handle, paint, and finish immediately after treatment.',
   },
   {
     q: 'What is ISPM 15 / IPPC certification and why does my export shipment need it?',
@@ -539,10 +469,10 @@ export function Contact() {
             usually within a few hours.
           </p>
           <div className={styles.contactInfo}>
-            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.18 21 3 13.82 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>} label="Office" val="031 227 7752" />
-            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>} label="Mobile" val="071 471 1417  ·  076 949 4944" />
-            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>} label="Email" val="info@stxaviertimber.com" />
-            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>} label="Location" val="1088, Colombo Road, Daluwakotuwa. Kochchikade." />
+            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.18 21 3 13.82 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>} label="Office" val={PHONE_OFFICE} />
+            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>} label="Mobile" val={`${PHONE_MOBILE}  ·  ${PHONE_MOBILE_ALT}`} />
+            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>} label="Email" val={EMAIL} />
+            <ContactRow icon={<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>} label="Location" val={`${NAP_ADDRESS_SHORT}, Sri Lanka`} />
           </div>
           <a href="https://wa.me/94714711417" className={styles.waBtn} target="_blank" rel="noopener noreferrer">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -609,7 +539,7 @@ export function Footer() {
       <div className={styles.footerInner}>
         <div>
           <p className={styles.footerName}>St. Xavier Timber</p>
-          <p className={styles.footerSub}>1088, Colombo Road, Daluwakotuwa. Kochchikade. · Est. 1955</p>
+          <p className={styles.footerSub}>{NAP_ADDRESS_SHORT}, Sri Lanka · Est. 1955</p>
         </div>
         <div className={styles.footerLinks}>
           <a href="/service-areas">Service Areas</a>
