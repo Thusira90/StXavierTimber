@@ -865,7 +865,7 @@ export const posts: Post[] = [
         heading: 'The Two-Part Solution: Treatment and Isolation',
         paragraphs: [
           'Correct protection of masonry-contact timber requires two complementary measures: treating the timber to resist biological attack, and isolating it from the moisture source to reduce the ongoing risk.',
-          'Treatment means VPI with Boron Borax to full cross-section penetration. This provides chemical resistance to termites and decay fungi throughout the timber. It does not prevent moisture absorption — it prevents the organisms that need moisture from causing damage once they are present.',
+          'Treatment means VPI with a borate preservative to deep penetration, with retention verified per species and dimension. This provides chemical resistance to termites and decay fungi throughout the treated timber. It does not prevent moisture absorption — it prevents the organisms that need moisture from causing damage once they are present.',
           'Isolation means a damp-proof course membrane — polythene, bituminous felt, or a proprietary DPC material — installed between the masonry surface and the timber bearing face. This significantly reduces the rate of moisture transfer from masonry to timber. Used with VPI-treated timber, isolation extends the service life of masonry-contact details by decades compared to either measure used alone.',
         ],
         list: [
