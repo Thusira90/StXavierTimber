@@ -214,7 +214,7 @@ export const posts: Post[] = [
           'The maintenance that extends outdoor timber life is simpler than most product marketing suggests. Keep the deck clean — leaf litter and soil in board gaps hold moisture against the timber. Re-oil or re-coat surfaces exposed to full sun annually or as the finish weathers; the coating\'s job is UV and water shedding, not preservation — that was the VPI treatment\'s job. Inspect annually for termite mud tubes on posts and the underside of the structure, and check that drainage details are still working.',
           'A VPI-treated, correctly detailed hardwood deck in Sri Lanka is realistically a 15-year-plus structure with basic maintenance. The same timber, surface treated and detailed carelessly, can need major repairs within three to five years. The treatment and detailing decisions made before construction matter more than anything done afterwards.',
         ],
-        note: 'St. Xavier Timber VPI-treats structural and decking timber with Boron Borax at 10 bar, backed by a 10-year warranty against pest contamination. Contact us on 031 227 7752 or WhatsApp 071 471 1417 to discuss your outdoor project.',
+        note: 'St. Xavier Timber VPI-treats structural and decking timber with borate preservative at 10 bar, backed by a 10-year warranty against pest contamination. Contact us on 031 227 7752 or WhatsApp 071 471 1417 to discuss your outdoor project.',
       },
     ],
   },
@@ -568,7 +568,7 @@ export const posts: Post[] = [
       {
         heading: 'What the Specification Should Cover',
         paragraphs: [
-          'A complete furniture timber input specification should cover six areas. Species (define acceptable species and explicitly exclude unacceptable substitutes). Dimensions (nominal and acceptable actual dimensions, with tolerances). Moisture content (target MC and acceptable range, measurement method, and documentation requirement). Treatment (for rubberwood: kiln drying and VPI treatment with Boron Borax, with batch records; for mahogany: kiln drying as minimum, VPI treatment recommended). Grade (minimum grade by your own visual inspection criteria or reference to a published standard). Degrade allowance (the maximum percentage of each delivery that can be below specification before the batch is rejected).',
+          'A complete furniture timber input specification should cover six areas. Species (define acceptable species and explicitly exclude unacceptable substitutes). Dimensions (nominal and acceptable actual dimensions, with tolerances). Moisture content (target MC and acceptable range, measurement method, and documentation requirement). Treatment (for rubberwood: kiln drying and VPI treatment with borate preservative, with batch records; for mahogany: kiln drying as minimum, VPI treatment recommended). Grade (minimum grade by your own visual inspection criteria or reference to a published standard). Degrade allowance (the maximum percentage of each delivery that can be below specification before the batch is rejected).',
         ],
       },
       {
@@ -616,7 +616,7 @@ export const posts: Post[] = [
         heading: 'Failure 1: Termite Damage to Roof Structures',
         paragraphs: [
           'Termite damage to roof timber is the most common structural timber failure in Sri Lanka. Subterranean termites enter through the foundation and travel upward through mud tubes along masonry walls, reaching the roof space where they attack rafters, purlins, and wall plates from the inside out. The damage is invisible until structural integrity is already severely compromised.',
-          'Prevention is simple and inexpensive: specify VPI treatment with Boron Borax for all roof structural members before installation. The cost of treatment is a small fraction of the cost of a full roof re-timber. No other intervention — post-installation spraying, soil treatment, physical barriers alone — provides the same level of built-in protection as treating the timber itself.',
+          'Prevention is simple and inexpensive: specify VPI treatment with borate preservative for all roof structural members before installation. The cost of treatment is a small fraction of the cost of a full roof re-timber. No other intervention — post-installation spraying, soil treatment, physical barriers alone — provides the same level of built-in protection as treating the timber itself.',
         ],
       },
       {
@@ -651,7 +651,7 @@ export const posts: Post[] = [
         heading: 'Failure 6: Beetle Infestation in Furniture After Delivery',
         paragraphs: [
           'Powder post beetle emergence in delivered furniture — fine dust and small exit holes appearing weeks or months after delivery — is the most common quality failure in the Sri Lankan furniture industry. It is caused by rubberwood processed without VPI treatment, or rubberwood that was kiln-dried (killing existing beetles) but then stored or transported long enough for adult beetles to re-infest before manufacture or delivery.',
-          'Prevention: kiln-dry rubberwood to kill existing infestation, then VPI treat with Boron Borax to prevent re-infestation. Both steps are required. Kiln drying alone is not sufficient; VPI alone on green timber does not achieve adequate penetration. The combined treatment sequence, done in the correct order, reliably prevents this failure mode.',
+          'Prevention: kiln-dry rubberwood to kill existing infestation, then VPI treat with borate preservative to prevent re-infestation. Both steps are required. Kiln drying alone is not sufficient; VPI alone on green timber does not achieve adequate penetration. The combined treatment sequence, done in the correct order, reliably prevents this failure mode.',
         ],
       },
       {
@@ -685,11 +685,11 @@ export const posts: Post[] = [
         heading: 'Wall Plates',
         paragraphs: [
           'Wall plates are the horizontal timber members resting on top of the masonry wall that carry the roof rafter feet and transfer roof loads to the wall. They are in direct contact with the masonry top surface, are typically enclosed between the top of the wall and the ceiling, and are inaccessible for inspection or maintenance without demolition.',
-          'Treatment specification for wall plates: kiln-dried to 15–18% MC, VPI-treated with Boron Borax to confirmed retention, from an IPPC-registered facility. Additionally, a damp-proof course (DPC) membrane — polythene, bituminous felt, or proprietary DPC strip — should be placed between the masonry wall top and the underside of the wall plate. This is not a substitute for timber treatment; it is a complementary measure that reduces the moisture transfer from masonry to timber and extends the service life of even treated timber.',
+          'Treatment specification for wall plates: kiln-dried to 15–18% MC, VPI-treated with borate preservative to confirmed retention, from an IPPC-registered facility. Additionally, a damp-proof course (DPC) membrane — polythene, bituminous felt, or proprietary DPC strip — should be placed between the masonry wall top and the underside of the wall plate. This is not a substitute for timber treatment; it is a complementary measure that reduces the moisture transfer from masonry to timber and extends the service life of even treated timber.',
         ],
         list: [
           'Kiln-dried to 15–18% MC before VPI treatment',
-          'VPI treated with Boron Borax — confirmed penetration and retention',
+          'VPI treated with borate preservative — confirmed penetration and retention',
           'DPC membrane between masonry top and timber underside',
           'Treatment records required before ceiling installation conceals the wall plate',
           'Inspect at 5-year intervals if accessible; replace at first sign of softening',
@@ -699,7 +699,7 @@ export const posts: Post[] = [
         heading: 'Timber Lintels',
         paragraphs: [
           'Timber lintels span door and window openings to carry the masonry above. Unlike steel or concrete lintels, timber lintels are inherently susceptible to moisture and biological attack — and they sit in exactly the environment where both are most likely: in contact with masonry on three faces, above an opening that may admit rain splash, and in a position that is difficult to inspect once plastered.',
-          'Modern construction increasingly uses concrete or steel lintels as a standard specification, which is a rational response to the maintenance demands of timber lintels in Sri Lanka\'s climate. Where timber lintels are specified — for heritage reasons, for flexibility of installation, or where the span and load do not require the strength of steel — they must be VPI treated with Boron Borax and should be isolated from masonry contact on the bearing surfaces with a DPC strip.',
+          'Modern construction increasingly uses concrete or steel lintels as a standard specification, which is a rational response to the maintenance demands of timber lintels in Sri Lanka\'s climate. Where timber lintels are specified — for heritage reasons, for flexibility of installation, or where the span and load do not require the strength of steel — they must be VPI treated with borate preservative and should be isolated from masonry contact on the bearing surfaces with a DPC strip.',
         ],
       },
       {
@@ -712,7 +712,7 @@ export const posts: Post[] = [
       {
         heading: 'Specification Language for Masonry-Contact Timber',
         paragraphs: [
-          'The specification clause for masonry-contact timber should be explicit: "All timber in contact with or within 300mm of masonry — including wall plates, lintels, sill plates, embedded beam ends, and any timber built into walls — shall be kiln-dried to 15–18% MC and VPI-treated with Boron Borax to a minimum retention of 3.5 kg/m³. A continuous damp-proof course membrane shall be installed between masonry and timber at all bearing faces. Treatment records shall be submitted before any masonry or plaster work conceals the treated members."',
+          'The specification clause for masonry-contact timber should be explicit: "All timber in contact with or within 300mm of masonry — including wall plates, lintels, sill plates, embedded beam ends, and any timber built into walls — shall be kiln-dried to 15–18% MC and VPI-treated with borate preservative to a minimum retention of 3.5 kg/m³. A continuous damp-proof course membrane shall be installed between masonry and timber at all bearing faces. Treatment records shall be submitted before any masonry or plaster work conceals the treated members."',
           'This specification, written at design stage and enforced at construction stage, prevents all of the failure modes described above for a cost that is a fraction of the remediation bill.',
         ],
         note: 'St. Xavier Timber supplies VPI-treated wall plate timber, lintels, and structural members cut to your specified dimensions. We issue treatment records with every order. Contact us for pricing and turnaround times.',
@@ -753,7 +753,7 @@ export const posts: Post[] = [
       {
         heading: 'Treatment Specification',
         paragraphs: [
-          'All structural roof timber — rafters, purlins, wall plates, ridge boards, hip and valley boards, ceiling joists, and any timber within 300mm of masonry — should be VPI treated with Boron Borax to a minimum retention of 3.0 kg/m³, from an IPPC-registered treatment facility. Treatment records (species, cross-section, pre-treatment MC, VPI cycle log, retention figure, date, facility registration) must be submitted before ceiling installation.',
+          'All structural roof timber — rafters, purlins, wall plates, ridge boards, hip and valley boards, ceiling joists, and any timber within 300mm of masonry — should be VPI treated with borate preservative to a minimum retention of 3.0 kg/m³, from an IPPC-registered treatment facility. Treatment records (species, cross-section, pre-treatment MC, VPI cycle log, retention figure, date, facility registration) must be submitted before ceiling installation.',
           'The specification should additionally require that any timber cut on site after delivery be immediately flood-coated with a concentrated borate solution on all exposed end grain surfaces. This partial protection does not substitute for factory VPI treatment but significantly reduces the vulnerability of site-cut ends.',
         ],
         list: [
@@ -775,7 +775,7 @@ export const posts: Post[] = [
       {
         heading: 'Connector and Fixing Specification',
         paragraphs: [
-          'Fixings in treated timber should be specified as hot-dip galvanised or stainless steel. Boron Borax treatment does not corrode mild steel fixings under dry interior conditions, but any moisture at the fixing interface can cause corrosion of unprotected steel, which stains the timber and weakens the connection over time. For coastal environments, stainless steel fixings are the correct specification.',
+          'Fixings in treated timber should be specified as hot-dip galvanised or stainless steel. Borate preservative treatment does not corrode mild steel fixings under dry interior conditions, but any moisture at the fixing interface can cause corrosion of unprotected steel, which stains the timber and weakens the connection over time. For coastal environments, stainless steel fixings are the correct specification.',
           'Nail plates, joist hangers, and truss connectors should all be specified as hot-dip galvanised as a minimum for interior structural applications, and stainless steel for any exposed or coastal application.',
         ],
         note: 'St. Xavier Timber supplies kiln-dried, VPI-treated structural timber in pine, mahogany, and rubberwood, cut to your specified dimensions and marked with treatment batch information. Contact us to discuss your roof structure requirements and we will provide a quote with turnaround time.',
@@ -809,7 +809,7 @@ export const posts: Post[] = [
       {
         heading: 'Treatment Specification for Floor Joists',
         paragraphs: [
-          'All floor joists in elevated timber floors should be kiln-dried to 15–18% MC and VPI treated with Boron Borax before installation. Treatment records must be submitted before the floor boarding is installed and the joists are concealed.',
+          'All floor joists in elevated timber floors should be kiln-dried to 15–18% MC and VPI treated with borate preservative before installation. Treatment records must be submitted before the floor boarding is installed and the joists are concealed.',
           'For sub-floor spaces — the void between the ground and the underside of a ground floor timber structure — additional considerations apply. If the sub-floor space is enclosed and cannot be adequately ventilated, the risk of elevated moisture and associated decay and termite activity is high. A chemical or physical termite barrier at the perimeter of the structure, combined with VPI-treated joists, provides the most complete protection for this detail.',
         ],
         list: [
@@ -913,7 +913,7 @@ export const posts: Post[] = [
         heading: 'Preservation Treatment Requirements',
         paragraphs: [
           'ICTAD specification CS-02 and the general conditions of the Public Works Department require preservation treatment for structural timber in specific applications. The key requirements are: timber in ground contact must be treated with a preservative system rated for ground contact (CCA or equivalent — not borate treatment, which leaches in ground contact); structural timber in buildings must be treated against termites and decay in accordance with the applicable exposure class; and wooden packaging for export must comply with ISPM 15 (heat treatment from an IPPC-registered facility).',
-          'For most above-ground structural applications in Sri Lanka — roof structures, floor joists, door and window frames — VPI treatment with Boron Borax satisfies the preservation requirements of the applicable specifications. Treatment records from an IPPC-registered facility provide the documentation evidence for compliance.',
+          'For most above-ground structural applications in Sri Lanka — roof structures, floor joists, door and window frames — VPI treatment with borate preservative satisfies the preservation requirements of the applicable specifications. Treatment records from an IPPC-registered facility provide the documentation evidence for compliance.',
         ],
       },
       {
@@ -953,7 +953,7 @@ export const posts: Post[] = [
       {
         heading: 'The Four Elements of a Complete Treatment Specification',
         paragraphs: [
-          'A complete timber treatment specification has four elements. First, the scope — which elements are covered. This should list every type of timber member that requires treatment, with no room for a contractor to argue that a specific element was not included. Second, the treatment method — which must specify VPI with Boron Borax, not surface application. Third, the minimum retention level — the amount of preservative that must be present in the wood, expressed in kg/m³. Fourth, the documentation requirements — what records must be submitted, by when, and to whom.',
+          'A complete timber treatment specification has four elements. First, the scope — which elements are covered. This should list every type of timber member that requires treatment, with no room for a contractor to argue that a specific element was not included. Second, the treatment method — which must specify VPI with borate preservative, not surface application. Third, the minimum retention level — the amount of preservative that must be present in the wood, expressed in kg/m³. Fourth, the documentation requirements — what records must be submitted, by when, and to whom.',
         ],
       },
       {
@@ -967,8 +967,8 @@ export const posts: Post[] = [
         heading: 'Sample Specification Clauses',
         paragraphs: [
           'The following clauses can be adapted for inclusion in a schedule of works or bill of quantities.',
-          '"All structural roof timber including rafters, purlins, ceiling joists, ridge boards, hip and valley boards, and wall plates shall be kiln-dried to 15–18% MC and Vacuum Pressure Impregnated with Boron Borax preservative to a minimum retention of 3.0 kg/m³, by an IPPC-registered treatment facility. Batch treatment records shall be submitted to the architect before ceiling installation proceeds."',
-          '"All door and window frames, sub-frames, and sill members shall be kiln-dried to 12–15% MC and VPI treated with Boron Borax to a minimum retention of 2.5 kg/m³. End grain exposed by site cutting shall be flood-coated with concentrated borate solution immediately after cutting. A damp-proof membrane shall be installed between all frame back faces and masonry before fixing."',
+          '"All structural roof timber including rafters, purlins, ceiling joists, ridge boards, hip and valley boards, and wall plates shall be kiln-dried to 15–18% MC and Vacuum Pressure Impregnated with borate preservative to a minimum retention of 3.0 kg/m³, by an IPPC-registered treatment facility. Batch treatment records shall be submitted to the architect before ceiling installation proceeds."',
+          '"All door and window frames, sub-frames, and sill members shall be kiln-dried to 12–15% MC and VPI treated with borate preservative to a minimum retention of 2.5 kg/m³. End grain exposed by site cutting shall be flood-coated with concentrated borate solution immediately after cutting. A damp-proof membrane shall be installed between all frame back faces and masonry before fixing."',
         ],
       },
       {
@@ -1022,7 +1022,7 @@ export const posts: Post[] = [
       {
         heading: 'Replacement Timber in Renovation',
         paragraphs: [
-          'Replacement structural members installed during renovation should be specified to exactly the same standard as new construction: kiln-dried to the target MC, VPI treated with Boron Borax, with treatment records. The fact that a building already exists and has existing timber does not reduce the standard required for the replacement material — if anything, the high-risk environment revealed by the need for renovation increases the case for the highest available treatment standard.',
+          'Replacement structural members installed during renovation should be specified to exactly the same standard as new construction: kiln-dried to the target MC, VPI treated with borate preservative, with treatment records. The fact that a building already exists and has existing timber does not reduce the standard required for the replacement material — if anything, the high-risk environment revealed by the need for renovation increases the case for the highest available treatment standard.',
           'Replacement timber is often installed in more difficult conditions than new construction: working in confined roof spaces, connecting to existing members that may not be at the ideal MC, and installing before the moisture problem that caused the original failure has been fully resolved. These conditions increase the importance of starting with the best possible treatment on the replacement timber.',
         ],
         note: 'St. Xavier Timber supplies VPI-treated replacement structural timber for renovation projects and can turn most orders around within 3–5 working days. We issue treatment records with every order. Contact us to discuss your renovation specification and timeline.',
@@ -1266,7 +1266,7 @@ export const posts: Post[] = [
           'The first step is to address the moisture source. Decay cannot continue below 20% MC — removing moisture kills the fungus, though it does not reverse damage already done. Fix the leak, improve drainage, or increase ventilation.',
           'Once the moisture source is addressed, structurally compromised timber must be replaced. Do not attempt to reinforce visibly decayed structural members. For adjacent sound timber that has been exposed to damp conditions, in-situ borate treatment — drilling and injection with concentrated borate solution — provides protection while the moisture issue is resolved. Specify VPI-treated replacement timber to prevent recurrence.',
         ],
-        note: 'All structural timber in new construction in Sri Lanka should be VPI-treated with Boron Borax before installation. Borate preservatives protect against both fungal decay and insect attack in above-ground, sheltered applications. St. Xavier Timber provides VPI treatment with full batch records. Contact us for specifications.',
+        note: 'All structural timber in new construction in Sri Lanka should be VPI-treated with borate preservative before installation. Borate preservatives protect against both fungal decay and insect attack in above-ground, sheltered applications. St. Xavier Timber provides VPI treatment with full batch records. Contact us for specifications.',
       },
     ],
   },
@@ -1451,7 +1451,7 @@ export const posts: Post[] = [
         heading: 'Pine (Imported Softwood)',
         paragraphs: [
           'Imported pine — primarily radiata pine from New Zealand and Australia, and various species from South America and Europe — is the most widely used construction timber in Sri Lanka for roof structures, formwork, and general framing. It is widely available, consistently dimensioned, relatively light, and works easily with standard tools.',
-          'Pine has moderate natural durability and is susceptible to termites and fungal decay without treatment. For roof structural applications, it should always be kiln-dried and VPI-treated. Its treatability is good — pine absorbs Boron Borax readily in VPI treatment, achieving high and uniform retention. Kiln-dried, VPI-treated pine is an excellent choice for roof structures where budget is a primary consideration.',
+          'Pine has moderate natural durability and is susceptible to termites and fungal decay without treatment. For roof structural applications, it should always be kiln-dried and VPI-treated. Its treatability is good — pine absorbs borate preservative readily in VPI treatment, achieving high and uniform retention. Kiln-dried, VPI-treated pine is an excellent choice for roof structures where budget is a primary consideration.',
         ],
         list: [
           'Density: 400–600 kg/m³ (varies by species) — lighter than most local hardwoods',
@@ -1499,7 +1499,7 @@ export const posts: Post[] = [
       {
         heading: 'The Treatment Requirement Across All Species',
         paragraphs: [
-          'Regardless of species, structural timber in Sri Lanka should be kiln-dried to 15–18% MC and VPI-treated with Boron Borax before installation in any roof structure, floor framing, or joinery application. The level of natural durability of the species reduces — but does not eliminate — the benefit of VPI treatment. Even teak sapwood benefits from treatment. For the more vulnerable species (pine, rubberwood), treatment is not optional if the structure is expected to last.',
+          'Regardless of species, structural timber in Sri Lanka should be kiln-dried to 15–18% MC and VPI-treated with borate preservative before installation in any roof structure, floor framing, or joinery application. The level of natural durability of the species reduces — but does not eliminate — the benefit of VPI treatment. Even teak sapwood benefits from treatment. For the more vulnerable species (pine, rubberwood), treatment is not optional if the structure is expected to last.',
           'The cost of treatment is a small fraction of the structural timber cost, and a smaller fraction still of the total construction cost. Specifying treatment across all structural timber is the most cost-effective insurance available against termite and decay damage.',
         ],
         note: 'St. Xavier Timber kiln-dries and VPI-treats pine, mahogany, rubberwood, and a range of imported hardwoods. We can advise on species selection for your specific application and provide treatment records for compliance documentation. Contact us with your project requirements.',
@@ -1564,7 +1564,7 @@ export const posts: Post[] = [
       {
         heading: 'The Treatment Requirement for All Furniture Timber',
         paragraphs: [
-          'All rubberwood used in furniture production should be kiln-dried to 12–15% MC and VPI-treated with Boron Borax. This is not optional — it is the minimum specification for quality production. Mahogany benefits from VPI treatment in any environment where termite activity is present, or where the furniture will be in a humid location.',
+          'All rubberwood used in furniture production should be kiln-dried to 12–15% MC and VPI-treated with borate preservative. This is not optional — it is the minimum specification for quality production. Mahogany benefits from VPI treatment in any environment where termite activity is present, or where the furniture will be in a humid location.',
           'The treatment adds a small cost to the input timber and delivers a dramatic reduction in post-production quality problems. Beetle emergence in delivered furniture is the most common — and most damaging — quality complaint in the Sri Lankan furniture industry. It is entirely preventable.',
         ],
         note: 'St. Xavier Timber supplies kiln-dried, VPI-treated rubberwood and mahogany to furniture manufacturers across Sri Lanka. We process both small and large batches to your specified dimensions and moisture content. Contact us with your volumes and requirements.',
@@ -1607,7 +1607,7 @@ export const posts: Post[] = [
         paragraphs: [
           'Rubberwood sapwood contains high concentrations of starch stored in parenchyma cells — the same storage starch that was supporting the metabolic activity of the living tree. This starch is an ideal food source for Lyctus powder post beetles, which specifically target wide-vessel sapwood with high starch content.',
           'The result is that rubberwood is among the most susceptible timber species to beetle infestation. Untreated rubberwood stored in a sawmill or furniture workshop for more than a few weeks is at risk. Untreated rubberwood in finished furniture can show beetle exit holes within months of delivery to the end customer.',
-          'Kiln drying at temperatures above 55°C kills all beetle life stages — eggs, larvae, and adults — and significantly reduces the starch content of the wood, making it less attractive to reinfestation. VPI treatment with Boron Borax provides ongoing chemical protection against reinfestation after drying. The combination of both treatments is the correct specification for rubberwood in any furniture or construction application.',
+          'Kiln drying at temperatures above 55°C kills all beetle life stages — eggs, larvae, and adults — and significantly reduces the starch content of the wood, making it less attractive to reinfestation. VPI treatment with borate preservative provides ongoing chemical protection against reinfestation after drying. The combination of both treatments is the correct specification for rubberwood in any furniture or construction application.',
         ],
       },
       {
@@ -1718,16 +1718,16 @@ export const posts: Post[] = [
         heading: 'Why All Structural Pine Needs Treatment in Sri Lanka',
         paragraphs: [
           'Pine has low natural durability. Its heartwood and sapwood are both susceptible to termite attack, and pine sapwood is also susceptible to fungal staining (blue stain) if it remains wet. In Sri Lanka\'s tropical climate with year-round termite activity, untreated pine roof structures are a liability — not a matter of if termites will attack, but when.',
-          'The good news is that pine responds very well to VPI treatment. Its open tracheid structure allows Boron Borax solution to penetrate deeply and uniformly, achieving high retention levels throughout the cross-section. Kiln-dried, VPI-treated pine is a structurally reliable and pest-resistant construction timber with a service life comparable to naturally durable species in above-ground applications.',
+          'The good news is that pine responds very well to VPI treatment. Its open tracheid structure allows borate preservative solution to penetrate deeply and uniformly, achieving high retention levels throughout the cross-section. Kiln-dried, VPI-treated pine is a structurally reliable and pest-resistant construction timber with a service life comparable to naturally durable species in above-ground applications.',
         ],
       },
       {
         heading: 'What to Check When Buying Construction Pine',
         paragraphs: [
-          'When buying pine for structural use, check the following: moisture content (should be 15–18% MC for structural applications — ask for measurement records from the supplier), treatment status (VPI-treated with Boron Borax from an IPPC-registered facility, with batch records), grade (structural grades have limits on knot size, slope of grain, and other defects that affect strength), and dimensions (check that actual dimensions match nominal — some suppliers sell undersized timber to nominal dimensions).',
+          'When buying pine for structural use, check the following: moisture content (should be 15–18% MC for structural applications — ask for measurement records from the supplier), treatment status (VPI-treated with borate preservative from an IPPC-registered facility, with batch records), grade (structural grades have limits on knot size, slope of grain, and other defects that affect strength), and dimensions (check that actual dimensions match nominal — some suppliers sell undersized timber to nominal dimensions).',
           'Reject timber that is visibly bowed, twisted, or has deep surface checking. Some degrade is normal in any batch of construction timber, but excessive degrade indicates poor kiln drying practice and may indicate deeper problems (honeycombing, residual stress) that are not visible on the surface.',
         ],
-        note: 'St. Xavier Timber processes construction pine — kiln drying to 15–18% MC and VPI treating with Boron Borax — and issues full treatment records with every batch. Contact us for pricing and turnaround times on your pine dimensions.',
+        note: 'St. Xavier Timber processes construction pine — kiln drying to 15–18% MC and VPI treating with borate preservative — and issues full treatment records with every batch. Contact us for pricing and turnaround times on your pine dimensions.',
       },
       {
         heading: 'Pine for Pallet Manufacture',
@@ -1986,7 +1986,7 @@ export const posts: Post[] = [
         paragraphs: [
           'Vacuum Pressure Impregnation drives the preservative solution deep into the timber under pressure — toward the core, well beyond the shallow layer that brush or dip treatment reaches. In a treatable species at the correct moisture content, the preservative is distributed throughout the section, leaving little untreated interior for an insect to exploit.',
           'The practical consequence is that cutting VPI-treated timber on site does not create an unprotected entry point the way cutting surface-treated timber does. The end grain exposed by a site cut is still impregnated with preservative throughout its depth. This is a fundamental difference: surface treatment protects the original surface; VPI treatment protects the material itself.',
-          'Boron Borax, the preservative used in VPI treatment, also works differently from contact insecticides used in surface treatments. Boron does not kill on contact — it kills when ingested. Termites and borers that consume treated wood cannot metabolise nutrients and die. This means that even if a pest penetrates the timber — for example, through a site-drilled fixings hole — it encounters active preservative throughout the member and cannot survive.',
+          'The borate preservative used in VPI treatment also works differently from contact insecticides used in surface treatments. Boron does not kill on contact — it kills when ingested. Termites and borers that consume treated wood cannot metabolise nutrients and die. This means that even if a pest penetrates the timber — for example, through a site-drilled fixings hole — it encounters active preservative throughout the member and cannot survive.',
         ],
       },
       {
@@ -2033,13 +2033,13 @@ export const posts: Post[] = [
       {
         heading: 'Why VPI Treatment Is the Correct Solution',
         paragraphs: [
-          'VPI treatment with Boron Borax provides ongoing protection against re-infestation because the preservative remains active throughout the timber for the life of the piece. Beetles that bore into VPI-treated rubberwood encounter Boron Borax throughout the wood — not just on the surface — and cannot survive. Adult beetles that attempt to lay eggs in the timber\'s vessels find the environment hostile and do not complete the life cycle.',
+          'VPI treatment with borate preservative provides ongoing protection against re-infestation because the preservative remains active throughout the timber for the life of the piece. Beetles that bore into VPI-treated rubberwood encounter borate preservative throughout the wood — not just on the surface — and cannot survive. Adult beetles that attempt to lay eggs in the timber\'s vessels find the environment hostile and do not complete the life cycle.',
           'This is the critical difference between kiln drying and VPI treatment in the context of infestation risk: kiln drying deals with the problem that exists at the time of treatment; VPI treatment guards against the problem that might develop later.',
         ],
         list: [
           'Kiln drying kills existing beetles — no ongoing protection against re-infestation',
           'VPI treatment prevents infestation throughout the life of the timber',
-          'Boron Borax penetrates deep into the section — minimal untreated interior for beetles to exploit',
+          'Borate preservative penetrates deep into the section — minimal untreated interior for beetles to exploit',
           'Particularly important for rubberwood in the wide-vessel sapwood',
           'Treatment does not affect workability, adhesive bonding, or finish quality',
         ],
@@ -2047,7 +2047,7 @@ export const posts: Post[] = [
       {
         heading: 'The Combined Treatment Sequence',
         paragraphs: [
-          'The correct processing sequence for rubberwood furniture timber is kiln drying followed by VPI treatment — in that order. Kiln drying first reduces the moisture content to the target range (12–15% for furniture), which improves the penetration and retention of the Boron Borax solution during VPI. It also kills any beetles present before treatment, preventing them from being sealed inside the wood.',
+          'The correct processing sequence for rubberwood furniture timber is kiln drying followed by VPI treatment — in that order. Kiln drying first reduces the moisture content to the target range (12–15% for furniture), which improves the penetration and retention of the borate preservative solution during VPI. It also kills any beetles present before treatment, preventing them from being sealed inside the wood.',
           'VPI treatment on green or partially dried rubberwood gives lower and less uniform preservative retention, because the water already in the wood limits how much preservative solution the pressure cycle can force in. Drying before VPI is not just good practice — it significantly improves the effectiveness of the treatment.',
         ],
       },
@@ -2082,8 +2082,8 @@ export const posts: Post[] = [
         heading: 'The Three Threats: Termites, Fungi, and Marine Borers',
         paragraphs: [
           'Subterranean termites are active throughout Sri Lanka, including coastal areas. The elevated moisture in coastal soils actually favours termite activity by maintaining the humid conditions termite colonies require. Coastal buildings without chemical or physical termite barriers are at higher risk than inland buildings, not lower.',
-          'Fungal decay — rot — is the second major threat. The organisms that cause wood rot require liquid water or consistently high moisture content to establish and grow. In coastal environments, these conditions are frequently met in exposed roof structures, external joinery, balcony framing, and any timber element that is subject to rain splash or sea spray. Boron Borax treatment provides protection against fungal decay as well as insects — borate compounds inhibit fungal spore germination and mycelium growth.',
-          'Marine borers — shipworms (Teredo) and gribble (Limnoria) — are a threat specifically to timber in direct water contact: piers, jetties, boat sheds with water-level structural members, and any timber that spends time submerged or regularly inundated. Boron Borax treatment is not suitable for marine borer protection — borate leaches readily in water contact, and alternative preservatives (CCA, creosote, or physical encapsulation) are required for marine applications.',
+          'Fungal decay — rot — is the second major threat. The organisms that cause wood rot require liquid water or consistently high moisture content to establish and grow. In coastal environments, these conditions are frequently met in exposed roof structures, external joinery, balcony framing, and any timber element that is subject to rain splash or sea spray. Borate preservative treatment provides protection against fungal decay as well as insects — borate compounds inhibit fungal spore germination and mycelium growth.',
+          'Marine borers — shipworms (Teredo) and gribble (Limnoria) — are a threat specifically to timber in direct water contact: piers, jetties, boat sheds with water-level structural members, and any timber that spends time submerged or regularly inundated. Borate preservative treatment is not suitable for marine borer protection — borate leaches readily in water contact, and alternative preservatives (CCA, creosote, or physical encapsulation) are required for marine applications.',
         ],
         list: [
           'Termites: active year-round in coastal areas, favoured by moist soil conditions',
@@ -2095,7 +2095,7 @@ export const posts: Post[] = [
       {
         heading: 'The Minimum Specification for Coastal Structural Timber',
         paragraphs: [
-          'For structural timber in coastal buildings — within approximately 5km of the coast or in areas with consistently high humidity — the minimum specification should be: kiln-dried to 15–18% MC, then VPI-treated with Boron Borax to verified deep penetration and retention, with treatment records from an IPPC-registered facility.',
+          'For structural timber in coastal buildings — within approximately 5km of the coast or in areas with consistently high humidity — the minimum specification should be: kiln-dried to 15–18% MC, then VPI-treated with borate preservative to verified deep penetration and retention, with treatment records from an IPPC-registered facility.',
           'For exposed external timber — verandah posts, external cladding, pergola members — the specification should additionally include a high-build primer and top coat immediately after treatment. VPI treatment provides resistance against biological attack; the surface coating provides resistance against moisture absorption and UV degradation. Both are required for full protection of exposed external timber in coastal conditions.',
           'Timber in direct contact with masonry in coastal buildings — wall plates, embedded beams, any timber touching concrete or brickwork — should be isolated from the masonry with a damp-proof course membrane wherever possible. Even fully VPI-treated timber will eventually deteriorate if it is continuously exposed to moisture wicking from saturated masonry.',
         ],
@@ -2144,7 +2144,7 @@ export const posts: Post[] = [
       {
         heading: 'The Correct Treatment Specification for Frames',
         paragraphs: [
-          'All door and window frames, including sub-frames, architraves, and any timber sill members, should be VPI-treated with Boron Borax before installation. Treatment should be done on the dimensioned frame sections before they are cut to final length and assembled — not after cutting, because cutting exposes untreated end grain.',
+          'All door and window frames, including sub-frames, architraves, and any timber sill members, should be VPI-treated with borate preservative before installation. Treatment should be done on the dimensioned frame sections before they are cut to final length and assembled — not after cutting, because cutting exposes untreated end grain.',
           'If frames must be cut on site after VPI treatment, the exposed end grain should be flood-coated with a concentrated borate solution immediately after cutting. This does not replicate the retention level of factory VPI treatment, but it significantly reduces the vulnerability of the exposed surface.',
           'Frames should also be isolated from direct masonry contact wherever possible. A waterproof membrane or damp-proof layer between the back of the frame and the masonry opening prevents moisture wicking from the wall into the timber — moisture that creates the conditions termites require and that degrades even treated timber over long periods.',
         ],
@@ -2168,9 +2168,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'boron-borax-vs-other-timber-preservatives',
-    title: 'Boron Borax vs Other Timber Preservatives: What You Need to Know',
+    title: 'Borate Wood Preservative (Boron Borax) vs Other Timber Preservatives: What You Need to Know',
     description:
-      'Not all timber preservatives are equal — they differ in how they work, what they protect against, where they can be used, and how safe they are. This guide compares Boron Borax with the main alternatives and explains when each is appropriate.',
+      'Not all timber preservatives are equal — they differ in how they work, what they protect against, where they can be used, and how safe they are. This guide compares borate preservative with the main alternatives and explains when each is appropriate.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2180,14 +2180,14 @@ export const posts: Post[] = [
         heading: 'Why the Choice of Preservative Matters',
         paragraphs: [
           'Timber preservatives are not interchangeable. They differ in the organisms they protect against, the environments where they remain effective, their toxicity to humans and animals, their effect on the timber and downstream processing, and their regulatory status in different markets. Choosing the wrong preservative for an application wastes money at best and creates health or structural risks at worst.',
-          'The main preservative systems used in Sri Lanka are Boron Borax (applied by VPI), Copper Chrome Arsenate (CCA), and — for export packaging — heat treatment under ISPM 15. Each has a distinct profile of strengths and limitations.',
+          'The main preservative systems used in Sri Lanka are borate preservative (applied by VPI), Copper Chrome Arsenate (CCA), and — for export packaging — heat treatment under ISPM 15. Each has a distinct profile of strengths and limitations.',
         ],
       },
       {
-        heading: 'Boron Borax (Borate Treatment)',
+        heading: 'Borate Preservative (Boron Borax)',
         paragraphs: [
-          'Boron Borax — disodium octaborate tetrahydrate — is the preservative used in VPI treatment for interior and above-ground applications. It works by disrupting the digestive enzymes of wood-destroying insects, making the wood indigestible and lethal to termites, powder post beetles, and wood-boring larvae. It also inhibits fungal growth by interfering with fungal enzyme systems.',
-          'The key advantage of borates over most alternative preservatives is safety. Boron Borax is non-toxic to mammals at the concentrations used in timber treatment — it is classified in the same general toxicity category as common salt. It leaves no harmful residue in sawdust or wood waste, does not off-gas volatile compounds in enclosed spaces, and does not require special handling or respiratory protection during installation.',
+          'The borate preservative — disodium octaborate tetrahydrate, commonly called Boron Borax — is used in VPI treatment for interior and above-ground applications. It works by disrupting the digestive enzymes of wood-destroying insects, making the wood indigestible and lethal to termites, powder post beetles, and wood-boring larvae. It also inhibits fungal growth by interfering with fungal enzyme systems.',
+          'The key advantage of borates over most alternative preservatives is safety. Borate preservative is non-toxic to mammals at the concentrations used in timber treatment — it is classified in the same general toxicity category as common salt. It leaves no harmful residue in sawdust or wood waste, does not off-gas volatile compounds in enclosed spaces, and does not require special handling or respiratory protection during installation.',
           'The key limitation of borates is water leaching. Boron compounds are water-soluble and will leach out of timber in repeated water contact. This makes borate treatment unsuitable for ground contact, exterior applications subject to rain wash, or any application where the timber is regularly wetted. For those applications, alternative preservatives with better water resistance are required.',
         ],
         list: [
@@ -2216,10 +2216,10 @@ export const posts: Post[] = [
       {
         heading: 'Choosing the Right Preservative for Your Application',
         paragraphs: [
-          'For most construction and furniture applications in Sri Lanka — roof structures, floor framing, door and window frames, interior joinery, and furniture — Boron Borax by VPI is the correct choice. It is effective against the relevant threat organisms, safe for use in occupied buildings, does not affect downstream processing or finishing, and is applied by a method (VPI) that achieves deep, verified penetration.',
+          'For most construction and furniture applications in Sri Lanka — roof structures, floor framing, door and window frames, interior joinery, and furniture — borate preservative by VPI is the correct choice. It is effective against the relevant threat organisms, safe for use in occupied buildings, does not affect downstream processing or finishing, and is applied by a method (VPI) that achieves deep, verified penetration.',
           'For ground contact applications — fence posts, decking support posts, pergola uprights set in the ground — CCA-treated timber is more appropriate, because the ground contact and wetting cycles will leach borate treatment faster than it can protect. For heavy industrial or marine applications, consult with a specialist — creosote or alternative heavy-duty systems may be required.',
         ],
-        note: 'St. Xavier Timber applies Boron Borax by VPI for all interior, above-ground, and sheltered exterior applications. We can advise on the appropriate treatment for your specific application and supply timber treated to the correct specification. Contact us with your project details.',
+        note: 'St. Xavier Timber applies borate preservative by VPI for all interior, above-ground, and sheltered exterior applications. We can advise on the appropriate treatment for your specific application and supply timber treated to the correct specification. Contact us with your project details.',
       },
     ],
   },
@@ -2261,7 +2261,7 @@ export const posts: Post[] = [
           'Rubberwood is one of the most treatable timber species. Its wide, open vessels and high sapwood content allow preservative to penetrate rapidly and uniformly throughout the cross-section. Treatment times are shorter than for most other species, and penetration to the core is consistently achieved under standard VPI conditions. This treatability, combined with its susceptibility to beetles, makes rubberwood the species for which VPI treatment delivers the clearest return.',
           'Mahogany (Swietenia macrophylla and Khaya species) is moderately treatable. It has smaller vessels than rubberwood and a more pronounced heartwood zone in mature logs. Penetration into sapwood is good; heartwood penetration is variable and depends on the log age and the individual piece. For large-section mahogany structural members, confirming core penetration through sample cross-sections is advisable.',
           'Teak is the most difficult common species to treat. Its heartwood contains natural oils (tectoquinone and other extractives) that fill the vessel walls and actively repel water-borne preservatives. Surface penetration in teak heartwood under standard VPI conditions may be only a few millimetres. However, teak heartwood has high natural durability — it does not need VPI treatment for most applications. The sapwood of teak is far less durable and should be treated; fortunately, teak sapwood is also more permeable.',
-          'Pine (imported softwood species) is generally highly treatable. Softwood tracheids provide relatively open pathways for preservative solution, and pine absorbs Boron Borax readily under standard treatment conditions. The main variable in pine treatability is resin content — highly resinous heartwood may resist penetration, but this is less relevant for the common construction pine species used in Sri Lanka.',
+          'Pine (imported softwood species) is generally highly treatable. Softwood tracheids provide relatively open pathways for preservative solution, and pine absorbs borate preservative readily under standard treatment conditions. The main variable in pine treatability is resin content — highly resinous heartwood may resist penetration, but this is less relevant for the common construction pine species used in Sri Lanka.',
         ],
       },
       {
@@ -2274,7 +2274,7 @@ export const posts: Post[] = [
       {
         heading: 'Reading a Treatment Record',
         paragraphs: [
-          'A treatment record from a VPI facility should specify the species treated, the cross-section dimensions, the moisture content before treatment, the vacuum duration and level, the preservative concentration and volume absorbed, the pressure level and duration, and the final retention figure. The retention figure — expressed in kg of preservative per cubic metre of timber — is the key number: it tells you how much Boron Borax is now in the wood.',
+          'A treatment record from a VPI facility should specify the species treated, the cross-section dimensions, the moisture content before treatment, the vacuum duration and level, the preservative concentration and volume absorbed, the pressure level and duration, and the final retention figure. The retention figure — expressed in kg of preservative per cubic metre of timber — is the key number: it tells you how much borate preservative is now in the wood.',
           'Minimum retention requirements vary by application and are specified in the relevant standards. Your treatment provider should be able to confirm that the batch meets the retention level required for your specific application and exposure class.',
         ],
         note: 'St. Xavier Timber provides full treatment records with every VPI order, including species, cross-section, pre-treatment MC, cycle parameters, and retention figures. Contact us to discuss the appropriate specification for your timber species and application.',
@@ -2301,12 +2301,12 @@ export const posts: Post[] = [
       {
         heading: 'What a Complete Timber Treatment Specification Covers',
         paragraphs: [
-          'A complete specification for structural timber treatment should cover: the elements to be treated (with no ambiguity about what is included and what is excluded), the treatment method (VPI with Boron Borax — not surface application), the minimum retention level required for the application and exposure class, the requirement for kiln drying to a specified MC before VPI treatment, the requirement for treatment by an IPPC-registered facility, and the documentation required for compliance verification.',
+          'A complete specification for structural timber treatment should cover: the elements to be treated (with no ambiguity about what is included and what is excluded), the treatment method (VPI with borate preservative — not surface application), the minimum retention level required for the application and exposure class, the requirement for kiln drying to a specified MC before VPI treatment, the requirement for treatment by an IPPC-registered facility, and the documentation required for compliance verification.',
           'Elements that are frequently omitted and should always be included: door and window sub-frames (not just the visible frame), timber embedded in or within 300mm of masonry, any timber at or near floor level in the roof space, and any structural timber in contact with concrete.',
         ],
         list: [
           'Define every element to be treated — frames, sub-frames, structural members, embedded timber',
-          'Specify VPI with Boron Borax — not surface treatment',
+          'Specify VPI with borate preservative — not surface treatment',
           'State the minimum retention level (typically 2.5–4.0 kg/m³ for above-ground interior use)',
           'Require kiln drying to 15–18% MC before VPI',
           'Require treatment by an IPPC-registered facility',
@@ -2331,9 +2331,9 @@ export const posts: Post[] = [
       {
         heading: 'Sample Specification Clause',
         paragraphs: [
-          'The following clause can be adapted for inclusion in a schedule of works: "All structural timber — including roof rafters, purlins, ceiling joists, wall plates, floor joists, door and window frames and sub-frames, and all timber within 300mm of masonry — shall be kiln-dried to 15–18% MC and Vacuum Pressure Impregnated with Boron Borax preservative to a minimum retention of 3.0 kg/m³, carried out by an IPPC-registered treatment facility. Treatment batch records confirming species, cross-section, pre-treatment moisture content, VPI cycle parameters, and achieved retention shall be submitted to the architect or project manager before any concealing finishes are applied."',
+          'The following clause can be adapted for inclusion in a schedule of works: "All structural timber — including roof rafters, purlins, ceiling joists, wall plates, floor joists, door and window frames and sub-frames, and all timber within 300mm of masonry — shall be kiln-dried to 15–18% MC and Vacuum Pressure Impregnated with borate preservative to a minimum retention of 3.0 kg/m³, carried out by an IPPC-registered treatment facility. Treatment batch records confirming species, cross-section, pre-treatment moisture content, VPI cycle parameters, and achieved retention shall be submitted to the architect or project manager before any concealing finishes are applied."',
         ],
-        note: 'St. Xavier Timber provides VPI treatment with Boron Borax and issues full batch records for every order. We work with architects, quantity surveyors, and main contractors across Sri Lanka and can turn most orders around in 3–5 working days. Contact us to discuss your project timeline and treatment requirements.',
+        note: 'St. Xavier Timber provides VPI treatment with borate preservative and issues full batch records for every order. We work with architects, quantity surveyors, and main contractors across Sri Lanka and can turn most orders around in 3–5 working days. Contact us to discuss your project timeline and treatment requirements.',
       },
     ],
   },
@@ -2358,7 +2358,7 @@ export const posts: Post[] = [
         heading: 'What the Warranty Does Not Cover',
         paragraphs: [
           'The warranty covers pest attack — not all forms of timber degradation. It does not cover mechanical damage, structural failure due to overload, decay caused by prolonged water contact (for which borate treatment is not designed), or any damage caused by improper installation or use.',
-          'The warranty also specifies the installation conditions under which it applies. Boron Borax treatment is designed for dry, interior, and sheltered above-ground applications. It is not suitable for ground contact, repeated water exposure, or marine applications. Timber installed in conditions outside this scope — embedded in wet soil, used as exterior decking subject to regular rain and ponding, or used in a marine structure — is not covered by the pest warranty, because the treatment chemistry was not designed for those conditions and the preservative will leach out over time.',
+          'The warranty also specifies the installation conditions under which it applies. Borate preservative treatment is designed for dry, interior, and sheltered above-ground applications. It is not suitable for ground contact, repeated water exposure, or marine applications. Timber installed in conditions outside this scope — embedded in wet soil, used as exterior decking subject to regular rain and ponding, or used in a marine structure — is not covered by the pest warranty, because the treatment chemistry was not designed for those conditions and the preservative will leach out over time.',
         ],
         list: [
           'Covered: termite attack and wood-boring insect infestation within 10 years',
@@ -2996,12 +2996,12 @@ export const posts: Post[] = [
       {
         heading: 'What VPI Treatment Does Inside the Timber',
         paragraphs: [
-          'During VPI treatment, timber is loaded into a sealed pressure vessel. A 45-minute initial vacuum draws air out of the wood cells, creating space for the preservative to enter. Boron Borax solution is then introduced at 10 bar (145 PSI) and held under pressure for 2–6 hours depending on species and cross-section thickness. The pressure drives the solution deep into the cross-section — toward the core — achieving penetration that no surface application can match.',
-          'Boron Borax works by interfering with the digestive enzymes of wood-destroying insects. Termites and borers that ingest treated wood cannot metabolise nutrients and die. Unlike older timber preservatives based on arsenic or chromium, Boron Borax is non-toxic to humans and animals at treatment concentrations, making it safe for use in residential buildings, schools, and any occupied structure.',
+          'During VPI treatment, timber is loaded into a sealed pressure vessel. A 45-minute initial vacuum draws air out of the wood cells, creating space for the preservative to enter. Borate preservative solution is then introduced at 10 bar (145 PSI) and held under pressure for 2–6 hours depending on species and cross-section thickness. The pressure drives the solution deep into the cross-section — toward the core — achieving penetration that no surface application can match.',
+          'Borate preservative works by interfering with the digestive enzymes of wood-destroying insects. Termites and borers that ingest treated wood cannot metabolise nutrients and die. Unlike older timber preservatives based on arsenic or chromium, borate preservative is non-toxic to humans and animals at treatment concentrations, making it safe for use in residential buildings, schools, and any occupied structure.',
         ],
         list: [
           'Deep penetration toward the core — not just the outer surface',
-          'Boron Borax disrupts digestive enzymes in termites and wood-boring insects',
+          'Borate preservative disrupts digestive enzymes in termites and wood-boring insects',
           'Non-toxic to humans, animals, and pets at treatment concentrations',
           'Does not wash off or evaporate in normal indoor conditions',
           'Timber remains fully workable after treatment — can be cut, drilled, and fixed normally',
@@ -3017,11 +3017,11 @@ export const posts: Post[] = [
       {
         heading: 'How to Specify Treated Timber for Roof Structures',
         paragraphs: [
-          'For new construction, the specification should require all structural timber — rafters, purlins, wall plates, ridge boards, and any timber in contact with or within 300mm of masonry — to be VPI-treated with Boron Borax to a confirmed retention level, supplied by an IPPC-registered treatment facility. The treatment provider should supply batch records confirming the treatment cycle, pressure, chemical concentration, and timber species and dimensions processed.',
-          'Kiln drying prior to VPI treatment significantly improves treatment effectiveness. Dry timber absorbs the preservative solution more uniformly and achieves higher retention levels than green or partially dried timber. For roof structural timber, the correct specification is: kiln-dried to 15–18% MC, then VPI-treated with Boron Borax — in that sequence, under one roof where possible to avoid re-wetting between processes.',
+          'For new construction, the specification should require all structural timber — rafters, purlins, wall plates, ridge boards, and any timber in contact with or within 300mm of masonry — to be VPI-treated with borate preservative to a confirmed retention level, supplied by an IPPC-registered treatment facility. The treatment provider should supply batch records confirming the treatment cycle, pressure, chemical concentration, and timber species and dimensions processed.',
+          'Kiln drying prior to VPI treatment significantly improves treatment effectiveness. Dry timber absorbs the preservative solution more uniformly and achieves higher retention levels than green or partially dried timber. For roof structural timber, the correct specification is: kiln-dried to 15–18% MC, then VPI-treated with borate preservative — in that sequence, under one roof where possible to avoid re-wetting between processes.',
         ],
         list: [
-          'Specify VPI treatment with Boron Borax for all structural roof members',
+          'Specify VPI treatment with borate preservative for all structural roof members',
           'Require batch treatment records from an IPPC-registered facility',
           'Kiln dry to 15–18% MC before VPI for best penetration and retention',
           'Include all timber within 300mm of masonry in the treatment specification',
@@ -3165,7 +3165,7 @@ export const posts: Post[] = [
     slug: 'what-is-vacuum-pressure-impregnation',
     title: 'What Is Vacuum Pressure Impregnation (VPI) and How Does It Protect Timber?',
     description:
-      'VPI is the most thorough method available for deep-penetration timber preservation. Learn how the process works, what Boron Borax treatment does inside the wood, and why it carries a 10-year pest warranty.',
+      'VPI is the most thorough method available for deep-penetration timber preservation. Learn how the process works, what borate preservative treatment does inside the wood, and why it carries a 10-year pest warranty.',
     date: '2026-04-28',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -3181,24 +3181,24 @@ export const posts: Post[] = [
       {
         heading: 'How the VPI Process Works',
         paragraphs: [
-          'VPI is a two-stage process carried out inside a sealed pressure vessel. In the first stage, a vacuum is applied to the timber load. This draws air and moisture out of the wood cells, creating space in the cellular structure for the preservative to enter. In the second stage, the vacuum is released and the chamber is flooded with the preservative solution — Boron Borax — under pressure up to 10 bar (145 PSI). The pressure forces the solution deep into the wood cells throughout the entire cross-section.',
+          'VPI is a two-stage process carried out inside a sealed pressure vessel. In the first stage, a vacuum is applied to the timber load. This draws air and moisture out of the wood cells, creating space in the cellular structure for the preservative to enter. In the second stage, the vacuum is released and the chamber is flooded with the preservative solution — borate preservative — under pressure up to 10 bar (145 PSI). The pressure forces the solution deep into the wood cells throughout the entire cross-section.',
           'After the pressure cycle, the excess solution is removed and the timber is allowed to dry and fix. The boron compounds bond with the wood fibres and become part of the material — they do not wash off, evaporate, or degrade over time under normal indoor or sheltered conditions.',
         ],
         list: [
           'Stage 1: Vacuum removes air from wood cells',
-          'Stage 2: Boron Borax solution injected at up to 10 bar (145 PSI)',
+          'Stage 2: borate preservative solution injected at up to 10 bar (145 PSI)',
           'Deep penetration toward the core — not just surface treatment',
           'Chemical fixes within the wood and does not wash off indoors',
           'Timber remains workable — can be cut, drilled, and finished after treatment',
         ],
       },
       {
-        heading: 'What Is Boron Borax and Why Is It Used?',
+        heading: 'What Is Borate Preservative (Boron Borax) and Why Is It Used?',
         paragraphs: [
-          'Boron Borax (disodium octaborate tetrahydrate) is a water-soluble borate compound that is highly effective against a wide range of wood-destroying organisms — termites, powder post beetles, wood-boring beetles, and fungal decay. It works by disrupting the digestive systems of insects and inhibiting fungal spore germination.',
-          'Unlike older timber preservatives based on arsenic, chromium, or creosote, Boron Borax is non-toxic to humans and animals at the concentrations used in timber treatment. It is environmentally inert, heavy-metal free, and is classified as a low-hazard preservative by international regulatory bodies. This makes it safe for use in residential construction, furniture, and indoor joinery.',
+          'The borate preservative (disodium octaborate tetrahydrate, commonly called Boron Borax) is a water-soluble compound that is highly effective against a wide range of wood-destroying organisms — termites, powder post beetles, wood-boring beetles, and fungal decay. It works by disrupting the digestive systems of insects and inhibiting fungal spore germination.',
+          'Unlike older timber preservatives based on arsenic, chromium, or creosote, borate preservative is non-toxic to humans and animals at the concentrations used in timber treatment. It is environmentally inert, heavy-metal free, and is classified as a low-hazard preservative by international regulatory bodies. This makes it safe for use in residential construction, furniture, and indoor joinery.',
         ],
-        note: 'Boron Borax treated timber is safe for use in homes, schools, and food-handling facilities. It is not suitable for ground contact or continuous water immersion — for those applications, alternative preservatives should be specified.',
+        note: 'Borate-treated timber is safe for use in homes, schools, and food-handling facilities. It is not suitable for ground contact or continuous water immersion — for those applications, alternative preservatives should be specified.',
       },
       {
         heading: 'What the 10-Year Warranty Covers',

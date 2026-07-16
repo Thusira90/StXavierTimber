@@ -61,7 +61,7 @@ const values = [
       </svg>
     ),
     title: 'Sustainable Practice',
-    desc: 'Boron Borax — the preservative at the heart of our VPI treatment — is non-toxic, heavy-metal free, and environmentally safe. We treat timber to last, reducing waste and the need for premature replacement.',
+    desc: 'Our borate preservative — commonly called Boron Borax, and the active agent at the heart of our VPI treatment — is non-toxic, heavy-metal free, and environmentally safe. We treat timber to last, reducing waste and the need for premature replacement.',
   },
   {
     icon: (
