@@ -8,8 +8,8 @@ export default function Hero() {
         <div className={styles.left}>
           <span className={styles.eyebrow}>Kiln Drying & Vacuum Pressure Impregnation · Sri Lanka</span>
           <h1 className={styles.h1}>
-            Wood treated<br />
-            <em>to last a lifetime.</em>
+            Industrial Timber Treatment<br />
+            <em>in Sri Lanka.</em>
           </h1>
           <p className={styles.legacy}>
             "Precision treatment. Honest timelines. No shortcuts."

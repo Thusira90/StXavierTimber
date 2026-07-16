@@ -111,7 +111,7 @@ const FAQS = [
   },
   {
     q: 'Is kiln drying worth it for timber used in Kandy\'s climate?',
-    a: 'Yes — particularly for Kandy\'s highland climate, which has higher humidity and more frequent rainfall than coastal areas. Timber that has not been kiln-dried to a stable moisture content will continue to absorb and release moisture seasonally, causing joints to open, boards to warp, and finishes to fail. Kiln drying eliminates this movement.',
+    a: 'Yes — particularly for Kandy\'s highland climate, which has higher humidity and more frequent rainfall than coastal areas. Timber that has not been kiln-dried to a stable moisture content will continue to absorb and release moisture seasonally, causing joints to open, boards to warp, and finishes to fail. Kiln drying to a stable moisture content greatly reduces this movement.',
   },
   {
     q: 'How do I get a quote?',

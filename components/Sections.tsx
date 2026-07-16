@@ -179,8 +179,8 @@ const industries = [
     sub: 'Warp and pest resistant timber',
     desc: 'Doors and window frames demand tight dimensional tolerances. Untreated or poorly dried timber swells, warps, and allows pest entry over time. Our treatment process delivers stable timber that holds its shape after fitting.',
     details: [
-      'Precise drying eliminates moisture-driven warping post-installation',
-      'VPI treatment locks out termites and borers at the core',
+      'Precise drying minimises moisture-driven warping post-installation',
+      'VPI treatment protects against termites and borers deep in the timber',
       'Suitable for interior and exterior joinery applications',
       'Consistent moisture levels across each batch for reliable machining',
     ],
@@ -204,7 +204,7 @@ const industries = [
     desc: 'Architects and interior designers specifying timber for feature walls, ceilings, flooring, and bespoke joinery need material that is dimensionally stable, pest-free, and consistent. Our treatment ensures the timber performs exactly as specified once installed.',
     details: [
       'Kiln drying to 12–15% MC for stable, warp-free installation',
-      'VPI treatment eliminates pest risk in feature and decorative timber',
+      'VPI treatment sharply reduces pest risk in feature and decorative timber',
       'Consistent batch quality across large and small project quantities',
       'Treatment records available for specification and project documentation',
     ],

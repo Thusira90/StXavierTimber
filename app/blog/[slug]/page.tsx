@@ -106,9 +106,13 @@ export default async function PostPage({
     ],
   };
 
+  // Only sections whose heading is a genuine question qualify as FAQ entries —
+  // Google's FAQ rich-result guidelines require actual questions, so feeding
+  // statement-style headings (e.g. "Air Seasoning: The Traditional Method")
+  // into FAQPage schema produces invalid entries that get discounted or ignored.
   const faqEntries = post.sections
-    .filter((s) => s.heading && s.paragraphs && s.paragraphs.length > 0)
-    .slice(0, 4);
+    .filter((s) => s.heading?.trim().endsWith('?') && s.paragraphs && s.paragraphs.length > 0)
+    .slice(0, 6);
 
   const faqSchema = faqEntries.length > 0
     ? {

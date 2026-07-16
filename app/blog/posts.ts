@@ -268,7 +268,7 @@ export const posts: Post[] = [
         heading: 'Defect 5: Beetle Exit Holes After Delivery',
         paragraphs: [
           'Fine powdery frass and small circular exit holes appearing in delivered furniture — typically rubberwood pieces — indicate powder post beetle infestation. This is not a drying defect in the strict sense, but it is directly related to the timber treatment process: kiln drying at adequate temperatures kills existing beetle life stages, and VPI treatment prevents re-infestation.',
-          'Beetle emergence in delivered furniture means either that the timber was not kiln-dried (and the infestation was present at manufacture), that the timber was kiln-dried but then stored long enough for adult beetles to re-infest before manufacture, or that the timber was treated but the treatment was inadequate. Combined kiln drying and VPI treatment, done in the correct sequence, eliminates this defect entirely.',
+          'Beetle emergence in delivered furniture means either that the timber was not kiln-dried (and the infestation was present at manufacture), that the timber was kiln-dried but then stored long enough for adult beetles to re-infest before manufacture, or that the timber was treated but the treatment was inadequate. Combined kiln drying and VPI treatment, done in the correct sequence, is the reliable way to prevent this defect.',
         ],
         note: 'St. Xavier Timber supplies kiln-dried, VPI-treated rubberwood and mahogany to furniture manufacturers across Sri Lanka. We process timber to your specified MC and issue treatment records with every batch. Contact us to discuss your production requirements.',
       },
@@ -651,7 +651,7 @@ export const posts: Post[] = [
         heading: 'Failure 6: Beetle Infestation in Furniture After Delivery',
         paragraphs: [
           'Powder post beetle emergence in delivered furniture — fine dust and small exit holes appearing weeks or months after delivery — is the most common quality failure in the Sri Lankan furniture industry. It is caused by rubberwood processed without VPI treatment, or rubberwood that was kiln-dried (killing existing beetles) but then stored or transported long enough for adult beetles to re-infest before manufacture or delivery.',
-          'Prevention: kiln-dry rubberwood to kill existing infestation, then VPI treat with Boron Borax to prevent re-infestation. Both steps are required. Kiln drying alone is not sufficient; VPI alone on green timber does not achieve adequate penetration. The combined treatment sequence, done in the correct order, eliminates this failure mode entirely.',
+          'Prevention: kiln-dry rubberwood to kill existing infestation, then VPI treat with Boron Borax to prevent re-infestation. Both steps are required. Kiln drying alone is not sufficient; VPI alone on green timber does not achieve adequate penetration. The combined treatment sequence, done in the correct order, reliably prevents this failure mode.',
         ],
       },
       {
@@ -1984,7 +1984,7 @@ export const posts: Post[] = [
       {
         heading: 'What VPI Achieves That Surface Treatment Cannot',
         paragraphs: [
-          'Vacuum Pressure Impregnation forces the preservative solution through the entire cross-section of the timber under pressure — from the surface to the core. When treatment is complete, every part of the wood contains the active chemical. There is no untreated path through the material that an insect can exploit.',
+          'Vacuum Pressure Impregnation drives the preservative solution deep into the timber under pressure — toward the core, well beyond the shallow layer that brush or dip treatment reaches. In a treatable species at the correct moisture content, the preservative is distributed throughout the section, leaving little untreated interior for an insect to exploit.',
           'The practical consequence is that cutting VPI-treated timber on site does not create an unprotected entry point the way cutting surface-treated timber does. The end grain exposed by a site cut is still impregnated with preservative throughout its depth. This is a fundamental difference: surface treatment protects the original surface; VPI treatment protects the material itself.',
           'Boron Borax, the preservative used in VPI treatment, also works differently from contact insecticides used in surface treatments. Boron does not kill on contact — it kills when ingested. Termites and borers that consume treated wood cannot metabolise nutrients and die. This means that even if a pest penetrates the timber — for example, through a site-drilled fixings hole — it encounters active preservative throughout the member and cannot survive.',
         ],
@@ -2034,12 +2034,12 @@ export const posts: Post[] = [
         heading: 'Why VPI Treatment Is the Correct Solution',
         paragraphs: [
           'VPI treatment with Boron Borax provides ongoing protection against re-infestation because the preservative remains active throughout the timber for the life of the piece. Beetles that bore into VPI-treated rubberwood encounter Boron Borax throughout the wood — not just on the surface — and cannot survive. Adult beetles that attempt to lay eggs in the timber\'s vessels find the environment hostile and do not complete the life cycle.',
-          'This is the critical difference between kiln drying and VPI treatment in the context of infestation risk: kiln drying eliminates the problem that exists at the time of treatment; VPI treatment eliminates the problem that might develop at any point in the future.',
+          'This is the critical difference between kiln drying and VPI treatment in the context of infestation risk: kiln drying deals with the problem that exists at the time of treatment; VPI treatment guards against the problem that might develop later.',
         ],
         list: [
           'Kiln drying kills existing beetles — no ongoing protection against re-infestation',
           'VPI treatment prevents infestation throughout the life of the timber',
-          'Boron Borax penetrates the full cross-section — no untreated interior for beetles to exploit',
+          'Boron Borax penetrates deep into the section — minimal untreated interior for beetles to exploit',
           'Particularly important for rubberwood in the wide-vessel sapwood',
           'Treatment does not affect workability, adhesive bonding, or finish quality',
         ],
@@ -2095,7 +2095,7 @@ export const posts: Post[] = [
       {
         heading: 'The Minimum Specification for Coastal Structural Timber',
         paragraphs: [
-          'For structural timber in coastal buildings — within approximately 5km of the coast or in areas with consistently high humidity — the minimum specification should be: kiln-dried to 15–18% MC, then VPI-treated with Boron Borax to confirmed full penetration, with treatment records from an IPPC-registered facility.',
+          'For structural timber in coastal buildings — within approximately 5km of the coast or in areas with consistently high humidity — the minimum specification should be: kiln-dried to 15–18% MC, then VPI-treated with Boron Borax to verified deep penetration and retention, with treatment records from an IPPC-registered facility.',
           'For exposed external timber — verandah posts, external cladding, pergola members — the specification should additionally include a high-build primer and top coat immediately after treatment. VPI treatment provides resistance against biological attack; the surface coating provides resistance against moisture absorption and UV degradation. Both are required for full protection of exposed external timber in coastal conditions.',
           'Timber in direct contact with masonry in coastal buildings — wall plates, embedded beams, any timber touching concrete or brickwork — should be isolated from the masonry with a damp-proof course membrane wherever possible. Even fully VPI-treated timber will eventually deteriorate if it is continuously exposed to moisture wicking from saturated masonry.',
         ],
@@ -2104,7 +2104,7 @@ export const posts: Post[] = [
         heading: 'Species Selection for Coastal Applications',
         paragraphs: [
           'Not all timber species are equally suited to coastal applications. Dense, naturally durable species — teak, in particular — have higher natural resistance to both insects and fungal decay than lower-durability species like rubberwood or pine. However, natural durability does not eliminate the need for treatment in high-risk environments — it supplements it.',
-          'For structural applications in coastal areas, specify naturally durable species where the budget allows, and in all cases require VPI treatment to the full cross-section. A high-durability species with VPI treatment will significantly outlast a lower-durability species without treatment in the same coastal environment.',
+          'For structural applications in coastal areas, specify naturally durable species where the budget allows, and in all cases require VPI treatment driven deep into the section. A high-durability species with VPI treatment will significantly outlast a lower-durability species without treatment in the same coastal environment.',
         ],
       },
       {
@@ -2194,7 +2194,7 @@ export const posts: Post[] = [
           'Effective against: termites, powder post beetles, wood-boring larvae, fungal decay',
           'Not suitable for: ground contact, repeated water contact, marine applications',
           'Safety: low toxicity to humans, animals, and the environment',
-          'Applied by: Vacuum Pressure Impregnation (VPI) for full penetration',
+          'Applied by: Vacuum Pressure Impregnation (VPI) for deep penetration',
           'Service life: indefinite in dry, interior, sheltered conditions',
         ],
       },
@@ -2216,7 +2216,7 @@ export const posts: Post[] = [
       {
         heading: 'Choosing the Right Preservative for Your Application',
         paragraphs: [
-          'For most construction and furniture applications in Sri Lanka — roof structures, floor framing, door and window frames, interior joinery, and furniture — Boron Borax by VPI is the correct choice. It is effective against the relevant threat organisms, safe for use in occupied buildings, does not affect downstream processing or finishing, and is applied by a method (VPI) that achieves full cross-section penetration.',
+          'For most construction and furniture applications in Sri Lanka — roof structures, floor framing, door and window frames, interior joinery, and furniture — Boron Borax by VPI is the correct choice. It is effective against the relevant threat organisms, safe for use in occupied buildings, does not affect downstream processing or finishing, and is applied by a method (VPI) that achieves deep, verified penetration.',
           'For ground contact applications — fence posts, decking support posts, pergola uprights set in the ground — CCA-treated timber is more appropriate, because the ground contact and wetting cycles will leach borate treatment faster than it can protect. For heavy industrial or marine applications, consult with a specialist — creosote or alternative heavy-duty systems may be required.',
         ],
         note: 'St. Xavier Timber applies Boron Borax by VPI for all interior, above-ground, and sheltered exterior applications. We can advise on the appropriate treatment for your specific application and supply timber treated to the correct specification. Contact us with your project details.',
@@ -2245,12 +2245,12 @@ export const posts: Post[] = [
         paragraphs: [
           'In almost all species, the sapwood — the outer, younger rings of the log — is significantly more permeable to preservative solution than the heartwood. Sapwood cells are living or recently dead, their pits are still open, and they absorb liquids readily. Heartwood cells are older, their pit membranes are aspirated or encrusted with extractives, and they resist liquid penetration.',
           'This means that the treatability of a piece of timber depends heavily on the proportion of sapwood to heartwood in the cross-section. A board cut from the outer part of a log, predominantly sapwood, will be highly treatable. A board cut from the centre of a large log, predominantly heartwood, may show good penetration at the edges (where sapwood remains) and very limited penetration in the core.',
-          'For structural timber requiring full cross-section protection, specifying sapwood-rich material or using smaller cross-sections that are more easily penetrated all the way through is important. The treatment record should show penetration depth and retention at both the surface and the core to confirm that adequate treatment has been achieved throughout.',
+          'For structural timber requiring deep, through-section protection, specifying sapwood-rich material or using smaller cross-sections that are more easily penetrated is important. The treatment record should show penetration depth and retention at both the surface and the core to confirm that adequate treatment has been achieved throughout.',
         ],
         list: [
           'Sapwood: highly permeable — absorbs preservative readily',
           'Heartwood: much lower permeability — resists penetration in many species',
-          'Full penetration is easier to achieve in smaller cross-sections',
+          'Deep, uniform penetration is easier to achieve in smaller cross-sections',
           'Species with high heartwood-to-sapwood ratio need larger cross-sections treated in shorter lengths',
           'Treatment records should confirm penetration at the core, not just the surface',
         ],
@@ -2996,11 +2996,11 @@ export const posts: Post[] = [
       {
         heading: 'What VPI Treatment Does Inside the Timber',
         paragraphs: [
-          'During VPI treatment, timber is loaded into a sealed pressure vessel. A 45-minute initial vacuum draws air out of the wood cells, creating space for the preservative to enter. Boron Borax solution is then introduced at 10 bar (145 PSI) and held under pressure for 2–6 hours depending on species and cross-section thickness. The pressure forces the solution through the entire cross-section — from surface to core — achieving penetration that no surface application can match.',
+          'During VPI treatment, timber is loaded into a sealed pressure vessel. A 45-minute initial vacuum draws air out of the wood cells, creating space for the preservative to enter. Boron Borax solution is then introduced at 10 bar (145 PSI) and held under pressure for 2–6 hours depending on species and cross-section thickness. The pressure drives the solution deep into the cross-section — toward the core — achieving penetration that no surface application can match.',
           'Boron Borax works by interfering with the digestive enzymes of wood-destroying insects. Termites and borers that ingest treated wood cannot metabolise nutrients and die. Unlike older timber preservatives based on arsenic or chromium, Boron Borax is non-toxic to humans and animals at treatment concentrations, making it safe for use in residential buildings, schools, and any occupied structure.',
         ],
         list: [
-          'Full cross-section penetration — not just the outer surface',
+          'Deep penetration toward the core — not just the outer surface',
           'Boron Borax disrupts digestive enzymes in termites and wood-boring insects',
           'Non-toxic to humans, animals, and pets at treatment concentrations',
           'Does not wash off or evaporate in normal indoor conditions',
@@ -3187,7 +3187,7 @@ export const posts: Post[] = [
         list: [
           'Stage 1: Vacuum removes air from wood cells',
           'Stage 2: Boron Borax solution injected at up to 10 bar (145 PSI)',
-          'Full cross-section penetration — not just surface treatment',
+          'Deep penetration toward the core — not just surface treatment',
           'Chemical fixes within the wood and does not wash off indoors',
           'Timber remains workable — can be cut, drilled, and finished after treatment',
         ],

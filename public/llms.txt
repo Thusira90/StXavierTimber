@@ -15,7 +15,7 @@
 ## Services
 
 1. **Kiln Drying / Timber Seasoning** — automated kiln chambers drying timber to a verified 12–15% moisture content. Species include rubberwood, teak, mahogany, pine, jak, kumbuk, nadun, coconut, and imported hardwoods. Drying time 3–12 days depending on species and thickness. Moisture verified with calibrated meters, recorded per batch.
-2. **Vacuum Pressure Impregnation (VPI)** — 5% Boron Borax preservative driven to the timber core at 10 bar (145 PSI). Protects against termites, wood borers, and fungal decay. 10-year warranty against pest contamination. Non-toxic: no heavy metals, arsenic, or solvents.
+2. **Vacuum Pressure Impregnation (VPI)** — 5% borate preservative solution (Boron Borax) driven deep into the timber at 10 bar (145 PSI), with retention verified per species and dimension. Protects against termites, wood borers, and fungal decay. 10-year warranty against pest contamination. Non-toxic: no heavy metals, arsenic, or solvents.
 3. **ISPM 15 Heat Treatment** — IPPC registered heat treatment for export wooden packaging (pallets, crates, dunnage). Core heated to 56°C for minimum 30 minutes. Issues the IPPC certification mark and per-batch treatment certificate. Accepted in 180+ countries.
 
 ## Key Pages

@@ -7,11 +7,11 @@ const siteUrl = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'St. Xavier Timber | Kiln Drying & Wood Preservation Sri Lanka',
+    default: 'Timber Treatment Sri Lanka | Kiln Drying & VPI | St. Xavier Timber',
     template: '%s | St. Xavier Timber',
   },
   description:
-    'Industrial kiln drying and vacuum pressure impregnation (VPI) services in Sri Lanka. IPPC registered, ISPM 15 compliant. Est. 1955, Daluwakotuwa, Kochchikade.',
+    'Industrial timber treatment in Sri Lanka since 1955 — kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. IPPC registered, island-wide delivery.',
   keywords: [
     'kiln drying Sri Lanka',
     'timber seasoning Sri Lanka',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   creator: 'St. Xavier Timber',
   publisher: 'St. Xavier Timber',
   openGraph: {
-    title: 'St. Xavier Timber | Kiln Drying & Wood Preservation Sri Lanka',
+    title: 'Timber Treatment Sri Lanka | Kiln Drying & VPI | St. Xavier Timber',
     description:
       'Industrial kiln drying and VPI timber treatment. IPPC registered, ISPM 15 certified. Est. 1955. Serving construction, furniture, and export industries island-wide.',
     siteName: 'St. Xavier Timber',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'St. Xavier Timber | Kiln Drying & Wood Preservation Sri Lanka',
+    title: 'Timber Treatment Sri Lanka | Kiln Drying & VPI | St. Xavier Timber',
     description:
       'Industrial kiln drying and VPI timber treatment. IPPC registered, ISPM 15 certified. Est. 1955.',
     images: ['/og-image.jpg'],
