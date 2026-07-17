@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 import { Footer } from '../../components/Sections';
 import styles from './about.module.css';
@@ -11,16 +12,79 @@ export const metadata: Metadata = {
   openGraph: { url: 'https://www.stxaviertimber.com/about' },
 };
 
-const milestones = [
+// Ordered oldest to newest. These prints are undated — the family places them
+// somewhere between the 1950s and the 1980s — so captions describe only what is
+// visible in the frame. Do not add years to individual photographs.
+const archive = [
+  {
+    src: '/history/1.jpg',
+    w: 656,
+    h: 652,
+    alt: 'Sepia photograph of the original St. Xavier Timber shopfront, with sawn timber stacked to the rafters and a man seated at the counter.',
+    caption: 'The original shopfront, stacked to the rafters.',
+  },
+  {
+    src: '/history/2.jpg',
+    w: 672,
+    h: 996,
+    alt: 'A man in a white shirt and sarong standing with a bicycle outside a palm-thatched timber shed, sawn boards leaning against the wall.',
+    caption: 'Outside the yard, boards leaning where they were left.',
+  },
+  {
+    src: '/history/3.jpg',
+    w: 1776,
+    h: 1180,
+    alt: 'A man seated at a workbench inside the timber store, surrounded by stacked sawn timber on every side.',
+    caption: 'At the bench, timber stacked on every side.',
+  },
+  {
+    src: '/history/4.jpg',
+    w: 1508,
+    h: 1016,
+    alt: 'A large group of yard workers posed together on and around a felled log at the timber yard.',
+    caption: 'The whole crew, gathered on a felled log.',
+  },
+  {
+    src: '/history/5.jpg',
+    w: 672,
+    h: 928,
+    alt: 'A bullock cart loaded with timber standing at the yard, with racks of stacked timber filling the shed behind.',
+    caption: 'A bullock cart at the loading bay.',
+  },
+  {
+    src: '/history/6.jpg',
+    w: 680,
+    h: 712,
+    alt: 'Six members of the yard team standing shoulder to shoulder outside the mill, beneath a stack of sawn boards.',
+    caption: 'Six of the team, outside the mill.',
+  },
+  {
+    src: '/history/7.jpg',
+    w: 1280,
+    h: 1024,
+    alt: 'A faded colour photograph of men beside an elephant at the timber yard, with the mill shed and coconut palms behind.',
+    caption: 'An elephant at the yard, beside the mill shed.',
+  },
+  {
+    src: '/history/8.jpg',
+    w: 1512,
+    h: 968,
+    alt: 'Yard workers at work in the timber store, with sawn timber and the mill shed behind them.',
+    caption: 'A working day, somewhere in the middle of it.',
+  },
+];
+
+const milestones: { year: string; title: string; desc: string; approx?: boolean }[] = [
   {
     year: '1955',
     title: 'Founded in Daluwakotuwa',
     desc: 'St. Xavier Timber was established as a local timber trading operation in Daluwakotuwa, Sri Lanka. What began as a small family enterprise quickly became a trusted name in the regional timber trade.',
   },
   {
-    year: '1970s',
-    title: 'Expanding the Trading Network',
-    desc: 'Through the 1970s, the business grew its reach across the Western Province, building long-standing relationships with construction companies, furniture makers, and exporters who relied on consistent, quality timber supply.',
+    year: '1960s–80s',
+    title: 'The Yard Years',
+    desc: 'Over these decades the business grew from a local trading operation into an established name across the Western Province — the era our surviving photographs come from. Timber moved by bullock cart and elephant, and the relationships built with construction firms and furniture makers in these years are ones we still hold today. The exact dates are not something we can pin down; the second and third generations grew up in this yard.',
+    approx: true,
   },
   {
     year: '1990s',
@@ -152,6 +216,39 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Archive */}
+      <section className={styles.archiveSection}>
+        <div className={styles.archiveInner}>
+          <div className={styles.archiveHeader}>
+            <span className={styles.eyebrowDark}>From the Family Album</span>
+            <h2 className={styles.h2}>The Early Decades</h2>
+            <p className={styles.archiveIntro}>
+              A handful of prints that survived from the yard's first decades — the original
+              shopfront, the bullock carts, and the people who did the work. The photographs
+              are undated; we know roughly when, but not exactly, so we have left the years off
+              rather than guess at them.
+            </p>
+          </div>
+          <div className={styles.archiveGrid}>
+            {archive.map((p) => (
+              <figure key={p.src} className={styles.archiveFigure}>
+                <span className={styles.archiveFrame}>
+                  <Image
+                    src={p.src}
+                    alt={p.alt}
+                    width={p.w}
+                    height={p.h}
+                    className={styles.archiveImg}
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </span>
+                <figcaption className={styles.archiveCaption}>{p.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Timeline */}
       <section className={styles.timelineSection}>
         <div className={styles.timelineInner}>
@@ -163,7 +260,10 @@ export default function AboutPage() {
             {milestones.map((m, i) => (
               <div key={m.year} className={`${styles.timelineItem} ${i % 2 === 0 ? styles.timelineLeft : styles.timelineRight}`}>
                 <div className={styles.timelineCard}>
-                  <span className={styles.timelineYear}>{m.year}</span>
+                  <span className={styles.timelineYear}>
+                    {m.year}
+                    {m.approx && <span className={styles.timelineApprox}>approx.</span>}
+                  </span>
                   <h3 className={styles.timelineTitle}>{m.title}</h3>
                   <p className={styles.timelineDesc}>{m.desc}</p>
                 </div>
