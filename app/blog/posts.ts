@@ -19,9 +19,9 @@ export type Post = {
 export const posts: Post[] = [
   {
     slug: 'timber-seasoning-sri-lanka-complete-guide',
-    title: 'Timber Seasoning in Sri Lanka: Air Seasoning vs Kiln Seasoning Explained',
+    title: 'Timber Seasoning in Sri Lanka',
     description:
-      'What timber seasoning is, how air seasoning and kiln seasoning compare in Sri Lankan conditions, and how to choose a seasoning provider — from Sri Lanka\'s longest-running facility.',
+      'What timber seasoning is, how air seasoning and kiln seasoning compare in Sri Lankan conditions, and how to choose a seasoning provider.',
     date: '2026-07-07',
     readTime: '6 min read',
     category: 'Kiln Drying',
@@ -71,9 +71,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'ispm-15-certification-sri-lanka-exporters-guide',
-    title: 'ISPM 15 Certification in Sri Lanka: A Complete Guide for Exporters',
+    title: 'ISPM 15 Certification in Sri Lanka',
     description:
-      'How to get wooden packaging ISPM 15 certified in Sri Lanka — the process, the IPPC mark, what customs checks, and the mistakes that get shipments rejected at destination ports.',
+      'How to get wooden packaging ISPM 15 certified in Sri Lanka — the process, the IPPC mark, what customs checks.',
     date: '2026-07-05',
     readTime: '6 min read',
     category: 'Export',
@@ -124,9 +124,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'kiln-drying-cost-sri-lanka-what-determines-price',
-    title: 'How Much Does Kiln Drying Cost in Sri Lanka? What Determines the Price',
+    title: 'How Much Does Kiln Drying Cost in Sri Lanka?',
     description:
-      'What drives the cost of kiln drying timber in Sri Lanka — species, thickness, volume, and initial moisture — and how to compare quotes properly so cheap drying does not become expensive timber.',
+      'What drives the cost of kiln drying timber in Sri Lanka — species, thickness, volume, and initial moisture.',
     date: '2026-07-05',
     readTime: '5 min read',
     category: 'Kiln Drying',
@@ -168,9 +168,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-decking-outdoor-use-sri-lanka',
-    title: 'Timber for Decking and Outdoor Use in Sri Lanka: Species, Treatment, and Detailing',
+    title: 'Timber for Decking and Outdoor Use in Sri Lanka',
     description:
-      'Outdoor timber in Sri Lanka faces sun, monsoon rain, and termites. Which species survive, why VPI treatment is essential, and the detailing that decides whether a deck lasts 3 years or 15.',
+      'Outdoor timber in Sri Lanka faces sun, monsoon rain, and termites. Which species survive, why VPI treatment is essential.',
     date: '2026-07-05',
     readTime: '6 min read',
     category: 'Construction',
@@ -222,7 +222,7 @@ export const posts: Post[] = [
     slug: 'common-furniture-defects-incorrect-timber-drying',
     title: 'Common Furniture Defects Caused by Incorrect Timber Drying',
     description:
-      'Most furniture quality failures — warped panels, opening joints, cracked surfaces, sticking drawers — trace back to timber that was not dried correctly before manufacture. This guide identifies each defect type and the specific drying failure that caused it.',
+      'Most furniture quality failures — warped panels, opening joints, cracked surfaces, sticking drawers.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -278,7 +278,7 @@ export const posts: Post[] = [
     slug: 'export-furniture-timber-requirements',
     title: 'Export Furniture Timber: What International Buyers Require',
     description:
-      'Sri Lankan furniture manufacturers exporting to Europe, the Middle East, and Southeast Asia face specific requirements from international buyers around timber treatment, moisture content, and documentation. This guide covers what is typically required and how to comply.',
+      'Sri Lankan furniture manufacturers exporting to Europe, the Middle East, and Southeast Asia face specific requirements from international buyers.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -327,7 +327,7 @@ export const posts: Post[] = [
     slug: 'furniture-timber-sourcing-sri-lanka',
     title: 'How to Source Timber for Furniture Production in Sri Lanka',
     description:
-      'Timber sourcing for furniture manufacture is not just about price per cubic metre. Species, moisture content, treatment, and supply consistency all determine whether your production runs smoothly or generates a steady stream of quality problems.',
+      'Timber sourcing for furniture manufacture is not just about price per cubic metre. Species, moisture content, treatment.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -367,9 +367,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'gluing-jointing-kiln-dried-timber',
-    title: 'Gluing and Jointing Kiln-Dried Timber: What Furniture Manufacturers Need to Know',
+    title: 'Gluing and Jointing Kiln-Dried Timber',
     description:
-      'Glue joint failure is one of the most common furniture quality problems — and almost always preventable. Moisture content, surface condition, and joint design all affect glue bond strength. This guide covers what to get right before the clamps go on.',
+      'Glue joint failure is one of the most common furniture quality problems — and almost always preventable.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -416,9 +416,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'finishing-kiln-dried-timber-moisture-effect',
-    title: 'Finishing Kiln-Dried Timber: How Moisture Content Affects Paint, Stain, and Lacquer',
+    title: 'Finishing Kiln-Dried Timber',
     description:
-      'The moisture content of timber at the time of finishing directly affects how finishes bond, how they look, and how long they last. Getting the MC right before the first coat goes on is the single most important preparation step in furniture finishing.',
+      'The moisture content of timber at the time of finishing directly affects how finishes bond, how they look, and how long they last.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -458,9 +458,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'solid-timber-vs-panel-board-furniture',
-    title: 'Solid Timber vs Panel Board in Furniture Production: When to Use Each',
+    title: 'Solid Timber vs Panel Board in Furniture Production',
     description:
-      'Solid timber and engineered panel boards are not competing products — they are different solutions to different problems. Understanding which performs better in which application determines quality and cost efficiency in furniture production.',
+      'Solid timber and engineered panel boards are not competing products — they are different solutions to different problems.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -499,9 +499,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'rubberwood-vs-mahogany-furniture-comparison',
-    title: 'Rubberwood vs Mahogany for Furniture: A Cost and Performance Comparison',
+    title: 'Rubberwood vs Mahogany for Furniture',
     description:
-      'Rubberwood and mahogany are the two most widely used furniture timbers in Sri Lanka. The right choice between them depends on application, market, and the specific performance properties that matter for your product. This guide compares them across every dimension that matters in production.',
+      'Rubberwood and mahogany are the two most widely used furniture timbers in Sri Lanka. The right choice between them depends on application, market.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -550,9 +550,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'furniture-factory-timber-drying-specification',
-    title: 'Setting Up a Timber Drying and Treatment Specification for a Furniture Factory',
+    title: 'Setting Up a Timber Drying and Treatment Specification',
     description:
-      'A written timber input specification is the most cost-effective quality control system a furniture factory can implement. It defines what you accept, creates a basis for rejection, and shifts the quality risk to the supplier. This guide covers what the specification should contain.',
+      'A written timber input specification is the most cost-effective quality control system a furniture factory can implement.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -597,9 +597,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'common-structural-timber-failures-sri-lanka',
-    title: 'Common Structural Timber Failures in Sri Lanka — and How to Prevent Them',
+    title: 'Common Structural Timber Failures in Sri Lanka',
     description:
-      'Most structural timber failures in Sri Lanka share the same root causes: untreated timber, inadequate drying, and poor specification at the design stage. This guide covers the failures that occur most often and exactly what prevents each one.',
+      'Most structural timber failures in Sri Lanka share the same root causes: untreated timber, inadequate drying, and poor specification at the design stage.',
     date: '2026-07-01',
     readTime: '6 min read',
     category: 'Construction',
@@ -666,9 +666,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-lintels-wall-plates-embedded-treatment',
-    title: 'Timber Lintels, Wall Plates, and Embedded Members: Treatment and Specification',
+    title: 'Timber Lintels, Wall Plates, and Embedded Members',
     description:
-      'The most vulnerable timber elements in any Sri Lankan building are those in direct contact with masonry — wall plates, lintels, sill plates, and embedded beam ends. These are the elements that fail first and are the hardest to replace. Here is what the specification needs to cover.',
+      'The most vulnerable timber elements in any Sri Lankan building are those in direct contact with masonry.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -721,9 +721,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'roof-timber-specification-guide-sri-lanka',
-    title: 'Roof Timber Specification: A Complete Guide for Sri Lankan Builders',
+    title: 'Roof Timber Specification',
     description:
-      'A roof structure is the most valuable timber investment in any building and the most expensive to replace. This guide covers every element of a complete roof timber specification — species, moisture content, treatment, grade, and documentation.',
+      'A roof structure is the most valuable timber investment in any building and the most expensive to replace.',
     date: '2026-07-01',
     readTime: '6 min read',
     category: 'Construction',
@@ -784,9 +784,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-floor-joists-specification-failures',
-    title: 'Timber Floor Joists: Specification, Treatment, and Common Failures',
+    title: 'Timber Floor Joists: Specification and Treatment',
     description:
-      'Floor joists are among the least inspected structural elements in a building — and among the most expensive to replace. This guide covers the correct specification for floor joists in Sri Lankan construction and the failure modes that occur when the specification is wrong.',
+      'Floor joists are among the least inspected structural elements in a building — and among the most expensive to replace.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -839,9 +839,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-in-contact-with-masonry-risk',
-    title: 'Timber in Contact with Masonry: The Hidden Risk in Every Building',
+    title: 'Timber in Contact with Masonry',
     description:
-      'Masonry wicks moisture and provides the damp conditions that termites and decay fungi need. Any timber touching concrete, brick, or block is at elevated biological risk — and most of these elements are hidden behind finishes within weeks of installation.',
+      'Masonry wicks moisture and creates the damp conditions termites and decay fungi need, which is why timber must never sit against it untreated.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Construction',
@@ -887,9 +887,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'building-with-timber-sri-lanka-regulations',
-    title: 'Building with Timber in Sri Lanka: What the Regulations Require',
+    title: 'Building with Timber in Sri Lanka',
     description:
-      'Sri Lankan building regulations set out requirements for structural timber use, fire resistance, and pest protection. This guide explains the key regulatory requirements for timber in construction and how to comply.',
+      'Sri Lankan building regulations set out requirements for structural timber use, fire resistance, and pest protection.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -935,9 +935,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'how-to-specify-treated-timber-building-projects',
-    title: 'How to Specify Treated Timber for Building Projects: A Guide for Architects and QS',
+    title: 'How to Specify Treated Timber for Building Projects',
     description:
-      'Timber treatment specification is the most cost-effective structural quality control available in Sri Lankan construction — but only if it is written correctly and enforced. This guide gives architects and quantity surveyors the specification language and documentation requirements they need.',
+      'Timber treatment specification is the most cost-effective structural quality control available in Sri Lankan construction.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -983,9 +983,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-treatment-new-build-vs-renovation',
-    title: 'Timber Treatment for New Build vs Renovation: Different Problems, Different Solutions',
+    title: 'Timber Treatment for New Build vs Renovation',
     description:
-      'New construction and renovation projects have very different timber treatment challenges. In new build, the goal is to prevent problems from establishing. In renovation, the goal is to stop problems that may already be present and protect the new material going in.',
+      'New construction and renovation projects have very different timber treatment challenges. In new build, the goal is to prevent problems from establishing.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -1033,7 +1033,7 @@ export const posts: Post[] = [
     slug: 'how-to-inspect-timber-batch-before-delivery',
     title: 'How to Inspect a Timber Batch Before Accepting Delivery',
     description:
-      'Accepting a delivery without inspection is the most expensive mistake in timber procurement. This guide gives you a step-by-step process for checking moisture content, grade, treatment, and defects before the timber leaves the lorry.',
+      'Accepting a delivery without inspection is the most expensive mistake in timber procurement. This guide gives you a step-by-step process for checking.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1092,9 +1092,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'reaction-wood-timber-defect',
-    title: 'Reaction Wood: What It Is and Why It Causes Problems in Sawn Timber',
+    title: 'Reaction Wood: What It Is and Why It Causes Problems',
     description:
-      'Reaction wood forms in leaning trees and branches and has fundamentally different properties from normal wood. It causes unpredictable warp after sawing and behaves differently in drying, machining, and structural loading.',
+      'Reaction wood forms in leaning trees and branches and has fundamentally different properties from normal wood.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -1141,7 +1141,7 @@ export const posts: Post[] = [
     slug: 'timber-knots-grading-structural-impact',
     title: 'Timber Knots: Types, Grading Rules, and Structural Impact',
     description:
-      'Knots are the most visible timber defect — but not all knots are equal. The type, size, location, and condition of a knot all determine how much it affects structural performance and appearance grade.',
+      'Knots are the most visible timber defect, but not all are equal — type, size, location, and condition decide how much a knot weakens the wood.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1187,7 +1187,7 @@ export const posts: Post[] = [
     slug: 'blue-stain-timber-does-it-matter',
     title: 'Blue Stain in Timber: What It Is and Whether It Matters',
     description:
-      'Blue stain is one of the most visible timber defects — dark streaks through the sapwood that look alarming but are not always a structural concern. This guide explains what causes it, what it tells you about the timber\'s history, and when to reject it.',
+      'Blue stain is one of the most visible timber defects — dark streaks through the sapwood that look alarming but are not always a structural concern.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -1227,7 +1227,7 @@ export const posts: Post[] = [
     slug: 'fungal-decay-timber-identification',
     title: 'Fungal Decay in Timber: How to Identify It and What to Do',
     description:
-      'Fungal decay destroys timber faster than any other biological threat. Knowing what it looks like, what conditions allow it to establish, and how to stop it is essential for anyone managing structural timber in Sri Lanka\'s climate.',
+      'Fungal decay destroys timber faster than any other biological threat. Knowing what it looks like, what conditions allow it to establish.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1272,9 +1272,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'case-hardening-kiln-drying-defect',
-    title: 'Case Hardening: The Hidden Kiln Drying Defect That Causes Problems After Machining',
+    title: 'Case Hardening: The Hidden Kiln Drying Defect',
     description:
-      'Case hardening is a residual stress condition in kiln-dried timber that is invisible until the wood is re-sawn. It causes boards to spring and distort the moment the saw blade passes through — revealing a drying failure that cannot be undone.',
+      'Case hardening is a residual stress condition in kiln-dried timber that is invisible until the wood is re-sawn.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -1307,9 +1307,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'shakes-ring-shake-timber-defect',
-    title: 'Shakes and Ring Shakes in Structural Timber: What They Are and Why They Matter',
+    title: 'Shakes and Ring Shakes in Structural Timber',
     description:
-      'Shakes are separations along the grain of timber that form in the standing tree. They are among the most serious structural defects because they reduce shear capacity exactly where shear forces are highest.',
+      'Shakes are separations along the grain that form in the standing tree — among the most serious structural defects, as they cut shear capacity.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -1355,7 +1355,7 @@ export const posts: Post[] = [
     slug: 'slope-of-grain-timber-defect',
     title: 'Slope of Grain: Why Diagonal Grain Reduces Timber Strength',
     description:
-      'Slope of grain is one of the most important and least understood defects in structural timber. A board that looks perfectly clean can have its bending strength reduced by half due to grain that deviates from the board axis.',
+      'Slope of grain is one of the most important and least understood defects in structural timber. A board that looks perfectly clean can have its bending.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -1395,7 +1395,7 @@ export const posts: Post[] = [
     slug: 'how-to-grade-timber-sri-lanka',
     title: 'How Timber Is Graded: What the Marks and Numbers Mean',
     description:
-      'Timber grading is the system that translates visible defects into structural or appearance classifications. Understanding what a grade means — and what it does not guarantee — is essential for anyone buying timber for construction or furniture.',
+      'Timber grading is the system that translates visible defects into structural or appearance classifications.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1432,9 +1432,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-species-for-construction-sri-lanka',
-    title: 'Timber Species for Construction in Sri Lanka: What to Specify and Why',
+    title: 'Timber Species for Construction in Sri Lanka',
     description:
-      'The species you specify for structural timber in Sri Lanka determines durability, treatability, dimensional stability, and long-term maintenance requirements. This guide covers the main options and what each one delivers in construction applications.',
+      'The species you specify for structural timber in Sri Lanka determines durability, treatability, dimensional stability.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -1508,9 +1508,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-species-for-furniture-sri-lanka',
-    title: 'Timber Species for Furniture in Sri Lanka: Which Wood Works Best?',
+    title: 'Timber Species for Furniture in Sri Lanka',
     description:
-      'The species you choose for furniture determines workability, finish quality, dimensional stability, pest resistance, and long-term durability. This guide covers the main options available in Sri Lanka and what each one offers for furniture production.',
+      'The species you choose for furniture determines workability, finish quality, dimensional stability, pest resistance, and long-term durability.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -1573,9 +1573,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'rubberwood-complete-guide',
-    title: 'Rubberwood: A Complete Guide for Sri Lankan Furniture and Construction Buyers',
+    title: 'Rubberwood: A Complete Guide for Sri Lankan Furniture',
     description:
-      'Rubberwood is Sri Lanka\'s most-used timber — but it is also one of the most misunderstood. This guide covers its properties, strengths, weaknesses, correct treatment, and where it should and should not be used.',
+      'Rubberwood is Sri Lanka\'s most-used timber — but it is also one of the most misunderstood. This guide covers its properties, strengths, weaknesses.',
     date: '2026-07-01',
     readTime: '6 min read',
     category: 'Timber Treatment',
@@ -1629,9 +1629,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'teak-timber-properties-uses-sri-lanka',
-    title: 'Teak Timber in Sri Lanka: Properties, Uses, and Why It Costs What It Does',
+    title: 'Teak Timber in Sri Lanka',
     description:
-      'Teak is the benchmark hardwood for durability, stability, and appearance — but the premium it commands is only justified in certain applications. This guide explains what teak actually delivers and where it is worth the investment.',
+      'Teak is the benchmark hardwood for durability, stability, and appearance — but the premium it commands is only justified in certain applications.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1685,9 +1685,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'pine-timber-sri-lanka-guide',
-    title: 'Pine Timber in Sri Lanka: What You Need to Know Before You Buy',
+    title: 'Pine Timber in Sri Lanka',
     description:
-      'Pine is Sri Lanka\'s most widely used construction timber — but not all pine is the same. This guide explains the species differences, what to look for when buying, and why treatment is non-negotiable for structural use.',
+      'Pine is Sri Lanka\'s most widely used construction timber — but not all pine is the same. This guide explains the species differences.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1740,9 +1740,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'mahogany-timber-sri-lanka-guide',
-    title: 'Mahogany in Sri Lanka: Species, Properties, and What to Expect',
+    title: 'Mahogany in Sri Lanka: Species, Properties',
     description:
-      'Mahogany is a broad term covering several related species. Understanding which species you are buying, what its properties are, and how it should be treated is important for getting the result you need in furniture or construction.',
+      'Mahogany is a broad term covering several related species. Understanding which species you are buying, what its properties are.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1795,9 +1795,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'jak-wood-sri-lanka-guide',
-    title: 'Jak Wood in Sri Lanka: Properties, Traditional Uses, and Modern Applications',
+    title: 'Jak Wood in Sri Lanka: Properties, Traditional Uses',
     description:
-      'Jak (Artocarpus heterophyllus) has been used in Sri Lankan construction and furniture for generations. This guide covers its physical properties, natural durability, workability, and where it fits in modern building and furniture practice.',
+      'Jak (Artocarpus heterophyllus) has been used in Sri Lankan construction and furniture for generations.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -1851,9 +1851,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'coconut-timber-sri-lanka-guide',
-    title: 'Coconut Timber in Sri Lanka: Properties, Uses, and What Makes It Unusual',
+    title: 'Coconut Timber in Sri Lanka',
     description:
-      'Coconut timber — harvested from the stems of mature palms — is one of Sri Lanka\'s most unusual and underused building materials. This guide explains its distinctive properties, where it works well, and its significant limitations.',
+      'Coconut timber — harvested from the stems of mature palms — is one of Sri Lanka\'s most unusual and underused building materials.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -1900,9 +1900,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'imported-vs-local-timber-sri-lanka',
-    title: 'Imported vs Local Timber in Sri Lanka: How to Choose for Your Project',
+    title: 'Imported vs Local Timber in Sri Lanka',
     description:
-      'Sri Lanka imports substantial volumes of construction and furniture timber while significant local species exist. The decision between imported and local timber involves cost, availability, consistency, sustainability, and performance — this guide covers all of these.',
+      'Sri Lanka imports substantial volumes of construction and furniture timber while significant local species exist.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1951,9 +1951,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'vpi-vs-surface-treatment-timber',
-    title: 'VPI vs Surface Treatment: Why Brush-On Preservatives Do Not Protect Timber',
+    title: 'VPI vs Surface Treatment',
     description:
-      'Surface preservatives — paints, varnishes, and brush-applied chemicals — are widely used but largely ineffective against termites and wood-boring insects. Here is why the application method matters as much as the chemical, and what deep penetration treatment achieves that surface treatment cannot.',
+      'Surface preservatives — paints, varnishes, and brush-applied chemicals — are widely used but largely ineffective against termites and wood-boring insects.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -2008,9 +2008,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'vpi-treatment-rubberwood-furniture',
-    title: 'VPI Treatment for Rubberwood Furniture: Why Surface Treatment Is Not Enough',
+    title: 'VPI Treatment for Rubberwood Furniture',
     description:
-      'Rubberwood is Sri Lanka\'s most-used furniture timber — and its most vulnerable to powder post beetle infestation. Kiln drying kills existing beetles; VPI treatment prevents re-infestation. Here is why both are needed for quality furniture production.',
+      'Rubberwood is Sri Lanka\'s most-used furniture timber — and its most vulnerable to powder post beetle infestation.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Industries',
@@ -2063,9 +2063,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'vpi-treatment-coastal-high-humidity',
-    title: 'Timber Treatment for Coastal and High-Humidity Environments in Sri Lanka',
+    title: 'Timber Treatment for Coastal and High-Humidity Environments',
     description:
-      'Coastal and high-humidity locations in Sri Lanka present the most demanding conditions for structural timber — elevated moisture, salt air, and year-round termite activity combine to accelerate decay and infestation. Here is what the specification needs to include.',
+      'Coastal and high-humidity locations in Sri Lanka present the most demanding conditions for structural timber.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -2119,9 +2119,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'vpi-treatment-door-window-frames',
-    title: 'VPI Treatment for Door and Window Frames: Why It Matters More Than You Think',
+    title: 'VPI Treatment for Door and Window Frames',
     description:
-      'Door and window frames are among the most termite-vulnerable elements in any building — and among the most expensive to replace. The correct treatment specification prevents the problem entirely.',
+      'Door and window frames are among the most termite-vulnerable elements in any building — and among the most expensive to replace.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Construction',
@@ -2168,9 +2168,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'boron-borax-vs-other-timber-preservatives',
-    title: 'Borate Wood Preservative (Boron Borax) vs Other Timber Preservatives: What You Need to Know',
+    title: 'Borate Wood Preservative (Boron Borax) vs Other Timber',
     description:
-      'Not all timber preservatives are equal — they differ in how they work, what they protect against, where they can be used, and how safe they are. This guide compares borate preservative with the main alternatives and explains when each is appropriate.',
+      'Not all timber preservatives are equal — they differ in how they work, what they protect against, where they can be used, and how safe they are.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2227,7 +2227,7 @@ export const posts: Post[] = [
     slug: 'vpi-treatment-different-timber-species',
     title: 'How VPI Treatment Works on Different Timber Species',
     description:
-      'VPI treatment is not one-size-fits-all. Different species absorb the preservative at different rates and to different depths. Understanding treatability helps you specify correctly and know what to expect from the treatment records.',
+      'VPI treatment is not one-size-fits-all. Different species absorb the preservative at different rates and to different depths.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2283,9 +2283,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'how-to-specify-vpi-treatment-construction',
-    title: 'How to Specify VPI Timber Treatment for Construction Projects',
+    title: 'How to Specify VPI Timber Treatment for Construction',
     description:
-      'Getting the timber treatment specification right at the design stage is the most cost-effective way to ensure long-term structural performance. This guide covers what to include in a schedule of works, what documentation to require, and common specification mistakes to avoid.',
+      'Getting the timber treatment specification right at the design stage is the most cost-effective way to ensure long-term structural performance.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -2341,7 +2341,7 @@ export const posts: Post[] = [
     slug: 'what-does-10-year-timber-pest-warranty-cover',
     title: 'What Does a 10-Year Timber Pest Warranty Actually Cover?',
     description:
-      'A 10-year pest warranty on VPI-treated timber is only as useful as what it actually guarantees. This guide explains what the warranty covers, what conditions it requires, and what documentation you need to make a valid claim.',
+      'A 10-year pest warranty on VPI-treated timber is only as useful as what it actually guarantees.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -2395,9 +2395,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'what-is-fibre-saturation-point',
-    title: 'What Is the Fibre Saturation Point — and Why Does It Matter for Timber?',
+    title: 'What Is the Fibre Saturation Point',
     description:
-      'The fibre saturation point is the threshold at which timber starts to shrink, swell, and change its mechanical properties. Understanding it explains almost every moisture-related problem in timber construction and manufacturing.',
+      'The fibre saturation point is the threshold at which timber starts to shrink, swell, and change its mechanical properties.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -2455,7 +2455,7 @@ export const posts: Post[] = [
     slug: '7-kiln-drying-myths',
     title: '7 Kiln Drying Myths That Cost Timber Buyers Money',
     description:
-      'Misconceptions about kiln drying lead to bad purchasing decisions, failed projects, and unnecessary cost. These are the seven most common myths — and what the reality actually is.',
+      'Misconceptions about kiln drying lead to bad purchasing decisions, failed projects, and unnecessary cost.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2516,9 +2516,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'common-kiln-drying-defects',
-    title: 'Common Kiln Drying Defects and What They Tell You About the Drying Process',
+    title: 'Common Kiln Drying Defects and What They Tell You',
     description:
-      'Degrade in kiln-dried timber is not random — each type of defect is caused by a specific failure in the drying process. Knowing how to identify and diagnose drying defects lets you reject bad timber before it becomes an expensive problem.',
+      'Degrade in kiln-dried timber is not random — each type of defect is caused by a specific failure in the drying process.',
     date: '2026-07-01',
     readTime: '6 min read',
     category: 'Timber Treatment',
@@ -2585,7 +2585,7 @@ export const posts: Post[] = [
     slug: 'drying-hardwood-vs-softwood-timber',
     title: 'Drying Hardwood vs Softwood: What Changes and Why It Matters',
     description:
-      'Hardwoods and softwoods behave very differently in the kiln. Understanding those differences is what separates a drying schedule that produces quality timber from one that produces degrade. This guide explains the key variables and how they affect the drying process.',
+      'Hardwoods and softwoods behave very differently in the kiln. Understanding those differences is what separates a drying schedule that produces quality.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2641,9 +2641,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'kiln-drying-schedules-explained',
-    title: 'Kiln Drying Schedules Explained: How Temperature and Humidity Control the Drying Process',
+    title: 'Kiln Drying Schedules Explained',
     description:
-      'A kiln drying schedule is a programmed sequence of temperature and humidity conditions that guides timber through the drying process with minimal degrade. This guide explains what a schedule controls, why the sequence matters, and what happens when it goes wrong.',
+      'A kiln drying schedule is a programmed sequence of temperature and humidity conditions that guides timber through the drying process with minimal degrade.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2699,7 +2699,7 @@ export const posts: Post[] = [
     slug: 'how-moisture-meters-work',
     title: 'How Moisture Meters Work — and How to Use Them Correctly',
     description:
-      'A moisture meter is the most useful tool in timber quality control — but it can also mislead you if you do not understand its limitations. This guide explains the two main types of meter, how they measure MC, and where each one can give a wrong reading.',
+      'A moisture meter is the most useful tool in timber quality control — but it can also mislead you if you do not understand its limitations.',
     date: '2026-07-01',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -2764,9 +2764,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'why-timber-cracks-splits-during-drying',
-    title: 'Why Does Timber Crack and Split? Understanding Checking and End Splitting',
+    title: 'Why Does Timber Crack and Split?',
     description:
-      'Cracks and splits in drying timber are not random — they follow predictable patterns driven by uneven moisture loss. This guide explains what causes checking and end splitting, how to prevent them, and what they tell you about the drying process.',
+      'Cracks and splits in drying timber are not random — they follow predictable patterns driven by uneven moisture loss.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2829,9 +2829,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'why-timber-warps-moisture-movement',
-    title: 'Why Does Timber Warp? The Role of Moisture in Timber Movement',
+    title: 'Why Does Timber Warp? The Role of Moisture in Timber',
     description:
-      'Warped timber is almost always a moisture problem — but understanding which type of warp has occurred tells you exactly what went wrong in the drying or storage process. This guide explains the four types of warp and how to prevent each one.',
+      'Warped timber is almost always a moisture problem — but understanding which type of warp has occurred tells you exactly what went wrong in the drying.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2896,7 +2896,7 @@ export const posts: Post[] = [
     slug: 'what-is-timber-moisture-content',
     title: 'What Is Timber Moisture Content and Why Does It Matter?',
     description:
-      'Moisture content is the single most important property of sawn timber — it determines whether wood will warp, crack, take a finish, hold a joint, or move after installation. This guide explains what MC means, how it is measured, and what the right number is for different applications.',
+      'Moisture content is the single most important property of sawn timber — it determines whether wood will warp, crack, take a finish, hold a joint.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -2964,9 +2964,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'termite-protection-roof-timber-sri-lanka',
-    title: 'Termite Protection for Roof Timber in Sri Lanka: What Builders Need to Know',
+    title: 'Termite Protection for Roof Timber in Sri Lanka',
     description:
-      'Termite damage to roof structures is one of the most expensive building failures in Sri Lanka — and almost entirely preventable. This guide explains how termites attack roof timber, what treatment stops them, and how to specify correctly for new construction.',
+      'Termite damage to roof structures is one of the most expensive building failures in Sri Lanka — and almost entirely preventable.',
     date: '2026-06-30',
     readTime: '5 min read',
     category: 'Construction',
@@ -3040,9 +3040,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'what-is-ispm-15-heat-treatment',
-    title: 'What Is ISPM 15 Heat Treatment — And Why Sri Lankan Exporters Need It',
+    title: 'What Is ISPM 15 Heat Treatment',
     description:
-      "If you're exporting goods on wooden pallets or in wooden crates, ISPM 15 heat treatment isn't optional — it's a legal requirement in over 180 countries. Here's what it means, how it works, and what the IPPC mark on your timber certifies.",
+      "If you're exporting goods on wooden pallets or in wooden crates, ISPM 15 heat treatment isn't optional — it's a legal requirement in over 180 countries.",
     date: '2026-05-15',
     readTime: '5 min read',
     category: 'Export & Compliance',
@@ -3101,9 +3101,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'kiln-drying-vs-air-drying-timber',
-    title: "Kiln Drying vs Air Drying: What's the Difference and Which Should You Use?",
+    title: "Kiln Drying vs Air Drying",
     description:
-      'Both kiln drying and air drying reduce moisture in timber, but they produce very different results at very different speeds. Learn which method suits your application — and why most industrial uses demand kiln-dried timber.',
+      'Both kiln drying and air drying reduce moisture in timber, but they produce very different results at very different speeds.',
     date: '2026-05-08',
     readTime: '4 min read',
     category: 'Timber Treatment',
@@ -3163,9 +3163,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'what-is-vacuum-pressure-impregnation',
-    title: 'What Is Vacuum Pressure Impregnation (VPI) and How Does It Protect Timber?',
+    title: 'What Is Vacuum Pressure Impregnation (VPI)?',
     description:
-      'VPI is the most thorough method available for deep-penetration timber preservation. Learn how the process works, what borate preservative treatment does inside the wood, and why it carries a 10-year pest warranty.',
+      'VPI is the most thorough method available for deep-penetration timber preservation. Learn how the process works.',
     date: '2026-04-28',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -3232,9 +3232,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'why-furniture-manufacturers-need-kiln-dried-timber',
-    title: 'Why Furniture Manufacturers Should Only Use Kiln-Dried Timber',
+    title: 'Why Manufacturers Should Use Only Kiln-Dried Timber',
     description:
-      'Warping, joint failure, and surface cracking in finished furniture almost always trace back to one cause: timber that was not properly dried before manufacture. Here is why kiln-dried timber at 12–15% MC is the only acceptable input for quality furniture production.',
+      'Warping, joint failure, and surface cracking in finished furniture almost always trace back to one cause: timber that was not properly dried before.',
     date: '2026-04-15',
     readTime: '4 min read',
     category: 'Industries',
@@ -3287,9 +3287,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'how-to-choose-the-right-timber-treatment',
-    title: 'Kiln Drying or VPI — Which Timber Treatment Does Your Project Need?',
+    title: 'Kiln Drying or VPI: Which Does Your Timber Need?',
     description:
-      'Kiln drying and VPI solve different problems. This guide explains what each treatment does, when to use them separately, when to combine them, and how to choose based on your specific application.',
+      'Kiln drying and VPI solve different problems. This guide explains what each treatment does, when to use them separately, when to combine them.',
     date: '2026-04-01',
     readTime: '5 min read',
     category: 'Timber Treatment',

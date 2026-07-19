@@ -7,9 +7,9 @@ import styles from '../timber-treatment-negombo/negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | St. Xavier Timber — Get a Timber Treatment Quote',
+  title: { absolute: 'Contact St. Xavier Timber | Timber Treatment Quote' },
   description:
-    'Contact St. Xavier Timber for kiln drying, VPI, and ISPM 15 heat treatment. Call 031 227 7752, WhatsApp 071 471 1417, or send your timber specs for a quote — usually within a few hours. Daluwakotuwa, Kochchikade. Island-wide.',
+    'Kiln drying, VPI, and ISPM 15 heat treatment. Call 031 227 7752, WhatsApp 071 471 1417, or send your timber specs for a quote. Island-wide.',
   keywords: [
     'contact St. Xavier Timber',
     'timber treatment quote Sri Lanka',
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/contact-us` },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Contact St. Xavier Timber | Get a Timber Treatment Quote',
     description: 'Call 031 227 7752, WhatsApp 071 471 1417, or send your timber specs for a quote. Daluwakotuwa, Kochchikade. Island-wide delivery.',
     url: `${BASE}/contact-us`,

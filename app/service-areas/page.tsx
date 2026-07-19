@@ -7,9 +7,9 @@ import styles from '../timber-treatment-negombo/negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Service Areas | Island-wide Timber Treatment — St. Xavier Timber',
+  title: { absolute: 'Service Areas | Island-wide Timber Treatment' },
   description:
-    'St. Xavier Timber serves all of Sri Lanka with kiln drying, VPI, and ISPM 15 heat treatment. Island-wide delivery from our Kochchikade facility. Find your area.',
+    'Kiln drying, VPI, and ISPM 15 heat treatment across Sri Lanka. Island-wide delivery from our Kochchikade facility. Find your area.',
   keywords: [
     'timber treatment Sri Lanka',
     'island-wide timber treatment',
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/service-areas` },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Service Areas | St. Xavier Timber',
     description: 'Island-wide kiln drying, VPI, and ISPM 15 heat treatment. Find your area.',
     url: `${BASE}/service-areas`,

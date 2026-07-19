@@ -6,11 +6,12 @@ import styles from './case-studies.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Timber Treatment Results — St. Xavier Timber',
+  title: { absolute: 'Timber Treatment Case Studies | St. Xavier Timber' },
   description:
-    'Real results from St. Xavier Timber clients. How kiln drying and VPI treatment solved contamination, warping, and cracking for Sri Lanka construction companies.',
+    'Real results from St. Xavier Timber clients: how kiln drying and VPI treatment solved contamination, warping, and cracking on Sri Lankan projects.',
   alternates: { canonical: `${BASE}/case-studies` },
-  openGraph: { url: `${BASE}/case-studies` },
+  openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }], url: `${BASE}/case-studies` },
 };
 
 const caseStudySchema = {

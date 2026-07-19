@@ -7,9 +7,9 @@ import styles from '../timber-treatment-negombo/negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Timber Treatment Gampaha | Kiln Drying, VPI & ISPM 15',
+  title: 'Timber Treatment Gampaha',
   description:
-    'Industrial kiln drying, VPI, and ISPM 15 heat treatment for Gampaha district. IPPC registered. Est. 1955. 35 minutes via the Colombo–Negombo road. Island-wide delivery available.',
+    'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Gampaha district. IPPC registered. Est. 1955.',
   keywords: [
     'timber treatment Gampaha',
     'kiln drying Gampaha',
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/timber-treatment-gampaha` },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Gampaha | St. Xavier Timber',
     description: 'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Gampaha district. IPPC registered. Est. 1955.',
     url: `${BASE}/timber-treatment-gampaha`,

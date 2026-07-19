@@ -7,11 +7,11 @@ const siteUrl = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Timber Treatment Sri Lanka | Kiln Drying & VPI | St. Xavier Timber',
+    default: 'Timber Treatment Sri Lanka | Kiln Drying & VPI',
     template: '%s | St. Xavier Timber',
   },
   description:
-    'Industrial timber treatment in Sri Lanka since 1955 — kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. IPPC registered, island-wide delivery.',
+    'Industrial timber treatment in Sri Lanka since 1955 — kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. IPPC registered.',
   keywords: [
     'kiln drying Sri Lanka',
     'timber seasoning Sri Lanka',

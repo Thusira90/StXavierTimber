@@ -7,9 +7,9 @@ import styles from '../timber-treatment-negombo/negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Timber Treatment Chilaw & Puttalam | Kiln Drying, VPI & ISPM 15',
+  title: 'Timber Treatment Chilaw & Puttalam',
   description:
-    'Kiln drying, VPI, and ISPM 15 heat treatment 40 minutes from Chilaw, straight down the coastal road. IPPC registered. Est. 1955. Serving Chilaw, Wennappuwa, Marawila, and Puttalam.',
+    'Kiln drying, VPI, and ISPM 15 heat treatment 40 minutes from Chilaw. IPPC registered. Est. 1955.',
   keywords: [
     'timber treatment Chilaw',
     'kiln drying Chilaw',
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/timber-treatment-chilaw` },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Chilaw & Puttalam | St. Xavier Timber',
     description: 'Kiln drying, VPI, and ISPM 15 heat treatment 40 minutes from Chilaw. IPPC registered. Est. 1955.',
     url: `${BASE}/timber-treatment-chilaw`,

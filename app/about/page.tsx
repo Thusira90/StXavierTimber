@@ -5,11 +5,12 @@ import styles from './about.module.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About St. Xavier Timber — Timber Treatment Specialists, Sri Lanka Est. 1955',
+  title: { absolute: 'About St. Xavier Timber | Timber Treatment Since 1955' },
   description:
-    'Family-owned since 1955. IPPC registered kiln drying, VPI, and ISPM 15 heat treatment in Daluwakotuwa, Kochchikade. Four generations serving Sri Lanka\'s construction, furniture, and export industries.',
+    'Family-owned since 1955. IPPC registered kiln drying, VPI, and ISPM 15 heat treatment in Daluwakotuwa, Kochchikade — four generations of timber expertise.',
   alternates: { canonical: 'https://www.stxaviertimber.com/about' },
-  openGraph: { url: 'https://www.stxaviertimber.com/about' },
+  openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }], url: 'https://www.stxaviertimber.com/about' },
 };
 
 // Ordered oldest to newest. These prints are undated — the family places them

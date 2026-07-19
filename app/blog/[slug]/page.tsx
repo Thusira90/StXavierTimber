@@ -18,7 +18,10 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: post.title,
+    // `absolute` opts out of the root "%s | St. Xavier Timber" template — the
+    // brand suffix pushed every article title past Google's ~60-char display
+    // limit. Brand is still carried by og:site_name and the JSON-LD publisher.
+    title: { absolute: post.title },
     description: post.description,
     keywords: post.tags,
     alternates: { canonical: `https://www.stxaviertimber.com/blog/${slug}` },
@@ -30,11 +33,23 @@ export async function generateMetadata({
       publishedTime: post.date,
       authors: ['St. Xavier Timber'],
       tags: post.tags,
+      // Next.js does not inherit the root layout's og:image into a child that
+      // defines its own openGraph, so set it explicitly or the share preview
+      // renders imageless.
+      images: [
+        {
+          url: '/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
+      images: ['/og-image.jpg'],
     },
   };
 }

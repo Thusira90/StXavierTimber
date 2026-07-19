@@ -7,9 +7,9 @@ import styles from '../timber-treatment-negombo/negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Timber Treatment Colombo | Kiln Drying, VPI & ISPM 15',
+  title: 'Timber Treatment Colombo',
   description:
-    'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Colombo. IPPC registered. Est. 1955. Island-wide delivery to construction sites, furniture workshops, and export depots.',
+    'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Colombo. IPPC registered. Est. 1955. Island-wide delivery.',
   keywords: [
     'timber treatment Colombo',
     'kiln drying Colombo',
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/timber-treatment-colombo` },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Colombo | St. Xavier Timber',
     description: 'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Colombo. IPPC registered. Est. 1955. Island-wide delivery.',
     url: `${BASE}/timber-treatment-colombo`,

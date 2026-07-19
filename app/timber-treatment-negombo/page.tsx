@@ -7,9 +7,9 @@ import styles from './negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Timber Treatment Negombo | Kiln Drying, VPI & ISPM 15',
+  title: 'Timber Treatment Negombo',
   description:
-    'Timber treatment 5 minutes from Negombo. Kiln drying, VPI, and ISPM 15 heat treatment in Daluwakotuwa, Kochchikade. IPPC registered. Est. 1955. Island-wide delivery.',
+    'Industrial kiln drying, VPI, and ISPM 15 heat treatment — 5 minutes from Negombo in Daluwakotuwa. IPPC registered. Est. 1955.',
   keywords: [
     'timber treatment Negombo',
     'kiln drying Negombo',
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/timber-treatment-negombo` },
   openGraph: {
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Negombo | St. Xavier Timber',
     description: 'Industrial kiln drying, VPI, and ISPM 15 heat treatment — 5 minutes from Negombo in Daluwakotuwa. IPPC registered. Est. 1955.',
     url: `${BASE}/timber-treatment-negombo`,
