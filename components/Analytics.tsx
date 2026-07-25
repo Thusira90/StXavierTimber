@@ -17,12 +17,6 @@ import { useEffect } from 'react';
 const GA_MEASUREMENT_ID = 'G-QS03GW2LEN';
 const PRODUCTION_HOST = 'www.stxaviertimber.com';
 
-declare global {
-  interface Window {
-    dataLayer: unknown[];
-  }
-}
-
 export function Analytics() {
   useEffect(() => {
     const isProd =
@@ -42,6 +36,8 @@ export function Analytics() {
     function gtag(...args: unknown[]) {
       window.dataLayer.push(args);
     }
+    // Expose globally so lib/analytics.ts trackConversion() can fire events.
+    window.gtag = gtag;
     gtag('js', new Date());
     gtag('config', GA_MEASUREMENT_ID);
   }, []);

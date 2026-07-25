@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import styles from './Sections.module.css';
 import { NAP_ADDRESS_SHORT, PHONE_OFFICE, PHONE_MOBILE, PHONE_MOBILE_ALT, EMAIL } from '@/lib/company';
+import { trackConversion, CONVERSION_EVENTS } from '@/lib/analytics';
 
 /* ── Process ─────────────────────────────────────────────── */
 const steps = [
@@ -449,6 +450,10 @@ export function Contact() {
       });
       if (res.ok) {
         setSubmitted(true);
+        trackConversion(CONVERSION_EVENTS.formSubmit, {
+          method: 'contact_form',
+          treatment: data.treatment || undefined,
+        });
       } else {
         setError(true);
       }
