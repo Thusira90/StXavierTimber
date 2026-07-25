@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { POSTAL_ADDRESS } from '@/lib/company';
+import { Analytics } from '@/components/Analytics';
 import './globals.css';
 
 const siteUrl = 'https://www.stxaviertimber.com';
@@ -7,7 +8,7 @@ const siteUrl = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Timber Treatment Sri Lanka | Kiln Drying & VPI',
+    default: 'Timber Treatment Sri Lanka | Kiln Drying & VPI Since 1955',
     template: '%s | St. Xavier Timber',
   },
   description:
@@ -143,59 +144,18 @@ const localBusinessSchema = {
     'https://www.instagram.com/stxaviertimber',
     'https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/',
   ],
-  subOrganization: {
-    '@type': 'Organization',
-    name: 'CeyPall',
-    description:
-      'Pallet manufacturing arm of St. Xavier Timber. Produces ISPM 15 certified, IPPC registered wooden pallets from kiln-dried and VPI-treated timber for export and local use.',
-    url: 'https://ceypall.com',
-    foundingDate: '1955',
-    parentOrganization: {
-      '@type': 'Organization',
-      name: 'St. Xavier Timber',
-      url: siteUrl,
-    },
-    hasOfferCatalog: {
-      '@type': 'OfferCatalog',
-      name: 'Pallet Products',
-      itemListElement: [
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Product',
-            name: 'ISPM 15 Certified Export Pallets',
-            description:
-              'Heat treated wooden pallets compliant with ISPM 15 phytosanitary standards. IPPC registered, accepted in 180+ countries for international export.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Product',
-            name: 'VPI Treated Pallets',
-            description:
-              'Vacuum pressure impregnated pallets for pest and fungal protection. Made from St. Xavier kiln-dried timber.',
-          },
-        },
-      ],
-    },
-  },
 };
 
 const ceypallSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  '@id': 'https://ceypall.com',
+  '@id': 'https://www.ceypall.com',
   name: 'CeyPall',
   alternateName: 'CeyPall Pallets',
   description:
-    'Sri Lanka\'s IPPC registered pallet manufacturer. ISPM 15 certified wooden pallets made from kiln-dried and VPI-treated timber. Sister company of St. Xavier Timber, Est. 1955.',
-  url: 'https://ceypall.com',
-  parentOrganization: {
-    '@type': 'Organization',
-    name: 'St. Xavier Timber',
-    url: siteUrl,
-  },
+    'Sri Lanka\'s IPPC registered pallet manufacturer. ISPM 15 certified wooden pallets made from kiln-dried and VPI-treated timber. Sister company of St. Xavier Timber; incorporated 2025, built on the same 1955 timber legacy.',
+  url: 'https://www.ceypall.com',
+  foundingDate: '2025-10-03',
   address: POSTAL_ADDRESS,
   knowsAbout: [
     'ISPM 15 wooden pallets',
@@ -210,17 +170,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics GA4 — production only, so localhost/dev traffic never pollutes analytics */}
-        {process.env.NODE_ENV === 'production' && (
-          <>
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-QS03GW2LEN" />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QS03GW2LEN');`,
-              }}
-            />
-          </>
-        )}
+        {/* GA4 — gated to the production host only (see components/Analytics.tsx) */}
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}

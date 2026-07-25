@@ -308,17 +308,17 @@ export function CeyPall() {
         <div className={styles.ceypallHeaderLeft}>
           <span className={styles.ceypallEyebrow}>Sister Company</span>
           <h2 className={styles.ceypallH2}>
-            Need pallets?{' '}
-            <a href="https://ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypallLink}>CeyPall</a> has you covered.
+            Our sister company,{' '}
+            <a href="https://www.ceypall.com/wooden-pallets-sri-lanka" target="_blank" rel="noopener noreferrer" className={styles.ceypallLink}>CeyPall</a>.
           </h2>
           <p className={styles.ceypallSub}>
-            CeyPall is our pallet manufacturing arm — built on the same 1955 timber legacy.
-            Every CeyPall pallet is made from St. Xavier treated timber: kiln-dried, VPI-treated,
-            and ISPM 15 certified for export.
+            CeyPall is our sister company — the pallet-manufacturing side of the same 1955 timber
+            legacy. Every CeyPall pallet is made from St. Xavier treated timber: kiln-dried,
+            VPI-treated, and ISPM 15 certified for export.
           </p>
           <div className={styles.ceypallCta}>
-            <a href="https://ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypallCtaBtn}>
-              Visit ceypall.com →
+            <a href="https://www.ceypall.com/wooden-pallets-sri-lanka" target="_blank" rel="noopener noreferrer" className={styles.ceypallCtaBtn}>
+              Visit CeyPall →
             </a>
           </div>
         </div>
@@ -550,9 +550,8 @@ export function Footer() {
           <a href="https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
         <p className={styles.footerRight}>
-          Pallet products →{' '}
-          <a href="https://ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypall}>
-            CEYPALL
+          <a href="https://www.ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypall}>
+            CeyPall →
           </a>
         </p>
       </div>
