@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { POSTAL_ADDRESS } from '@/lib/company';
 import { Analytics } from '@/components/Analytics';
+import { ConversionTracker } from '@/components/ConversionTracker';
 import './globals.css';
 
 const siteUrl = 'https://www.stxaviertimber.com';
@@ -181,7 +182,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ceypallSchema) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ConversionTracker />
+        {children}
+      </body>
     </html>
   );
 }
