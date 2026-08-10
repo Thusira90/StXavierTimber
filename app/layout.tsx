@@ -9,11 +9,11 @@ const siteUrl = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Timber Treatment Sri Lanka | Kiln Drying & VPI Since 1955',
+    default: 'Kiln Drying & VPI Timber Treatment Sri Lanka | Est. 1955',
     template: '%s | St. Xavier Timber',
   },
   description:
-    'Industrial timber treatment in Sri Lanka since 1955 — kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. IPPC registered.',
+    'Industrial kiln drying, VPI, and ISPM 15 timber treatment in Sri Lanka since 1955. IPPC registered. Island-wide delivery. Call 031 227 7752 for a quote.',
   keywords: [
     'kiln drying Sri Lanka',
     'timber seasoning Sri Lanka',

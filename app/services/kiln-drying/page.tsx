@@ -7,9 +7,9 @@ import styles from '../../timber-treatment-negombo/negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Kiln Drying Timber Service',
+  title: 'Wood Kiln Drying Services in Sri Lanka | Est. 1955',
   description:
-    'Industrial wood kiln drying in Sri Lanka. Our fully automated kiln uses advanced temperature and moisture control to reach 12–15% moisture content — reducing warping, cracking, and instability across all species. IPPC registered, Est. 1955. Island-wide delivery.',
+    'Industrial wood kiln drying in Sri Lanka to 12–15% moisture content. Fully automated kiln, all species. IPPC registered, Est. 1955. Island-wide delivery — call 031 227 7752.',
   keywords: [
     'kiln drying Sri Lanka',
     'wood kiln drying',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${BASE}/services/kiln-drying` },
   openGraph: {
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Wood Kiln Drying Service Sri Lanka' }],
-    title: 'Kiln Drying Timber Service | St. Xavier Timber',
+    title: 'Wood Kiln Drying Services in Sri Lanka | St. Xavier Timber',
     description:
       'Industrial wood kiln drying to 12–15% moisture content with a fully automated kiln. IPPC registered, Est. 1955. Island-wide delivery across Sri Lanka.',
     url: `${BASE}/services/kiln-drying`,

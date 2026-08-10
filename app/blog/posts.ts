@@ -71,9 +71,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'ispm-15-certification-sri-lanka-exporters-guide',
-    title: 'ISPM 15 Certification in Sri Lanka',
+    title: 'ISPM 15 Certification Sri Lanka: Exporter Guide (2026)',
     description:
-      'How to get wooden packaging ISPM 15 certified in Sri Lanka — the process, the IPPC mark, what customs checks.',
+      'How to get wooden packaging ISPM 15 certified in Sri Lanka — the process, the IPPC mark, customs checks, and how to avoid shipment holds. Updated for 2026.',
     date: '2026-07-05',
     readTime: '6 min read',
     category: 'Export',
@@ -499,9 +499,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'rubberwood-vs-mahogany-furniture-comparison',
-    title: 'Rubberwood vs Mahogany for Furniture',
+    title: 'Rubberwood vs Mahogany: Sri Lanka Furniture Guide (2026)',
     description:
-      'Rubberwood and mahogany are the two most widely used furniture timbers in Sri Lanka. The right choice between them depends on application, market.',
+      'Rubberwood vs mahogany for Sri Lankan furniture — cost, durability, workability, and finish quality compared. Which species is right for your project?',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -1139,9 +1139,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-knots-grading-structural-impact',
-    title: 'Timber Knots: Types, Grading Rules, and Structural Impact',
+    title: 'Timber Knots: Types, Grading Rules & Structural Impact',
     description:
-      'Knots are the most visible timber defect, but not all are equal — type, size, location, and condition decide how much a knot weakens the wood.',
+      'Not all timber knots weaken wood equally. Learn the types, grading rules, and structural impact of knots — and how to read grade stamps before you buy.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
@@ -1432,9 +1432,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-species-for-construction-sri-lanka',
-    title: 'Timber Species for Construction in Sri Lanka',
+    title: 'Best Timber Species for Construction in Sri Lanka (2026)',
     description:
-      'The species you specify for structural timber in Sri Lanka determines durability, treatability, dimensional stability.',
+      'The best timber species for construction in Sri Lanka compared — durability, treatability, dimensional stability, and cost. Choose the right wood for your build.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Construction',
@@ -1508,9 +1508,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'timber-species-for-furniture-sri-lanka',
-    title: 'Timber Species for Furniture in Sri Lanka',
+    title: 'Best Timber Species for Furniture in Sri Lanka (2026)',
     description:
-      'The species you choose for furniture determines workability, finish quality, dimensional stability, pest resistance, and long-term durability.',
+      'The best timber species for furniture in Sri Lanka — workability, finish quality, pest resistance, and durability compared. Choose the right wood for your piece.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Industries',
@@ -1573,9 +1573,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'rubberwood-complete-guide',
-    title: 'Rubberwood: A Complete Guide for Sri Lankan Furniture',
+    title: 'Rubberwood in Sri Lanka: Complete Buyer Guide (2026)',
     description:
-      'Rubberwood is Sri Lanka\'s most-used timber — but it is also one of the most misunderstood. This guide covers its properties, strengths, weaknesses.',
+      'Rubberwood is Sri Lanka\'s most-used timber — and the most misunderstood. Properties, strengths, weaknesses, and how to buy it right. Complete 2026 buyer guide.',
     date: '2026-07-01',
     readTime: '6 min read',
     category: 'Timber Treatment',
@@ -1740,9 +1740,9 @@ export const posts: Post[] = [
   },
   {
     slug: 'mahogany-timber-sri-lanka-guide',
-    title: 'Mahogany in Sri Lanka: Species, Properties',
+    title: 'Mahogany in Sri Lanka: Species, Uses & Buyer Guide (2026)',
     description:
-      'Mahogany is a broad term covering several related species. Understanding which species you are buying, what its properties are.',
+      '"Mahogany" covers several species with very different qualities. Learn which mahogany you\'re buying in Sri Lanka, its properties, uses, and what to pay.',
     date: '2026-07-01',
     readTime: '5 min read',
     category: 'Timber Treatment',
