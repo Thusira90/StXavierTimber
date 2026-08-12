@@ -64,6 +64,11 @@ export const metadata: Metadata = {
       'Industrial kiln drying and VPI timber treatment. IPPC registered, ISPM 15 certified. Est. 1955.',
     images: ['/og-image.jpg'],
   },
+  verification: {
+    other: {
+      'msvalidate.01': '8007F79D9D0F89E8137D0D777B9BD4C3',
+    },
+  },
   robots: {
     index: true,
     follow: true,
