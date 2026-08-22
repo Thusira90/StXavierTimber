@@ -1,5 +1,6 @@
 'use client';
 import { useState, useMemo } from 'react';
+import Link from 'next/link'
 import styles from './TimberCalculator.module.css';
 
 const SPECIES = [
@@ -267,7 +268,7 @@ export default function TimberCalculator() {
                     </svg>
                     Send via WhatsApp
                   </a>
-                  <a href="/contact-us" className={styles.btnSecondary}>Request a Quote</a>
+                  <Link href="/contact-us" className={styles.btnSecondary}>Request a Quote</Link>
                 </div>
               </>
             ) : (

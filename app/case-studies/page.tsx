@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link'
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from './case-studies.module.css';
@@ -177,7 +178,7 @@ export default function CaseStudiesPage() {
             and assess the treatment — at no charge. Or call us with your specifications.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/contact-us" className={styles.ctaBtn}>Get in Touch</a>
+            <Link href="/contact-us" className={styles.ctaBtn}>Get in Touch</Link>
             <a href="tel:+94312277752" className={styles.ctaPhone}>031 227 7752</a>
           </div>
         </div>

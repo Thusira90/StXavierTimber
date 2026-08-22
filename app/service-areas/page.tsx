@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link'
 import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
@@ -151,7 +152,7 @@ export default function ServiceAreasPage() {
           </div>
           <div className={styles.servicesList}>
             {REGIONS.map((r) => (
-              <a key={r.href} href={r.href} className={styles.serviceCard} style={{ textDecoration: 'none' }}>
+              <Link key={r.href} href={r.href} className={styles.serviceCard} style={{ textDecoration: 'none' }}>
                 <div className={styles.serviceTop}>
                   <span className={styles.serviceTag}>Regional Page</span>
                   <h3 className={styles.serviceName}>{r.name}</h3>
@@ -160,7 +161,7 @@ export default function ServiceAreasPage() {
                 <p className={styles.serviceDesc} style={{ color: '#5a7a2e', fontWeight: 600 }}>
                   View {r.name} services →
                 </p>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -189,8 +190,8 @@ export default function ServiceAreasPage() {
             Send us your location, timber species, dimensions, and quantity. We will advise on the right treatment and quote transport both ways.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/contact-us" className={styles.ctaBtn}>Get a Quote</a>
-            <a href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</a>
+            <Link href="/contact-us" className={styles.ctaBtn}>Get a Quote</Link>
+            <Link href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</Link>
           </div>
         </div>
       </section>

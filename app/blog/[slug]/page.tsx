@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link'
 import Navbar from '../../../components/Navbar';
 import { Footer } from '../../../components/Sections';
 import styles from './post.module.css';
@@ -204,11 +205,11 @@ export default async function PostPage({
             <h2 className={styles.relatedHeading}>Related Articles</h2>
             <div className={styles.relatedGrid}>
               {related.map((r) => (
-                <a key={r.slug} href={`/blog/${r.slug}`} className={styles.relatedCard}>
+                <Link key={r.slug} href={`/blog/${r.slug}`} className={styles.relatedCard}>
                   <span className={styles.relatedCategory}>{r.category}</span>
                   <p className={styles.relatedTitle}>{r.title}</p>
                   <span className={styles.relatedReadMore}>Read article →</span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -224,8 +225,8 @@ export default async function PostPage({
             and provide a quote — usually within a few hours.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/contact-us" className={styles.ctaBtn}>Get a Quote</a>
-            <a href="/blog" className={styles.ctaBack}>← All Articles</a>
+            <Link href="/contact-us" className={styles.ctaBtn}>Get a Quote</Link>
+            <Link href="/blog" className={styles.ctaBack}>← All Articles</Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link'
 import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
@@ -234,8 +235,8 @@ export default function ColomboPage() {
             Send us your timber species, dimensions, and quantity. We will advise on the right treatment and provide a quote — usually within a few hours.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/contact-us" className={styles.ctaBtn}>Get a Quote</a>
-            <a href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</a>
+            <Link href="/contact-us" className={styles.ctaBtn}>Get a Quote</Link>
+            <Link href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</Link>
           </div>
         </div>
       </section>
