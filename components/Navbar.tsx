@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link'
 import Image from 'next/image';
 import styles from './Navbar.module.css';
 
@@ -20,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <div className={styles.inner}>
-        <a href="/" className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <Image
             src="/logo.png"
             alt="St. Xavier Timber"
@@ -30,17 +31,17 @@ export default function Navbar() {
             style={{ objectFit: 'contain' }}
             priority
           />
-        </a>
+        </Link>
 
         <ul className={styles.links}>
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className={styles.link}>{l.label}</a>
+              <Link href={l.href} className={styles.link}>{l.label}</Link>
             </li>
           ))}
         </ul>
 
-        <a href="/contact-us" className={styles.cta}>Get a Quote</a>
+        <Link href="/contact-us" className={styles.cta}>Get a Quote</Link>
 
         <button
           className={styles.burger}
@@ -54,13 +55,13 @@ export default function Navbar() {
       {open && (
         <div className={styles.mobile}>
           {links.map((l) => (
-            <a key={l.href} href={l.href} className={styles.mobileLink} onClick={() => setOpen(false)}>
+            <Link key={l.href} href={l.href} className={styles.mobileLink} onClick={() => setOpen(false)}>
               {l.label}
-            </a>
+            </Link>
           ))}
-          <a href="/contact-us" className={styles.mobileCta} onClick={() => setOpen(false)}>
+          <Link href="/contact-us" className={styles.mobileCta} onClick={() => setOpen(false)}>
             Get a Quote
-          </a>
+          </Link>
         </div>
       )}
     </nav>

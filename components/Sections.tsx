@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link'
 import styles from './Sections.module.css';
 import { NAP_ADDRESS_SHORT, PHONE_OFFICE, PHONE_MOBILE, PHONE_MOBILE_ALT, EMAIL } from '@/lib/company';
 import { trackConversion, CONVERSION_EVENTS } from '@/lib/analytics';
@@ -547,9 +548,9 @@ export function Footer() {
           <p className={styles.footerSub}>{NAP_ADDRESS_SHORT}, Sri Lanka · Est. 1955</p>
         </div>
         <div className={styles.footerLinks}>
-          <a href="/service-areas">Service Areas</a>
-          <a href="/blog">Knowledge Centre</a>
-          <a href="/calculator">Calculator</a>
+          <Link href="/service-areas">Service Areas</Link>
+          <Link href="/blog">Knowledge Centre</Link>
+          <Link href="/calculator">Calculator</Link>
           <a href="https://www.facebook.com/profile.php?id=100054793123041" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://www.instagram.com/stxaviertimber?igsh=MTRueHJydWNkNmdnOQ%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>

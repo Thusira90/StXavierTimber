@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link'
 import { POSTAL_ADDRESS, GEO, PHONES_E164, EMAIL } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
@@ -169,8 +170,8 @@ export default function KilnDryingPage() {
               moves after installation — the single most common cause of furniture and joinery failure. Air drying stalls
               at 16–19% in Sri Lanka&apos;s humidity, which is still too wet for interior or export work. Kiln drying is
               the only reliable way to reach a stable 12–15% quickly and consistently. It also pairs with our{' '}
-              <a href="/#services" className={styles.contactLink}>VPI preservative treatment</a> and{' '}
-              <a href="/timber-treatment-colombo" className={styles.contactLink}>island-wide service</a> for a
+              <Link href="/#services" className={styles.contactLink}>VPI preservative treatment</Link> and{' '}
+              <Link href="/timber-treatment-colombo" className={styles.contactLink}>island-wide service</Link> for a
               complete, export-ready result.
             </p>
             <div className={styles.contactRow}>
@@ -246,8 +247,8 @@ export default function KilnDryingPage() {
             drying schedule and provide a quote — usually within a few hours.
           </p>
           <div className={styles.ctaActions}>
-            <a href="/contact-us" className={styles.ctaBtn}>Get a Quote</a>
-            <a href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</a>
+            <Link href="/contact-us" className={styles.ctaBtn}>Get a Quote</Link>
+            <Link href="/calculator" className={styles.ctaSecondary}>Use the Calculator →</Link>
           </div>
         </div>
       </section>
