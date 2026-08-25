@@ -9,8 +9,19 @@ const isProductionDeploy = process.env.VERCEL_ENV === 'production';
 
 const nextConfig: NextConfig = {
   async headers() {
-    if (isProductionDeploy) return [];
+    const cacheHeaders = [
+      {
+        source: '/:file(.+\\.(?:webp|png|jpg|jpeg|svg|ico|woff2|woff|ttf))',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+      {
+        source: '/_next/static/:path*',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+    ];
+    if (isProductionDeploy) return cacheHeaders;
     return [
+      ...cacheHeaders,
       {
         source: '/:path*',
         headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],

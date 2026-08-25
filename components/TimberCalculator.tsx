@@ -120,15 +120,15 @@ export default function TimberCalculator() {
               <h2 className={styles.cardTitle}>Your Timber</h2>
 
               <div className={styles.field}>
-                <label className={styles.label}>Species</label>
-                <select className={styles.select} value={species} onChange={e => setSpecies(e.target.value)}>
+                <label className={styles.label} htmlFor="calc-species">Species</label>
+                <select id="calc-species" className={styles.select} value={species} onChange={e => setSpecies(e.target.value)}>
                   {SPECIES.map(s => <option key={s.value} value={s.value}>{s.label}</option>)}
                 </select>
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label}>Intended Use</label>
-                <select className={styles.select} value={useCase} onChange={e => setUseCase(e.target.value)}>
+                <label className={styles.label} htmlFor="calc-usecase">Intended Use</label>
+                <select id="calc-usecase" className={styles.select} value={useCase} onChange={e => setUseCase(e.target.value)}>
                   {USE_CASES.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
                 </select>
               </div>

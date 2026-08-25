@@ -91,7 +91,7 @@ export default async function PostPage({
       '@type': 'Organization',
       name: 'St. Xavier Timber',
       url: BASE,
-      logo: { '@type': 'ImageObject', url: `${BASE}/logo.png` },
+      logo: { '@type': 'ImageObject', url: `${BASE}/logo.webp` },
     },
     keywords: post.tags.join(', '),
     articleSection: post.category,
