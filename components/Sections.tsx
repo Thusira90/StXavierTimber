@@ -503,17 +503,17 @@ export function Contact() {
             </div>
           ) : (
             <form className={styles.form} onSubmit={handleSubmit}>
-              <input name="name" type="text" placeholder="Your name / company" required className={styles.input} />
-              <input name="species" type="text" placeholder="Timber species & dimensions" required className={styles.input} />
-              <input name="quantity" type="text" placeholder="Quantity (sq ft or pieces)" required className={styles.input} />
-              <select name="treatment" className={styles.input} defaultValue="" required>
+              <input name="name" type="text" aria-label="Your name or company" placeholder="Your name / company" required className={styles.input} />
+              <input name="species" type="text" aria-label="Timber species and dimensions" placeholder="Timber species & dimensions" required className={styles.input} />
+              <input name="quantity" type="text" aria-label="Quantity in square feet or pieces" placeholder="Quantity (sq ft or pieces)" required className={styles.input} />
+              <select name="treatment" aria-label="Treatment required" className={styles.input} defaultValue="" required>
                 <option value="" disabled>Treatment required</option>
                 <option>Kiln Drying only</option>
                 <option>Vacuum Pressure Impregnation only</option>
                 <option>Both — Kiln + VPI</option>
               </select>
-              <input name="phone" type="tel" inputMode="numeric" placeholder="Phone or WhatsApp number" className={styles.input} onKeyDown={(e) => { if (!/[\d\s\+\-\(\)]/.test(e.key) && !['Backspace','Delete','Tab','ArrowLeft','ArrowRight'].includes(e.key)) e.preventDefault(); }} />
-              <textarea name="notes" placeholder="Any other requirements or questions..." className={styles.textarea} rows={4} />
+              <input name="phone" type="tel" inputMode="numeric" aria-label="Phone or WhatsApp number" placeholder="Phone or WhatsApp number" className={styles.input} onKeyDown={(e) => { if (!/[\d\s\+\-\(\)]/.test(e.key) && !['Backspace','Delete','Tab','ArrowLeft','ArrowRight'].includes(e.key)) e.preventDefault(); }} />
+              <textarea name="notes" aria-label="Additional requirements or questions" placeholder="Any other requirements or questions..." className={styles.textarea} rows={4} />
               {error && <p className={styles.formError}>Something went wrong — please try again or call us directly.</p>}
               <button type="submit" className={styles.submitBtn} disabled={loading}>
                 {loading ? 'Sending…' : 'Send Enquiry →'}

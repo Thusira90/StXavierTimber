@@ -7,7 +7,7 @@ const services = [
     title: 'Wood Kiln Drying',
     desc: 'Our fully automated kiln uses precision temperature and moisture control to achieve 12–15% moisture content — reducing warping, cracking, and instability across all species.',
     photo: 'Kiln facility photo',
-    image: '/KD.png',
+    image: '/KD.webp',
     features: [
       'Fully automated kiln with advanced temper control',
       'Target moisture content 12–15% for all species',
@@ -20,7 +20,7 @@ const services = [
     title: 'Vacuum Pressure Impregnation',
     desc: 'A 5% borate preservative solution (a boron-based preservative) is driven deep into the timber under 10 bar (145 PSI) of pressure, with retention verified per species and dimension — providing long-term protection against pests, fungal decay, and moisture ingress.',
     photo: 'VPI chamber photo',
-    image: '/vpi-chamber.png',
+    image: '/vpi-chamber.webp',
     features: [
       '45-minute vacuum air removal pre-treatment',
       '10 bar / 145 PSI pressure maintained 2–6 hours',

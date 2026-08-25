@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
           <Image
-            src="/logo.png"
+            src="/logo.webp"
             alt="St. Xavier Timber"
             width={200}
             height={80}
