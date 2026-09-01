@@ -15,13 +15,15 @@ import { useEffect } from 'react';
 // than rendered as JSX — this keeps SSR/hydration output empty and side-steps
 // setState-in-effect.
 const GA_MEASUREMENT_ID = 'G-QS03GW2LEN';
-const PRODUCTION_HOST = 'www.stxaviertimber.com';
+// Accept both www and non-www — visitors reach the site under either hostname
+// depending on how the link was shared, and the tag must fire in both cases.
+const PRODUCTION_HOSTS = new Set(['www.stxaviertimber.com', 'stxaviertimber.com']);
 
 export function Analytics() {
   useEffect(() => {
     const isProd =
       process.env.NEXT_PUBLIC_VERCEL_ENV === 'production' &&
-      window.location.hostname === PRODUCTION_HOST;
+      PRODUCTION_HOSTS.has(window.location.hostname);
     if (!isProd) return;
     if (document.getElementById('ga4-gtag')) return; // guard against double-injection
 
