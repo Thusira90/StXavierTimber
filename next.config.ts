@@ -8,6 +8,12 @@ import type { NextConfig } from "next";
 const isProductionDeploy = process.env.VERCEL_ENV === 'production';
 
 const nextConfig: NextConfig = {
+  // Vercel does not auto-expose VERCEL_ENV under the NEXT_PUBLIC_ prefix, so
+  // client bundles cannot read it directly. Inline it at build time so the GA
+  // gate in components/Analytics.tsx sees "production" on the prod deploy.
+  env: {
+    NEXT_PUBLIC_VERCEL_ENV: process.env.VERCEL_ENV,
+  },
   async headers() {
     const cacheHeaders = [
       {
