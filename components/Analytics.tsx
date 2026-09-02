@@ -34,10 +34,15 @@ export function Analytics() {
     document.head.appendChild(tag);
 
     window.dataLayer = window.dataLayer || [];
-    // Each dataLayer entry is a command tuple; gtag.js reads them positionally.
-    function gtag(...args: unknown[]) {
-      window.dataLayer.push(args);
-    }
+    // gtag.js only treats dataLayer entries as commands when they are an
+    // Arguments object (Object.prototype.toString → "[object Arguments]").
+    // A plain Array from `[...args]` looks identical but is silently ignored,
+    // so gtag.js loads, no /collect hits fire, and GA stays empty. Use the
+    // classic `function(){ push(arguments) }` shape verbatim.
+    const gtag: Window['gtag'] = function gtag() {
+      // eslint-disable-next-line prefer-rest-params
+      window.dataLayer.push(arguments as unknown as IArguments);
+    };
     // Expose globally so lib/analytics.ts trackConversion() can fire events.
     window.gtag = gtag;
     gtag('js', new Date());
