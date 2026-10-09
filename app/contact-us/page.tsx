@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OG_BASE } from '@/lib/seo';
 import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Contact, Footer } from '@/components/Sections';
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/contact-us` },
   openGraph: {
+    ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Contact St. Xavier Timber | Get a Timber Treatment Quote',
     description: 'Call 031 227 7752, WhatsApp 071 471 1417, or send your timber specs for a quote. Daluwakotuwa, Kochchikade. Island-wide delivery.',

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { POSTAL_ADDRESS } from '@/lib/company';
+import { OG_BASE, OG_IMAGE } from '@/lib/seo';
 import { Analytics } from '@/components/Analytics';
 import { ConversionTracker } from '@/components/ConversionTracker';
 import './globals.css';
@@ -42,27 +43,17 @@ export const metadata: Metadata = {
   creator: 'St. Xavier Timber',
   publisher: 'St. Xavier Timber',
   openGraph: {
+    ...OG_BASE,
     title: 'Timber Treatment Sri Lanka | Kiln Drying & VPI | St. Xavier Timber',
     description:
       'Industrial kiln drying and VPI timber treatment. IPPC registered, ISPM 15 certified. Est. 1955. Serving construction, furniture, and export industries island-wide.',
-    siteName: 'St. Xavier Timber',
-    locale: 'en_LK',
-    type: 'website',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Timber Treatment Sri Lanka | Kiln Drying & VPI | St. Xavier Timber',
     description:
       'Industrial kiln drying and VPI timber treatment. IPPC registered, ISPM 15 certified. Est. 1955.',
-    images: ['/og-image.jpg'],
+    images: [OG_IMAGE.url],
   },
   verification: {
     yandex: '65dc4f5fab5a3520',

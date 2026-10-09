@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OG_BASE } from '@/lib/seo';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
@@ -6,7 +7,7 @@ import { Process, Industries, CeyPall, FAQ, Contact, Footer } from '@/components
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.stxaviertimber.com' },
-  openGraph: { url: 'https://www.stxaviertimber.com' },
+  openGraph: { ...OG_BASE, url: 'https://www.stxaviertimber.com' },
 };
 
 const BASE = 'https://www.stxaviertimber.com';

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
 import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/timber-treatment-colombo` },
   openGraph: {
+    ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Colombo | St. Xavier Timber',
     description: 'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Colombo. IPPC registered. Est. 1955. Island-wide delivery.',

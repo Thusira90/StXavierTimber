@@ -5,6 +5,9 @@ import { Footer } from '../../../components/Sections';
 import styles from './post.module.css';
 import type { Metadata } from 'next';
 import { posts, getPost, getRelatedPosts } from '../posts';
+import { postFaqs } from '../faqs';
+import { serviceLinksFor } from '../service-links';
+import { OG_BASE, OG_IMAGE } from '@/lib/seo';
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -26,7 +29,10 @@ export async function generateMetadata({
     description: post.description,
     keywords: post.tags,
     alternates: { canonical: `https://www.stxaviertimber.com/blog/${slug}` },
+    // Next.js does not inherit the root layout's openGraph into a child that
+    // defines its own, so spread the shared base (site name, locale, image).
     openGraph: {
+      ...OG_BASE,
       title: post.title,
       description: post.description,
       url: `https://www.stxaviertimber.com/blog/${slug}`,
@@ -34,23 +40,12 @@ export async function generateMetadata({
       publishedTime: post.date,
       authors: ['St. Xavier Timber'],
       tags: post.tags,
-      // Next.js does not inherit the root layout's og:image into a child that
-      // defines its own openGraph, so set it explicitly or the share preview
-      // renders imageless.
-      images: [
-        {
-          url: '/og-image.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka',
-        },
-      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: ['/og-image.jpg'],
+      images: [OG_IMAGE.url],
     },
   };
 }
@@ -72,6 +67,7 @@ export default async function PostPage({
   const post = getPost(slug);
   if (!post) notFound();
   const related = getRelatedPosts(slug);
+  const serviceLinks = serviceLinksFor(post);
 
   const BASE = 'https://www.stxaviertimber.com';
 
@@ -126,20 +122,29 @@ export default async function PostPage({
   // Google's FAQ rich-result guidelines require actual questions, so feeding
   // statement-style headings (e.g. "Air Seasoning: The Traditional Method")
   // into FAQPage schema produces invalid entries that get discounted or ignored.
-  const faqEntries = post.sections
+  const headingFaqs: [string, string][] = post.sections
     .filter((s) => s.heading?.trim().endsWith('?') && s.paragraphs && s.paragraphs.length > 0)
-    .slice(0, 6);
+    .slice(0, 6)
+    .map((s) => [s.heading!.trim(), s.paragraphs!.join(' ')]);
+
+  // Hand-written Q&As (app/blog/faqs.ts) are rendered in a visible "Frequently
+  // asked questions" section below the article — FAQPage markup must mirror
+  // on-page text. Skip any that repeat a question-style heading already shown.
+  const shownQuestions = new Set(headingFaqs.map(([q]) => q.toLowerCase()));
+  const extraFaqs = (postFaqs[slug] ?? []).filter(([q]) => !shownQuestions.has(q.toLowerCase()));
+
+  const faqEntries = [...headingFaqs, ...extraFaqs];
 
   const faqSchema = faqEntries.length > 0
     ? {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
-        mainEntity: faqEntries.map((s) => ({
+        mainEntity: faqEntries.map(([name, text]) => ({
           '@type': 'Question',
-          name: s.heading,
+          name,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: s.paragraphs!.join(' '),
+            text,
           },
         })),
       }
@@ -195,6 +200,30 @@ export default async function PostPage({
               )}
             </div>
           ))}
+
+          {extraFaqs.length > 0 && (
+            <div className={styles.section}>
+              <h2 className={styles.h2}>Frequently asked questions</h2>
+              {extraFaqs.map(([question, answer]) => (
+                <div key={question} className={styles.faqItem}>
+                  <h3 className={styles.faqQ}>{question}</h3>
+                  <p className={styles.body}>{answer}</p>
+                </div>
+              ))}
+            </div>
+          )}
+
+          <div className={styles.serviceBlock}>
+            <h2 className={styles.serviceBlockH2}>Need this done for your timber?</h2>
+            <div className={styles.serviceGrid}>
+              {serviceLinks.map((l) => (
+                <Link key={l.title} href={l.href} className={styles.serviceCard}>
+                  <span className={styles.serviceCardTitle}>{l.title} →</span>
+                  <span className={styles.serviceCardBlurb}>{l.blurb}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </article>
 
