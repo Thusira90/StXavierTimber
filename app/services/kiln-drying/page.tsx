@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
 import { POSTAL_ADDRESS, GEO, PHONES_E164, EMAIL } from '@/lib/company';
 import Navbar from '@/components/Navbar';
@@ -8,11 +9,14 @@ import styles from '../../timber-treatment-negombo/negombo.module.css';
 const BASE = 'https://www.stxaviertimber.com';
 
 export const metadata: Metadata = {
-  title: 'Kiln Drying Timber Service',
+  title: 'Kiln Drying & Timber Seasoning Service',
   description:
-    'Industrial wood kiln drying in Sri Lanka. Our fully automated kiln uses advanced temperature and moisture control to reach 12–15% moisture content — reducing warping, cracking, and instability across all species. IPPC registered, Est. 1955. Island-wide delivery.',
+    'Industrial kiln drying and timber seasoning services in Sri Lanka. Our fully automated kiln reaches a verified 12–15% moisture content in 3–12 days — reducing warping, cracking, and instability across all species. IPPC registered, Est. 1955. Island-wide delivery.',
   keywords: [
     'kiln drying Sri Lanka',
+    'kiln drying services',
+    'timber seasoning Sri Lanka',
+    'kiln seasoning of timber',
     'wood kiln drying',
     'timber kiln drying service',
     'kiln dried timber Sri Lanka',
@@ -25,10 +29,11 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: `${BASE}/services/kiln-drying` },
   openGraph: {
+    ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Wood Kiln Drying Service Sri Lanka' }],
-    title: 'Kiln Drying Timber Service | St. Xavier Timber',
+    title: 'Kiln Drying & Timber Seasoning Service | St. Xavier Timber',
     description:
-      'Industrial wood kiln drying to 12–15% moisture content with a fully automated kiln. IPPC registered, Est. 1955. Island-wide delivery across Sri Lanka.',
+      'Industrial kiln drying and timber seasoning to 12–15% moisture content with a fully automated kiln. IPPC registered, Est. 1955. Island-wide delivery across Sri Lanka.',
     url: `${BASE}/services/kiln-drying`,
   },
 };
@@ -49,6 +54,14 @@ const FAQS = [
   {
     q: 'Is your kiln drying ISPM 15 compliant for export?',
     a: 'Yes. Our kiln process is ISPM 15 heat-treatment compliant, and we are IPPC registered with the National Plant Quarantine Service. We issue the required IPPC mark and treatment certificate for wooden packaging, crates, and dunnage destined for international export.',
+  },
+  {
+    q: 'Is kiln drying the same as timber seasoning?',
+    a: 'In Sri Lanka “seasoning” is the everyday term for timber drying — the two mean the same thing. Kiln seasoning is simply drying in a closed, controlled chamber, as opposed to air seasoning, which relies on the weather. Both aim to bring freshly sawn timber down to the 12–15% moisture content needed for interior and export use.',
+  },
+  {
+    q: 'How much does kiln drying cost in Sri Lanka?',
+    a: 'Kiln drying is priced per batch on chamber time, which depends on species, thickness, starting moisture content, and load volume — so there is no single price per cubic foot. Send us your species, dimensions, and quantity for a quote. Air-drying under cover first and sending full loads of one species and thickness are the two simplest ways to reduce the cost.',
   },
   {
     q: 'How do I get a kiln drying quote?',
@@ -138,7 +151,7 @@ export default function KilnDryingPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Our Services · Kiln Drying</span>
           <h1 className={styles.h1}>
-            Wood Kiln Drying<br />
+            Wood Kiln Drying &amp; Timber Seasoning<br />
             <em>in Sri Lanka</em>
           </h1>
           <p className={styles.heroSub}>
@@ -172,7 +185,9 @@ export default function KilnDryingPage() {
               the only reliable way to reach a stable 12–15% quickly and consistently. It also pairs with our{' '}
               <Link href="/#services" className={styles.contactLink}>VPI preservative treatment</Link> and{' '}
               <Link href="/timber-treatment-colombo" className={styles.contactLink}>island-wide service</Link> for a
-              complete, export-ready result.
+              complete, export-ready result. New to the subject? Read our guides to{' '}
+              <Link href="/blog/timber-seasoning-sri-lanka-complete-guide" className={styles.contactLink}>timber seasoning in Sri Lanka</Link>{' '}
+              and <Link href="/blog/kiln-drying-cost-sri-lanka-what-determines-price" className={styles.contactLink}>what determines kiln drying cost</Link>.
             </p>
             <div className={styles.contactRow}>
               <a href="tel:+94312277752" className={styles.contactLink}>031 227 7752</a>

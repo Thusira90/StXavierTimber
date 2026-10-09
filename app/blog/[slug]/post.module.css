@@ -105,6 +105,65 @@
   margin-bottom: 18px;
 }
 
+.serviceBlock {
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.serviceBlockH2 {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 400;
+  color: #152409;
+  margin-bottom: 16px;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  background: rgba(78, 122, 40, 0.08);
+  border-left: 3px solid #4e7a28;
+  border-radius: 0 10px 10px 0;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.serviceCard:hover {
+  background: rgba(78, 122, 40, 0.15);
+}
+
+.serviceCardTitle {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #152409;
+}
+
+.serviceCardBlurb {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #2a381a;
+}
+
+.faqItem {
+  margin-bottom: 28px;
+}
+
+.faqQ {
+  font-size: 17px;
+  font-weight: 600;
+  color: #152409;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
 .list {
   list-style: none;
   padding: 0;

@@ -2,6 +2,7 @@ import Navbar from '../../components/Navbar';
 import { Footer } from '../../components/Sections';
 import styles from './blog.module.css';
 import type { Metadata } from 'next';
+import { OG_BASE } from '@/lib/seo';
 import { posts } from './posts';
 import Link from 'next/link';
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     'export pallet compliance',
   ],
   alternates: { canonical: 'https://www.stxaviertimber.com/blog' },
-  openGraph: { url: 'https://www.stxaviertimber.com/blog' },
+  openGraph: { ...OG_BASE, url: 'https://www.stxaviertimber.com/blog' },
 };
 
 function formatDate(dateStr: string) {

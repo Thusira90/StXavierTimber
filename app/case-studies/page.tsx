@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     'Real results from St. Xavier Timber clients: how kiln drying and VPI treatment solved contamination, warping, and cracking on Sri Lankan projects.',
   alternates: { canonical: `${BASE}/case-studies` },
   openGraph: {
+    ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }], url: `${BASE}/case-studies` },
 };
 
