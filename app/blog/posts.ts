@@ -18,6 +18,182 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: 'timber-treatment-chemicals-dip-cpi',
+    title: 'Timber Preservatives Compared: Borate, ACQ, CCA, and CCB',
+    description:
+      'No single timber preservative is best for every application. This guide compares four pressure-impregnation systems — borate with cypermethrin, ACQ, CCA, and CCB — by what they protect against, where they perform best, and the practical trade-offs of each.',
+    date: '2026-07-29',
+    readTime: '9 min read',
+    category: 'Timber Treatment',
+    tags: [
+      'boron borax',
+      'ACQ treatment',
+      'CCA treatment',
+      'CCB treatment',
+      'timber treatment comparison',
+      'VPI treatment',
+      'timber preservatives',
+      'wood preservatives Sri Lanka',
+      'cypermethrin',
+      'timber treatment Sri Lanka',
+      'termite treatment',
+    ],
+    sections: [
+      {
+        heading: 'Why Preservative Choice Matters',
+        paragraphs: [
+          'Timber preservatives are not interchangeable. Each system is formulated for a different combination of biological threats and service environments. Choosing the wrong preservative wastes money at best and creates structural or safety risks at worst — and choosing the most expensive option does not guarantee the best result for a given application.',
+          'The four pressure-impregnation systems most commonly discussed in Sri Lanka are borate with cypermethrin (the formulation used in VPI treatment), ACQ (Alkaline Copper Quaternary), CCA (Chromated Copper Arsenate), and CCB (Copper Chrome Boron). This guide explains what each one does, where it performs best, and where it falls short — so that builders, specifiers, and timber buyers can match the treatment to the actual service conditions of their project.',
+        ],
+      },
+      {
+        heading: 'Borate VPI Treatment: Borax, Boric Acid, and Cypermethrin',
+        paragraphs: [
+          'The borate VPI system is not a single chemical brushed onto the surface. It is a formulated, three-component system applied by deep vacuum pressure impregnation.',
+          'Borax (sodium borate, Na2B4O7) is the carrier and the backbone of the preservative. It provides broad-spectrum protection against decay fungi — brown rot, white rot, and soft rot — and against wood-boring insects. It is alkaline (pH 9.2 to 9.3), which keeps the treatment solution stable and the boron compounds soluble for deep penetration into the timber.',
+          'Boric acid (H3BO3) is the active boron source. It supplies highly bioavailable boron that is particularly effective against decay fungi and termites. Together with borax it forms a buffered borate solution — maintaining stable treatment chemistry while maximising the amount of active boron fixed within the wood.',
+          'Cypermethrin (AntiBorer 10EC) is a residual insecticide. Unlike the borates, it does not preserve the wood itself. It protects the timber by killing insects that attempt to attack the surface — pinhole borers, powder-post beetles, and termites. It is specifically formulated for use in spray, dip, and pressure impregnation systems, and provides long-term residual protection at the timber surface.',
+        ],
+      },
+      {
+        heading: 'How the Three Chemicals Work Together',
+        paragraphs: [
+          'The borates diffuse throughout the wood and make it indigestible and lethal to organisms that feed on it. Brown rot, white rot, soft rot, termites, powder-post beetles, and borer larvae are all controlled once boron is fixed in the timber. This is deep, through-section protection — not a surface coating.',
+          'Borates alone have one gap: an adult beetle can land on the timber surface and begin tunnelling or laying eggs before it ingests enough boron to be affected. Cypermethrin closes that gap with a fast-acting contact barrier at the surface, killing insects on arrival before they can establish.',
+          'Used on its own, however, cypermethrin has little to no activity against decay fungi. Combined, the three chemicals deliver fungal protection and internal insect protection from the borates, plus residual surface insect protection from the cypermethrin — each covering a biological threat the other does not.',
+        ],
+        list: [
+          'Brown rot, white rot, soft rot — controlled by the borates',
+          'Borer larvae, powder-post beetles, termites — controlled by both borates and cypermethrin',
+          'Adult beetles, pinhole borers, surface reinfestation — controlled mainly by the cypermethrin residual barrier',
+          'Decay fungi — not controlled by cypermethrin at all, which is why the borates are essential',
+        ],
+      },
+      {
+        heading: 'Borate VPI: Strengths and Limitations',
+        paragraphs: [
+          'The borate system performs exceptionally well where the timber remains above ground and protected from continuous wetting. It preserves the natural colour of the timber, is only mildly corrosive to steel (standard galvanised fasteners are suitable), has low toxicity to humans and animals at treatment concentrations, and accepts paint, stain, varnish, and adhesive without interference. It is generally the lowest-cost pressure-impregnation option.',
+          'The main limitation is leaching. Boron compounds are water-soluble and will gradually leach out of timber that is buried in soil, exposed to continuous rain without protective coating, or regularly wetted. This makes borate treatment unsuitable for ground contact, unprotected exterior applications subject to rain wash, or marine exposure. For those applications, a preservative with better fixation is required.',
+        ],
+        list: [
+          'Fungal protection — excellent in protected conditions',
+          'Termite and borer protection — excellent, enhanced by cypermethrin surface barrier',
+          'Ground contact — not recommended (borates leach)',
+          'Outdoor exposure — suitable where timber is sheltered or coated; not for continuous wetting',
+          'Timber colour — natural, unchanged',
+          'Corrosion to steel — very low; standard galvanised fasteners are suitable',
+          'Human toxicity — low (comparable to table salt at treatment concentrations)',
+          'Cost — generally the lowest of the four systems',
+        ],
+      },
+      {
+        heading: 'ACQ (Alkaline Copper Quaternary)',
+        paragraphs: [
+          'ACQ is a water-borne preservative built on copper oxide plus quaternary ammonium compounds, applied by pressure impregnation. The copper is the primary fungicide and insecticide; the quaternary compound handles copper-tolerant fungi and insects. ACQ is the modern, arsenic-free successor to CCA and is one of the most widely used exterior timber preservatives internationally.',
+          'ACQ\'s defining property is chemical fixation. During the fixation process the copper compounds bond permanently within the wood, so once fixed they resist being washed out by rain, ground moisture, or standing water. That permanent fixation allows decades of outdoor exposure and ground contact — the conditions where borate treatment would gradually leach and lose effectiveness.',
+        ],
+        list: [
+          'Fungal protection — excellent in all conditions, including ground contact',
+          'Termite protection — excellent',
+          'Ground contact — excellent; this is its primary design environment',
+          'Outdoor exposure — excellent; copper fixation resists rain leaching',
+          'Marine exposure — better than borate (specialist marine systems still preferred for severe exposure)',
+          'Timber colour — greenish to brown tint',
+          'Corrosion to steel — high; hot-dip galvanised or stainless steel fasteners are recommended',
+          'Human toxicity — moderate; higher than borates due to copper content',
+          'Environmental concerns — copper loading into soil and water',
+          'Cost — moderate to high',
+        ],
+      },
+      {
+        heading: 'CCA (Chromated Copper Arsenate)',
+        paragraphs: [
+          'CCA was the global standard for heavy-duty timber preservation for decades. It is a water-borne preservative containing copper, chromium, and arsenic, applied by pressure impregnation. Once fixed in the wood, the preservative is highly stable and provides exceptional long-term protection in the most demanding service environments.',
+          'CCA-treated timber can remain serviceable for 30 to 50 years or more in ground contact, marine, and heavy outdoor applications. However, the arsenic component raises significant concerns. Cutting, sanding, or burning CCA-treated timber can release arsenic, and disposal requires special handling in many jurisdictions. Because of this, many countries have restricted or banned CCA for residential applications — playgrounds, residential decking, picnic tables, and similar consumer uses.',
+        ],
+        list: [
+          'Fungal protection — excellent in all conditions',
+          'Termite protection — excellent',
+          'Ground contact — excellent; one of the most durable systems available',
+          'Marine exposure — excellent at high-retention grades',
+          'Leaching resistance — very high once chromium fixation is complete',
+          'Timber colour — green tint',
+          'Corrosion to steel — moderate',
+          'Human toxicity — high (arsenic); restricted or banned for residential use in many countries',
+          'Environmental concerns — high; arsenic in waste timber requires controlled disposal',
+          'Cost — moderate',
+        ],
+      },
+      {
+        heading: 'Where CCA Excels and Where It Does Not Belong',
+        paragraphs: [
+          'CCA remains the standard for heavy industrial applications where maximum durability is the overriding requirement and human contact is minimal: utility poles, transmission poles, railway sleepers, marine piles, bridge construction, and heavy agricultural structures.',
+          'CCA is not appropriate for any application involving regular human contact, enclosed interior spaces, furniture, or food-contact surfaces. The arsenic content, even when fixed, creates unacceptable risks in those settings. For residential and commercial building timber, the other three systems in this guide are all safer choices.',
+        ],
+      },
+      {
+        heading: 'CCB (Copper Chrome Boron)',
+        paragraphs: [
+          'CCB was developed as a lower-toxicity alternative to CCA by replacing arsenic with boron. It combines three different preservative actions: copper provides long-term fungal resistance, chromium acts primarily as a fixing agent that chemically binds the preservative into the wood to reduce leaching, and boron adds protection against termites, borers, and decay fungi.',
+          'Many countries adopted CCB for applications that need more outdoor durability than borate treatment can provide but do not justify the toxicity concerns of CCA — roof timber, utility poles, agricultural buildings, structural timber, and outdoor construction.',
+          'Although significantly safer than CCA, CCB still contains chromium, which requires careful handling during treatment and waste management. Its outdoor durability is generally excellent but may not match CCA in the harshest service environments such as marine pilings or tropical ground contact with severe decay hazard.',
+        ],
+        list: [
+          'Fungal protection — excellent',
+          'Termite and borer protection — excellent',
+          'Ground contact — good (better than borate, not quite as durable as CCA)',
+          'Outdoor exposure — very good; chromium fixation reduces boron leaching',
+          'Timber colour — greenish tint',
+          'Corrosion to steel — moderate',
+          'Human toxicity — lower than CCA but higher than borates (chromium handling concerns)',
+          'Environmental concerns — moderate; chromium requires controlled waste management',
+          'Cost — moderate',
+        ],
+      },
+      {
+        heading: 'How Do the Four Systems Compare on Biological Protection?',
+        paragraphs: [
+          'All four systems provide excellent protection against the core threats to structural timber in Sri Lanka — brown rot, white rot, soft rot, drywood termites, and powder-post beetles. The differences appear in specific threat categories and exposure conditions.',
+          'Against pinhole borers, the borate-plus-cypermethrin system has an edge because of the residual insecticidal barrier at the timber surface. Against subterranean termites in exposed outdoor settings and carpenter ants, ACQ and CCA have an advantage because their preservatives remain fixed in wet conditions where borates would leach. For marine borers, CCA at high retention grades is the most effective; ACQ is moderate; borate and CCB are not suitable.',
+          'For severe marine exposure, none of these four systems is ideal on its own — specialist marine-grade preservatives are typically preferred for pilings and jetty timbers.',
+        ],
+      },
+      {
+        heading: 'Which Treatment for Which Application?',
+        paragraphs: [
+          'No single preservative is best for every application. The correct choice depends on the timber\'s service environment — specifically whether it will stay dry and above ground, or face rain, soil contact, or continuous wetting.',
+        ],
+        list: [
+          'Borate VPI (borax + boric acid + cypermethrin) — interior structural timber, roof trusses, joinery, furniture, ceiling structures, door and window frames, and protected above-ground construction. Best where low corrosion, natural timber appearance, and low toxicity are priorities.',
+          'ACQ — decking, fencing, landscaping timber, pergolas, playground equipment, and other residential or commercial exterior timber exposed to frequent wetting or ground contact. The arsenic-free choice for outdoor durability.',
+          'CCB — exterior structural timber, agricultural buildings, pergolas, poles, and above-ground outdoor applications requiring greater weather resistance than borate systems but without CCA\'s arsenic concerns.',
+          'CCA — heavy industrial applications where maximum durability is required and local regulations permit its use: utility poles, railway sleepers, marine structures, bridge timbers. Not suitable for residential or consumer applications.',
+        ],
+      },
+      {
+        heading: 'Practical Differences: Colour, Corrosion, Cost, and Toxicity',
+        paragraphs: [
+          'Beyond biological protection, the four systems differ in practical ways that affect specification, installation, and cost.',
+          'Timber colour. Borate treatment preserves the natural colour of the wood — important for furniture, visible joinery, and any application where the timber will be stained or finished. ACQ, CCA, and CCB all leave a greenish tint from their copper content. ACQ-treated timber weathers to brown or grey over time.',
+          'Corrosion to metal fasteners. Borate treatment is only mildly corrosive to steel — standard galvanised fasteners, nail plates, joist hangers, and truss connectors all perform normally. ACQ is the most corrosive of the four due to its copper content and typically requires hot-dip galvanised or stainless steel fasteners, adding to installation cost. CCA and CCB are moderately corrosive.',
+          'Cost. Borate VPI treatment is generally the least expensive of the four systems. ACQ is moderate to high. CCA and CCB fall in between. The cost difference becomes significant on large projects treating dozens of cubic metres of structural timber.',
+          'Toxicity and environmental impact. Borate treatment has the lowest toxicity profile — comparable to table salt at treatment concentrations, with no special disposal requirements. ACQ has moderate toxicity from copper. CCB adds chromium handling concerns. CCA has the highest toxicity profile due to arsenic and is restricted in many jurisdictions for residential use.',
+        ],
+      },
+      {
+        heading: 'How to Choose the Right Preservative for Your Project',
+        paragraphs: [
+          'Start with one question: what exposure will this timber face in service? Will it stay dry and above ground, or will it be exposed to rain, ground contact, or continuous wetting?',
+          'For interior and above-ground timber — roof structures, framing, joinery, furniture, ceiling timber, door and window frames — borate VPI treatment provides full protection against the relevant biological threats, at the lowest cost, with no corrosion penalty, no discolouration, and the lowest toxicity profile.',
+          'For exterior timber exposed to weather, soil, or standing water — fence posts, decking, pergolas, utility poles, landscaping timber — a copper-based preservative such as ACQ or CCB is the appropriate specification. The permanent chemical fixation resists the leaching that would degrade borate treatment under those conditions.',
+          'For heavy industrial applications requiring maximum durability — utility poles, railway sleepers, marine structures — CCA remains the most durable option where regulations permit its use.',
+          'The right approach is to match the preservative to the service conditions, not to assume that any single system is universally superior.',
+        ],
+        note: 'St. Xavier Timber applies borate VPI treatment — borax, boric acid, and a residual cypermethrin insect barrier — by deep vacuum pressure impregnation for interior, above-ground, and sheltered timber. Tell us where and how your timber will be used and we will confirm the right treatment specification for your project. Call 031 227 7752 or WhatsApp 071 471 1417.',
+      },
+    ],
+  },
+  {
     slug: 'timber-seasoning-sri-lanka-complete-guide',
     title: 'Timber Seasoning in Sri Lanka',
     description:
