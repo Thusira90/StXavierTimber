@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
-import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -76,15 +75,13 @@ const OTHER_AREAS = [
 
 const serviceAreaSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BASE}/#service-areas`,
-  name: 'St. Xavier Timber',
+  '@type': 'Service',
+  '@id': `${BASE}/service-areas#service`,
+  name: 'Island-wide Timber Treatment',
   description: 'Island-wide timber treatment services: kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. Based in Daluwakotuwa, Kochchikade with delivery across Sri Lanka.',
   url: `${BASE}/service-areas`,
-  telephone: ['+94312277752', '+94714711417', '+94769494944'],
-  email: 'info@stxaviertimber.com',
-  address: POSTAL_ADDRESS,
-  geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
+  serviceType: 'Timber treatment: kiln drying, vacuum pressure impregnation (VPI), ISPM 15 heat treatment',
+  provider: { '@id': BASE },
   areaServed: { '@type': 'Country', name: 'Sri Lanka' },
 };
 
@@ -98,7 +95,7 @@ export default function ServiceAreasPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Island-wide Coverage</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>Across Sri Lanka</em>
           </h1>
           <p className={styles.heroSub}>

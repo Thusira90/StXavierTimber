@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
-import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -11,7 +10,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Kurunegala',
   description:
-    'Kiln drying, VPI, and ISPM 15 heat treatment for Kurunegala district. IPPC registered. Est. 1955.',
+    'Kiln drying, VPI and ISPM 15 heat treatment for Kurunegala district, about 90 minutes away via Kuliyapitiya. IPPC registered. Est. 1955.',
   keywords: [
     'timber treatment Kurunegala',
     'kiln drying Kurunegala',
@@ -28,22 +27,20 @@ export const metadata: Metadata = {
     ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Kurunegala | St. Xavier Timber',
-    description: 'Kiln drying, VPI, and ISPM 15 heat treatment for Kurunegala district. IPPC registered. Est. 1955.',
+    description: 'Kiln drying, VPI and ISPM 15 heat treatment for Kurunegala district, about 90 minutes away via Kuliyapitiya. IPPC registered. Est. 1955.',
     url: `${BASE}/timber-treatment-kurunegala`,
   },
 };
 
 const localSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BASE}/#kurunegala`,
-  name: 'St. Xavier Timber — Kurunegala Timber Treatment',
+  '@type': 'Service',
+  '@id': `${BASE}/timber-treatment-kurunegala#service`,
+  name: 'Kurunegala Timber Treatment',
   description: 'Industrial timber treatment serving Kurunegala and the North Western Province. Kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. Located in Daluwakotuwa, Kochchikade.',
   url: `${BASE}/timber-treatment-kurunegala`,
-  telephone: ['+94312277752', '+94714711417', '+94769494944'],
-  email: 'info@stxaviertimber.com',
-  address: POSTAL_ADDRESS,
-  geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
+  serviceType: 'Timber treatment: kiln drying, vacuum pressure impregnation (VPI), ISPM 15 heat treatment',
+  provider: { '@id': BASE },
   areaServed: [
     { '@type': 'City', name: 'Kurunegala' },
     { '@type': 'City', name: 'Kuliyapitiya' },
@@ -130,7 +127,7 @@ export default function KurunegalaPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Serving Kurunegala & North Western Province</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>for Kurunegala</em>
           </h1>
           <p className={styles.heroSub}>

@@ -36,6 +36,13 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Old /services index from the previous site — still cited by search
+      // engines via the retired stxaviertimber.vercel.app copy.
+      {
+        source: '/services',
+        destination: '/#services',
+        permanent: true,
+      },
       // Old VPI service page (removed) — VPI now lives on the homepage.
       {
         source: '/services/chemical-impregnation',

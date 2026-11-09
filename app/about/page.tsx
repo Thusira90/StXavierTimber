@@ -161,7 +161,7 @@ export default function AboutPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Our Story</span>
           <h1 className={styles.h1}>
-            Seven decades of<br />
+            Seven decades of{' '}<br />
             <em>timber expertise.</em>
           </h1>
           <p className={styles.heroSub}>

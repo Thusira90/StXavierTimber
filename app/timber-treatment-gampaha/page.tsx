@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
-import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -11,7 +10,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Gampaha',
   description:
-    'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Gampaha district. IPPC registered. Est. 1955.',
+    'Kiln drying, VPI and ISPM 15 heat treatment for Gampaha district, 30–40 minutes from our Kochchikade facility. IPPC registered. Est. 1955.',
   keywords: [
     'timber treatment Gampaha',
     'kiln drying Gampaha',
@@ -30,22 +29,20 @@ export const metadata: Metadata = {
     ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Gampaha | St. Xavier Timber',
-    description: 'Industrial kiln drying, VPI, and ISPM 15 heat treatment serving Gampaha district. IPPC registered. Est. 1955.',
+    description: 'Kiln drying, VPI and ISPM 15 heat treatment for Gampaha district, 30–40 minutes from our Kochchikade facility. IPPC registered. Est. 1955.',
     url: `${BASE}/timber-treatment-gampaha`,
   },
 };
 
 const localSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BASE}/#gampaha`,
-  name: 'St. Xavier Timber — Gampaha Timber Treatment',
+  '@type': 'Service',
+  '@id': `${BASE}/timber-treatment-gampaha#service`,
+  name: 'Gampaha Timber Treatment',
   description: 'Industrial timber treatment facility serving Gampaha district. Kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. Located in Daluwakotuwa, Kochchikade — easily accessible from Gampaha via the Colombo–Negombo road.',
   url: `${BASE}/timber-treatment-gampaha`,
-  telephone: ['+94312277752', '+94714711417', '+94769494944'],
-  email: 'info@stxaviertimber.com',
-  address: POSTAL_ADDRESS,
-  geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
+  serviceType: 'Timber treatment: kiln drying, vacuum pressure impregnation (VPI), ISPM 15 heat treatment',
+  provider: { '@id': BASE },
   areaServed: [
     { '@type': 'City', name: 'Gampaha' },
     { '@type': 'City', name: 'Ja-Ela' },
@@ -134,7 +131,7 @@ export default function GampahaPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Serving Gampaha District</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>for Gampaha</em>
           </h1>
           <p className={styles.heroSub}>

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
-import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from './negombo.module.css';
@@ -37,15 +36,13 @@ export const metadata: Metadata = {
 
 const localSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BASE}/#negombo`,
-  name: 'St. Xavier Timber — Negombo Timber Treatment',
+  '@type': 'Service',
+  '@id': `${BASE}/timber-treatment-negombo#service`,
+  name: 'Negombo Timber Treatment',
   description: 'Industrial timber treatment facility serving Negombo and surrounding areas. Kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. Located in Daluwakotuwa, Kochchikade — 5 minutes from Negombo town.',
   url: `${BASE}/timber-treatment-negombo`,
-  telephone: ['+94312277752', '+94714711417', '+94769494944'],
-  email: 'info@stxaviertimber.com',
-  address: POSTAL_ADDRESS,
-  geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
+  serviceType: 'Timber treatment: kiln drying, vacuum pressure impregnation (VPI), ISPM 15 heat treatment',
+  provider: { '@id': BASE },
   areaServed: [
     { '@type': 'City', name: 'Negombo' },
     { '@type': 'City', name: 'Kochchikade' },
@@ -133,7 +130,7 @@ export default function NegomboPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Serving Negombo & Surrounding Areas</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>Near Negombo</em>
           </h1>
           <p className={styles.heroSub}>

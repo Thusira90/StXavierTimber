@@ -63,7 +63,7 @@ export default function ContactUsPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Get a Quote</span>
           <h1 className={styles.h1}>
-            Contact<br />
+            Contact{' '}<br />
             <em>St. Xavier Timber</em>
           </h1>
           <p className={styles.heroSub}>
