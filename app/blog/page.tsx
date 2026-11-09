@@ -7,7 +7,7 @@ import { posts } from './posts';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Blog | Timber Treatment Guides & Export Compliance',
+  title: 'Timber Treatment & Kiln Drying Guides',
   description:
     'Expert guides on kiln drying, vacuum pressure impregnation, ISPM 15 heat treatment, and timber treatment for construction, furniture, and export in Sri Lanka.',
   keywords: [
@@ -39,7 +39,7 @@ export default function BlogPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Resources & Guides</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>Explained.</em>
           </h1>
           <p className={styles.heroSub}>

@@ -112,7 +112,7 @@ export default function CaseStudiesPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Client Results</span>
           <h1 className={styles.h1}>
-            What happens when<br />
+            What happens when{' '}<br />
             <em>timber treatment goes wrong.</em>
           </h1>
           <p className={styles.heroSub}>

@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
-import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -11,7 +10,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Kandy',
   description:
-    'Industrial kiln drying, VPI, and ISPM 15 heat treatment with delivery to Kandy. IPPC registered. Est. 1955.',
+    'Kiln drying, VPI and ISPM 15 heat treatment for Kandy and the Central Province, with island-wide delivery both ways. IPPC registered. Est. 1955.',
   keywords: [
     'timber treatment Kandy',
     'kiln drying Kandy',
@@ -30,22 +29,20 @@ export const metadata: Metadata = {
     ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Kandy | St. Xavier Timber',
-    description: 'Industrial kiln drying, VPI, and ISPM 15 heat treatment with delivery to Kandy. IPPC registered. Est. 1955.',
+    description: 'Kiln drying, VPI and ISPM 15 heat treatment for Kandy and the Central Province, with island-wide delivery both ways. IPPC registered. Est. 1955.',
     url: `${BASE}/timber-treatment-kandy`,
   },
 };
 
 const localSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BASE}/#kandy`,
-  name: 'St. Xavier Timber — Kandy Timber Treatment',
+  '@type': 'Service',
+  '@id': `${BASE}/timber-treatment-kandy#service`,
+  name: 'Kandy Timber Treatment',
   description: 'Industrial timber treatment facility serving Kandy and the Central Province. Kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment with island-wide delivery. Located in Daluwakotuwa, Kochchikade.',
   url: `${BASE}/timber-treatment-kandy`,
-  telephone: ['+94312277752', '+94714711417', '+94769494944'],
-  email: 'info@stxaviertimber.com',
-  address: POSTAL_ADDRESS,
-  geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
+  serviceType: 'Timber treatment: kiln drying, vacuum pressure impregnation (VPI), ISPM 15 heat treatment',
+  provider: { '@id': BASE },
   areaServed: [
     { '@type': 'City', name: 'Kandy' },
     { '@type': 'City', name: 'Peradeniya' },
@@ -134,7 +131,7 @@ export default function KandyPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Serving Kandy & Central Province</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>for Kandy</em>
           </h1>
           <p className={styles.heroSub}>

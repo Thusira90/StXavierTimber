@@ -23,6 +23,9 @@
 ## Key Pages
 
 - [Homepage](https://www.stxaviertimber.com): services overview, process, contact
+- [Kiln Drying Service](https://www.stxaviertimber.com/services/kiln-drying): moisture targets, drying times, species
+- [About](https://www.stxaviertimber.com/about): history since 1955, facility, registration
+- [Contact](https://www.stxaviertimber.com/contact-us): phone, WhatsApp, email, directions, hours
 - [Service Areas](https://www.stxaviertimber.com/service-areas): island-wide coverage hub
 - [Treatment Calculator](https://www.stxaviertimber.com/calculator): instant volume, drying time, and treatment estimates
 - [Knowledge Centre](https://www.stxaviertimber.com/blog): 60+ guides on timber seasoning, kiln drying, VPI, species, and defects

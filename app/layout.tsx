@@ -81,6 +81,16 @@ const localBusinessSchema = {
   description:
     'Industrial kiln drying and vacuum pressure impregnation (VPI) timber treatment services in Sri Lanka. IPPC registered and ISPM 15 certified. Est. 1955.',
   url: siteUrl,
+  logo: `${siteUrl}/logo.webp`,
+  image: `${siteUrl}${OG_IMAGE.url}`,
+  areaServed: { '@type': 'Country', name: 'Sri Lanka' },
+  knowsAbout: [
+    'kiln drying',
+    'timber seasoning',
+    'vacuum pressure impregnation',
+    'borate timber preservation',
+    'ISPM 15 heat treatment',
+  ],
   telephone: ['+94312277752', '+94714711417', '+94769494944'],
   email: 'info@stxaviertimber.com',
   foundingDate: '1955',

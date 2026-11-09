@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
-import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -35,15 +34,13 @@ export const metadata: Metadata = {
 
 const localSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BASE}/#galle`,
-  name: 'St. Xavier Timber — Galle & Southern Province Timber Treatment',
+  '@type': 'Service',
+  '@id': `${BASE}/timber-treatment-galle#service`,
+  name: 'Galle & Southern Province Timber Treatment',
   description: 'Industrial timber treatment with island-wide delivery to Galle and the Southern Province. Kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. Located in Daluwakotuwa, Kochchikade.',
   url: `${BASE}/timber-treatment-galle`,
-  telephone: ['+94312277752', '+94714711417', '+94769494944'],
-  email: 'info@stxaviertimber.com',
-  address: POSTAL_ADDRESS,
-  geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
+  serviceType: 'Timber treatment: kiln drying, vacuum pressure impregnation (VPI), ISPM 15 heat treatment',
+  provider: { '@id': BASE },
   areaServed: [
     { '@type': 'City', name: 'Galle' },
     { '@type': 'City', name: 'Hikkaduwa' },
@@ -131,7 +128,7 @@ export default function GallePage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Serving Galle & the Southern Province</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>for Galle</em>
           </h1>
           <p className={styles.heroSub}>

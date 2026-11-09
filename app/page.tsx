@@ -101,7 +101,7 @@ const kilnDryingSchema = {
   '@type': 'Service',
   '@id': `${BASE}/#kiln-drying`,
   name: 'Kiln Drying',
-  alternateName: ['Timber Kiln Drying', 'Wood Kiln Drying', 'ISPM 15 Heat Treatment'],
+  alternateName: ['Timber Kiln Drying', 'Wood Kiln Drying', 'Timber Seasoning'],
   description: 'Industrial kiln drying service for timber. Fully automated kiln targets 12–15% moisture content. Suitable for construction, furniture, and export timber. ISPM 15 heat treatment compliant. Drying time 3–12 days depending on species.',
   provider: { '@type': 'LocalBusiness', '@id': BASE, name: 'St. Xavier Timber' },
   areaServed: { '@type': 'Country', name: 'Sri Lanka' },

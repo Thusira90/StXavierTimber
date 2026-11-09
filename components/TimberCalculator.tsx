@@ -103,7 +103,7 @@ export default function TimberCalculator() {
       <div className={styles.hero}>
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Free Estimator</span>
-          <h1 className={styles.h1}>Timber Treatment<br /><em>Calculator</em></h1>
+          <h1 className={styles.h1}>Timber Treatment{' '}<br /><em>Calculator</em></h1>
           <p className={styles.heroSub}>
             Select your species, intended use, and timber type — get an instant estimate of
             volume, drying time, and the right treatment.

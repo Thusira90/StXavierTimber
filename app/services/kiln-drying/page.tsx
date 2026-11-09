@@ -11,7 +11,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Kiln Drying & Timber Seasoning Service',
   description:
-    'Industrial kiln drying and timber seasoning services in Sri Lanka. Our fully automated kiln reaches a verified 12–15% moisture content in 3–12 days — reducing warping, cracking, and instability across all species. IPPC registered, Est. 1955. Island-wide delivery.',
+    'Kiln drying in Sri Lanka to a verified 12–15% moisture content in 3–12 days. Rubberwood, teak, mahogany, pine and more. IPPC registered. Est. 1955.',
   keywords: [
     'kiln drying Sri Lanka',
     'kiln drying services',
@@ -151,7 +151,7 @@ export default function KilnDryingPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Our Services · Kiln Drying</span>
           <h1 className={styles.h1}>
-            Wood Kiln Drying &amp; Timber Seasoning<br />
+            Wood Kiln Drying &amp; Timber Seasoning{' '}<br />
             <em>in Sri Lanka</em>
           </h1>
           <p className={styles.heroSub}>

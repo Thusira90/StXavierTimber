@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
 import Link from 'next/link'
-import { POSTAL_ADDRESS } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -11,7 +10,7 @@ const BASE = 'https://www.stxaviertimber.com';
 export const metadata: Metadata = {
   title: 'Timber Treatment Chilaw & Puttalam',
   description:
-    'Kiln drying, VPI, and ISPM 15 heat treatment 40 minutes from Chilaw. IPPC registered. Est. 1955.',
+    'Kiln drying, VPI and ISPM 15 heat treatment 40 minutes south of Chilaw on the coastal road. Serving Chilaw and Puttalam. IPPC registered. Est. 1955.',
   keywords: [
     'timber treatment Chilaw',
     'kiln drying Chilaw',
@@ -28,22 +27,20 @@ export const metadata: Metadata = {
     ...OG_BASE,
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'St. Xavier Timber — Kiln Drying & VPI Treatment Sri Lanka' }],
     title: 'Timber Treatment Chilaw & Puttalam | St. Xavier Timber',
-    description: 'Kiln drying, VPI, and ISPM 15 heat treatment 40 minutes from Chilaw. IPPC registered. Est. 1955.',
+    description: 'Kiln drying, VPI and ISPM 15 heat treatment 40 minutes south of Chilaw on the coastal road. Serving Chilaw and Puttalam. IPPC registered. Est. 1955.',
     url: `${BASE}/timber-treatment-chilaw`,
   },
 };
 
 const localSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  '@id': `${BASE}/#chilaw`,
-  name: 'St. Xavier Timber — Chilaw & Puttalam Timber Treatment',
+  '@type': 'Service',
+  '@id': `${BASE}/timber-treatment-chilaw#service`,
+  name: 'Chilaw & Puttalam Timber Treatment',
   description: 'Industrial timber treatment serving Chilaw, Puttalam, and the coconut triangle. Kiln drying, vacuum pressure impregnation (VPI), and ISPM 15 heat treatment. Located in Daluwakotuwa, Kochchikade — directly on the Colombo–Chilaw coastal road.',
   url: `${BASE}/timber-treatment-chilaw`,
-  telephone: ['+94312277752', '+94714711417', '+94769494944'],
-  email: 'info@stxaviertimber.com',
-  address: POSTAL_ADDRESS,
-  geo: { '@type': 'GeoCoordinates', latitude: 7.3553, longitude: 79.8638 },
+  serviceType: 'Timber treatment: kiln drying, vacuum pressure impregnation (VPI), ISPM 15 heat treatment',
+  provider: { '@id': BASE },
   areaServed: [
     { '@type': 'City', name: 'Chilaw' },
     { '@type': 'City', name: 'Puttalam' },
@@ -131,7 +128,7 @@ export default function ChilawPage() {
         <div className={styles.heroInner}>
           <span className={styles.eyebrow}>Serving Chilaw, Puttalam & the Coconut Triangle</span>
           <h1 className={styles.h1}>
-            Timber Treatment<br />
+            Timber Treatment{' '}<br />
             <em>for Chilaw & Puttalam</em>
           </h1>
           <p className={styles.heroSub}>
