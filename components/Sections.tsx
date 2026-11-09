@@ -367,7 +367,7 @@ const faqs = [
   },
   {
     q: 'How long does the kiln drying process take?',
-    a: 'Drying time depends on species, thickness, and initial moisture level. Thin softwood boards can be completed in 3–5 days; dense hardwoods such as Teak or Mahogany may require 8–15 days. We can give you a firm timeline once we assess your load.',
+    a: 'Drying time depends on species, thickness, and initial moisture level. Thin softwood boards can be completed in 3–5 days; most loads are done within 12 days. Large-section hardwoods such as teak or mahogany can take longer: the bigger the piece, the longer it takes to dry evenly. We can give you a firm timeline once we assess your load.',
   },
   {
     q: 'What is Vacuum Pressure Impregnation (VPI) and how does it work?',

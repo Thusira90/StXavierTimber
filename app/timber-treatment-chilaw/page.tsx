@@ -69,7 +69,7 @@ const SERVICES = [
     details: [
       'Target: 12–15% moisture content across all species',
       'Coconut, teak, jak, mahogany, rubberwood, and more',
-      'Drying time: 3–12 days depending on species and thickness',
+      'Drying time: 3–12 days for most loads; larger sections take longer',
       'Calibrated meters verify moisture at multiple points per batch',
     ],
   },

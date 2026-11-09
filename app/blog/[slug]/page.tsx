@@ -38,7 +38,7 @@ export async function generateMetadata({
       url: `https://www.stxaviertimber.com/blog/${slug}`,
       type: 'article',
       publishedTime: post.date,
-      authors: ['St. Xavier Timber'],
+      authors: ['SXT'],
       tags: post.tags,
     },
     twitter: {
@@ -78,9 +78,12 @@ export default async function PostPage({
     description: post.description,
     datePublished: post.date,
     dateModified: post.date,
+    // Byline is "SXT" (the business's own shorthand); alternateName ties it
+    // back to St. Xavier Timber so engines don't treat it as a separate entity.
     author: {
       '@type': 'Organization',
-      name: 'St. Xavier Timber',
+      name: 'SXT',
+      alternateName: 'St. Xavier Timber',
       url: BASE,
     },
     publisher: {
@@ -163,7 +166,9 @@ export default async function PostPage({
           <div className={styles.meta}>
             <span className={styles.category}>{post.category}</span>
             <span className={styles.dot}>·</span>
-            <span className={styles.metaText}>{formatDate(post.date)}</span>
+            <span className={styles.metaText}>By SXT</span>
+            <span className={styles.dot}>·</span>
+            <time className={styles.metaText} dateTime={post.date}>{formatDate(post.date)}</time>
             <span className={styles.dot}>·</span>
             <span className={styles.metaText}>{post.readTime}</span>
           </div>

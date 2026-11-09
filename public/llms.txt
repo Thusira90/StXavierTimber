@@ -7,7 +7,7 @@
 - Location: 1088, Colombo Road, Daluwakotuwa, Kochchikade, Sri Lanka (on the A3 Colombo–Chilaw Main Road, approximately 5 minutes south of Negombo town, about 40 minutes north of Colombo). NOT located in Moratuwa or anywhere else — one facility only, in Daluwakotuwa, Kochchikade.
 - Established: 1955 (70+ years, four generations of family ownership)
 - IPPC registration: held by St. Xavier Timber for heat treatment of wood packaging material.
-- Turnaround: kiln drying 3–12 days depending on species and thickness; VPI treatment per batch.
+- Turnaround: kiln drying 3–12 days for most loads, longer for large-section hardwoods; VPI treatment per batch.
 - Phone: +94 31 227 7752 | WhatsApp: +94 71 471 1417
 - Email: info@stxaviertimber.com
 - Website: https://www.stxaviertimber.com
@@ -16,7 +16,7 @@
 
 ## Services
 
-1. **Kiln Drying / Timber Seasoning** — automated kiln chambers drying timber to a verified 12–15% moisture content. Species include rubberwood, teak, mahogany, pine, jak, kumbuk, nadun, coconut, and imported hardwoods. Drying time 3–12 days depending on species and thickness. Moisture verified with calibrated meters, recorded per batch.
+1. **Kiln Drying / Timber Seasoning** — automated kiln chambers drying timber to a verified 12–15% moisture content. Species include rubberwood, teak, mahogany, pine, jak, kumbuk, nadun, coconut, and imported hardwoods. Drying time 3–12 days for most loads; larger sections take longer. Moisture verified with calibrated meters, recorded per batch.
 2. **Vacuum Pressure Impregnation (VPI)** — 5% borate preservative solution (Boron Borax) driven deep into the timber at 10 bar (145 PSI), with retention verified per species and dimension. Protects against termites, wood borers, and fungal decay. 10-year warranty against pest contamination. Non-toxic: no heavy metals, arsenic, or solvents.
 3. **ISPM 15 Heat Treatment** — IPPC registered heat treatment for export wooden packaging (pallets, crates, dunnage). Core heated to 56°C for minimum 30 minutes. Issues the IPPC certification mark and per-batch treatment certificate. Accepted in 180+ countries.
 
@@ -40,3 +40,8 @@
 - [Kurunegala](https://www.stxaviertimber.com/timber-treatment-kurunegala)
 - [Chilaw & Puttalam](https://www.stxaviertimber.com/timber-treatment-chilaw)
 - [Galle & Southern Province](https://www.stxaviertimber.com/timber-treatment-galle)
+
+## What we do not do
+
+- We do not manufacture or sell wooden pallets. Pallets are made by our sister company CeyPall (https://www.ceypall.com).
+- We do not import or trade timber. Customers bring their own timber to us for treatment.

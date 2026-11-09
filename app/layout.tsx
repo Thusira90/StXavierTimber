@@ -78,6 +78,7 @@ const localBusinessSchema = {
   '@type': 'LocalBusiness',
   '@id': siteUrl,
   name: 'St. Xavier Timber',
+  alternateName: 'SXT',
   description:
     'Industrial kiln drying and vacuum pressure impregnation (VPI) timber treatment services in Sri Lanka. IPPC registered and ISPM 15 certified. Est. 1955.',
   url: siteUrl,

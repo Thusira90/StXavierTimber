@@ -24,7 +24,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How long does the kiln drying process take?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Drying time depends on species, thickness, and initial moisture level. Thin softwood boards can be completed in 3–5 days; dense hardwoods such as Teak or Mahogany may require 8–15 days.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Drying time depends on species, thickness, and initial moisture level. Thin softwood boards can be completed in 3–5 days; most loads are done within 12 days. Large-section hardwoods such as teak or mahogany can take longer: the bigger the piece, the longer it takes to dry evenly.' },
     },
     {
       '@type': 'Question',
@@ -102,7 +102,7 @@ const kilnDryingSchema = {
   '@id': `${BASE}/#kiln-drying`,
   name: 'Kiln Drying',
   alternateName: ['Timber Kiln Drying', 'Wood Kiln Drying', 'Timber Seasoning'],
-  description: 'Industrial kiln drying service for timber. Fully automated kiln targets 12–15% moisture content. Suitable for construction, furniture, and export timber. ISPM 15 heat treatment compliant. Drying time 3–12 days depending on species.',
+  description: 'Industrial kiln drying service for timber. Fully automated kiln targets 12–15% moisture content. Suitable for construction, furniture, and export timber. ISPM 15 heat treatment compliant. Drying time 3–12 days for most loads; larger sections take longer.',
   provider: { '@type': 'LocalBusiness', '@id': BASE, name: 'St. Xavier Timber' },
   areaServed: { '@type': 'Country', name: 'Sri Lanka' },
   serviceType: 'Timber Treatment',
