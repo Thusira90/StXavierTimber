@@ -1,12 +1,35 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export async function POST(req: NextRequest) {
-  const { name, species, quantity, treatment, phone, notes } = await req.json();
+// Form values are interpolated into an HTML email, so escape them first —
+// otherwise anyone could inject markup or links into the enquiry inbox.
+function esc(v: unknown): string {
+  return String(v ?? '')
+    .slice(0, 2000)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
 
-  if (!name || !species || !quantity || !treatment) {
+export async function POST(req: NextRequest) {
+  let body: Record<string, unknown>;
+  try {
+    body = await req.json();
+  } catch {
+    return NextResponse.json({ error: 'Invalid request.' }, { status: 400 });
+  }
+  const raw = body ?? {};
+  if (!raw.name || !raw.species || !raw.quantity || !raw.treatment || !raw.phone) {
     return NextResponse.json({ error: 'Missing required fields.' }, { status: 400 });
   }
+  const name = esc(raw.name);
+  const species = esc(raw.species);
+  const quantity = esc(raw.quantity);
+  const treatment = esc(raw.treatment);
+  const phone = esc(raw.phone);
+  const notes = esc(raw.notes);
 
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
@@ -21,8 +44,7 @@ export async function POST(req: NextRequest) {
   const mailOptions = {
     from: `"St. Xavier Timber Website" <${process.env.SMTP_FROM}>`,
     to: process.env.SMTP_TO,
-    replyTo: undefined,
-    subject: `Timber Treatment Enquiry — ${name}`,
+    subject: `Timber Treatment Enquiry — ${String(raw.name).slice(0, 80).replace(/\s+/g, ' ')}`,
     html: `
       <table style="font-family:Arial,sans-serif;font-size:14px;color:#222;border-collapse:collapse;width:100%;max-width:600px">
         <tr><td colspan="2" style="background:#1a3a08;color:#fff;padding:20px 24px;font-size:18px;font-weight:bold">New Timber Treatment Enquiry</td></tr>

@@ -183,7 +183,7 @@ export default function KilnDryingPage() {
               moves after installation — the single most common cause of furniture and joinery failure. Air drying stalls
               at 16–19% in Sri Lanka&apos;s humidity, which is still too wet for interior or export work. Kiln drying is
               the only reliable way to reach a stable 12–15% quickly and consistently. It also pairs with our{' '}
-              <Link href="/#services" className={styles.contactLink}>VPI preservative treatment</Link> and{' '}
+              <Link href="/services/vpi-boron-treatment" className={styles.contactLink}>VPI preservative treatment</Link> and{' '}
               <Link href="/timber-treatment-colombo" className={styles.contactLink}>island-wide service</Link> for a
               complete, export-ready result. New to the subject? Read our guides to{' '}
               <Link href="/blog/timber-seasoning-sri-lanka-complete-guide" className={styles.contactLink}>timber seasoning in Sri Lanka</Link>{' '}

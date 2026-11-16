@@ -3,7 +3,7 @@ import { OG_BASE } from '@/lib/seo';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
-import { Process, Industries, CeyPall, FAQ, Contact, Footer } from '@/components/Sections';
+import { Process, Industries, FAQ, Contact, Footer } from '@/components/Sections';
 
 export const metadata: Metadata = {
   alternates: { canonical: 'https://www.stxaviertimber.com' },
@@ -102,6 +102,7 @@ const kilnDryingSchema = {
   '@id': `${BASE}/#kiln-drying`,
   name: 'Kiln Drying',
   alternateName: ['Timber Kiln Drying', 'Wood Kiln Drying', 'Timber Seasoning'],
+  url: `${BASE}/services/kiln-drying`,
   description: 'Industrial kiln drying service for timber. Fully automated kiln targets 12–15% moisture content. Suitable for construction, furniture, and export timber. ISPM 15 heat treatment compliant. Drying time 3–12 days depending on species.',
   provider: { '@type': 'LocalBusiness', '@id': BASE, name: 'St. Xavier Timber' },
   areaServed: { '@type': 'Country', name: 'Sri Lanka' },
@@ -114,6 +115,7 @@ const vpiSchema = {
   '@id': `${BASE}/#vpi`,
   name: 'Vacuum Pressure Impregnation',
   alternateName: ['VPI Treatment', 'Borate Preservative Treatment', 'Timber Preservation'],
+  url: `${BASE}/services/vpi-boron-treatment`,
   description: 'Vacuum pressure impregnation (VPI) timber treatment using a 5% borate preservative solution at 10 bar (145 PSI). Deep preservative penetration, with retention verified per species and dimension. Safe, non-toxic preservative. 10-year warranty against pest contamination.',
   provider: { '@type': 'LocalBusiness', '@id': BASE, name: 'St. Xavier Timber' },
   areaServed: { '@type': 'Country', name: 'Sri Lanka' },
@@ -133,7 +135,6 @@ export default function Home() {
         <Services />
         <Process />
         <Industries />
-        <CeyPall />
         <FAQ />
         <Contact />
       </main>

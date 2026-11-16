@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { OG_BASE } from '@/lib/seo';
-import { POSTAL_ADDRESS } from '@/lib/company';
+import { POSTAL_ADDRESS, GEO, NAP_ADDRESS_LINE } from '@/lib/company';
 import Navbar from '@/components/Navbar';
 import { Contact, Footer } from '@/components/Sections';
 import styles from '../timber-treatment-negombo/negombo.module.css';
@@ -82,6 +82,27 @@ export default function ContactUsPage() {
 
       {/* Reuse the homepage contact form + details */}
       <Contact />
+
+      <section className={styles.location}>
+        <div className={styles.locationInner}>
+          <div className={styles.locationText}>
+            <h2 className={styles.locationH2}>Find our facility</h2>
+            <p className={styles.locationDesc}>
+              {NAP_ADDRESS_LINE}. On the A3 Colombo–Chilaw road, about 5 minutes south of Negombo and 40 minutes north
+              of Colombo.
+            </p>
+            <iframe
+              title="Map showing St. Xavier Timber, Daluwakotuwa, Kochchikade"
+              src={`https://www.google.com/maps?q=${GEO.latitude},${GEO.longitude}&z=15&output=embed`}
+              width="100%"
+              height="360"
+              style={{ border: 0, borderRadius: 12, marginTop: 16 }}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </>

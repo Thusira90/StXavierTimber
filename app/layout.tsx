@@ -123,6 +123,7 @@ const localBusinessSchema = {
         itemOffered: {
           '@type': 'Service',
           name: 'Kiln Drying',
+          url: `${siteUrl}/services/kiln-drying`,
           description:
             'Industrial automated kiln drying to 12–15% moisture content for construction, furniture, and export timber.',
         },
@@ -132,6 +133,7 @@ const localBusinessSchema = {
         itemOffered: {
           '@type': 'Service',
           name: 'Vacuum Pressure Impregnation (VPI)',
+          url: `${siteUrl}/services/vpi-boron-treatment`,
           description:
             'Deep-penetration 5% borate preservative treatment at 10 bar (145 PSI) for pest and fungal protection, with retention verified per species and dimension. 10-year warranty against pest contamination.',
         },
@@ -141,8 +143,9 @@ const localBusinessSchema = {
         itemOffered: {
           '@type': 'Service',
           name: 'ISPM 15 Heat Treatment',
+          url: `${siteUrl}/services/ispm-15-heat-treatment`,
           description:
-            'IPPC registered heat treatment for wooden packaging and pallets. Compliant with ISPM 15 phytosanitary standards for international export.',
+            'IPPC registered ISPM 15 heat treatment (56°C core for 30 minutes) of wooden packaging timber, crates and dunnage, with the IPPC mark and a per-batch treatment record.',
         },
       },
     ],
@@ -151,26 +154,6 @@ const localBusinessSchema = {
     'https://www.facebook.com/profile.php?id=100054793123041',
     'https://www.instagram.com/stxaviertimber',
     'https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/',
-  ],
-};
-
-const ceypallSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  '@id': 'https://www.ceypall.com',
-  name: 'CeyPall',
-  alternateName: 'CeyPall Pallets',
-  description:
-    'Sri Lanka\'s IPPC registered pallet manufacturer. ISPM 15 certified wooden pallets made from kiln-dried and VPI-treated timber. Sister company of St. Xavier Timber; incorporated 2025, built on the same 1955 timber legacy.',
-  url: 'https://www.ceypall.com',
-  foundingDate: '2025-10-03',
-  address: POSTAL_ADDRESS,
-  knowsAbout: [
-    'ISPM 15 wooden pallets',
-    'IPPC heat treatment',
-    'export pallet manufacturing',
-    'wooden packaging Sri Lanka',
-    'phytosanitary compliance',
   ],
 };
 
@@ -183,10 +166,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ceypallSchema) }}
         />
       </head>
       <body>

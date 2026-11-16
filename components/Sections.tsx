@@ -302,33 +302,6 @@ export function Species() {
   );
 }
 
-/* ── CeyPall ──────────────────────────────────────────────── */
-export function CeyPall() {
-  return (
-    <section className={styles.ceypallSection}>
-      <div className={styles.inner}>
-        <div className={styles.ceypallHeaderLeft}>
-          <span className={styles.ceypallEyebrow}>Sister Company</span>
-          <h2 className={styles.ceypallH2}>
-            Our sister company,{' '}
-            <a href="https://www.ceypall.com/wooden-pallets-sri-lanka" target="_blank" rel="noopener noreferrer" className={styles.ceypallLink}>CeyPall</a>.
-          </h2>
-          <p className={styles.ceypallSub}>
-            CeyPall is our sister company — the pallet-manufacturing side of the same 1955 timber
-            legacy. Every CeyPall pallet is made from St. Xavier treated timber: kiln-dried,
-            VPI-treated, and ISPM 15 certified for export.
-          </p>
-          <div className={styles.ceypallCta}>
-            <a href="https://www.ceypall.com/wooden-pallets-sri-lanka" target="_blank" rel="noopener noreferrer" className={styles.ceypallCtaBtn}>
-              Visit CeyPall →
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 /* ── Testimonials ─────────────────────────────────────────── */
 const testimonials = [
   { quote: 'Consistent moisture levels batch after batch. Our furniture rejects dropped significantly after switching to St. Xavier for kiln drying.', company: 'Colombo Furniture Manufacturer', type: 'Furniture Industry' },
@@ -395,8 +368,9 @@ const faqs = [
   },
 ];
 
+// Answers are always in the DOM (native <details>), so crawlers and AI
+// assistants that don't run JavaScript or click still see every answer.
 export function FAQ() {
-  const [open, setOpen] = useState<number | null>(null);
   return (
     <section className={styles.altSection} id="faq">
       <div className={styles.inner}>
@@ -405,18 +379,18 @@ export function FAQ() {
           <h2 className={styles.h2}>Frequently Asked Questions</h2>
         </div>
         <div className={styles.faqList}>
-          {faqs.map((f, i) => (
-            <div key={f.q} className={styles.faqItem}>
-              <button className={styles.faqQ} onClick={() => setOpen(open === i ? null : i)}>
+          {faqs.map((f) => (
+            <details key={f.q} className={styles.faqItem}>
+              <summary className={styles.faqQ}>
                 {f.q}
-                <span className={`${styles.faqChevron} ${open === i ? styles.faqOpen : ''}`}>
+                <span className={styles.faqChevron}>
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                     <path d="M4 6l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </span>
-              </button>
-              {open === i && <p className={styles.faqA}>{f.a}</p>}
-            </div>
+              </summary>
+              <p className={styles.faqA}>{f.a}</p>
+            </details>
           ))}
         </div>
       </div>
@@ -505,14 +479,16 @@ export function Contact() {
             <form className={styles.form} onSubmit={handleSubmit}>
               <input name="name" type="text" aria-label="Your name or company" placeholder="Your name / company" required className={styles.input} />
               <input name="species" type="text" aria-label="Timber species and dimensions" placeholder="Timber species & dimensions" required className={styles.input} />
-              <input name="quantity" type="text" aria-label="Quantity in square feet or pieces" placeholder="Quantity (sq ft or pieces)" required className={styles.input} />
+              <input name="quantity" type="text" aria-label="Quantity in square feet or pieces" placeholder="Quantity / volume (cu ft, sq ft or pieces)" required className={styles.input} />
               <select name="treatment" aria-label="Treatment required" className={styles.input} defaultValue="" required>
                 <option value="" disabled>Treatment required</option>
                 <option>Kiln Drying only</option>
                 <option>Vacuum Pressure Impregnation only</option>
                 <option>Both — Kiln + VPI</option>
+                <option>ISPM 15 Heat Treatment (export packaging timber)</option>
+                <option>Not sure — please advise</option>
               </select>
-              <input name="phone" type="tel" inputMode="numeric" aria-label="Phone or WhatsApp number" placeholder="Phone or WhatsApp number" className={styles.input} onKeyDown={(e) => { if (!/[\d\s\+\-\(\)]/.test(e.key) && !['Backspace','Delete','Tab','ArrowLeft','ArrowRight'].includes(e.key)) e.preventDefault(); }} />
+              <input name="phone" type="tel" inputMode="numeric" aria-label="Phone or WhatsApp number" placeholder="Phone or WhatsApp number" required className={styles.input} onKeyDown={(e) => { if (!/[\d\s\+\-\(\)]/.test(e.key) && !['Backspace','Delete','Tab','ArrowLeft','ArrowRight'].includes(e.key)) e.preventDefault(); }} />
               <textarea name="notes" aria-label="Additional requirements or questions" placeholder="Any other requirements or questions..." className={styles.textarea} rows={4} />
               {error && <p className={styles.formError}>Something went wrong — please try again or call us directly.</p>}
               <button type="submit" className={styles.submitBtn} disabled={loading}>
@@ -551,15 +527,11 @@ export function Footer() {
           <Link href="/service-areas">Service Areas</Link>
           <Link href="/blog">Knowledge Centre</Link>
           <Link href="/calculator">Calculator</Link>
+          <Link href="/warranty">Warranty</Link>
           <a href="https://www.facebook.com/profile.php?id=100054793123041" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://www.instagram.com/stxaviertimber?igsh=MTRueHJydWNkNmdnOQ%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://www.linkedin.com/company/st-xavier-timber-daluwakotuwa/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-        <p className={styles.footerRight}>
-          <a href="https://www.ceypall.com" target="_blank" rel="noopener noreferrer" className={styles.ceypall}>
-            CeyPall →
-          </a>
-        </p>
       </div>
     </footer>
   );

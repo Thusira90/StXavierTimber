@@ -7,19 +7,19 @@ const BASE = 'https://www.stxaviertimber.com';
 const staticRoutes: MetadataRoute.Sitemap = [
   {
     url: BASE,
-    lastModified: new Date('2026-06-04'),
+    lastModified: new Date('2026-11-16'),
     changeFrequency: 'monthly',
     priority: 1,
   },
   {
     url: `${BASE}/about`,
-    lastModified: new Date('2026-06-04'),
+    lastModified: new Date('2026-11-16'),
     changeFrequency: 'yearly',
     priority: 0.7,
   },
   {
     url: `${BASE}/calculator`,
-    lastModified: new Date('2026-07-03'),
+    lastModified: new Date('2026-11-16'),
     changeFrequency: 'yearly',
     priority: 0.8,
   },
@@ -31,7 +31,7 @@ const staticRoutes: MetadataRoute.Sitemap = [
   },
   {
     url: `${BASE}/contact-us`,
-    lastModified: new Date('2026-07-12'),
+    lastModified: new Date('2026-11-16'),
     changeFrequency: 'yearly',
     priority: 0.9,
   },
@@ -85,14 +85,34 @@ const staticRoutes: MetadataRoute.Sitemap = [
   },
   {
     url: `${BASE}/services/kiln-drying`,
-    lastModified: new Date('2026-07-21'),
+    lastModified: new Date('2026-11-16'),
     changeFrequency: 'monthly',
     priority: 0.9,
   },
   {
+    url: `${BASE}/services/vpi-boron-treatment`,
+    lastModified: new Date('2026-11-16'),
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    url: `${BASE}/services/ispm-15-heat-treatment`,
+    lastModified: new Date('2026-11-16'),
+    changeFrequency: 'monthly',
+    priority: 0.9,
+  },
+  {
+    url: `${BASE}/warranty`,
+    lastModified: new Date('2026-11-16'),
+    changeFrequency: 'yearly',
+    priority: 0.6,
+  },
+  {
     url: `${BASE}/blog`,
-    // Always reflects the newest post date so Google knows when fresh content arrived.
-    lastModified: new Date(posts[0].date),
+    // Always reflects the newest post publish/update date so Google knows when fresh content arrived.
+    lastModified: new Date(
+      Math.max(...posts.map((p) => new Date(p.updated ?? p.date).getTime())),
+    ),
     changeFrequency: 'weekly',
     priority: 0.8,
   },
@@ -101,7 +121,7 @@ const staticRoutes: MetadataRoute.Sitemap = [
 // Blog posts — sorted newest-first in posts.ts; lastModified = publish date.
 const blogRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
   url: `${BASE}/blog/${post.slug}`,
-  lastModified: new Date(post.date),
+  lastModified: new Date(post.updated ?? post.date),
   changeFrequency: 'monthly' as const,
   priority: 0.6,
 }));

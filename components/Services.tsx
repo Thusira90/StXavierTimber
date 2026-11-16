@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './Services.module.css';
 
 const services = [
@@ -8,6 +9,7 @@ const services = [
     desc: 'Our fully automated kiln uses precision temperature and moisture control to achieve 12–15% moisture content — reducing warping, cracking, and instability across all species.',
     photo: 'Kiln facility photo',
     image: '/KD.webp',
+    href: '/services/kiln-drying',
     features: [
       'Fully automated kiln with advanced temper control',
       'Target moisture content 12–15% for all species',
@@ -21,6 +23,7 @@ const services = [
     desc: 'A 5% borate preservative solution (a boron-based preservative) is driven deep into the timber under 10 bar (145 PSI) of pressure, with retention verified per species and dimension — providing long-term protection against pests, fungal decay, and moisture ingress.',
     photo: 'VPI chamber photo',
     image: '/vpi-chamber.webp',
+    href: '/services/vpi-boron-treatment',
     features: [
       '45-minute vacuum air removal pre-treatment',
       '10 bar / 145 PSI pressure maintained 2–6 hours',
@@ -74,11 +77,16 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <a href="#contact" className={styles.cardLink}>Request a quote →</a>
+                <Link href={s.href} className={styles.cardLink}>{s.title} details →</Link>
               </div>
             </div>
           ))}
         </div>
+
+        <p className={styles.sub} style={{ marginTop: 32, textAlign: 'center' }}>
+          Exporting? We also heat-treat packaging timber, crates and dunnage to ISPM 15.{' '}
+          <Link href="/services/ispm-15-heat-treatment" className={styles.cardLink}>ISPM 15 heat treatment →</Link>
+        </p>
       </div>
     </section>
   );

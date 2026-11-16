@@ -111,67 +111,6 @@
 .spRow:last-child { border-bottom: none; }
 .spVal    { color: var(--text-primary); font-weight: 500; text-align: right; }
 
-/* CeyPall section */
-.ceypallSection   {
-  background: #0d1c06;
-  padding: 96px 0;
-  border-top: 1px solid rgba(168,195,120,0.1);
-  border-bottom: 1px solid rgba(168,195,120,0.1);
-  position: relative;
-  overflow: hidden;
-}
-.ceypallSection::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(ellipse at 5% 50%, rgba(78,122,40,0.25) 0%, transparent 45%),
-    radial-gradient(ellipse at 95% 50%, rgba(46,79,18,0.2) 0%, transparent 45%),
-    radial-gradient(circle at 50% 10%, rgba(138,173,90,0.1) 0%, transparent 40%);
-  pointer-events: none;
-  z-index: 0;
-}
-.ceypallSection::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('/IPPC-HEat-Treated-Pallet.webp');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.07;
-  mix-blend-mode: luminosity;
-  pointer-events: none;
-  z-index: 0;
-}
-.ceypallHeader    { display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: start; margin-bottom: 48px; }
-.ceypallHeaderLeft{ display: flex; flex-direction: column; gap: 0; }
-.ceypallEyebrow   { font-size: 11px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--sage-400); font-weight: 500; display: block; margin-bottom: 14px; }
-.ceypallH2        { font-family: var(--font-display); font-size: clamp(28px, 4vw, 42px); font-weight: 400; color: #ffffff; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 20px; }
-.ceypallLink      { color: var(--sage-400); text-decoration: none; border-bottom: 2px solid rgba(168,195,120,0.3); transition: border-color 0.15s, color 0.15s; }
-.ceypallLink:hover{ color: var(--sage-300); border-color: var(--sage-400); }
-.ceypallSub       { font-size: 14.5px; color: rgba(212,232,184,0.88); line-height: 1.75; font-weight: 300; margin-bottom: 24px; max-width: 560px; }
-.ceypallBadges    { display: flex; flex-wrap: wrap; gap: 8px; }
-.ceypallBadge     { font-size: 11px; padding: 4px 12px; border-radius: 100px; background: rgba(168,195,120,0.1); color: var(--sage-300); border: 1px solid rgba(168,195,120,0.2); font-weight: 500; letter-spacing: 0.02em; }
-.ceypallHeaderRight{ display: flex; flex-direction: column; gap: 0; border-left: 1px solid rgba(168,195,120,0.2); padding-left: 40px; flex-shrink: 0; }
-.ceypallStat      { padding: 20px 0; border-bottom: 1px solid rgba(168,195,120,0.12); display: flex; flex-direction: column; gap: 4px; }
-.ceypallStat:last-child { border-bottom: none; }
-.ceypallStatNum   { font-family: var(--font-display); font-size: 32px; color: var(--sage-400); line-height: 1; letter-spacing: -0.02em; }
-.ceypallStatLabel { font-size: 11px; color: rgba(212,232,184,0.87); text-transform: uppercase; letter-spacing: 0.07em; }
-.ceypallGrid      { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 40px; }
-.ceypallCard      { background: rgba(255,255,255,0.04); border: 1px solid rgba(168,195,120,0.13); border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px; transition: box-shadow 0.2s, border-color 0.2s; }
-.ceypallCard:hover{ box-shadow: 0 4px 24px rgba(78,122,40,0.2); border-color: rgba(168,195,120,0.28); }
-.ceypallCardTop   { display: flex; flex-direction: column; gap: 6px; }
-.ceypallTag       { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--sage-600); background: var(--sage-50); border: 1px solid var(--sage-100); padding: 3px 10px; border-radius: 100px; align-self: flex-start; }
-.ceypallCardSub   { font-size: 11.5px; color: rgba(212,232,184,0.87); margin-top: 4px; }
-.ceypallCardTitle { font-family: var(--font-display); font-size: 19px; font-weight: 400; color: #ffffff; letter-spacing: -0.01em; line-height: 1.2; }
-.ceypallCardDesc  { font-size: 13px; color: rgba(212,232,184,0.88); line-height: 1.7; font-weight: 300; }
-.ceypallFeatures  { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border); }
-.ceypallFeature   { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: rgba(212,232,184,0.9); line-height: 1.5; }
-.ceypallFeature svg{ color: var(--sage-500, var(--sage-400)); flex-shrink: 0; margin-top: 1px; }
-.ceypallCta       { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-.ceypallCtaBtn    { background: var(--stone-800); color: var(--stone-50); font-size: 14px; font-weight: 500; padding: 12px 28px; border-radius: 8px; text-decoration: none; transition: background 0.15s; flex-shrink: 0; }
-.ceypallCtaBtn:hover { background: var(--text-primary); }
-.ceypallCtaNote   { font-size: 12.5px; color: rgba(212,232,184,0.87); }
 
 /* Testimonials */
 .testGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -192,7 +131,9 @@
 }
 .faqQ:hover { color: var(--sage-400); }
 .faqChevron { flex-shrink: 0; color: rgba(212,232,184,0.4); transition: transform 0.2s; display: flex; }
-.faqOpen  { transform: rotate(180deg); }
+.faqQ { list-style: none; }
+.faqQ::-webkit-details-marker { display: none; }
+.faqItem[open] .faqChevron { transform: rotate(180deg); }
 .faqA     { font-size: 14px; line-height: 1.75; color: rgba(212,232,184,0.88); padding: 0 0 20px; font-weight: 300; }
 
 /* Contact section */
@@ -253,18 +194,11 @@
 .footerLinks a{ font-size: 13px; color: rgba(212,232,184,0.85); text-decoration: none; transition: color 0.15s; }
 .footerLinks a:hover { color: var(--sage-200); }
 .footerRight  { font-size: 12px; color: rgba(212,232,184,0.82); }
-.ceypall      { color: var(--sage-400); text-decoration: none; }
-.ceypall:hover{ text-decoration: underline; }
 
 /* Responsive */
 @media (max-width: 900px) {
-  .section, .altSection, .ceypallSection, .processSection { padding: 64px 0; }
+  .section, .altSection, .processSection { padding: 64px 0; }
   .inner  { padding: 0 20px; }
-  .ceypallHeader { grid-template-columns: 1fr; gap: 32px; }
-  .ceypallHeaderRight { flex-direction: row; border-left: none; padding-left: 0; border-top: 1px solid var(--border-mid); padding-top: 28px; gap: 32px; }
-  .ceypallStat { border-bottom: none; border-right: 1px solid var(--border); padding-right: 32px; }
-  .ceypallStat:last-child { border-right: none; padding-right: 0; }
-  .ceypallGrid { grid-template-columns: 1fr; }
   .stepGrid  { grid-template-columns: 1fr; }
   .indGrid   { grid-template-columns: 1fr 1fr; }
   .indCard   { padding: 20px; }
