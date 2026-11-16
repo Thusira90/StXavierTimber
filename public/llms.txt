@@ -12,18 +12,21 @@
 - Email: info@stxaviertimber.com
 - Website: https://www.stxaviertimber.com
 - Coverage: island-wide — customers across all 25 districts of Sri Lanka send timber for treatment; delivery available both ways
-- Sister company: CeyPall (https://www.ceypall.com) — ISPM 15 certified wooden pallet manufacturing
+- Scope: St. Xavier Timber treats timber (drying, preservation, heat treatment). It does not manufacture or sell pallets or packaging.
 
 ## Services
 
 1. **Kiln Drying / Timber Seasoning** — automated kiln chambers drying timber to a verified 12–15% moisture content. Species include rubberwood, teak, mahogany, pine, jak, kumbuk, nadun, coconut, and imported hardwoods. Drying time 3–12 days depending on species and thickness. Moisture verified with calibrated meters, recorded per batch.
-2. **Vacuum Pressure Impregnation (VPI)** — 5% borate preservative solution (Boron Borax) driven deep into the timber at 10 bar (145 PSI), with retention verified per species and dimension. Protects against termites, wood borers, and fungal decay. 10-year warranty against pest contamination. Non-toxic: no heavy metals, arsenic, or solvents.
-3. **ISPM 15 Heat Treatment** — IPPC registered heat treatment for export wooden packaging (pallets, crates, dunnage). Core heated to 56°C for minimum 30 minutes. Issues the IPPC certification mark and per-batch treatment certificate. Accepted in 180+ countries.
+2. **Vacuum Pressure Impregnation (VPI)** — 5% borate preservative solution (Boron Borax) driven deep into the timber at 10 bar (145 PSI), with retention verified per species and dimension. Protects against termites, wood borers, and fungal decay. 10-year warranty against pest contamination. Non-toxic: no heavy metals, arsenic, or solvents. Designed for dry, interior and sheltered above-ground timber; not for ground contact, repeated wetting or marine use (borate is water-soluble). St. Xavier Timber does not offer a ground-contact preservative.
+3. **ISPM 15 Heat Treatment** — IPPC registered heat treatment of customers' export wooden packaging timber, crates, skids and dunnage. Core heated to 56°C for minimum 30 minutes. Issues the IPPC certification mark and per-batch treatment certificate. Accepted in 180+ countries.
 
 ## Key Pages
 
 - [Homepage](https://www.stxaviertimber.com): services overview, process, contact
 - [Kiln Drying Service](https://www.stxaviertimber.com/services/kiln-drying): moisture targets, drying times, species
+- [VPI Boron Treatment](https://www.stxaviertimber.com/services/vpi-boron-treatment): borate pressure treatment, suitable uses and limits
+- [ISPM 15 Heat Treatment](https://www.stxaviertimber.com/services/ispm-15-heat-treatment): heat treatment of export packaging timber, crates and dunnage
+- [Warranty](https://www.stxaviertimber.com/warranty): 10-year VPI pest warranty terms, exclusions and claims
 - [About](https://www.stxaviertimber.com/about): history since 1955, facility, registration
 - [Contact](https://www.stxaviertimber.com/contact-us): phone, WhatsApp, email, directions, hours
 - [Service Areas](https://www.stxaviertimber.com/service-areas): island-wide coverage hub

@@ -14,6 +14,10 @@ export type Post = {
   category: string;
   tags: string[];
   sections: PostSection[];
+  /** ISO date of the last substantive edit; drives dateModified and sitemap lastmod. */
+  updated?: string;
+  /** Outbound references cited by the article, rendered as a Sources list. */
+  sources?: { label: string; url: string }[];
 };
 
 export const posts: Post[] = [
@@ -104,7 +108,7 @@ export const posts: Post[] = [
       {
         heading: 'The Certification Process, Step by Step',
         list: [
-          'Send your packaging — pallets, crates, boxes, or loose dunnage — to a registered treatment facility, or have the facility manufacture certified packaging for you.',
+          'Send your wooden packaging — crates, boxes, skids, or loose dunnage — or the timber it will be made from to an IPPC-registered treatment facility.',
           'The wood is heat treated: loaded into the chamber, brought to 56°C core temperature (verified by probes in the thickest pieces), and held for a minimum of 30 minutes.',
           'The facility applies the IPPC mark to at least two opposite sides of each item.',
           'A treatment certificate is issued for the batch, recording the date, treatment parameters, and quantity — keep this with your shipping documents.',
@@ -114,7 +118,7 @@ export const posts: Post[] = [
       {
         heading: 'Common Mistakes That Cost Exporters',
         paragraphs: [
-          'The most frequent mistake we see is treating packaging as an afterthought — ordering certified pallets days before a shipment deadline. Heat treatment itself is fast, but chamber scheduling, transport, and marking take time. Build packaging certification into your shipping timeline a week or more ahead.',
+          'The most frequent mistake we see is treating packaging as an afterthought — arranging treatment days before a shipment deadline. Heat treatment itself is fast, but chamber scheduling, transport, and marking take time. Build packaging certification into your shipping timeline a week or more ahead.',
           'The second mistake is repairing certified packaging with uncertified wood. A certified pallet repaired with an untreated board is no longer compliant — the whole unit must be re-treated and re-marked. Destination inspectors specifically look for boards without marks on otherwise marked pallets.',
           'The third is confusing kiln drying with ISPM 15 heat treatment. They are different processes with different targets: kiln drying targets moisture content and takes days; ISPM 15 heat treatment targets core temperature and takes hours. Kiln-dried wood is not automatically ISPM 15 compliant — the treatment must be run and documented specifically against the ISPM 15 standard by a registered facility.',
         ],
@@ -3042,23 +3046,28 @@ export const posts: Post[] = [
     slug: 'what-is-ispm-15-heat-treatment',
     title: 'What Is ISPM 15 Heat Treatment',
     description:
-      "If you're exporting goods on wooden pallets or in wooden crates, ISPM 15 heat treatment isn't optional — it's a legal requirement in over 180 countries.",
+      'ISPM 15 heat treatment for wooden packaging timber, crates and dunnage: what the 56°C standard requires, what the IPPC mark certifies, and how Sri Lankan exporters comply.',
     date: '2026-05-15',
+    updated: '2026-11-16',
+    sources: [
+      { label: 'IPPC — ISPM 15: Regulation of wood packaging material in international trade', url: 'https://www.ippc.int/en/publications/640/' },
+      { label: 'Department of Agriculture Sri Lanka (home of the National Plant Quarantine Service)', url: 'https://doa.gov.lk/' },
+    ],
     readTime: '5 min read',
     category: 'Export & Compliance',
-    tags: ['ISPM 15', 'export pallets', 'heat treatment', 'IPPC', 'phytosanitary', 'Sri Lanka export'],
+    tags: ['ISPM 15', 'wooden packaging timber', 'heat treatment', 'IPPC', 'phytosanitary', 'Sri Lanka export'],
     sections: [
       {
         heading: 'What ISPM 15 Actually Is',
         paragraphs: [
-          'ISPM 15 — the International Standards for Phytosanitary Measures No. 15 — is a global standard developed by the International Plant Protection Convention (IPPC) that governs the treatment of wooden packaging materials used in international trade. In plain terms: if your goods are packed on wooden pallets, in wooden crates, or secured with wooden dunnage, those materials must be treated and marked to ISPM 15 before they can cross most international borders.',
+          'ISPM 15 — the International Standards for Phytosanitary Measures No. 15 — is a global standard developed by the International Plant Protection Convention (IPPC) that governs the treatment of wooden packaging materials used in international trade. In plain terms: if your goods travel in wooden crates, on wooden skids, or are braced with wooden dunnage, that solid wood packaging must be treated and marked to ISPM 15 before they can cross most international borders.',
           'The standard exists to prevent the spread of invasive insects and plant diseases that can travel undetected inside untreated wood. Bark beetles, pine wood nematodes, and dozens of other organisms have caused billions of dollars in agricultural and forestry damage after hitchhiking across borders in wooden packaging. ISPM 15 is the international response to that threat.',
         ],
       },
       {
         heading: 'Why It Matters for Sri Lankan Exporters',
         paragraphs: [
-          "Sri Lanka exports tea, apparel, rubber products, ceramics, and a wide range of manufactured goods — much of it packed on wooden pallets or in wooden crates. If those pallets are not ISPM 15 compliant, destination country customs authorities are legally entitled to refuse entry, fumigate the shipment at the exporter's expense, or destroy the packaging on arrival.",
+          "Sri Lanka exports tea, apparel, rubber products, ceramics, and a wide range of manufactured goods — much of it shipped with solid wood packaging. If that wood packaging is not ISPM 15 compliant, destination country customs authorities are legally entitled to refuse entry, fumigate the shipment at the exporter's expense, or destroy the packaging on arrival.",
           'The practical cost of non-compliance is significant: delayed shipments, demurrage charges, fumigation fees, and — in some cases — the loss of the entire consignment. For exporters working on tight margins with time-sensitive contracts, these are risks that can be eliminated entirely by using ISPM 15 certified packaging.',
         ],
       },
@@ -3086,15 +3095,15 @@ export const posts: Post[] = [
       {
         heading: 'Common Mistakes Exporters Make',
         paragraphs: [
-          'The most common mistake is assuming that pallets purchased locally are automatically ISPM 15 compliant. They are not — unless they were made from timber treated by an IPPC-registered facility and correctly marked. Buying unmarked pallets from a hardware shop or small workshop is a compliance risk.',
-          'The second mistake is treating ISPM 15 as a one-time formality rather than a per-shipment requirement. Each batch of pallets used in an export shipment must be treated. Reusing pallets that were treated for a previous shipment is generally acceptable only if the mark remains legible and the wood has not been modified.',
+          'The most common mistake is assuming that wooden packaging bought locally is automatically ISPM 15 compliant. It is not — unless it was made from timber treated by an IPPC-registered facility and correctly marked. Unmarked crates or dunnage from a hardware shop or small workshop are a compliance risk.',
+          'The second mistake is treating ISPM 15 as a one-time formality rather than a per-shipment requirement. Wood packaging must carry a valid mark for every export shipment. Reusing packaging that was treated for a previous shipment is generally acceptable only if the mark remains legible and the wood has not been repaired or modified; a repair with untreated wood voids the treatment.',
         ],
       },
       {
         heading: 'How St. Xavier Timber Can Help',
         paragraphs: [
-          'St. Xavier Timber is IPPC registered and has been providing heat treatment for wooden packaging since our pallet manufacturing division launched over two decades ago. We treat high volumes of pallet timber on a regular basis and issue the documentation exporters need for customs clearance.',
-          'Our sister company, CeyPall, manufactures ISPM 15 certified wooden pallets to order — made from St. Xavier treated timber and ready for export. Whether you need treatment for your own pallets or a supply of certified pallets, we can turn orders around quickly to meet your shipping schedule.',
+          'St. Xavier Timber is a timber treatment facility, registered with the National Plant Quarantine Service under the IPPC scheme for heat treatment of wood packaging material. We heat-treat timber that packaging makers and exporters bring to us — sawn packaging timber, crate components, skids and loose dunnage — and issue the IPPC mark and a per-batch treatment record that exporters need for customs clearance.',
+          'We treat timber; we do not manufacture or sell packaging. Bring us your packaging timber or finished wooden packaging with the species, dimensions, quantity and shipping date, and we will schedule the chamber around your deadline. For the full service details, see our ISPM 15 heat treatment page.',
         ],
       },
     ],

@@ -12,7 +12,7 @@ const links = [
   { label: 'Calculator', href: '/calculator' },
   { label: 'Knowledge Centre', href: '/blog' },
   { label: 'FAQ', href: '/#faq' },
-  { label: 'Contact', href: '/#contact' },
+  { label: 'Contact', href: '/contact-us' },
 ];
 
 export default function Navbar() {

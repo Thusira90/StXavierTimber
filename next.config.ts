@@ -36,18 +36,27 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // The retired stxaviertimber.vercel.app host is still indexed. Send every
+      // path on it to the same path on the canonical domain with a 301 (Next's
+      // `permanent: true` would emit 308) so Google consolidates the duplicate.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'stxaviertimber.vercel.app' }],
+        destination: 'https://www.stxaviertimber.com/:path*',
+        statusCode: 301,
+      },
       // Old /services index from the previous site — still cited by search
       // engines via the retired stxaviertimber.vercel.app copy.
       {
         source: '/services',
         destination: '/#services',
-        permanent: true,
+        statusCode: 301,
       },
-      // Old VPI service page (removed) — VPI now lives on the homepage.
+      // Old VPI service page from the previous site — now has its own page.
       {
         source: '/services/chemical-impregnation',
-        destination: '/#services',
-        permanent: true,
+        destination: '/services/vpi-boron-treatment',
+        statusCode: 301,
       },
       // Pallets are CeyPall's business (separate company/domain), not St Xavier's.
       {

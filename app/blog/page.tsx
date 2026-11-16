@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'VPI timber treatment guide',
     'timber treatment Sri Lanka',
     'wood preservation guide',
-    'export pallet compliance',
+    'export wood packaging compliance',
   ],
   alternates: { canonical: 'https://www.stxaviertimber.com/blog' },
   openGraph: { ...OG_BASE, url: 'https://www.stxaviertimber.com/blog' },

@@ -24,7 +24,7 @@ export default function Hero() {
             ))}
           </div>
           <div className={styles.actions}>
-            <a href="#contact" className={styles.btnPrimary}>Request a Quote</a>
+            <a href="/contact-us" className={styles.btnPrimary}>Request a Quote</a>
             <a
               href="https://wa.me/94714711417"
               className={styles.btnWa}

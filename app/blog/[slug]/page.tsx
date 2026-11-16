@@ -22,10 +22,10 @@ export async function generateMetadata({
   const post = getPost(slug);
   if (!post) return {};
   return {
-    // `absolute` opts out of the root "%s | St. Xavier Timber" template — the
-    // brand suffix pushed every article title past Google's ~60-char display
-    // limit. Brand is still carried by og:site_name and the JSON-LD publisher.
-    title: { absolute: post.title },
+    // `absolute` opts out of the root "%s | St. Xavier Timber" template so the
+    // brand suffix is only added where it still fits Google's ~60-char display
+    // limit. Longer titles rely on og:site_name and the JSON-LD publisher.
+    title: { absolute: brandedTitle(post.title) },
     description: post.description,
     keywords: post.tags,
     alternates: { canonical: `https://www.stxaviertimber.com/blog/${slug}` },
@@ -38,6 +38,7 @@ export async function generateMetadata({
       url: `https://www.stxaviertimber.com/blog/${slug}`,
       type: 'article',
       publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
       authors: ['St. Xavier Timber'],
       tags: post.tags,
     },
@@ -48,6 +49,11 @@ export async function generateMetadata({
       images: [OG_IMAGE.url],
     },
   };
+}
+
+const BRAND_SUFFIX = ' | St. Xavier Timber';
+function brandedTitle(title: string) {
+  return title.length + BRAND_SUFFIX.length <= 60 ? `${title}${BRAND_SUFFIX}` : title;
 }
 
 function formatDate(dateStr: string) {
@@ -77,7 +83,7 @@ export default async function PostPage({
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     author: {
       '@type': 'Organization',
       name: 'St. Xavier Timber',
@@ -200,6 +206,19 @@ export default async function PostPage({
               )}
             </div>
           ))}
+
+          {post.sources && post.sources.length > 0 && (
+            <div className={styles.section}>
+              <h2 className={styles.h2}>Sources</h2>
+              <ul className={styles.list}>
+                {post.sources.map((src) => (
+                  <li key={src.url} className={styles.listItem}>
+                    <a href={src.url} target="_blank" rel="noopener noreferrer">{src.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {extraFaqs.length > 0 && (
             <div className={styles.section}>
